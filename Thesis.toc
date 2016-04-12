@@ -1,0 +1,27 @@
+\select@language {spanish}
+\contentsline {chapter}{Resumen}{\es@scroman {ii}}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Agradecimientos}{\es@scroman {iii}}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {v}}{dummy.4}
+\contentsline {chapter}{\IeC {\'I}ndice of Tablas}{\es@scroman {vi}}{dummy.6}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.8}
+\contentsline {chapter}{\numberline {2}Integrales de trayectoria en espacio plano.}{2}{chapter.9}
+\contentsline {section}{\numberline {2.1}La ecuacion de Schrodinger.}{3}{section.16}
+\contentsline {subsection}{\numberline {2.1.1}A Subsection}{4}{subsection.23}
+\contentsline {section}{\numberline {2.2}El experimento de la doble rendija.}{5}{section.24}
+\contentsline {section}{\numberline {2.3}Campos escalares.}{5}{section.25}
+\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{5}{section.26}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{5}{section.27}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{5}{section.28}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{6}{chapter.29}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{7}{section.31}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{7}{subsection.32}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{7}{section.33}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{7}{section.34}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{7}{section.35}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{7}{section.36}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}An Appendix}{8}{appendix.37}
+\vspace {2em}
