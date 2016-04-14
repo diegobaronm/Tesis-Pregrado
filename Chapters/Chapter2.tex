@@ -96,12 +96,48 @@ En el continuo:
 \langle q_{f}t_{f}|q_it_i\rangle=\mathcal{N}\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}(q,\dot{q})dt\right\} }}
 \end{equation}
 Donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo esto solo pasa si asumimos una forma específica del Hamiltoniano, cuando esto no es asi se tiene una acción efectiva. En teorñia de campos por ejemplo esta descomposición solo se puede hacer en el caso de campos Abelianos.
-
+\newpage
  
-\subsection{A Subsection}
+ 
 
-Donec urna leo, vulputate vitae porta eu, vehicula blandit libero. Phasellus eget massa et leo condimentum mollis. Nullam molestie, justo at pellentesque vulputate, sapien velit ornare diam, nec gravida lacus augue non diam. Integer mattis lacus id libero ultrices sit amet mollis neque molestie. Integer ut leo eget mi volutpat congue. Vivamus sodales, turpis id venenatis placerat, tellus purus adipiscing magna, eu aliquam nibh dolor id nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed cursus convallis quam nec vehicula. Sed vulputate neque eget odio fringilla ac sodales urna feugiat.
+\subsection{Teoría de Perturbaciones y Matriz $\mathcal{S}$}
 
+Vamos a ilustrar cómo usar el método de integrales de trayectoria en procesos de dispersión, este tipo de procesos involucran la interacción de una partícula con un potencial $V(x)$. Debido a que no siempre podemos calcular analíticamente la integral (2.18) entonces es necesario acudir a la teoría de perturbaciones, esta es aplicable en el regimen en que la energía de interacción $E_I<\hbar$. En este caso podemos escribir:
+\begin{equation}
+\text{Exp}\left[\frac{-i}{\hbar}\int_{t_{i}}^{t_{f}}V(x,t)dt\right]=1-\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}V(x,t)dt+\left(\frac{i}{\hbar}\right)^{2}\frac{1}{2!}\left[\int_{t_{i}}^{t_{f}}V(x,t)dt\right]^{2}+...
+\end{equation}
+Cuando reemplazamos esto en la expresión (2.18) obtenemos:
+\begin{equation}
+K=K_0+K_1+K_2+...\ \text{donde}\ K_0=\mathcal{N}\int \mathcal{D}x \text{Exp}\left[ \frac{i}{\hbar}\int \frac{1}{2}m\dot{x}^2dt\right] 
+\end{equation}
+Para calcular $K_0$, escribamos la forma discretizada de (2.20)
+\begin{eqnarray}
+\nonumber K_0&=&\lim_{n\to\infty}\left(\frac{m}{i\hbar\tau}\right)^{\left(\frac{n+1}{2}\right)}\int_{-\infty}^{\text{\ensuremath{\infty}}}\prod_{j=1}^{n}dx_{j}\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{n}\left(x_{j+1}-x_{j}\right)^{2}\right]\\
+\nonumber &=& \lim_{n\to\infty}\left(\frac{m}{i\hbar\tau}\right)^{\left(\frac{n+1}{2}\right)}\frac{1}{\left(n+1\right)^{\frac{1}{2}}}\left(\frac{i\hbar\tau}{m}\right)^{\frac{n}{2}}\text{Exp}\left[\frac{im}{2\hbar(n+1)\tau}\left(x_{f}-x_{i}\right)^{2}\right]\\
+K_0(x_ft_f,x_it_i)&=& \Theta(t_{f}-t_{i})\left(\frac{m}{i\hbar(t_{f}-t_{i})}\right)^{1/2}\text{Exp}\left[\frac{im}{2\hbar(t_{f}-t_{i})}\left(x_{f}-x_{i}\right)^{2}\right] 
+\end{eqnarray}
+Calculemos ahora $K_1$:
+\begin{equation}
+K_1=\lim_{n\to\infty}\frac{-i}{\hbar}N^{(n+1)/2}\sum_{i=1}^{n}\int\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{n}(x_{j+1}-x_{j})^{2}\right]V(x_{i},t_{i})dx_{1}...dx_{n}
+\end{equation}
+Ahora como solo $V(x)$ depende de $x_i$, separamos (2.22) como:
+\begin{eqnarray}
+\nonumber K_1&=&\lim_{n\to\infty}\frac{-i}{\hbar}\sum_{i=1}^{n}\left\{ \int N^{(n-i+1)/2}\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=i}^{n}(x_{j+1}-x_{j})^{2}\right]dx_{i}...dx_{n}\right\}\\
+& &\times  \left\{ \int N^{i/2}\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{i-1}(x_{j+1}-x_{j})^{2}\right]dx_{1}...dx_{i-1}\right\} V(x_{i},t_{i})
+\end{eqnarray}
+Los dos términos en corchetes en (2.23) son $K_0(xt,x_ft_f)$ y $K_0(x_it_i,xt)$, así:
+\begin{equation}
+K_1(x_ft_f,x_it_i)= -\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}dt\int_{-\infty}^{\infty}K_{0}(x_{f}t_{f}.xt)V(x,t)K_{0}(xt,x_{i}t_{i})dx
+\end{equation}
+Como $K_0(x_ft_f,xt)=0$ si $t>t_f$ y $K_0(xt,x_it_i)=0$ si $t<t_i$, entonces podemos escribir:
+\begin{equation}
+K_1(x_ft_f,x_it_i)=-\frac{i}{\hbar}\int_{-\infty}^{\infty}dt\int_{-\infty}^{\infty}K_{0}(x_{f}t_{f}.xt)V(x,t)K_{0}(xt,x_{i}t_{i})dx 
+\end{equation}
+De la misma manera se puede probar que:
+\begin{equation}
+K_2(x_ft_f,x_it_i)=\left(\frac{-i}{\hbar}\right)^2\int_{-\infty}^{\infty}dt_{1}dt_{2}dx_{1}dx_{2}K_{0}(x_{f}t_{f}.x_{2}t_{2})V_2K_{0}(x_{2}t_{2},x_{1}t_{1})V_1K_{0}(x_{1}t_{1},x_{i}t_{i})
+\end{equation}
+Esta es una solución en series para $K$ y recibe el nombre de Serie de Born, en la expresión general para $K_n$ no se tiene el factor $n!$ ya que hay ese mismo numero de formas para ordenar los $n$ potenciales $V(x)$ que entran en el propagador.
 \section{El experimento de la doble rendija.}
 
 \section{Campos escalares.}

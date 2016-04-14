@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  12 APR 2016 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  14 APR 2016 00:06
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -948,7 +948,26 @@ File: Imagenes/Fig1.png Graphic file (type png)
 Package pdftex.def Info: Imagenes/Fig1.png used on input line 25.
 (pdftex.def)             Requested size: 256.0748pt x 177.6559pt.
 
-[3 <./Imagenes/Fig1.png>] [4] [5]) (Chapters/Chapter3.tex [6]
+[3 <./Imagenes/Fig1.png>] [4] [5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 103.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 103.
+
+[6]
+Overfull \hbox (5.57393pt too wide) detected at line 139
+[]\OML/cmm/m/it/10.95 K[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]t[]; x[]t[]
+\OT1/cmr/m/n/10.95 ) = [][] [][] \OML/cmm/m/it/10.95 dt[]dt[]dx[]dx[]K[]\OT1/cm
+r/m/n/10.95 (\OML/cmm/m/it/10.95 x[]t[]:x[]t[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it
+/10.95 V[]K[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]t[]; x[]t[]\OT1/cmr/m/n
+/10.95 )\OML/cmm/m/it/10.95 V[]K[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]t[
+]; x[]t[]\OT1/cmr/m/n/10.95 )
+ []
+
+) (Chapters/Chapter3.tex [7]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -957,16 +976,16 @@ File: Imagenes/Escudoudea.jpg Graphic file (type jpg)
 <use Imagenes/Escudoudea.jpg>
 Package pdftex.def Info: Imagenes/Escudoudea.jpg used on input line 4.
 (pdftex.def)             Requested size: 199.16928pt x 299.47748pt.
- [7
+ [8
 
-]) (Appendices/AppendixA.tex [8]
+]) (Appendices/AppendixA.tex [9]
 Ap\'{e}ndice A.
 ------------------------------------------------------------------------------
  A An Appendix
 ------------------------------------------------------------------------------
-[9
+[10
 
-]) [10]
+]) [11]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -980,7 +999,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C40D15CFACE4A80287AC7F9D3366B981;4112.
+(rerunfilecheck)             Checksum: FBA2F6E6C7122296930ACCBB63FEFFFB;4242.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -988,11 +1007,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 14103 strings out of 493673
- 196748 string characters out of 3141530
- 278032 words of memory out of 3000000
- 17161 multiletter control sequences out of 15000+200000
- 13918 words of font info for 51 fonts, out of 3000000 for 9000
+ 14121 strings out of 493673
+ 196967 string characters out of 3141530
+ 280032 words of memory out of 3000000
+ 17169 multiletter control sequences out of 15000+200000
+ 15165 words of font info for 56 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,12n,45p,918b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -1014,9 +1033,9 @@ nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (18 pages, 705402 bytes).
+Output written on Thesis.pdf (19 pages, 715112 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
  179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
