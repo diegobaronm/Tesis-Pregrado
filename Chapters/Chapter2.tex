@@ -166,9 +166,52 @@ Esto último era lo que queríamos probar.
 
 \subsection{Matriz $\mathcal{S}$.}
 En un experimento de dispersión es razonable suponer que las partículas al principio y al final del proceso son partículas libres, estas ondas planas están distribuidas en todo el espacio. Sin embargo esto último lleva a una contradicción ya que la presencia del centro dispersor no permite que en sus cercanias la solución sea una onda plana. Para resolver este inconveniente se puede proponer lo que se llama una fuente dinámica, que se "prenda y apague" lentamente tal que las partículas en los estados (final/incial) puedan ser libres y por tanto la aproximación de ondas planas sea válida en este regimen.\\
+\\
+Para empezar definamos $\psi_{in}(\vec{x}_i,t_i)$, $\psi_{out}(\vec{x}_f,t_f)$ como ondas planas para $t\to -\infty$,  $t\to \infty$ respectivamente, la amplitud de dispersión se define como:
+\begin{equation}
+\mathcal{S}=\int\psi_{out}^{*}(\vec{x}_{f}t_{f})\psi^{(+)}(\vec{x}_{f}t_{f})d\vec{x}_{f}
+\end{equation}
+En (2.31) el superíndice $(+)$ denota que $\psi^{(+)}(\vec{x}t)$ era una onda libre en $t\to -\infty$, usando la serie de Born obtenemos:
+\begin{eqnarray}
+\nonumber \mathcal{S}&=&\int\psi_{out}^{*}(\vec{x}_{f}t_{f})\psi^{(+)}(\vec{x}_{f}t_{f})d\vec{x}_{f}=\int\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})d\vec{x}_{f}d\vec{x_{i}}\\
+\nonumber &&-\frac{i}{\hbar}\int\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}t)V(\vec{x}t)K_{0}(\vec{x}t,\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})d\vec{x}_{f}d\vec{x_{i}}d\vec{x}dt\\
+\nonumber &=&\int \psi_{out}^{*}(\vec{x}_{f}t_{f})\phi(\vec{x}_{f}t_{f})d\vec{x}_f\\
+&&-\frac{i}{\hbar}\int\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}t)V(\vec{x}t)K_{0}(\vec{x}t,\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})d\vec{x}_{f}d\vec{x_{i}}d\vec{x}dt   
+\end{eqnarray}
+Si los momentos iniciales y finales son $\vec{p}_i=\hbar\vec{k}_i$,$\vec{p}_f=\hbar\vec{k}_f$ respectivamente, entonces tenemos que:
+\begin{eqnarray}
+\psi_{in}(\vec{x}t)&=&\frac{1}{\sqrt{\tau}}\text{Exp}\left( \frac{i}{\hbar}(\vec{p}_i\cdot \vec{x}-E_it )\right)\\
+\psi_{out}(\vec{x}t)&=&\frac{1}{\sqrt{\tau}}\text{Exp}\left( \frac{i}{\hbar}(\vec{p}_f\cdot \vec{x}-E_ft )\right)
+\end{eqnarray}
+Donde $E^2=\frac{p^2}{2m}$ y $\tau$ es el volumen de integración, el cual es arbitrario. Si sustituimos las expresiones (2.33) y (2.34) en (2.32) obtenemos:
+\begin{equation}
+\mathcal{S}_{fi}=\delta(\vec{k}_f-\vec{k}_i)-\frac{i}{\hbar}\int\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}t)V(\vec{x}t)K_{0}(\vec{x}t,\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})d\vec{x}_{f}d\vec{x_{i}}d\vec{x}dt
+\end{equation}
+Lo cual nos permite ver la amplitud de dispersion $\mathcal{S}_{fi}$ como el elemento de una matriz, la \textbf{matriz $\mathcal{S}$ de dispersión}. En (2.35) el primer término solo es representativo cuando no hay interacción y $\vec{k}_i=\vec{k}_f$. Las interacciones están representadas en el segundo término.\\
+\\
+Es posible representar este segundo término mediante una serie de diagramas a los cuales se les asocian ciertas reglas, estos diagramas reciben el nombre de \textbf{Diagramas de Feynmann}. Si nombramos:
+\begin{equation}
+\mathcal{A}=-\frac{i}{\hbar}\int\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}t)V(\vec{x}t)K_{0}(\vec{x}t,\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})d\vec{x}_{f}d\vec{x_{i}}d\vec{x}dt
+\end{equation}
 
-
-
+\begin{SCfigure}[1.3][h]
+\caption[Diagrama de Feynmann primera cuantización]{Representación de $\mathcal{A}$}
+\includegraphics[width=4cm]{Imagenes/Fig2}
+\end{SCfigure}
+Este diagrama lo podemos descomponer usando la siguiente convención:
+\begin{SCfigure}[1.3][h]
+\caption[Diagrama de Feynmann primera cuantización]{Representación de $K_0(x_2t_2,x_1t_1)$}
+\includegraphics[width=4cm]{Imagenes/Fig3}
+\end{SCfigure}
+\begin{SCfigure}[1.3][h]
+\caption[Diagrama de Feynmann primera cuantización]{Representación de $\int -\frac{i}{\hbar}V(xt)dxdt$}
+\includegraphics[width=4cm]{Imagenes/Fig4}
+\end{SCfigure}
+Por ejemplo el diagrama correspondiente a término de segundo orden:
+\begin{eqnarray}
+\nonumber \mathcal{A}^{(2)}&=&\left(-\frac{i}{\hbar}\right)^2\int d\vec{x}_{f}d\vec{x_{i}}d\vec{x\prime}dt\prime d\vec{x}dt\\
+&&\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}t)V(\vec{x}t)K_{0}(\vec{x}t,\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})
+\end{eqnarray}
 \section{El experimento de la doble rendija.}
 
 \section{Campos escalares.}
