@@ -31,7 +31,7 @@ K(3,1)=K(2A,1)K(3,2A)+K(2B,1)K(3,2B)
 \end{equation}
 Al tomar el módulo cuadrado de la expresión (2.5) se generarán los términos de interferencia necesarios para describir el patrón de difracción. No podemos decir que el electrón tomó un camino u el otro, de una manera más simple: este siguió todos los caminos posibles!
 
-\section{La ecuacion de Schrodinger.}
+\section{La ecuación de Schrödinger.}
 En el cuadro de Schrodinger la evolución de un sistema cuántico afecta al ket que representa al estado del sistema, la ecuación que rige la dinámica del mismo es la \textbf{Ecuación de Schrödinger}
 \begin{equation}
 i\hbar\frac{\partial}{\partial t}|\psi\rangle_S=\hat{H}|\psi\rangle_S
@@ -100,7 +100,7 @@ Donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo esto solo
  
  
 
-\subsection{Teoría de Perturbaciones y Matriz $\mathcal{S}$}
+\subsection{Teoría de Perturbaciones.}
 
 Vamos a ilustrar cómo usar el método de integrales de trayectoria en procesos de dispersión, este tipo de procesos involucran la interacción de una partícula con un potencial $V(x)$. Debido a que no siempre podemos calcular analíticamente la integral (2.18) entonces es necesario acudir a la teoría de perturbaciones, esta es aplicable en el regimen en que la energía de interacción $E_I<\hbar$. En este caso podemos escribir:
 \begin{equation}
@@ -138,6 +138,37 @@ De la misma manera se puede probar que:
 K_2(x_ft_f,x_it_i)=\left(\frac{-i}{\hbar}\right)^2\int_{-\infty}^{\infty}dt_{1}dt_{2}dx_{1}dx_{2}K_{0}(x_{f}t_{f}.x_{2}t_{2})V_2K_{0}(x_{2}t_{2},x_{1}t_{1})V_1K_{0}(x_{1}t_{1},x_{i}t_{i})
 \end{equation}
 Esta es una solución en series para $K$ y recibe el nombre de Serie de Born, en la expresión general para $K_n$ no se tiene el factor $n!$ ya que hay ese mismo numero de formas para ordenar los $n$ potenciales $V(x)$ que entran en el propagador.
+\\
+\\
+Por último mostraremos que \textbf{el propagador es la función de Green de la ecuación de Schrödinger.} Para esto sustituyamos la expresión para la serie de Born en la ecuación (2.2):
+\begin{eqnarray}
+\nonumber \psi(\vec{x}_f,t_f)&=&\int K_{0}(\vec{x_{f}}t_{f},\vec{x_{i}}t_{i})\psi(\vec{x_{i}},t_{i})d\vec{x_{i}}\\
+& & \frac{-i}{\hbar}\int K_{0}(\vec{x_{f}}t_{f},\vec{x}t)V(\vec{x},t)K_{0}(\vec{x}t,\vec{x_{i}}t_{i})\psi(\vec{x_{i}},t_{i})d\vec{x}dtd\vec{x_{i}}+O(\hbar^{2})
+\end{eqnarray}
+Hemos cambiado a tres dimensiones espaciales y los otros términos en la serie hacen converger el último $K_0$ a $K$, por tanto:
+\begin{equation}
+\psi(\vec{x}_f,t_f)=\int K_{0}(\vec{x_{f}}t_{f},\vec{x_{i}}t_{i})\psi(\vec{x_{i}},t_{i})d\vec{x_{i}}-\frac{i}{\hbar}\int K_{0}(\vec{x_{f}}t_{f},\vec{x}t)V(\vec{x},t)\psi(\vec{x},t)d\vec{x}dt
+\end{equation}
+Cuando $t_i \to -\infty$,no hay presencia de potencial por tanto $\psi$ se vuelve una onda plana. Así:
+\begin{equation}
+\psi(\vec{x}_f,t_f)=\phi(\vec{x}_ft_f)-\frac{i}{\hbar}\int K_{0}(\vec{x_{f}}t_{f},\vec{x}t)V(\vec{x},t)\psi(\vec{x},t)d\vec{x}dt
+\end{equation}
+Aplicando el operador $\hat{H}=\frac{\hbar^2}{2m}\nabla_{\vec{x}_ft_f}+i\hbar\frac{\partial}{\partial t_f}$ en la ecuación (2.29) y usando $\hat{H}\psi(x,t)=V(x,t)\psi(x,t)$:
+\begin{eqnarray}
+\nonumber \hat{H}(\psi(\vec{x}_f,t_f))&=&\hat{H}(\phi(\vec{x}_ft_f))-\frac{i}{\hbar}\int\hat{H} (K_{0}(\vec{x_{f}}t_{f},\vec{x}t))V(\vec{x},t)\psi(\vec{x},t)d\vec{x}dt\\
+\nonumber V(\vec{x}_f,t_t)\psi(\vec{x}_f,t_f)&=&0-\frac{i}{\hbar}\int\hat{H} (K_{0}(\vec{x_{f}}t_{f},\vec{x}t))V(\vec{x},t)\psi(\vec{x},t)d\vec{x}dt
+\end{eqnarray}
+Por tanto:
+\begin{equation}
+\left(\frac{\hbar^2}{2m}\nabla_{\vec{x}_ft_f}+i\hbar\frac{\partial}{\partial t_f}\right)K_{0}(\vec{x_{f}}t_{f},\vec{x}t)=i\hbar\delta(\vec{x}-\vec{x}_f)\delta(t-t_f)
+\end{equation}
+Esto último era lo que queríamos probar.
+
+\subsection{Matriz $\mathcal{S}$.}
+En un experimento de dispersión es razonable suponer que las partículas al principio y al final del proceso son partículas libres, estas ondas planas están distribuidas en todo el espacio. Sin embargo esto último lleva a una contradicción ya que la presencia del centro dispersor no permite que en sus cercanias la solución sea una onda plana. Para resolver este inconveniente se puede proponer lo que se llama una fuente dinámica, que se "prenda y apague" lentamente tal que las partículas en los estados (final/incial) puedan ser libres y por tanto la aproximación de ondas planas sea válida en este regimen.\\
+
+
+
 \section{El experimento de la doble rendija.}
 
 \section{Campos escalares.}
