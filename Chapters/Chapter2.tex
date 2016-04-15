@@ -207,11 +207,23 @@ Este diagrama lo podemos descomponer usando la siguiente convención:
 \caption[Diagrama de Feynmann primera cuantización]{Representación de $\int -\frac{i}{\hbar}V(xt)dxdt$}
 \includegraphics[width=4cm]{Imagenes/Fig4}
 \end{SCfigure}
+\\
 Por ejemplo el diagrama correspondiente a término de segundo orden:
 \begin{eqnarray}
-\nonumber \mathcal{A}^{(2)}&=&\left(-\frac{i}{\hbar}\right)^2\int d\vec{x}_{f}d\vec{x_{i}}d\vec{x\prime}dt\prime d\vec{x}dt\\
-&&\psi_{out}^{*}(\vec{x}_{f}t_{f})K_{0}(\vec{x}_{f}t_{f},\vec{x}t)V(\vec{x}t)K_{0}(\vec{x}t,\vec{x}_{i}t_{i})\psi_{in}(\vec{x}_{i}t_{i})
+\nonumber \mathcal{A}^{(2)}&=&\left(-\frac{i}{\hbar}\right)^2\int d\vec{x}_{f}d\vec{x_{i}}d\vec{x\prime}dt\prime d\vec{x}dtK_{0}(\vec{x}t,\vec{x}_it_i)V(\vec{x}t)K_{0}(\vec{x}\prime t\prime,\vec{x}t)\\
+&&\times V(\vec{x}\prime t\prime)K_{0}(\vec{x}_{f}t_{f},\vec{x}\prime t\prime)\psi_{out}^{*}(\vec{x}_{f}t_{f})\psi_{in}(\vec{x}_{i}t_{i})
 \end{eqnarray}
+Es el siguiente:
+\begin{SCfigure}[1.3][h]
+\caption[Diagrama de Feynmann primera cuantización]{Representación de $\mathcal{A}^{(2)}$}
+\includegraphics[width=4cm]{Imagenes/Fig5}
+\end{SCfigure}
+En algunos casos es útil conocer una expresión para el propagador  $K_0$en el espacio de momentos, definimos $\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_2t_2)$ como la amplitud de que una partícula con momento $\vec{p}_2$ en un instante $t_2$, sea observada un instante de tiempo después en $t_1$ con momento $\vec{p}_1$. Así:
+
+
+
+
+
 \section{El experimento de la doble rendija.}
 
 \section{Campos escalares.}
