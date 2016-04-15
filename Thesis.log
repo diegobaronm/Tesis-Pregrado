@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  15 APR 2016 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  15 APR 2016 18:04
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1052,8 +1052,8 @@ Underfull \hbox (badness 6078) in paragraph at lines 220--220
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-) (Chapters/Chapter3.tex [9 <./Imagenes/Fig2.png> <./Imagenes/Fig3.png> <./Imag
-enes/Fig4.png> <./Imagenes/Fig5.png>] [10]
+[9 <./Imagenes/Fig2.png> <./Imagenes/Fig3.png> <./Imagenes/Fig4.png> <./Imagene
+s/Fig5.png>]) (Chapters/Chapter3.tex [10]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -1085,7 +1085,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6F10B008F05E003C29B0387F708F9AB6;4329.
+(rerunfilecheck)             Checksum: 7D9E8C214BD65BA9D6C01217BAFDB886;4329.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1093,8 +1093,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14335 strings out of 493673
- 200444 string characters out of 3141530
+ 14338 strings out of 493673
+ 200477 string characters out of 3141530
  282501 words of memory out of 3000000
  17349 multiletter control sequences out of 15000+200000
  16219 words of font info for 61 fonts, out of 3000000 for 9000
@@ -1122,9 +1122,9 @@ public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (22 pages, 761622 bytes).
+Output written on Thesis.pdf (22 pages, 766639 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
+ 382 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
