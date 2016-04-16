@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  15 APR 2016 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  16 APR 2016 18:23
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -850,7 +850,7 @@ LaTeX Info: Redefining \selectfont on input line 126.
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
-<Imagenes/Escudoudea.jpg, id=91, 683.55376pt x 1027.84pt>
+<Imagenes/Escudoudea.jpg, id=95, 683.55376pt x 1027.84pt>
 File: Imagenes/Escudoudea.jpg Graphic file (type jpg)
 
 <use Imagenes/Escudoudea.jpg>
@@ -976,7 +976,7 @@ mm/m/it/10.95 q[]; t[]\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 q[]; t[]\OT1/cmr
 
 [2
 
-] <Imagenes/Fig1.png, id=194, 481.8pt x 334.24875pt>
+] <Imagenes/Fig1.png, id=203, 481.8pt x 334.24875pt>
 File: Imagenes/Fig1.png Graphic file (type png)
  <use Imagenes/Fig1.png>
 Package pdftex.def Info: Imagenes/Fig1.png used on input line 25.
@@ -999,61 +999,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 167.
+(hyperref)                removing `math shift' on input line 174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 167.
+(hyperref)                removing `math shift' on input line 174.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 189--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--200
 
  []
 
-[8] <Imagenes/Fig2.png, id=255, 164.86594pt x 95.6072pt>
+[8] <Imagenes/Fig2.png, id=264, 164.86594pt x 95.6072pt>
 File: Imagenes/Fig2.png Graphic file (type png)
 
 <use Imagenes/Fig2.png>
-Package pdftex.def Info: Imagenes/Fig2.png used on input line 199.
+Package pdftex.def Info: Imagenes/Fig2.png used on input line 206.
 (pdftex.def)             Requested size: 113.81102pt x 66.00111pt.
- <Imagenes/Fig3.png, id=256, 136.25906pt x 39.14626pt>
+ <Imagenes/Fig3.png, id=265, 136.25906pt x 39.14626pt>
 File: Imagenes/Fig3.png Graphic file (type png)
 
 <use Imagenes/Fig3.png>
-Package pdftex.def Info: Imagenes/Fig3.png used on input line 204.
+Package pdftex.def Info: Imagenes/Fig3.png used on input line 211.
 (pdftex.def)             Requested size: 113.81102pt x 32.69685pt.
 
-Underfull \hbox (badness 6078) in paragraph at lines 205--205
+Underfull \hbox (badness 6078) in paragraph at lines 212--212
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig4.png, id=257, 135.50626pt x 59.47218pt>
+<Imagenes/Fig4.png, id=266, 135.50626pt x 59.47218pt>
 File: Imagenes/Fig4.png Graphic file (type png)
  <use Imagenes/Fig4.png>
-Package pdftex.def Info: Imagenes/Fig4.png used on input line 208.
+Package pdftex.def Info: Imagenes/Fig4.png used on input line 215.
 (pdftex.def)             Requested size: 113.81102pt x 49.95174pt.
 
-Underfull \hbox (badness 6078) in paragraph at lines 209--209
+Underfull \hbox (badness 6078) in paragraph at lines 216--216
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig5.png, id=258, 167.12437pt x 94.85437pt>
+<Imagenes/Fig5.png, id=267, 167.12437pt x 94.85437pt>
 File: Imagenes/Fig5.png Graphic file (type png)
  <use Imagenes/Fig5.png>
-Package pdftex.def Info: Imagenes/Fig5.png used on input line 219.
+Package pdftex.def Info: Imagenes/Fig5.png used on input line 226.
 (pdftex.def)             Requested size: 113.81102pt x 64.59708pt.
 
-Underfull \hbox (badness 6078) in paragraph at lines 220--220
+Underfull \hbox (badness 6078) in paragraph at lines 227--227
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
 [9 <./Imagenes/Fig2.png> <./Imagenes/Fig3.png> <./Imagenes/Fig4.png> <./Imagene
-s/Fig5.png>]) (Chapters/Chapter3.tex [10]
+s/Fig5.png>] <Imagenes/Fig6.png, id=278, 110.66344pt x 41.4047pt>
+File: Imagenes/Fig6.png Graphic file (type png)
+
+<use Imagenes/Fig6.png>
+Package pdftex.def Info: Imagenes/Fig6.png used on input line 253.
+(pdftex.def)             Requested size: 113.81102pt x 42.58473pt.
+
+Underfull \hbox (badness 6078) in paragraph at lines 254--254
+ [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
+ []
+
+<Imagenes/Fig7.png, id=279, 112.92188pt x 65.49469pt>
+File: Imagenes/Fig7.png Graphic file (type png)
+ <use Imagenes/Fig7.png>
+Package pdftex.def Info: Imagenes/Fig7.png used on input line 257.
+(pdftex.def)             Requested size: 113.81102pt x 66.01418pt.
+
+Underfull \hbox (badness 6078) in paragraph at lines 258--258
+ [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
+ []
+
+[10 <./Imagenes/Fig6.png> <./Imagenes/Fig7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 265--269
+
+ []
+
+) (Chapters/Chapter3.tex [11]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -1062,16 +1088,16 @@ File: Imagenes/Escudoudea.jpg Graphic file (type jpg)
 <use Imagenes/Escudoudea.jpg>
 Package pdftex.def Info: Imagenes/Escudoudea.jpg used on input line 4.
 (pdftex.def)             Requested size: 199.16928pt x 299.47748pt.
- [11
+ [12
 
-]) (Appendices/AppendixA.tex [12]
+]) (Appendices/AppendixA.tex [13]
 Ap\'{e}ndice A.
 ------------------------------------------------------------------------------
  A An Appendix
 ------------------------------------------------------------------------------
-[13
+[14
 
-]) [14]
+]) [15]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1084,47 +1110,77 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7D9E8C214BD65BA9D6C01217BAFDB886;4329.
 
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: DCA8F3E0837E7C3F5DE0F97C4353CF5C;4724
+(rerunfilecheck)             After:  F75AFEBD9DF50A66DB112D6C448AD59C;4724.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14338 strings out of 493673
- 200477 string characters out of 3141530
- 282501 words of memory out of 3000000
- 17349 multiletter control sequences out of 15000+200000
+ 14366 strings out of 493673
+ 200873 string characters out of 3141530
+ 282639 words of memory out of 3000000
+ 17360 multiletter control sequences out of 15000+200000
  16219 words of font info for 61 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,12n,48p,918b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (22 pages, 766639 bytes).
+pdfTeX warning (dest): name{figure.caption.70} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.77} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.73} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.72} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.71} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.69} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.64} has been referenced but does not exist,
+ replaced by a fixed one
+
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/symbols/msbm7.pfb>
+Output written on Thesis.pdf (23 pages, 804908 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

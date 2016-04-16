@@ -164,6 +164,13 @@ Por tanto:
 \end{equation}
 Esto último era lo que queríamos probar.
 
+
+
+
+
+
+
+
 \subsection{Matriz $\mathcal{S}$.}
 En un experimento de dispersión es razonable suponer que las partículas al principio y al final del proceso son partículas libres, estas ondas planas están distribuidas en todo el espacio. Sin embargo esto último lleva a una contradicción ya que la presencia del centro dispersor no permite que en sus cercanias la solución sea una onda plana. Para resolver este inconveniente se puede proponer lo que se llama una fuente dinámica, que se "prenda y apague" lentamente tal que las partículas en los estados (final/incial) puedan ser libres y por tanto la aproximación de ondas planas sea válida en este regimen.\\
 \\
@@ -232,7 +239,45 @@ Teniendo en cuenta que el Jacobiano de esta transformación es $J=\left(\frac{1}
 \begin{equation}
 \mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)=\Theta(t_{1}-t_{0})\left(\frac{\alpha}{i\pi}\right)^{3/2}\frac{1}{8}\int\text{Exp}\left[\frac{i\vec{p}\cdot\vec{X}}{2\hbar}\right]d\vec{X}\int\text{Exp}\left[\frac{i\vec{P}\cdot\vec{x}}{2\hbar)}\right]e^{i\alpha x^{2}}d\vec{x}
 \end{equation}
-La primera integral es $I_1=8(2\pi\hbar)^3\delta(\vec{p}_0-\vec{p}_1)$
+La primera integral es $I_1=8(2\pi\hbar)^3\delta(\vec{p}_0-\vec{p}_1)$, la segunda la podemos calcular con la identidad $ \int e^{-ax^2+bx+c}=e^{\frac{b^2}{4a}+c}\left(\frac{\pi}{a}\right)^(1/2)$, por tanto $I_2=\left(\frac{i\pi}{\alpha}\right)^{3/2}\text{Exp}\left[\frac{-i\vec{P}^{2}}{8\hbar^{3}4i\alpha}\right]$, por tanto:
+\begin{equation}
+\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)=(2\pi\hbar)^3\Theta(t_1-t_0)\delta(\vec{p}_1-\vec{p}_0)\text{Exp}\left[\frac{-i\vec{P}^{2}(t_{1}-t_{0})}{8m\hbar}\right]
+\end{equation}
+Si también realizamos la transformada de Fourier en el tiempo, obtenemos:
+\begin{equation}
+\mathcal{K}_0(\vec{p}_1E_1,\vec{p}_0E_0)=(2\pi\hbar)^4\delta(\vec{p}_0-\vec{p}_1)\delta(E_1-E_0)\frac{i\hbar}{E-\frac{p_{1}^{2}}{2m}+i\epsilon}
+\end{equation}
+De aquí las reglas de Feynmann en el espacio de momentos son:
+\begin{SCfigure}[1.3][h]
+\caption[Diagrama de Feynmann primera cuantización]{Representación de $\frac{1}{(2\pi\hbar)^4}\frac{i\hbar}{E-\frac{p_{1}^{2}}{2m}+i\epsilon}$}
+\includegraphics[width=4cm]{Imagenes/Fig6}
+\end{SCfigure}
+\begin{SCfigure}[1.3][h]
+\caption[Diagrama de Feynmann primera cuantización]{Representación de $\frac{-i}{\hbar}(2\pi\hbar)^4v(\vec{q},W)$}
+\includegraphics[width=4cm]{Imagenes/Fig7}
+\end{SCfigure}
+\newpage
+
+\subsection{Propiedades adicionales de las integrales de trayectoria.}
+Ya hemos mostrado que la amplitud de transición entre un estado $(q_i,t_i)$ a $(q_f,t_f)$ está dada por:
+\begin{equation}
+\langle q_{f}t_{f}|q_it_i\rangle=\mathcal{N}\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}(q,\dot{q})dt\right\} }}
+\end{equation}
+En un experimento real, las partículas creadas en algún instante en el pasado son destruidas al ser detectadas, esto lo podemos interpretar de la siguiente manera: El estado de vacío en $t=-\infty$ evoluciona al mismo vacío en $t=\infty$. En este proceso una partícula es creada para ser posteriormente destruida, todo esto en presencia de una fuente generadora de estos procesos. Así es razonable poner nuestro interés en calcular transiciones vacío-vacío en presencia de una fuente.\\
+\\
+Podemos modificar el Lagrangiano de la de la siguiente manera: $\mathcal{L} \to \mathcal{L}+\hbar J(t)q(t)$. Si $|0,t\rangle^J $ es el estado fundamental en presencia de la fuente, entonces la amplitud de transición se define de la siguiente manera:
+\begin{equation}
+Z[J]\propto \langle 0,\infty|0,-\infty\rangle ^J
+\end{equation}
+
+
+
+
+
+
+
+
+
 
 
 
