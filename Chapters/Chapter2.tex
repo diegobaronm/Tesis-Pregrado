@@ -304,6 +304,23 @@ Otra forma equivalente de obtener este mismo resultado es: en vez de hacer una r
 \begin{equation}
 Z[J]=\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{-\infty}^{\infty}(\mathcal{L}(q,\dot{q})+\hbar Jq + \frac{1}{2}i\epsilon q^2)dt\right\} }}
 \end{equation}
+En general se cumple que:
+\begin{equation}
+ \langle q_{f}t_{f}|T[q(t_{1})...q(t_{n})]|q_{i}t_{i}\rangle=\mathcal{N}\int\mathcal{D}qq(t_{1})...q(t_{n})\text{Exp}\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
+\end{equation}
+Donde $T$ es el operador de ordenamiento temporal. Si derivamos funcionalmente la expresión para $Z[J]$ respecto a $J(t)$ obtenemos:
+\begin{equation}
+\frac{\delta Z[J]}{\delta J(t_{1}).}|_{J=0}=i\mathcal{N}\int\mathcal{D}qq(t_{1})\text{Exp}\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
+\end{equation}	
+Haciendo esto $n$ veces:
+\begin{equation}
+\frac{\delta^{n}Z[J]}{\delta J(t_{1})...\delta J(t_{n}).}|_{J=0}=i^{n}\mathcal{N}\int\mathcal{D}qq(t_{1})...q(t_{n})\text{Exp}\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
+\end{equation}
+De igualar las ecuaciones (2.53), (2.55) y al tener en cuenta agregar el factor $\frac{1}{2}i\epsilon q^2$ (el cual simplemente va a hacer converger los estados inicial y final en (2.53) a estados de vacío) obtenemos:
+\begin{equation}
+\frac{\delta^{n}Z[J]}{\delta J(t_{1})...\delta J(t_{n}).}|_{J=0}\propto i^{n}\langle0,\infty|T[q(t_{1})...q(t_{n})]|0,-\infty\rangle
+\end{equation}
+Estas últimas expresiones que hemos derivado van a ser importantes como punto de partida a la hora de tratar de cuantizar una teoría de campos vía el formalismo de integrales de trayectoria.
 
 
 
