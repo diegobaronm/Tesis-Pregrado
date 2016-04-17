@@ -269,15 +269,41 @@ Podemos modificar el Lagrangiano de la de la siguiente manera: $\mathcal{L} \to 
 \begin{equation}
 Z[J]\propto \langle 0,\infty|0,-\infty\rangle ^J
 \end{equation}
-
-
-
-
-
-
-
-
-
+La fuente $J(t)=0$ para $t>t\prime$ , $t\prime \prime < t$. Instroduzcamos entonces $T$ y $T\prime $ de tal manera que $T<t\prime\prime $ , $T\prime>t\prime $ por tanto la amplitud (2.44) es:
+\begin{equation}
+\langle 	Q\prime T\prime |QT\rangle=\mathcal{N}\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{T}^{T\prime}\mathcal{L}(q,\dot{q})dt\right\} }}
+\end{equation}
+Podemos escribir:
+\begin{equation}
+\langle Q\prime T\prime |QT \rangle^J=\int dq\prime dq\langle Q\prime T\prime | q\prime t\prime  \rangle\langle q\prime t\prime | qt \rangle\langle qt|QT \rangle
+\end{equation}
+Ahora si denotamos $|E_q\rangle$ como un autoestado del hamiltoniano podemos usar estos estados para expandir:
+\begin{eqnarray}
+\nonumber \langle Q\prime T\prime | q\prime t\prime  \rangle &=& \langle Q\prime|\text{Exp}\left[\frac{-i}{\hbar}HT\prime\right]\text{Exp}\left[\frac{i}{\hbar}Ht\prime\right]|q\prime\rangle\\
+\nonumber &=& \sum_{mn}\phi^{*}(q\prime)\phi(Q\prime)\langle E_{Q\prime}|\text{Exp}\left[\frac{-i}{\hbar}HT\prime\right]\text{Exp}\left[\frac{i}{\hbar}Ht\prime\right]|E_{q\prime}\rangle\\
+&=&\sum_{m}\phi^{*}(q\prime)\phi(Q\prime)Exp\left[\frac{i}{\hbar}E_{m}(t\prime-T\prime)\right]
+\end{eqnarray}
+De la misma manera:
+\begin{equation}
+\langle qt|	QT  \rangle=\sum_{m}\phi^{*}(Q)\phi(q)Exp\left[\frac{i}{\hbar}E_{m}(t-T)\right]
+\end{equation}
+Introduciendo (2.47) y (2.48) en (2.46):
+\begin{eqnarray}
+\nonumber \langle Q\prime T\prime|QT\rangle &=&\int dq\prime dq\sum_{m}\phi_{m}(Q\prime)\phi_{m}(q\prime,t)Exp\left[\frac{-i}{\hbar}E_{m}T\prime\right]\\
+&&\times  \sum_{n}\phi_{n}^{*}(Q)\phi_{n}^{*}(q,t)Exp\left[\frac{i}{\hbar}E_{n}T\right]\langle q\prime t\prime|qt\rangle^{J}
+\end{eqnarray}
+Si hacemos una rotación de Wick de $T$ y $T\prime $ nos damos cuenta que el el término que menos sufre de supresión en la integral (2.49) es el asociado a $m=n=0$, por tanto:
+\begin{equation}
+\int dq\prime dq\phi_{0}^{*}(q\prime,t\prime)\langle q\prime t\prime|qt\rangle^{J}\phi_{0}(q,t)=\lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T\prime\to\text{\ensuremath{\infty}e}^{-i\delta}}\frac{\langle Q\prime T\prime|QT\rangle^{J}}{\phi_{0}^{*}(Q)\phi_{0}(Q\prime)\text{Exp}\left[\frac{-i}{\hbar}E_{0}(T\prime-T)\right]}
+\end{equation}
+El lado de (2.50) es simplemente el valor de expectación en el vacio de la amplitud de transcición, justo lo que buscabamos y el denominador de la parte derecha de la ecuación es simplemente una constante, así:
+\begin{equation}
+\langle 0,\infty| 0,-\infty \rangle ^J \propto \lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T\prime\to\text{\ensuremath{\infty}e}^{-i\delta}}\langle Q\prime T\prime|QT\rangle^{J}
+\end{equation}
+Otra forma equivalente de obtener este mismo resultado es: en vez de hacer una rotación de Wick, podemos agregar una pequeña cantidad imaginaria negativa al hamiltoniano $H+(-\frac{1}{2}i\epsilon q^2)$, lo cual es equivalente a restar esta misma cantidad a $\mathcal{L}$, de aquí que:
+\begin{equation}
+Z[J]=\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{-\infty}^{\infty}(\mathcal{L}(q,\dot{q})+\hbar Jq + \frac{1}{2}i\epsilon q^2)dt\right\} }}
+\end{equation}
 
 
 

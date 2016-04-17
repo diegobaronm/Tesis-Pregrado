@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  16 APR 2016 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  17 APR 2016 14:25
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1079,7 +1079,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--269
 
  []
 
-) (Chapters/Chapter3.tex [11]
+[11]
+Overfull \hbox (2.54366pt too wide) detected at line 298
+[] [] \OML/cmm/m/it/10.95 dq\OMS/cmsy/m/n/10.95 0\OML/cmm/m/it/10.95 dq[]\OT1/
+cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q\OMS/cmsy/m/n/10.95 0\OML/cmm/m/it/10.95 ; 
+t\OMS/cmsy/m/n/10.95 0\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10
+.95 q\OMS/cmsy/m/n/10.95 0\OML/cmm/m/it/10.95 t\OMS/cmsy/m/n/10.95 0j\OML/cmm/m
+/it/10.95 qt\OMS/cmsy/m/n/10.95 i[]\OML/cmm/m/it/10.95 []\OT1/cmr/m/n/10.95 (\
+OML/cmm/m/it/10.95 q; t\OT1/cmr/m/n/10.95 ) = [] []
+ []
+
+) (Chapters/Chapter3.tex [12]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -1088,16 +1098,16 @@ File: Imagenes/Escudoudea.jpg Graphic file (type jpg)
 <use Imagenes/Escudoudea.jpg>
 Package pdftex.def Info: Imagenes/Escudoudea.jpg used on input line 4.
 (pdftex.def)             Requested size: 199.16928pt x 299.47748pt.
- [12
+ [13
 
-]) (Appendices/AppendixA.tex [13]
+]) (Appendices/AppendixA.tex [14]
 Ap\'{e}ndice A.
 ------------------------------------------------------------------------------
  A An Appendix
 ------------------------------------------------------------------------------
-[14
+[15
 
-]) [15]
+]) [16]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1117,40 +1127,40 @@ Package rerunfilecheck Warning: File `Thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: DCA8F3E0837E7C3F5DE0F97C4353CF5C;4724
-(rerunfilecheck)             After:  F75AFEBD9DF50A66DB112D6C448AD59C;4724.
+(rerunfilecheck)             Before: 799A28198E7DB42D54B311595269BC89;4724
+(rerunfilecheck)             After:  EE5E2A04017692D79DEEBB02C36E0B6B;4724.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14366 strings out of 493673
- 200873 string characters out of 3141530
+ 14375 strings out of 493673
+ 200968 string characters out of 3141530
  282639 words of memory out of 3000000
  17360 multiletter control sequences out of 15000+200000
  16219 words of font info for 61 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,12n,48p,918b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.70} has been referenced but does n
+pdfTeX warning (dest): name{figure.caption.78} has been referenced but does n
 ot exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix.77} has been referenced but does not exist
+pdfTeX warning (dest): name{appendix.85} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.73} has been referenced but does not exist,
+pdfTeX warning (dest): name{section.81} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.72} has been referenced but does not exi
+pdfTeX warning (dest): name{subsection.80} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.71} has been referenced but does not exist,
+pdfTeX warning (dest): name{section.79} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.69} has been referenced but does not exist,
+pdfTeX warning (dest): name{chapter.77} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{section.64} has been referenced but does not exist,
+pdfTeX warning (dest): name{section.72} has been referenced but does not exist,
  replaced by a fixed one
 
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
@@ -1172,15 +1182,16 @@ type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (23 pages, 804908 bytes).
+/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msbm7.pfb>
+Output written on Thesis.pdf (24 pages, 820751 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,18 +12,18 @@
 \contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a de Perturbaciones.}{6}{subsection.30}
 \contentsline {subsection}{\numberline {2.1.2}Matriz $\mathcal {S}$.}{8}{subsection.44}
 \contentsline {subsection}{\numberline {2.1.3}Propiedades adicionales de las integrales de trayectoria.}{11}{subsection.62}
-\contentsline {section}{\numberline {2.2}El experimento de la doble rendija.}{11}{section.65}
-\contentsline {section}{\numberline {2.3}Campos escalares.}{11}{section.66}
-\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{11}{section.67}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{11}{section.68}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{11}{section.69}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{12}{chapter.70}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{13}{section.72}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{13}{subsection.73}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{13}{section.74}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{13}{section.75}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{13}{section.76}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{13}{section.77}
+\contentsline {section}{\numberline {2.2}El experimento de la doble rendija.}{12}{section.73}
+\contentsline {section}{\numberline {2.3}Campos escalares.}{12}{section.74}
+\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{12}{section.75}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{12}{section.76}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{12}{section.77}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{13}{chapter.78}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{14}{section.80}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{14}{subsection.81}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{14}{section.82}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{14}{section.83}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{14}{section.84}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{14}{section.85}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{14}{appendix.78}
+\contentsline {chapter}{\numberline {A}An Appendix}{15}{appendix.86}
 \vspace {2em}
