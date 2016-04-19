@@ -89,7 +89,7 @@ Si el Hamiltoniano es tal que $H=\frac{p^2}{2m}+V(q)$
 \end{equation}
 Y sabiendo que: $\int_{-\infty}^{\infty}\text{Exp}[-ax^{2}+bx+c]dx=\text{Exp}[\frac{b^{2}}{4a}+c](\frac{\pi}{a})^{\frac{1}{2}}$, entonces:
 \begin{equation}
-\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N\to\infty}[\frac{1}{h}(\frac{\text{\ensuremath{\pi\hbar}2m}}{\tau})^{\frac{1}{2}}]^{N}\int\prod_{1}^{N}dq_{j}\text{Exp}\left\{ \frac{i}{\hbar}\sum_{0}^{N}\left((\frac{q_{j+1}-q_{j}}{\tau})^{2}\frac{m}{2}-V\right)\tau\right\} 
+\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N\to\infty}[\frac{1}{h}(\frac{\text{\ensuremath{\pi\hbar}2m}}{i\tau})^{\frac{1}{2}}]^{N+1}\int\prod_{1}^{N}dq_{j}\text{Exp}\left\{ \frac{i}{\hbar}\sum_{0}^{N}\left((\frac{q_{j+1}-q_{j}}{\tau})^{2}\frac{m}{2}-V\right)\tau\right\} 
 \end{equation}
 En el continuo:
 \begin{equation}
@@ -256,7 +256,6 @@ De aquí las reglas de Feynmann en el espacio de momentos son:
 \caption[Diagrama de Feynmann primera cuantización]{Representación de $\frac{-i}{\hbar}(2\pi\hbar)^4v(\vec{q},W)$}
 \includegraphics[width=4cm]{Imagenes/Fig7}
 \end{SCfigure}
-\newpage
 
 \subsection{Propiedades adicionales de las integrales de trayectoria.}
 Ya hemos mostrado que la amplitud de transición entre un estado $(q_i,t_i)$ a $(q_f,t_f)$ está dada por:
@@ -321,10 +320,66 @@ De igualar las ecuaciones (2.53), (2.55) y al tener en cuenta agregar el factor 
 \frac{\delta^{n}Z[J]}{\delta J(t_{1})...\delta J(t_{n}).}|_{J=0}\propto i^{n}\langle0,\infty|T[q(t_{1})...q(t_{n})]|0,-\infty\rangle
 \end{equation}
 Estas últimas expresiones que hemos derivado van a ser importantes como punto de partida a la hora de tratar de cuantizar una teoría de campos vía el formalismo de integrales de trayectoria.
-
+\newpage
 
 
 \section{El experimento de la doble rendija.}
+En esta sección aplicaremos lo aprendido en la $\mathsection$2.1 para resolver vía integrales de trayectoria el conocido problema de la difracción de electrones por una y dos rendijas. 
+
+\subsection{El propagador de una partícula libre.}
+
+Con este objetivo en mente primero necesitamos conocer el propagador de una partícula libre, sabemos que en un espacio plano de una dimensión la integral de trayectoria está dada por la expresión (2.17),podemos hacer facilmente una analogía para un espacio euclídeo d-dimensional. En este caso el propagador es:
+\begin{eqnarray}
+\nonumber K(x_{f}t_{f,},x_{i,}t_{i})&=&\lim_{n\to\infty}\frac{1}{(2\pi i\hbar\epsilon/m)^{d/2}}\prod_{k=1}^{n}\int\frac{d^{d}x_{k}}{(2\pi i\hbar\epsilon/m)^{d/2}}\\
+&&\times \text{Exp}\left\{ \frac{i}{\hbar}\sum_{k=1}^{n}\epsilon\left[\frac{m(x_{k}-x_{k-1})^{2}}{2\epsilon^{2}}-V(x_{k})\right]\right\} 
+\end{eqnarray}
+donde $\epsilon=(t_i-t_f)/n$; para una partícula libre $V(x_k)=0$, entonces:
+\begin{equation}
+K(x_{f}t_{f,},x_{i,}t_{i})=\lim_{n\to\infty}\frac{1}{(2\pi i\hbar\epsilon/m)^{d/2}}\prod_{k=1}^{n}\int\frac{d^{d}x_{k}}{(2\pi i\hbar\epsilon/m)^{d/2}}\text{Exp}\left\{ \frac{i}{\hbar}\sum_{k=1}^{n}\left[\frac{m(x_{k}-x_{k-1})^{2}}{2\epsilon}\right]\right\}
+\end{equation}
+Para $d=1$, integremos los términos que tienen que ver con $x_1$:
+\begin{eqnarray}
+\nonumber &\frac{1}{(2\pi i\hbar\epsilon/m)^{1/2}}\prod_{k=1}^{n}\int\frac{dx_{1}}{(2\pi i\hbar\epsilon/m)^{1/2}}\text{Exp}\left\{ \frac{im(x_{1}-x_{0})^{2}}{2\hbar\epsilon}\right\} \text{Exp}\left\{ \frac{im(x_{2}-x_{1})^{2}}{2\hbar\epsilon}\right\}\\
+\nonumber &=\frac{1}{(2\pi i\hbar\epsilon/m)}\int dx_{1}\text{Exp}\left\{ \frac{-m}{2i\epsilon\hbar}\left(2x_{1}^{2}-2x_{1}(x_{2}+x_{0})+x_{0}^{2}+x_{2}^{2}\right)\right\}\\
+\nonumber &\text{Usando} \ \int e^{-ax^{2}+bx+c}dx=e^{^{\frac{b^{2}}{4a}+c}}\left(\frac{\pi}{a}\right)^{1/2}\\
+\nonumber &=\frac{1}{\sqrt{2\pi i\hbar(2\epsilon)/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{2}-x_{0})^{2}}{2\hbar(2\epsilon)}\right\} }}
+\end{eqnarray}
+Ahora al seguir con la integral de $x_2$ queda:
+\begin{eqnarray}
+\nonumber & \frac{1}{(2\pi i\hbar\epsilon/m)\sqrt{2}}\int dx_{2}\text{Exp}\left\{ \frac{im}{2\hbar(2\epsilon)}\left(x_{2}-x_{o}\right)^{2}\right\} \text{Exp}\left\{ \frac{im}{2\hbar\epsilon}\left(x_{3}-x_{2}\right)^{2}\right\} \\
+&=\frac{1}{\sqrt{2\pi i\hbar(3\epsilon)/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{3}-x_{0})^{2}}{2\hbar(3\epsilon)}\right\} }}
+\end{eqnarray}
+Así por inducción:
+\begin{eqnarray}
+\nonumber K(x_{f}t_{f},x_{i}t_{i})&=&\lim_{n\to\infty}\frac{1}{\sqrt{2\pi i\hbar(n\epsilon)/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{f}-x_{i})^{2}}{2\hbar(n\epsilon)}\right\} }}\\
+&=& \frac{1}{\sqrt{2\pi i\hbar(t_{f}-t_{i})/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{f}-x_{i})^{2}}{2\hbar(t_{f}-t_{i})}\right\} }}
+\end{eqnarray}
+Por tanto en 3-D:
+\begin{equation}
+K^{3D}(x_{f}t_{f},x_{i}t_{i})\equiv K_{0}^{3D}=\left(\frac{m}{2\pi i\hbar(t_{f}-t_{i})}\right)^{3/2}\text{Exp\ensuremath{\left\{ \frac{im|\vec{x}_{f}-\vec{x}_{i}|^{2}}{2\hbar(t_{f}-t_{i})}\right\} }}
+\end{equation}
+
+
+\subsection{El problema de difracción e interferencia.}
+Consideremos el siguiente experimento: una fuente de electrones en $(x,y,z)=(0,0,0)$ y dos rendijas en $Z=D$ con ancho $2a$ y centradas en $x=\pm b$, tal como se muestra en la figura 2.6. Adicionalmente consideramos que las barreras son lo suficientemente largas en $y$ como para poder despreciar los efectos de difracción inducidos en el caso de que estas fueran finitas.\\
+\\
+Así reducimos la dimensión del propagador en $y$:
+\begin{eqnarray}
+\nonumber K_{0}^{2D}(\vec{r}t,\vec{r}\prime t\prime)&=&\int_{-\infty}^{\infty}dyK_{0}^{3D}(\vec{r}t,\vec{r}\prime t\prime)\\
+&=& \frac{m}{2\pi i\hbar(t-t\prime)}Exp\left\{ \frac{im|\vec{x}-\vec{x}\prime|^{2}}{2\hbar(t-t\prime)}\right\} 
+\end{eqnarray}
+Donde $|\vec{x}-\vec{x}\prime|^{2}$ se define como el módulo cuadrádo de la distancia en el plano $z-x$. Para modelar las rendijas vamos a usar las siguientes funciones escalón:
+\[   
+\chi_{[b-a,b+a]}(\omega) = 
+     \begin{cases}
+       0 &\omega>b+a,\omega<b-a\\
+       1 &b-a<\omega<b+a \\
+      
+     \end{cases}
+\]
+La pregunta es. ¿cuál es la probabilidad de encontrar un electrón en ($z=L+D,x$)?, dado que haya salido de ($x=0,z=0$). Asumiendo que la fuente libera electrones individualmente podemos despreciar la interacción entre ellos.
+
+
 
 \section{Campos escalares.}
 \section{Campos fermiónicos.}
