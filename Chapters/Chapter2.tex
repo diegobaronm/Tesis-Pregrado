@@ -391,6 +391,57 @@ Sin embargo no hay nada en las leyes de la mecánica cuántica que nos diga que 
 \\
 No obstante podemos considerar esta imagen clásica para estudiar el problema, veamos por qué: el electrón tiene un momentum $p_z=\hbar k_z$, el cual esta relacionado con la velocidad clásica como $V_z=D/T=L/\tau$, aquí suponemos que $D$ es suficientemente grande comparado con las dimensiones en $x$ ($x,a,b\ll D,L$). Adicionalmente la longitud de onda $\lambda$ de la partícula es aproximadamente igual a la contribucion en $z$ (esto es como si tomaramos partículas que no se desvían demasiado de la trayectoria clásica). Si $\lambda \approx \lambda_z=2\pi\hbar/(mv_z)$ entonces $\lambda \ll D,L$. Esto quiere decir que el movimiento en $z$ es practicamente clásico. Note que cuánticamente es posible que el electrón pase a través de la rendija varias veces, sin embargo la probabilidad de este suceso ha de ser baja.
 
+Teniendo en cuenta lo anterior:
+\begin{eqnarray}
+\nonumber K_{a,b}^{2D}((x,L+D),T+\tau;(0,0),0)&=&\int_{-\infty}^{\infty}d\omega\chi_{[b-a,b+a]}(\omega)K_{0}^{2D}((x,L+D),T+\tau;(\omega,D),T)\\
+&&\nonumber \times K_{0}^{2D}((\omega,D),T;(0,0),0)\\
+&=&\nonumber \frac{e^{\frac{imL^{2}}{2\hbar\tau}}}{\sqrt{2\pi i\hbar\tau/m}}\frac{e^{\frac{imD^{2}}{2\hbar T}}}{\sqrt{2\pi i\hbar T/m}}\int_{b-a}^{b+a}\frac{e^{\frac{im\omega^{2}}{2\hbar T}}}{\sqrt{2\pi i\hbar T/m}}\frac{e^{\frac{im(x-\omega)^{2}}{2\hbar\tau}}}{\sqrt{2\pi i\hbar\tau/m}}d\omega 	
+\end{eqnarray}
+Por tanto el propagador es el producto de dos propagadores independientes:
+\begin{eqnarray}
+K_z(L+D,T+\tau;0,0)&=&\frac{e^{\frac{imL^{2}}{2\hbar\tau}}}{\sqrt{2\pi i\hbar\tau/m}}\frac{e^{\frac{imD^{2}}{2\hbar T}}}{\sqrt{2\pi i\hbar T/m}}\\
+K_x(x,T+\tau;0,0)&=&\int_{b-a}^{b+a}\frac{e^{\frac{im\omega^{2}}{2\hbar T}}}{\sqrt{2\pi i\hbar T/m}}\frac{e^{\frac{im(x-\omega)^{2}}{2\hbar\tau}}}{\sqrt{2\pi i\hbar\tau/m}}d\omega
+\end{eqnarray}
+Una forma de comprobar que las ecuaciones (2.63) y (2.64) son correctas es ver que si quitamos las rendijas ($a\to \infty$) e integramos en $D$ en el intervalo $(-\infty,\infty)$ recuperamos el propagador de una particula libre.\\
+\\
+En lo que sigue nos vamos a dar a la tarea de mostrar que podemos expresar la amplitud en términos de las conocidas integrales de Fressnel, sabemos que $P(x;a,b)=|A(x;a,b)|^2$ y de (2.64):
+\begin{equation}
+A_1(x;a,b)=\int_{b-a}^{b+a}\frac{e^{\frac{im\omega^{2}}{2\hbar T}}}{\sqrt{2\pi i\hbar T/m}}\frac{e^{\frac{im(x-\omega)^{2}}{2\hbar\tau}}}{\sqrt{2\pi i\hbar\tau/m}}d\omega
+\end{equation} 
+Organicemos de una manera diferente el exponencial de la ecuación (2.65):
+\begin{eqnarray}
+\nonumber \frac{m}{2\hbar\tau}(x-\omega)^{2}+\frac{m\omega^{2}}{2\hbar\tau}&=&\frac{m}{2\hbar}\left[\frac{1}{T}+\frac{1}{\tau}\right]\left[\omega^{2}-\frac{2x\omega}{\left(\frac{\tau}{T}+1\right)}+\left(\frac{x}{\frac{\tau}{T}+1}\right)^{2}-\left(\frac{x}{\frac{\tau}{T}+1}\right)^{2}\right]+\frac{mx^{2}}{2\text{\ensuremath{\hbar\tau}}}\\
+&=&\nonumber \frac{m}{2\hbar}\left[\frac{1}{T}+\frac{1}{\tau}\right]\left[\omega-\frac{x}{1+\tau/T}\right]^{2}+\frac{mx^{2}}{2\text{\ensuremath{\hbar}}}\left[\frac{1}{\tau}-\frac{T}{(\tau+T)\tau}\right]\\
+&=& \left[\frac{m}{2\hbar T}+\frac{m}{2\hbar\tau}\right]\left[\omega-\frac{x}{1+\tau/T}\right]^{2}+\frac{mx^{2}}{2\text{\ensuremath{\hbar}}(T+\tau)}
+\end{eqnarray}
+Por tanto reemplazando (2.66) en (2.65)
+\begin{equation}
+A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{2\pi i\hbar(T+\tau)/m}}\int_{b-a}^{b+a}d\omega\sqrt{\frac{T+\tau}{2\pi\hbar T\tau/m}}\text{Exp}\left\{ \frac{i(T+\tau)}{2\hbar T\tau/m}\left(\omega-\frac{x}{1+\tau/T}\right)^{2}\right\}
+\end{equation}
+Ahora si $\omega\prime=\sqrt{\frac{T+\tau}{\pi\hbar T\tau/m}}\left(\omega-\frac{x}{1+\tau/T}\right)$:
+\begin{equation}
+\Rightarrow A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{2\pi i\hbar(T+\tau)/m}}\int_{\alpha_{-}(x)}^{\alpha_{+}(x)}d\omega\prime\sqrt{\frac{T+\tau}{2\pi\hbar T\tau/m}}\text{Exp}\left\{ \frac{i\pi\omega\prime^{2}}{2}\right\} 
+\end{equation}
+Donde $\alpha_{\pm}(x)=\sqrt{\frac{T+\tau}{\pi\hbar T\tau/m}}(b\pm a)-\frac{x}{\sqrt{\pi\hbar\tau/m}}\sqrt{\frac{T}{T+\tau}}$.
+Si descomponemos el exponencial de la ecuación (2.68) en su parte imaginaria y real, obtenemos las famosas integrales de Fressnel, definidas como:
+\begin{equation}
+C[u]\equiv \int_{0}^{u}d\omega Cos\left(\frac{\pi\omega ^2 }{2}\right)\hspace{0.3cm} ;\hspace{0.3cm} S[u]\equiv \int_{0}^{u}d\omega Sin\left(\frac{\pi\omega ^2 }{2}\right)
+\end{equation}
+Así:
+\begin{eqnarray}
+&\nonumber A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{(2i)^{2}\pi\hbar(T+\tau)/m}}\\
+&\times[C[\alpha_{+}(x;a.b)]-C[\alpha_{-}(x;a.b)]+iS[\alpha_{+}(x;a.b)]-iS[\alpha_{-}(x;a.b)]]\\
+&A_{2}(x;a,b)=A_{1}(x;a,-b)
+\end{eqnarray}
+Para dos rendijas podemos calcular la amplitud total simplemente sumando:
+\begin{equation}
+A(x;a,b)=A_{1}(x;a,b)+A_{2}(x;a,b)
+\end{equation}
+
+
+\subsection{Difracción por una rendija.}
+
+
 
 
 \section{Campos escalares.}
