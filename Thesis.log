@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  19 APR 2016 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  19 APR 2016 23:30
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -976,7 +976,7 @@ mm/m/it/10.95 q[]; t[]\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 q[]; t[]\OT1/cmr
 
 [2
 
-] <Imagenes/Fig1.png, id=213, 481.8pt x 334.24875pt>
+] <Imagenes/Fig1.png, id=215, 481.8pt x 334.24875pt>
 File: Imagenes/Fig1.png Graphic file (type png)
  <use Imagenes/Fig1.png>
 Package pdftex.def Info: Imagenes/Fig1.png used on input line 25.
@@ -1015,13 +1015,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--200
 
  []
 
-[8] <Imagenes/Fig2.png, id=274, 164.86594pt x 95.6072pt>
+[8] <Imagenes/Fig2.png, id=276, 164.86594pt x 95.6072pt>
 File: Imagenes/Fig2.png Graphic file (type png)
 
 <use Imagenes/Fig2.png>
 Package pdftex.def Info: Imagenes/Fig2.png used on input line 206.
 (pdftex.def)             Requested size: 113.81102pt x 66.00111pt.
- <Imagenes/Fig3.png, id=275, 136.25906pt x 39.14626pt>
+ <Imagenes/Fig3.png, id=277, 136.25906pt x 39.14626pt>
 File: Imagenes/Fig3.png Graphic file (type png)
 
 <use Imagenes/Fig3.png>
@@ -1032,7 +1032,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 212--212
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig4.png, id=276, 135.50626pt x 59.47218pt>
+<Imagenes/Fig4.png, id=278, 135.50626pt x 59.47218pt>
 File: Imagenes/Fig4.png Graphic file (type png)
  <use Imagenes/Fig4.png>
 Package pdftex.def Info: Imagenes/Fig4.png used on input line 215.
@@ -1042,7 +1042,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 216--216
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig5.png, id=277, 167.12437pt x 94.85437pt>
+<Imagenes/Fig5.png, id=279, 167.12437pt x 94.85437pt>
 File: Imagenes/Fig5.png Graphic file (type png)
  <use Imagenes/Fig5.png>
 Package pdftex.def Info: Imagenes/Fig5.png used on input line 226.
@@ -1053,7 +1053,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 227--227
  []
 
 [9 <./Imagenes/Fig2.png> <./Imagenes/Fig3.png> <./Imagenes/Fig4.png> <./Imagene
-s/Fig5.png>] <Imagenes/Fig6.png, id=288, 110.66344pt x 41.4047pt>
+s/Fig5.png>] <Imagenes/Fig6.png, id=290, 110.66344pt x 41.4047pt>
 File: Imagenes/Fig6.png Graphic file (type png)
 
 <use Imagenes/Fig6.png>
@@ -1064,7 +1064,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 254--254
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig7.png, id=289, 112.92188pt x 65.49469pt>
+<Imagenes/Fig7.png, id=291, 112.92188pt x 65.49469pt>
 File: Imagenes/Fig7.png Graphic file (type png)
  <use Imagenes/Fig7.png>
 Package pdftex.def Info: Imagenes/Fig7.png used on input line 257.
@@ -1100,7 +1100,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--367
 
  []
 
-) (Chapters/Chapter3.tex [14]
+<Imagenes/Fig8.png, id=336, 496.10344pt x 307.90031pt>
+File: Imagenes/Fig8.png Graphic file (type png)
+ <use Imagenes/Fig8.png>
+Package pdftex.def Info: Imagenes/Fig8.png used on input line 383.
+(pdftex.def)             Requested size: 284.52756pt x 176.59027pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--393
+
+ []
+
+[14 <./Imagenes/Fig8.png>]) (Chapters/Chapter3.tex [15]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -1109,16 +1124,16 @@ File: Imagenes/Escudoudea.jpg Graphic file (type jpg)
 <use Imagenes/Escudoudea.jpg>
 Package pdftex.def Info: Imagenes/Escudoudea.jpg used on input line 4.
 (pdftex.def)             Requested size: 199.16928pt x 299.47748pt.
- [15
+ [16
 
-]) (Appendices/AppendixA.tex [16]
+]) (Appendices/AppendixA.tex [17]
 Ap\'{e}ndice A.
 ------------------------------------------------------------------------------
  A An Appendix
 ------------------------------------------------------------------------------
-[17
+[18
 
-]) [18]
+]) [19]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1132,7 +1147,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4259C03243C4275293A1E0779EEF3D80;5339.
+(rerunfilecheck)             Checksum: 66563F8FFF00CF143523F09DB423B6F4;5340.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1140,10 +1155,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14387 strings out of 493673
- 201113 string characters out of 3141530
+ 14394 strings out of 493673
+ 201234 string characters out of 3141530
  282642 words of memory out of 3000000
- 17364 multiletter control sequences out of 15000+200000
+ 17368 multiletter control sequences out of 15000+200000
  16219 words of font info for 61 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,12n,48p,918b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1173,9 +1188,9 @@ ts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on Thesis.pdf (26 pages, 837105 bytes).
+Output written on Thesis.pdf (27 pages, 850608 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
