@@ -100,7 +100,7 @@ Donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo esto solo
  
  
 
-\subsection{Teoría de Perturbaciones.}
+\subsection{Teoría de perturbaciones.}
 
 Vamos a ilustrar cómo usar el método de integrales de trayectoria en procesos de dispersión, este tipo de procesos involucran la interacción de una partícula con un potencial $V(x)$. Debido a que no siempre podemos calcular analíticamente la integral (2.18) entonces es necesario acudir a la teoría de perturbaciones, esta es aplicable en el regimen en que la energía de interacción $E_I<\hbar$. En este caso podemos escribir:
 \begin{equation}
@@ -440,8 +440,65 @@ A(x;a,b)=A_{1}(x;a,b)+A_{2}(x;a,b)
 
 
 \subsection{Difracción por una rendija.}
+En el caso de una sola rendija tenemos que $b=0$, además recordando que $\lambda\approx\lambda_z=h/mv_z$ ; $v_z=L/\tau=D/T$, podemos escribir:
+\begin{equation}
+\alpha(x,a)=\sqrt{N_F(a)}\sqrt{1+L/D}\left[	1-\frac{x}{a(1+L/D)}\right] \hspace{0.3cm};\hspace{0.3cm} N_F(a)=2a^2/\lambda L
+\end{equation}
+Las integrales de Fressnel tienen un comportamiento diferente dependiendo del valor de $N_F(a)$:
+\begin{eqnarray}
+C(\pm u)&=&\pm\frac{1}{2}+\frac{1}{\pi u}Sin\left(\frac{\pi u^2}{2}\right),\hspace{0.3cm}u\geq 1\\
+S(\pm u)&=&\pm\frac{1}{2}-\frac{1}{\pi u}Sin\left(\frac{\pi u^2}{2}\right),\hspace{0.3cm}u\geq 1
+\end{eqnarray}
+Definiendo $\eta\equiv 1+L/D$ y $\gamma=\eta-1$, en el caso $\frac{x}{a\eta}-1\gg\frac{1}{\sqrt{N_F(a)\eta}}$ encontramos que:
+\begin{eqnarray}
+\alpha(x,a)&\ll&-1\\
+\alpha(x,-a)&\gg&1
+\end{eqnarray} 
+Por tanto:
+\begin{eqnarray}
+C[\alpha(x,\pm a)]&=&\pm\frac{1}{2}+\frac{1}{\pi\alpha(x,\pm a) }Sin\left(\frac{\pi \alpha(x,\pm a)^2}{2}\right)\\
+S[\alpha(x,\pm a)]&=&\pm\frac{1}{2}-\frac{1}{\pi\alpha(x,\pm a) }Sin\left(\frac{\pi \alpha(x,\pm a)^2}{2}\right)
+\end{eqnarray}
+Es fácil mostar que $C[\alpha_-(x,a,o)]=-C[\alpha(x,-a)]$ y $S[\alpha_-(x,a,o)]=-S[\alpha(x,-a)]$, con esto, y usando la ecuación (2.70):
+\begin{eqnarray}
+\nonumber & P^{\text{(1rendija)}}(x;a,b)=|A(x;a,b)|^2=\\&\frac{1}{2\lambda(L+D)}
+([C(\alpha(x,a))+C(\alpha(x.-a))]^{2}+[S(\alpha(x.a))+S(\alpha(x.-a))]^{2})
+\end{eqnarray}
+Usando las ecuaciones (2.78),(2.79) y (2.80) encontramos:
+\begin{equation}
+P^{(\text{1rendija})}(x,a)\simeq\frac{2\gamma}{\pi^{2}\eta^{2}}\left(\frac{a^{2}}{\left(\frac{x^{2}}{\eta^{2}}-a^{2}\right)^{2}}+\frac{1}{\left(\frac{x^{2}}{\eta^{2}}-a^{2}\right)}\text{Sin}^{2}\left(\pi N_{F}(a)\frac{x}{a}\right)\right)
+\end{equation}
+En el límite $N_F(a)\ll 1\Rightarrow \frac{x}{\eta}\gg a$ ,tenemos la siguiente aproximación:
+\begin{equation}
+P^{(\text{1rendija})}(x,a)\simeq\frac{2\gamma}{\pi^{2}x^{2}}\text{Sin}^{2}\left(\pi N_{F}(a)\frac{x}{a}\right)
+\end{equation}
+Este límite es conocido como el regimen de Fraunhofer (Pantalla lejana), Figura 2.9. Es importante recalcar que en el regimen intermedio $(N_F(a)\approx 1)$, las aproximaciones (2.81) y (2.82) siguen siendo válidas.
+\begin{figure}[h]
+\centering
+\includegraphics[width=13cm]{Imagenes/Fig9}
+\caption[Patron de interferencia, 1 rendija, regimen de Fraunhofer]{Curva de difracción para una sola rendija, en la figura (a) $N_F(a)=0.01$, en (b) $N_F(a)=0.5$. Tomado de [1]}
+\end{figure}
+Sin embargo para $N_F(a)\ll 1$, obtenemos diferentes aproximaciones asintóticas:
+\begin{eqnarray}
+\nonumber &P^{(\text{1rendija})}(x)\simeq\frac{\gamma}{\eta}\left(\frac{\sqrt{N_{F}(a)}}{2a}+\frac{\text{\text{Sin}}\left(\frac{\pi}{2}N_{F}(a)\eta\left(1-\frac{x}{a\eta}\right)^{2}\right)}{2\pi\sqrt{\eta}\left(a-\frac{x}{\eta}\right)}+\frac{\text{\text{Sin}}\left(\frac{\pi}{2}N_{F}(a)\eta\left(1+\frac{x}{a\eta}\right)^{2}\right)}{2\pi\sqrt{\eta}\left(a+\frac{x}{\eta}\right)}\right)^{2}\\
+&+\frac{\gamma}{\eta}\left(\frac{\sqrt{N_{F}(a)}}{2a}-\frac{\text{\text{Cos}}\left(\frac{\pi}{2}N_{F}(a)\eta\left(1-\frac{x}{a\eta}\right)^{2}\right)}{2\pi\sqrt{\eta}\left(a-\frac{x}{\eta}\right)}-\frac{\text{\text{Cos}}\left(\frac{\pi}{2}N_{F}(a)\eta\left(1+\frac{x}{a\eta}\right)^{2}\right)}{2\pi\sqrt{\eta}\left(a+\frac{x}{\eta}\right)}\right)^{2},|x|<a\eta
+\end{eqnarray}
+\begin{equation}
+P^{(\text{1rendija})}(x,a)\simeq\frac{2\gamma}{\pi^{2}\eta^{2}}\left(\frac{a^{2}}{\left(\frac{x^{2}}{\eta^{2}}-a^{2}\right)^{2}}+\frac{1}{\left(\frac{x^{2}}{\eta^{2}}-a^{2}\right)}\text{Sin}^{2}\left(\pi N_{F}(a)\frac{x}{a}\right)\right), |x|>a\eta
+\end{equation}
+Esto se debe a que las aproximaciones asintóticas tienen el siguiente comportamiento:
+\begin{eqnarray}
+&\alpha(x,\pm a)\gg 1,\hspace{0.2cm} \text{si}\hspace{0.2cm} N_F(a)\gg 1 \hspace{0.2cm} \text{y}\hspace{0.2cm} |x|<a\eta\\
+&\pm\alpha(x,\mp a)\gg 1,\hspace{0.2cm} \text{si}\hspace{0.2cm} N_F(a)\gg 1 \hspace{0.2cm} \text{y}\hspace{0.2cm} |x|>a\eta
+\end{eqnarray}
+La función (2.83) oscila rápidamente alrededor del valor constante $N_F(a)\gamma/2a^2\eta=1/(\lambda_z(L+D))$ en $|x|<a\eta$ y la función (2.84) decrece rapidamente a 0 en $|x|>a\eta$. La curva de difracción se muestra en la figura 2.10.
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{Imagenes/Fig10}
+\caption[Patron de interferencia, 1 rendija, regimen de Fressnel]{Curva de difracción para una sola rendija, en la figura  $N_F(a)=100$. Tomado de [1]}
+\end{figure}
 
-
+\subsection{Interferencia y difracción por dos rendijas.}
 
 
 \section{Campos escalares.}
