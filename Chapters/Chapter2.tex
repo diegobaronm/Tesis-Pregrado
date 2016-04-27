@@ -492,13 +492,54 @@ Esto se debe a que las aproximaciones asintóticas tienen el siguiente comportam
 &\pm\alpha(x,\mp a)\gg 1,\hspace{0.2cm} \text{si}\hspace{0.2cm} N_F(a)\gg 1 \hspace{0.2cm} \text{y}\hspace{0.2cm} |x|>a\eta
 \end{eqnarray}
 La función (2.83) oscila rápidamente alrededor del valor constante $N_F(a)\gamma/2a^2\eta=1/(\lambda_z(L+D))$ en $|x|<a\eta$ y la función (2.84) decrece rapidamente a 0 en $|x|>a\eta$. La curva de difracción se muestra en la figura 2.10.
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=10cm]{Imagenes/Fig10}
-\caption[Patron de interferencia, 1 rendija, regimen de Fressnel]{Curva de difracción para una sola rendija, en la figura  $N_F(a)=100$. Tomado de [1]}
+\caption[Patrón de interferencia, 1 rendija, regimen de Fressnel]{Curva de difracción para una sola rendija, en la figura  $N_F(a)=100$. Tomado de [1]}
 \end{figure}
 
+
+
 \subsection{Interferencia y difracción por dos rendijas.}
+
+Podemos calcular la curva de difracción para dos rendijas usando la siguiente expresión:
+\begin{equation}
+P^{(2\text{rendija})}(x;a,b)=P_{1}(x;a,b)+P_{2}(x;a,b)+I_{12}(x;a,b)
+\end{equation}
+donde:
+\begin{eqnarray}
+\nonumber P_{1}(x;a,b)&=&|A_1(x;a,b)|^2\\
+\nonumber &=&\frac{\gamma}{2\lambda L\eta}([C(\alpha_{+}(x;a,b)-C(\alpha(x;a,b))]^{2}+[S(\alpha_{+}(x;a,b)-S(\alpha(x;a,b))]^{2})\\
+P_2(x;a,b)&=&|A_2(x;a,b)|^2=P_1(x;a,-b)
+\end{eqnarray}
+Y el término de interferencia:
+\begin{eqnarray}
+\nonumber I_{12}(x;a,b)&=& A_1(x;a,b)A_2(x;a,b)^*+A_2(x;a,b)A_1(x;a,b)^*\\
+\nonumber &=&\frac{\gamma}{\lambda L\eta}([C(\alpha_{+}(x;a,b)-C(\alpha(x;a,b))][C(\alpha_{+}(x;a,-b)-C(\alpha(x;a,-b))]\\
+&+& [S(\alpha_{+}(x;a,b)-S(\alpha(x;a,b))][S(\alpha_{+}(x;a,-b)-S(\alpha(x;a,-b))])
+\end{eqnarray}
+Hay que notar que en el caso de dos rendijas hay un término adicional, llamado el \textit{término de interferencia}, este es similar al encontrado en óptica. Esto resulta en un efecto de modulación de la curva de difracción dada por la suma de los términos de la ecuación (2.88).\\
+\\
+Definamos los numeros de Fressnel:
+\begin{equation}
+N_F(a)\equiv 2a^2/\lambda_zL ;\hspace{0.3cm} N_F(b)\equiv 2b^2/\lambda_zL ;\hspace{0.3cm} N_F\equiv 2ab/\lambda_zL=\sqrt{N_F(a)N_F(b)/2}
+\end{equation}
+En el caso de dos rendijas de ancho $2a$ y separadas por una distancia $2b$, en el caso en que $b\gg a$ tenemos los siguientes comportamientos, que se dividen en dos fases:
+\begin{itemize}
+\item Si $N_F\ll 1$, estamos en la \textit{fase mezclada}, es decir, encontramos una curva de interferencia modulada por la curva de difración de una rendija de tamaño $a$. En este caso estamos en el regimen de Fressnel, $N_F(a)\ll 1$. Este se muestra en la figura 2.11(a). 
+\item Si $N_F\gg 1$, estamos en la \textit{fase separada},es decir, hay dos curvas de interferencia, moduladas por las curvas de difracción correspondientes a cada rendija, cada curva centrada en $\pm b\eta$.	La forma de las curvas de difracción dependen de $N_F(a)$ y son similares al caso de una rendija (donde teniamos dos regímenes establecidos: Fressnel y Fraunhofer). En la figura 2.11(c), $N_F(a)\ll 1$ y en la figura 2.11(d) $N_F(a)\gg 1$.
+\item Si $N_F\sim 1$ observamos una separación entre dos curvas de interferencia, moduladas por una curva de difracción que corresponde al de una rendija en el caso de regimen intermedio, esto se muestra en la figura 2.11(b). 
+\end{itemize}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=14.5cm]{Imagenes/Fig11}
+\caption[Patrón de interferencia, 2 rendijas]{Curva de difracción para dos rendijas, en la figura  $N_F(a)=0.001$ para (a), 0.015 para (b), 0.12 para (c), 6 para (d) . Tomado de [1]}
+\end{figure}
+
+
+
+
+
 
 
 \section{Campos escalares.}
