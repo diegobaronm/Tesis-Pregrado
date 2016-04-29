@@ -620,9 +620,39 @@ Z_0[J]=\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)
 Esta es la misma ecuación que (2.100)!
 
 \subsection{Funciones de Green de la partícula libre.}
-
-
-
+Expandamos la amplitud de transición en serie:
+\begin{equation}
+Z_{0}[J]=\mathcal{N}\left\{ 1-\frac{i}{2}\int dxdyJ(x)\triangle_{F}(x-y)J(y)+\frac{1}{2!}\left(\frac{i}{2}\right)^{2}\left[\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right]^{2}+...\right\}
+\end{equation}
+Introduciendo la transformada de Fourier de $J(x)$ tenemos:
+\begin{equation}
+J(x)=\int J(p)e^{-ip\cdot x}d^4p
+\end{equation}
+Entonces,teniendo en cuenta que para abreviar hemos escrito los diferenciales en el cuadrivolumen como $d^4h\equiv dh$, tenemos:
+\begin{eqnarray}
+\nonumber -\frac{i}{2}\int J(x)\triangle_F(x-y)J(y)dxdy&=&-\frac{i}{2(2\pi)^{4}}\int\frac{J(p_{1})e^{-ip_{1}\cdot x}J(p_{2})e^{-ip_{2}\cdot y}e^{-ik(x-y)}dxdydkdp_{1}dp_{2}}{k^{2}-m^{2}+i\epsilon}\\
+\nonumber &=& -\frac{i}{2(2\pi)^{4}}\int\frac{J(p_{1})J(p_{2})e^{-ix(p_{1+k})}e^{-iy(p_{2}-k)}dxdydkdp_{1}dp_{2}}{k^{2}-m^{2}+i\epsilon}\\
+\nonumber \text{Integrando en x,y} &&\\
+\nonumber &=& -\frac{i(2\pi)^{8}}{2(2\pi)^{4}}\int\frac{J(p_{1})J(p_{2})\delta(p_{1}+k)\delta(p_{2}-k)dkdp_{1}dp_{2}}{k^{2}-m^{2}+i\epsilon}\\
+&=& -\frac{i(2\pi)^{4}}{2}\int\frac{J(k)J(-k)d^{4}k}{k^{2}-m^{2}+i\epsilon}
+\end{eqnarray}
+Si identificamos la expresión anterior mediante las reglas de la figura 2.12,
+\begin{SCfigure}[1][h]
+\caption[Diagrama de Feynmann segunda cuantización]{Diagrama de Feynmann segunda cuantización}
+\includegraphics[width=5.5cm]{Imagenes/Fig12}
+\end{SCfigure}
+entonces la integral (2.111) puede ser identificada con el diagrama que aparece en la figura 2.13:
+\begin{SCfigure}[1][h!]
+\caption[Diagrama de Feynmann segunda cuantización]{Representación de (2.111)}
+\includegraphics[width=3cm]{Imagenes/Fig13}
+\end{SCfigure}
+\\
+\\
+\\
+Por tanto finalmente:
+\begin{equation}
+\includegraphics[width=12cm]{Imagenes/Fig14}
+\end{equation}
 
 
 

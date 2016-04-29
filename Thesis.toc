@@ -20,16 +20,16 @@
 \contentsline {section}{\numberline {2.3}Campos escalares.}{21}{section.116}
 \contentsline {subsection}{\numberline {2.3.1}Integraci\IeC {\'o}n funcional.}{22}{subsection.128}
 \contentsline {subsection}{\numberline {2.3.2}Funciones de Green de la part\IeC {\'\i }cula libre.}{23}{subsection.136}
-\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{23}{section.137}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{23}{section.138}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{23}{section.139}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{24}{chapter.140}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{25}{section.142}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{25}{subsection.143}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{25}{section.144}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{25}{section.145}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{25}{section.146}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{25}{section.147}
+\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{24}{section.143}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{24}{section.144}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{24}{section.145}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{25}{chapter.146}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{26}{section.148}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{26}{subsection.149}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{26}{section.150}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{26}{section.151}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{26}{section.152}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{26}{section.153}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{26}{appendix.148}
+\contentsline {chapter}{\numberline {A}An Appendix}{27}{appendix.154}
 \vspace {2em}
