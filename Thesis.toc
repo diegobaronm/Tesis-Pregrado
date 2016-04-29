@@ -17,17 +17,17 @@
 \contentsline {subsection}{\numberline {2.2.2}El problema de difracci\IeC {\'o}n e interferencia.}{14}{subsection.85}
 \contentsline {subsection}{\numberline {2.2.3}Difracci\IeC {\'o}n por una rendija.}{17}{subsection.97}
 \contentsline {subsection}{\numberline {2.2.4}Interferencia y difracci\IeC {\'o}n por dos rendijas.}{18}{subsection.110}
-\contentsline {section}{\numberline {2.3}Campos escalares.}{21}{section.116}
-\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{21}{section.117}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{21}{section.118}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{21}{section.119}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{22}{chapter.120}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{23}{section.122}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{23}{subsection.123}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{23}{section.124}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{23}{section.125}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{23}{section.126}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{23}{section.127}
+\contentsline {section}{\numberline {2.3}Campos escalares.}{20}{section.116}
+\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{21}{section.118}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{21}{section.119}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{21}{section.120}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{22}{chapter.121}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{23}{section.123}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{23}{subsection.124}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{23}{section.125}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{23}{section.126}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{23}{section.127}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{23}{section.128}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{24}{appendix.128}
+\contentsline {chapter}{\numberline {A}An Appendix}{24}{appendix.129}
 \vspace {2em}
