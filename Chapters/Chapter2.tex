@@ -535,7 +535,7 @@ En el caso de dos rendijas de ancho $2a$ y separadas por una distancia $2b$, en 
 \includegraphics[width=14.5cm]{Imagenes/Fig11}
 \caption[Patrón de interferencia, 2 rendijas]{Curva de difracción para dos rendijas, en la figura  $N_F(a)=0.001$ para (a), 0.015 para (b), 0.12 para (c), 6 para (d) . Tomado de [1]}
 \end{figure}
-
+\newpage
 
 
 
@@ -547,8 +547,81 @@ En analogía con lo estudiado en la sección anterior para una partícula, defin
 \begin{equation}
 Z[J]=\int\mathcal{D}\phi\text{Exp}\left\{ i\int d^{4}x\left[\mathcal{L}(\phi)+J(x)\phi(x)+\frac{i}{2}\epsilon\phi^{2}(x)\right]\right\}
 \end{equation}
-En este caso en vez de dividir el espacio-tiempo en segmentos, dividimos el espacio 4 dimensional (4D) de Minkowski en hipervolúmenes (4D) asumiendo que en cada uno de estos volúmenes $\phi(x)$ es constante. Si $\mathcal{L}=\mathcal{L}(Klein-Gordon)$, tenemos:
- 	
+En este caso en vez de dividir el espacio-tiempo en segmentos, dividimos el espacio 4 dimensional (4D) de Minkowski en hipervolúmenes (4D) asumiendo que en cada uno de estos volúmenes $\phi(x)$ es constante. Si $\mathcal{L}=\mathcal{L}(Klein-Gordon)=\frac{1}{2}(\partial_\mu\phi\partial^\mu\phi-m^2 \phi^2)$, tenemos:
+\begin{equation}
+Z_{0}[J]=\text{\ensuremath{\int\mathcal{D}}}\phi\text{Exp}\left\{ i\int d^{4}x\left[\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-(m^{2}-i\epsilon)\phi^{2}))+J\phi\right]\right\} 
+\end{equation} 	
+Ahora como $\int\partial_{\mu}\phi\partial^{\mu}\phi=\int\partial_{\mu}(\phi\partial^{\mu}\phi)-\int\phi\square\phi=0-\int\phi\square\phi$, donde hemos usado que la primera integral es una cuadridivergencia y puede ser expresada como una integral de superficie, y poniendo la condición de frontera de que los campos se anulan en el borde, este término es cero. Por tanto (2.92) queda:
+\begin{equation}
+Z_{0}[J]=\text{\ensuremath{\int\mathcal{D}}}\phi\text{Exp}\left\{ -i\int d^{4}x\left[\frac{1}{2}(\phi\square\phi+(m^{2}-i\epsilon)\phi^{2}))-J\phi\right]\right\} 
+\end{equation}
+El campo $\phi(x)$ no satisface la ecuacion de K-G. Para evaluar $Z_0[J]$ separemos $\phi(x)$:
+\begin{equation}
+\phi \rightarrow \phi(x)+\phi_0(x)
+\end{equation}
+Se puede probar fácilmente que $\int\phi_{0}(\square+m^{2}-i\epsilon)\phi=\int\phi(\square+m^{2}-i\epsilon)\phi_{0}$, por tanto:
+\begin{eqnarray}
+\nonumber \int d^{4}x\left[\frac{1}{2}\phi(\square+m^{2}-i\epsilon)\phi-J\phi\right]&\rightarrow\int d^{4}x[\frac{1}{2}\phi(\square+m^{2}-i\epsilon)\phi+\phi(\square+m^{2}-i\epsilon)\phi_{0}\\
+&+\frac{1}{2}\phi_{0}(\square+m^{2}-i\epsilon)\phi_{0}-J\phi-J\phi_{0}]
+\end{eqnarray}
+Si escogemos ahora $\phi_0$ tal que satisfaga:
+\begin{equation}
+(\square+m^2-i\epsilon)\phi_0(x)=J(x)
+\end{equation}
+Entonces (2.95) queda como:
+\begin{equation}
+\int d^{4}x\left[\frac{1}{2}\phi(\square+m^{2}-i\epsilon)\phi-\frac{1}{2}J\phi_{0}\right]
+\end{equation}
+La solución a (2.96) es:
+\begin{equation}
+\phi_{0}(x)=-\int\triangle_{F}(x-y)J(y)d^{4}y
+\end{equation}
+Donde $\triangle_F(x-y)$, llamado el propagador de Feynmann, es la función de green del operador $(\square+m^2-i\epsilon)$ y cumple:
+\begin{equation}
+(\square+m^2-i\epsilon)\triangle_{F}(x)=-\delta^4(x)
+\end{equation}
+Con todo lo anterior podemos escribir $Z_0[J]$ como:
+\begin{equation}
+Z_0[J]=\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\} \int\mathcal{D}\phi\text{Exp}\left\{ -\frac{i}{2}\int d^{4}x\left[\frac{1}{2}(\phi(\square +m^{2}-i\epsilon)\phi\right]\right\} 
+\end{equation}
+Por tanto hemos logrado separar el funcional generatriz en dos partes, una que depende unicamente de $J(x)$ y otra de $\phi(x)$, esta última de hecho es simplemente un número que llamaremos $\mathcal{N}$, así:
+\begin{equation}
+Z_{0}[J]=\mathcal{N}\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\}
+\end{equation}
+\subsection{Integración funcional.}
+Vamos a generalizar la fórmula de integración Gaussiana a $n$ variables discretas para luego analizar este tipo de fórmulas en el caso de cálculo funcional. Sabemos que 
+\begin{equation}
+\int_{-\infty}^{\infty}e^{-\frac{1}{2}ax^{2}}dx=\left(\frac{2\pi}{a}\right)^{1/2}\Rightarrow\int\text{Exp}\left(-\frac{1}{2}\sum a_{n}x_{n}^{2}\right)dx_{1}...dx_{n}=\frac{(2\pi)^{n/2}}{\prod_{i=1}^{n}a_{i}^{1/2}}
+\end{equation}
+Sea $A$ una matriz diagonal y $x$ un vector, el producto escalar de $Ax$ y $x$ es $(x,Ax)=\sum_n a_nx_{n}^{2}$ y $det(A)=\prod_{i=1}^{n}a_i$. Por tanto podemos escribir (2.102) como:
+\begin{equation}
+\int\text{Exp}\left[-\frac{1}{2}(x,Ax)\right]d^{n}x=(2\pi)^{n/2}(detA)^{-1/2}
+\end{equation}
+Si definimos la medida $dx=d^nx(2\pi)^{-n/2}$, tenemos:
+\begin{equation}
+\int\text{Exp}\left[-\frac{1}{2}(x,Ax)\right]dx=(detA)^{-1/2}
+\end{equation}
+Esta ecuación puede ser extendida a formas cuadráticas $Q(x)=\frac{1}{2}(x,Ax)+(b,x)+c$.En este caso tenemos:
+\begin{equation}
+\int\text{Exp}\left[-\frac{1}{2}\left\{ (x,Ax)+(b,x)+c\right\} \right]dx=\text{Exp}\left[\frac{1}{2}(b,A^{-1}b)-c\right]det(A)^{-1/2}
+\end{equation}
+La generalización funcional de la ecuación (2.104) es:
+\begin{equation}
+\int\mathcal{D}\phi\text{Exp}\left[-\frac{1}{2}\int\phi(x)A\phi(x)dx\right]=(detA)^{-1/2}
+\end{equation}
+Así si partimos de $Z_{0}[J]=\int\mathcal{D}\phi\text{Exp}\left\{ -i\int\left[\frac{1}{2}\phi(\square+m^{2}-i\epsilon)\phi-J\phi\right]d^{4}x\right\} $ y aplicando (2.105),(2.106) con $A=i(\square+m^2-i\epsilon)$, $b=-iJ(x)$,$c=0$. Tenemos:
+\begin{equation}
+Z_{0}[J]=\text{Exp}\left[\frac{i}{2}\int J(x)(\square+m^{2}-i\epsilon)^{-1}J(y)dxdy\right]det(i(\square+m^{2}-i\epsilon))^{-1/2}
+\end{equation}
+Como sabemos $(\square +m^2-i\epsilon)^{-1}=-\triangle_F(x-y)$ y con la ecuación (2.106):
+\begin{equation}
+Z_0[J]=\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\} \int\mathcal{D}\phi\text{Exp}\left\{ -\frac{i}{2}\int d^{4}x\left[\frac{1}{2}(\phi(\square +m^{2}-i\epsilon)\phi\right]\right\} 
+\end{equation}
+Esta es la misma ecuación que (2.100)!
+
+\subsection{Funciones de Green de la partícula libre.}
+
+
 
 
 
