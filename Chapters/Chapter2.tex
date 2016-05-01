@@ -653,7 +653,56 @@ Por tanto finalmente:
 \begin{equation}
 \includegraphics[width=12cm]{Imagenes/Fig14}
 \end{equation}
-
+Podemos interpretar esta serie como la propagación y posterior aniquilación de  una partícula entre fuentes, de dos partículas entre fuentes y así sucesivamente. Tenemos por tanto una teoría de muchos cuerpos, lo cual es consistente con nuestra idea inicial de utilizar un campo. Cada término en la serie es una función de Green por tanto $Z_0[J]$ es llamada un \textit{funcional generatriz} para las funciones de Green de la teoría.
+\\
+\\
+Para entender esto analicemos la expansión en series de un funcional, primero recordemos la expansion en series de una funcion de $k$ variables $F(y_1,...,y_k)$:
+\begin{equation}
+F\{y\}=F(y_{1},..,y_{k})=\sum_{n=0}^{\infty}\sum_{i_{1}}^{k}...\sum_{i_{n}}^{k}\frac{1}{n!}T_{n}(i_{1},...,i_{n})y_{i_{1}}...y_{i_{n}}
+\end{equation}
+Donde
+\begin{equation}
+T_{n}(i_{1},...,i_{n})=\frac{\partial F\{y\}}{\partial y_{1}...\partial y_{n}}|_{y=0}
+\end{equation}
+Yendo al caso de muchas variables continuas $i\rightarrow x_1, y_i\rightarrow y(x),\sum_i\rightarrow \int dx$, entonces obtenemos la serie de potencias de un funcional:
+\begin{equation}
+F[y]=\sum_{n=0}^{\infty}\int dx_{1}...dx_{n}\frac{1}{n!}T_{n}(x_{1},...,x_{n})y(x_{1})...y(x_{n})
+\end{equation}
+Y en este caso:
+\begin{equation}
+T_{n}(x_{1},...,x_{n})=\frac{\delta}{\delta y(x_{1})}...\frac{\delta}{\delta y(x_{n})}F[y]|_{y=0}
+\end{equation}
+Y $F[y]$ es llamado el \textit{funcional generatriz} de las funciones  $T_{n}(x_{1},...,x_{n})$. Si escogemos una normalización tal que $Z_0[J]|_{J=0}=1 \Rightarrow \mathcal{N}=1$, por tanto:
+\begin{equation}
+Z_{0}[J]=\text{Exp}\left\{ -\frac{i}{2}\int dxdyJ(x)\triangle_{F}(x-y)J(y)\right\} 
+\end{equation}
+Asi $Z_0[J]$ es el funcional generatriz de:
+\begin{equation}
+\tau(x_{1},...,x_{n})=\frac{1}{i^{n}}\frac{\delta^{n}Z_{o}[J]}{\delta J(x_{1})...\delta J(x_{n})}|_{J=0}
+\end{equation}
+En analogía con la ecuación (2.56) tenemos:
+\begin{equation}
+\frac{\delta^{n}Z_{o}[J]}{\delta J(x_{1})...\delta J(x_{n})}|_{J=0}=i^{n}\langle0|T[\phi(x_{1})...\phi(x_{n})]|0\rangle
+\end{equation}
+Entonces:
+\begin{equation}
+\tau(x_1,...,x_n)=\langle0|T[\phi(x_{1})...\phi(x_{n})]|0\rangle
+\end{equation}
+A las funciones $\tau(x_1,...,x_n)$ se les llama funciones de Green o funciones de n-puntos, calculemos algunas, empecemos con la función de 2-puntos:
+\begin{equation}
+\tau(x,y)=-\frac{\delta^2Z_0[J]}{\delta J(x)\delta J(y)}|_{J=0}
+\end{equation}
+\begin{eqnarray}
+\nonumber \Rightarrow \frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&-\int\triangle_{F}(x-x_{1})J(x_{1})\times\text{Exp}\left\{ -\frac{i}{2}\int dxdy\text{\ensuremath{\triangle}}_{F}(x_{1}-x_{2})J(x_{1})J(x_{2})\right\}\\
+\nonumber &=& -\int\triangle_{F}(x-x_{1})J(x_{1})\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\ 
+\nonumber \Rightarrow \frac{1}{i}\frac{\delta}{\delta J(y)}\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&\int\triangle_{F}(x-x_{1})J(x_{1})\int\triangle_{F}(y-x_{1})J(x_{1})\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+&&+ i\triangle_{F}(x-y)\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\end{eqnarray}
+Evaluando en $J=0$ la expresión (2.122) tenemos:
+\begin{equation}
+\tau(x,y)=i\triangle_F(x-y)
+\end{equation}
+Pero, ¿cuál es el significado físico de esta expresión?           
 
 
 
