@@ -20,16 +20,17 @@
 \contentsline {section}{\numberline {2.3}Campos escalares.}{21}{section.116}
 \contentsline {subsection}{\numberline {2.3.1}Integraci\IeC {\'o}n funcional.}{22}{subsection.128}
 \contentsline {subsection}{\numberline {2.3.2}Funciones de Green de la part\IeC {\'\i }cula libre.}{23}{subsection.136}
-\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{26}{section.154}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{26}{section.155}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{26}{section.156}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{27}{chapter.157}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{28}{section.159}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{28}{subsection.160}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{28}{section.161}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{28}{section.162}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{28}{section.163}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{28}{section.164}
+\contentsline {subsection}{\numberline {2.3.3}Funcional generatriz para campos interactuantes.}{27}{subsection.162}
+\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{28}{section.163}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{28}{section.164}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{28}{section.165}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{29}{chapter.166}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{30}{section.168}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{30}{subsection.169}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{30}{section.170}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{30}{section.171}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{30}{section.172}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{30}{section.173}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{29}{appendix.165}
+\contentsline {chapter}{\numberline {A}An Appendix}{31}{appendix.174}
 \vspace {2em}

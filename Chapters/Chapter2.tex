@@ -696,18 +696,61 @@ A las funciones $\tau(x_1,...,x_n)$ se les llama funciones de Green o funciones 
 \nonumber \Rightarrow \frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&-\int\triangle_{F}(x-x_{1})J(x_{1})\times\text{Exp}\left\{ -\frac{i}{2}\int dxdy\text{\ensuremath{\triangle}}_{F}(x_{1}-x_{2})J(x_{1})J(x_{2})\right\}\\
 \nonumber &=& -\int\triangle_{F}(x-x_{1})J(x_{1})\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\ 
 \nonumber \Rightarrow \frac{1}{i}\frac{\delta}{\delta J(y)}\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&\int\triangle_{F}(x-x_{1})J(x_{1})\int\triangle_{F}(y-x_{1})J(x_{1})\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
-&&+ i\triangle_{F}(x-y)\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+&&+ i\triangle_{F}(x-y)\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}
 \end{eqnarray}
 Evaluando en $J=0$ la expresión (2.122) tenemos:
 \begin{equation}
 \tau(x,y)=i\triangle_F(x-y)
 \end{equation}
-Pero, ¿cuál es el significado físico de esta expresión?           
+Pero, ¿cuál es el significado físico de esta expresión? Sabemos que:
+\begin{equation}
+\tau(x,y)=\langle0|T[\phi(x)\phi(y)]|0\rangle=\Theta(x_{0}-y_{0})\langle0|\phi(x)\phi(y)|0\rangle+\Theta(y_{0}-x_{0})\langle0|\phi(y)\phi(x)|0\rangle
+\end{equation}          
+Si descomponemos el campo $\phi(x)$ como:
+\begin{eqnarray}
+\phi^{(+)}(x)&=&\int\frac{d^{3}k}{[(2\pi)^{3}2\omega_{k}]^{1/2}}f_{k}(x)a(k)\\
+\phi^{(-)}(x)&=&\int\frac{d^{3}k}{[(2\pi)^{3}2\omega_{k}]^{1/2}}f_{k}^*(x)a^\dagger(k)
+\end{eqnarray}
+Y reemplazamos en (2.125), la expresión que sobrevive es:
+\begin{equation}
+\tau(x,y)=\Theta(x_{0}-y_{0})\langle0|\phi^{(+)}(x)\phi^{(-)}(y)|0\rangle+\Theta(y_{0}-x_{0})\langle0|\phi^{(+)}(y)\phi^{(-)}(x)|0\rangle
+\end{equation}
+Estas son las amplitudes para un partícula que es creada en el evento $(y_0,y)$, se propaga y es posteriormente destruida en $(x_0,x)$ o una partícula que es creada en el evento $(x_0,x)$, se propaga y es posteriormente destruida en $(y_o,y)$. Lo anterior se ve representado en la figura 2.14.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{Imagenes/Fig15}
+\caption[Representación gráfica de la función de 2-puntos ]{Representación gráfica de la ecuación 2.127}
+\end{figure}
+\\
+\\
+Es claro ahora que la función de 1-punto es:
+\begin{equation}
+\tau(x)=\langle 0|\phi(x)|0\rangle=0
+\end{equation}
+Calculemos entonces la función de 3-puntos, partiendo de (2.122):
+\begin{eqnarray}
+\nonumber\left(\frac{1}{i}\right)^{3}\frac{\delta}{\delta J_{1}}\frac{\delta}{\delta J_{2}}\frac{\delta}{\delta J_{3}}Z_{0}[J]&=&-i\triangle_{F}(x_{3}-x_{2})\int\triangle_{F}(x_{1}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\nonumber && -i\triangle_{F}(x_{2}-x_{1})\int\triangle_{F}(x_{3}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\nonumber &&-i\triangle_{F}(x_{3}-x_{1})\int\triangle_{F}(x_{2}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\nonumber &&-\int\triangle_{F}(x_{3}-x)J(x)dx\int\triangle_{F}(x_{2}-x)J(x)dx\\
+&&\times\int\triangle_{F}(x_{1}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}
+\end{eqnarray}
+Si evaluamos en $J=0$ la ecuación (2.129) vemos que $\tau(x_1,x_2,x_3)=0$. Para encontrar la función de 4-puntos derivamos de nuevo, los términos que sobreviven al hacer $J=0$ son:
+\begin{eqnarray}
+\nonumber \tau(x_1,x_2,x_3,x_4)&=&\langle 0|T[\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)]|0\rangle\\
+\nonumber &&-[\triangle_{F}(x_{3}-x_{2})\triangle_{F}(x_{1}-x_{4})\\
+\nonumber &&+\triangle_{F}(x_{2}-x_{1})\triangle_{F}(x_{3}-x_{4})\\
+&&+\triangle_{F}(x_{3}-x_{1})\triangle_{F}(x_{2}-x_{4})]
+\end{eqnarray}
+Esto es el producto de funciones de 2-puntos:
+\begin{equation}
+\includegraphics[width=8cm]{Imagenes/Fig16}
+\end{equation}
+Así uno puede darse cuenta que si $n$ es impar la función de n-puntos se anula y si es par, es la suma de los productos de las diferentes permutaciones de funciones de 2-puntos.
 
 
-
-
-
+\subsection{Funcional generatriz para campos interactuantes.}
+Ahora debemos lidiar con el problema de encontrar el funcional generatriz para el caso de una teoría con términos de interacción en $\mathcal{L}$, en general para campos escalares $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$.
 
 \section{Campos fermiónicos.}
 \section{Teorías Gauge y campos de Yang-Mills}
