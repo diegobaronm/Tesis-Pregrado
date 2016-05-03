@@ -750,7 +750,43 @@ Así uno puede darse cuenta que si $n$ es impar la función de n-puntos se anula
 
 
 \subsection{Funcional generatriz para campos interactuantes.}
-Ahora debemos lidiar con el problema de encontrar el funcional generatriz para el caso de una teoría con términos de interacción en $\mathcal{L}$, en general para campos escalares $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$.
+Ahora debemos lidiar con el problema de encontrar el funcional generatriz para el caso de una teoría con términos de interacción en $\mathcal{L}$, en general para campos escalares $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$. El funcional generatriz normalizado, con $S=\int \mathcal{L}dx$ es:
+\begin{equation}
+\frac{\int\mathcal{D}\phi\text{Exp}\left(iS+\int J\phi dx\right)}{\int\mathcal{D}\phi\text{Exp}\left(iS\right)}
+\end{equation}
+Por tanto queremos encontrar la ecuación diferencial que obedece $Z[J]$ y resolverla en términos de $Z_0[J]$. Para esto primero veamos la ecuación diferencial que satiscace $Z_0[J]$. Sabemos que:
+\begin{equation}
+\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}=-\int\triangle_{F}(x-y)J(y)dy\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}Jdxdy\right\} 
+\end{equation}
+Por tanto si aplicamos$(\square +m^2)$ a izquierda y derecha de (2.133), tenemos:
+\begin{equation}
+(\square +m^{2})\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}=J(x)Z_{0}[J]
+\end{equation}
+Esta es la ecuación diferencial que buscabamos, si definimos el funcional $\hat{Z}_0[\phi]=\frac{e^{iS}}{\int \mathcal{D}\phi e^{iS}}$, notamos que:
+
+\begin{equation}
+Z[J]=\int\mathcal{D}\phi\hat{Z}[\phi]\text{Exp}\left\{ i\int J\phi dx\right\}
+\end{equation}
+Esta última ecuación define el análogo funcional a la transformada de Fourier, si hacemos la derivada funcional de $\hat{Z}_0[\phi]$ obtenemos:
+\begin{equation}
+i\frac{\delta\hat{Z}[\phi]}{\delta\phi}=\left\{ (\square+m^{2})\phi-\frac{\partial\mathcal{L}_{int}}{\partial\phi}\right\} \hat{Z}[\phi]
+\end{equation}
+Si en el lado derecho de la ecuacion (2.135) multiplicamos por $\text{Exp}[i\int J\phi dx]$, integramos en $\phi(x)$ y cambiamos $\phi \rightarrow \frac{1}{i}\frac{\delta}{\delta J}$, conseguimos la siguiente ecuación:
+\begin{equation}
+RHS(1.135)=\left\{ (\square +m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]
+\end{equation} 
+Si hacemos lo mismo en el lado izquierdo nos queda:
+\begin{eqnarray}
+\nonumber LHS(2.135)=i\int\mathcal{D}\phi\frac{\delta\hat{Z}[\phi]}{\delta\phi}\text{Exp}\left(i\int J\phi dx\right)&=& i\{\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
+\nonumber &&-i\int\mathcal{D}\phi J(x)\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
+\end{eqnarray}
+
+
+
+
+
+
+
 
 \section{Campos fermiónicos.}
 \section{Teorías Gauge y campos de Yang-Mills}

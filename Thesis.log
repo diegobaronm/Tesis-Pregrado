@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  1 MAY 2016 22:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  3 MAY 2016 18:44
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1258,8 +1258,8 @@ File: Imagenes/Fig16.png Graphic file (type png)
 <use Imagenes/Fig16.png>
 Package pdftex.def Info: Imagenes/Fig16.png used on input line 747.
 (pdftex.def)             Requested size: 227.62204pt x 109.3332pt.
-) (Chapters/Chapter3.tex [27 <./Imagenes/Fig16.png>]
-[28]
+ [27 <./Imagenes/Fig16.png>]) (Chapters/Chapter3.tex
+[28] [29]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -1268,16 +1268,16 @@ File: Imagenes/Escudoudea.jpg Graphic file (type jpg)
 <use Imagenes/Escudoudea.jpg>
 Package pdftex.def Info: Imagenes/Escudoudea.jpg used on input line 4.
 (pdftex.def)             Requested size: 199.16928pt x 299.47748pt.
- [29
+ [30
 
-]) (Appendices/AppendixA.tex [30]
+]) (Appendices/AppendixA.tex [31]
 Ap\'{e}ndice A.
 ------------------------------------------------------------------------------
  A An Appendix
 ------------------------------------------------------------------------------
-[31
+[32
 
-]) [32]
+]) [33]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1291,7 +1291,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3DCC265E2BE8B9E3A3A5D58FC105751B;6803.
+(rerunfilecheck)             Checksum: 3543387B838F9E012E2588CABDEB0DE2;6803.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1299,8 +1299,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14540 strings out of 493673
- 203340 string characters out of 3141530
+ 14548 strings out of 493673
+ 203431 string characters out of 3141530
  283841 words of memory out of 3000000
  17418 multiletter control sequences out of 15000+200000
  16219 words of font info for 61 fonts, out of 3000000 for 9000
@@ -1334,9 +1334,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 /symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (41 pages, 1023138 bytes).
+Output written on Thesis.pdf (42 pages, 1029280 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
- 216 named destinations out of 1000 (max. 500000)
+ 681 PDF objects out of 1000 (max. 8388607)
+ 224 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
