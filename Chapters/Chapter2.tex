@@ -777,17 +777,90 @@ RHS(1.135)=\left\{ (\square +m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L
 \end{equation} 
 Si hacemos lo mismo en el lado izquierdo nos queda:
 \begin{eqnarray}
-\nonumber LHS(2.135)=i\int\mathcal{D}\phi\frac{\delta\hat{Z}[\phi]}{\delta\phi}\text{Exp}\left(i\int J\phi dx\right)&=& i\{\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
-\nonumber &&-i\int\mathcal{D}\phi J(x)\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
+\nonumber LHS(2.135)=i\int\mathcal{D}\phi\frac{\delta\hat{Z}[\phi]}{\delta\phi}\text{Exp}\left(i\int J\phi dx\right)&=& i\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
+\nonumber &&+\int\mathcal{D}\phi J(x)\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
 \end{eqnarray}
-
-
-
-
-
-
+El primer término del lado derecho de la ecuación (2.138) es un término de superficio, por tanto se anula. Por tanto, la ecuación que cumple $Z[J]$ es:
+\begin{equation}
+\left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J]
+\end{equation}
+Vamos a probar que la solución de esta ecuación es:
+\begin{equation}
+Z[J]=\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]Z_{0}[J]
+\end{equation} 
+Para esto primero obtengamos la siguiente identidad:
+\begin{equation}
+\text{Exp}\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]J(x)\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]=J(x)-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]
+\end{equation}
+Sabemos que el conmutador $\left[J(x),\frac{1}{i}\frac{\delta}{\delta J(y)}\right]=i\delta(x-y)\Rightarrow\left[J(x),\frac{1}{i}\frac{\delta^{n}}{\delta J^{n}(y)}\right]=i\delta(x-y)n\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n-1}$, con esto podemos calcular:
+\begin{eqnarray}
+\nonumber \left[J(x),\int F\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]&=&\left[J(x),\int\left\{ F[0]+\frac{1}{i}\frac{\delta}{\delta J(y)}F\prime[0]+...+\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n}\frac{F^{n}[0]}{n!}\right\} dy\right]\\
+\nonumber &=& \left[J(x),\int\sum_{n=0}^{\infty}\frac{1}{n!}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n}F^{n}[0]\right]\\
+\nonumber &=& \sum_{n=0}^{\infty}\frac{1}{n!}\int i\delta(x-y)n\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n-1}F^{n}[0]dy\\
+&=& i\sum_{k=1}^{\infty}\frac{1}{k!}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{k}F^{k+1}[0]=iF\prime\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)
+\end{eqnarray}
+De la formula de Hausdorff tenemos que:
+\begin{equation}
+e^ABe^{-A}=B+[B,A]+\frac{1}{2!}[A,[A,B]]+...
+\end{equation}
+Si $A=-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy$ y $B=J(x)$, tenemos que sólo los dos primeros términos de la ecuación (2.143) contribuyen y usando el resultado de (2.142) obtenemos:
+\begin{equation}
+\text{Exp}\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]J(x)\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]=J(x)-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]
+\end{equation}
+Ahora veamos lo siguiente:
+\begin{equation}
+J(x)Z[J]=\mathcal{N}J(x)\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]Z_{0}[J]
+\end{equation}
+Si hacemos el siguiente truco para introducir:
+\begin{equation}
+1=\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\times\text{Exp}\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]
+\end{equation}
+\begin{eqnarray}
+\nonumber \Rightarrow J(x)Z[J]&=&\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\times\left[J(x)-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]\right]Z_{0}[J]\\
+\nonumber &=&\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right](\square+m^{2})\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}\\
+&&-\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]Z_{0}[J]
+\end{eqnarray}
+Así:
+\begin{equation}
+\left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J]
+\end{equation}
+Esta es la ecuación diferencial que teníamos al principio (2.139), por tanto la propuesta (2.140) es correcta.
+\newpage
 
 
 \section{Campos fermiónicos.}
+En la aproximación de cuantización canónica el campo $\psi(x)$ es tratado como un operador que obedece relaciones de anticonmutación a tiempos iguales, ${\psi(x),\bar{\psi}(y)}|_{x_0=y_0}=i\delta (x-y)$. Por otro lado en la aproximación funcional, el funcional generatriz es una integral funcional sobre los campos, para el caso de campos escalares estos son tratados como funciones que llevan números complejos a números complejos y conmutan. En el caso de campos fermiónicos es necesario que los campos sean funciones de números complejos anticonmutantes, estos números se conocen como \textit{variables de Grassmann}.
+\\
+\\
+Los generadores $C_i$ de un álgebra de Grassmann n-dimensional cumplen la relacion:
+\begin{equation}
+{C_i,C_j}=0\Rightarrow C_i^2=0
+\end{equation}
+En el caso 1-D la expansión en series de una función solo tiene dos términos $f(c)=a+bC$. La diferenciación es de dos tipos, izquierda y derecha:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Teorías Gauge y campos de Yang-Mills}
 \section{La teoria de Yukawa}
