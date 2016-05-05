@@ -22,15 +22,16 @@
 \contentsline {subsection}{\numberline {2.3.2}Funciones de Green de la part\IeC {\'\i }cula libre.}{23}{subsection.136}
 \contentsline {subsection}{\numberline {2.3.3}Funcional generatriz para campos interactuantes.}{27}{subsection.162}
 \contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{31}{section.180}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{31}{section.182}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{31}{section.183}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{32}{chapter.184}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{33}{section.186}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{33}{subsection.187}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{33}{section.188}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{33}{section.189}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{33}{section.190}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{33}{section.191}
+\contentsline {subsection}{\numberline {2.4.1}La matriz S y la f\IeC {\'o}rmula de reducci\IeC {\'o}n.}{34}{subsection.206}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{34}{section.208}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{34}{section.209}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{35}{chapter.210}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{36}{section.212}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{36}{subsection.213}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{36}{section.214}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{36}{section.215}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{36}{section.216}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{36}{section.217}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{34}{appendix.192}
+\contentsline {chapter}{\numberline {A}An Appendix}{37}{appendix.218}
 \vspace {2em}

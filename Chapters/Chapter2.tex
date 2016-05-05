@@ -837,24 +837,122 @@ Los generadores $C_i$ de un álgebra de Grassmann n-dimensional cumplen la relac
 {C_i,C_j}=0\Rightarrow C_i^2=0
 \end{equation}
 En el caso 1-D la expansión en series de una función solo tiene dos términos $f(c)=a+bC$. La diferenciación es de dos tipos, izquierda y derecha:
+\begin{equation}
+\frac{\partial^{L}}{\partial C_{i}}(C_{1}C_{2})=\delta_{i1}C_{2}-\delta_{i2}C_{1};\hspace{0.3cm}\frac{\partial^{R}}{\partial C_{i}}(C_{1}C_{2})=C_{1}\delta_{i2}-C_{2}\delta_{i1}
+\end{equation}
+También tenemos que:
+\begin{eqnarray}
+\nonumber \left\{ \frac{\partial}{\partial C_{i}},C_{j}\right\} C&=&\frac{\partial}{\partial C_{i}}(C_{j}C)+C_{j}\frac{\partial C}{\partial C_{i}}=\delta_{ij}C\\
+\Rightarrow \left\{ \frac{\partial}{\partial C_{i}},C_{j}\right\} &=& \delta_{ij}
+\end{eqnarray} 
+De la relación (2.151) se desprende que en el caso 1-D $\left\{ \frac{d}{dC},C\right\} =1$. También se tiene que:
+\begin{equation}
+\left\{ \frac{\partial}{\partial C_{i}},\frac{\partial}{\partial C_{j}}\right\} =0\Rightarrow\frac{\partial^{2}}{\partial C_{i}^{2}}=0
+\end{equation}
+La ecuación (2.152) implica que no hay una operacion inversa a la diferenciación, por tanto debemos definir la integración de una manera razonable. Esto se consigue al pedir que la integración sea invariante bajo translaciones de la variable independiente, es decir que se cumpla:
+\begin{equation}
+\int_{-\infty}^{\infty}dxf(x)=\int_{-\infty}^{\infty}dxf(x+c)
+\end{equation}
+De este requerimiento se concluye que debemos tener:
+\begin{eqnarray}
+\int dC=&0&; \hspace{0.3 cm} \int CdC=1\\
+\nonumber \text{En el caso n-dimensional}&&\\
+\int dC_i=&0&; \hspace{0.3 cm} \int C_idC_i=1
+\end{eqnarray}
+Por tanto la integración y la derivación son la misma operación. Exploremos ahora el comportamiento de las integrales gaussianas en variables de Grassmann. Sean $\eta,\bar{\eta}$ variables de Grassmann, tenemos:
+\begin{eqnarray}
+e^{-\bar{\eta}\eta}&=&1-\bar{\eta}\eta\\
+\Rightarrow\int d\bar{\eta}d\eta e^{-\bar{\eta}\eta}&=&\int d\bar{\eta}d\eta-\int d\bar{\eta}d\eta\bar{\eta}\eta=\int d\bar{\eta}d\eta\bar{\eta\eta}=1
+\end{eqnarray}
+Ahora hagamos una generalización a más dimensiones, sea $\text{\ensuremath{\bar{\eta}}=\ensuremath{\left(\begin{array}{c}
+\bar{\eta_{1}}\\
+\bar{\eta_{2}}
+\end{array}\right)}}$;$\text{\ensuremath{\eta}=\ensuremath{\left(\begin{array}{c}
+\eta_{1}\\
+\eta_{2}
+\end{array}\right)}}$.
+\begin{equation}
+\bar{\eta}^T\eta\equiv \bar{\eta}\eta=\bar{\eta}_1\eta_1+\bar{\eta}_2\eta_2\Rightarrow (\bar{\eta}\eta)^2=2\bar{\eta}_1\eta_1\bar{\eta}_2\eta_2\Rightarrow (\bar{\eta}\eta)^{3+n}=0 \;n=0,1,... 
+\end{equation}
+De la ecuación (2.158) podemos concluir que:
+\begin{equation}
+e^{-\bar{\eta}\eta}=1-(\bar{\eta}_1\eta_1+\bar{\eta}_2\eta_2)+\bar{\eta}_1\eta_1\bar{\eta}_2\eta_2\Rightarrow \int d\bar{\eta}d\eta e^{-\bar{\eta}\eta}=1
+\end{equation}
+Ahora si hacemos el cambio de variables $\eta=M\alpha$ y $\bar{\eta}=N\bar{\alpha}$, donde $(M,N)$ son matrices $2\times 2$ y $(\bar{\alpha},\alpha)$ son las nuevas variables de Grassman independientes tenemos:
+\begin{equation}
+\eta_{1}\eta_{2}=(M_{11}\alpha_{1}+M_{12}\alpha_{2})(M_{21}\alpha_{1}+M_{22}\alpha_{2})=(M_{11}M_{22}-M_{12}M_{21})\alpha_{1}\alpha_{2}=det(M)\alpha_{1}\alpha_{2}
+\end{equation}
+Para preservar la integración se debe mantener la condición:
+\begin{equation}
+\int d\eta_{1}d\eta_{2}\eta_{1}\eta_{2}=\int d\alpha_{1}d\alpha_{2}\alpha_{1}\alpha_{2}\Rightarrow d\eta_{1}d\eta_{2}=(detM)^{-1}d\alpha_{1}d\alpha_{2}
+\end{equation}
+Sustituyendo (2.160) en (2.159):
+\begin{eqnarray}
+\nonumber (det(MN))^{-1}\int d\bar{\alpha}d\alpha e^{-\bar{\alpha}M^{T}N\alpha}=1&\text{Pero como}& \left[det(MN)\right]^{-1}=\left[det(M^{T}N)\right]^{-1}\\
+\nonumber &\text{Si}\ A=M^TN&\Rightarrow \int d\bar{\alpha}d\alpha e^{-\bar{\alpha}A\alpha}=det(A)\\
+\end{eqnarray}
+Para describir un campo, en el caso que nos interesa, el campo de Dirac debemos pasar a un álgebra infinito-dimensional, por tanto:
+\begin{equation}
+\{C(x),C(y)\}=0; \ \frac{\partial^{LR}C(x)}{\partial C(y)}=\delta(x-y); \ \int dC(x)=0; \ \int dC(x)C(x)=1
+\end{equation}
+En analogía con la ecuación (2.91) construimos el funcional generatriz para el campo de Dirac usando en este caso $\mathcal{L}=i\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi$, así tenemos:
+\begin{equation}
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi+\bar{\eta}\psi+\bar{\psi}\eta\right]dx\right\}
+\end{equation}
+Donde escogemos la normalización tal que:
+\begin{equation}
+Z_{0}[0,0]=1\Rightarrow\mathcal{N}=\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi\right]dx\right\} 
+\end{equation}
+En este caso $\bar{\eta}$ es la fuente de $\bar{\psi}$ y $\eta$ es la fuente de $\psi$. Con el objetivo de simplificar la notación definamos $S^{-1}\equiv i\gamma^{\mu}\partial_{\mu}-m$, entonces:
+\begin{equation}
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[\bar{\psi}S^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta\right]dx\right\}
+\end{equation} 
+Si $Q(\psi,\bar{\psi})=\bar{\psi}S^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta$, los valores de $\bar{\psi},\psi$ que minimizan Q son $\psi_m=-S\eta$ y $\bar{\psi}_m=-\bar{\eta}S$, por tanto $Q_m=-\bar{\eta}S\eta$. Así $Q=Q_m+(\bar{\psi}-\bar{\psi}_m)S^{-1}(\psi-\psi_m)$. Con lo anterior podemos escribir la ecuación (2.166) como:
+\begin{equation}
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[Q_{m}+(\bar{\psi}-\bar{\psi}_{m})S^{-1}(\psi-\psi_{m})\right]dx\right\} 
+\end{equation}
+Ahora, solo dos terminos del exponencial en (2.167) sobreviven: el que tiene que ver con $Q_m$ ya que este es independiente de $(\psi,\bar{\psi})$ y:
+\begin{equation}
+\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[(\bar{\psi}S^{-1}\psi\right]dx\right\} =det(iS^{-1})
+\end{equation}
+Con lo anterior:
+\begin{equation}
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\text{Exp}\left\{ -i\int\bar{\eta}(x)S(x-y)\eta(y)dxdy\right\} det(iS^{-1})
+\end{equation}
+Pero como de (2.165):
+\begin{equation}
+\mathcal{N}=\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[(\bar{\psi}S^{-1}\psi\right]dx\right\} =det(iS^{-1})
+\end{equation}
+Finalmente de (2.169) y (2.170):
+\begin{equation}
+Z_{0}[\eta,\bar{\eta}]=\text{Exp}\left\{ -i\int\bar{\eta}(x)S(x-y)\eta(y)dxdy\right\} 
+\end{equation}
+Sin embargo falta mostrar que $S$ existe. Este está dado por:
+\begin{equation}
+S=(i\gamma^{\mu}\partial_{\mu}+m)\triangle_{F}(x)
+\end{equation}
+Veamos:
+\begin{equation}
+S^{-1}S=(i\gamma^{\mu}\partial_{\mu}-m)(i\gamma^{\mu}\partial_{\mu}+m)\triangle_{F}(x)=(-\square+m^{2})\triangle_{F}(x)=\delta^{4}(x)
+\end{equation}
+La función de 2-puntos (o propagador) es $\tau(x,y)=-\frac{\delta^{2}Z_{0}[\eta,\bar{\eta}]}{\delta\eta(x)\delta\bar{\eta}(y)}|_{\eta=\bar{\eta}=0}$, el cálculo directo arroja:
+\begin{equation}
+\tau(x,y)=iS(x-y)
+\end{equation}
+Como conclusión podemos decir que tanto en el caso del campo escalar como para el campo fermiónico el propagador es el funcional inverso al término cuadrático que aparece en la densidad lagrangiana. El funcional generatriz para campos interactuantes se puede generalizar para el caso fermiónico haciendo una analogía con la ecuación (2.140),así:
+\begin{equation}
+Z[\eta,\bar{\eta}]=\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta\eta},\frac{1}{i}\frac{\delta}{\delta\bar{\eta}}\right)dx\right]Z_{0}[\eta,\bar{\eta}]
+\end{equation}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\subsection{La matriz S y la fórmula de reducción.}
+Ya hemos visto como calcular las funciones de Green para una teoría con interacciones. pero todavía nos falta calcular lo mas importante: las secciones eficaces de los procesos físicos reales, como los decaimientos y los procesos de dispersión. El cálculo de estas cantidades implica calcular la \textit{amplitud mecánico cuántica}, la cual da cuenta de la probabilidad de que dicho proceso tome lugar. Una vez se tiene la amplitud, el resto del cálculo es directo. En lo que sigue se mostrará como calcular esta amplitud y como esta se relaciona con las funciones de Green que ya hemos encontrado.
+\\
+\\
+Consideremos un proceso en el cual una configuración inicial de partículas, llamada $\alpha$ evoluciona hacia un estado final $\beta$. Denotaremos la amplitud correspondiente a dicho proceso como $S_{\alpha\beta}$ y lo llamaremos el elemento $\alpha\beta$ de la matriz $S$. Por tanto $S$ es la matriz de todos los posibles procesos $(\beta\alpha)$. Estos estados son definidos asintóticamente en tiempos $t\to -\infty$ y $t\to \infty$, asi:
+\begin{equation}
+S_{\beta\alpha}=\langle \beta,t\to\infty|\alpha,t\to -\infty\rangle
+\end{equation} 
+En ausencia de interacciones de largo rango, estos estados asintóticos constituyen estados de partícula libre. Una notación alternativa es la de estados (in) y (out):
 
 
 
