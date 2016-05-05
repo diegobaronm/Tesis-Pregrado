@@ -953,6 +953,129 @@ Consideremos un proceso en el cual una configuración inicial de partículas, ll
 S_{\beta\alpha}=\langle \beta,t\to\infty|\alpha,t\to -\infty\rangle
 \end{equation} 
 En ausencia de interacciones de largo rango, estos estados asintóticos constituyen estados de partícula libre. Una notación alternativa es la de estados (in) y (out):
+\begin{equation}
+|\alpha\rangle_{in}=|\alpha,t\to-\infty\rangle;\ |\beta\rangle_{out}=|\beta,t\to\infty\rangle
+\end{equation}
+Algunas relaciones importantes son:
+\begin{equation}
+S_{\beta\alpha}=_{out}\langle\beta|\alpha\text{\ensuremath{\rangle}}_{in};\ a_{out}=S^{\dagger}a_{in}S;\ a_{out}^{\dagger}=S^{\dagger}a_{in}^{\text{\ensuremath{\dagger}}}S;\ \phi_{out}=S^{\dagger}\phi_{in}S
+\end{equation}
+Necesitamos calcular de fomra explícita una expresión $S$, para esto primero consideremos el campo $\phi$ en un tiempo intermedio entre $(-\infty,\infty)$, es decir cuando el campo está sujeto a interacciones. La densidad lagrangiana es $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$, por tanto $\phi$ cumple:
+\begin{equation}
+(\square_{x}+m^{2})\phi=\frac{\partial\mathcal{L}_{int}}{\partial\phi};\ K_{x}\phi=\frac{\partial\mathcal{L}_{int}}{\partial\phi};\ K_{x}\equiv(\square_{x}+m^{2})
+\end{equation}
+Resolvamos la ecuación (2.179), tenemos por definición que la funcion de Green cumple que:
+\begin{equation}
+K_yG(y-x)=\delta^4(y-x)
+\end{equation}
+Si multiplicamos (2.179) por $G(x-y)$ y (2.180) por $\phi(y)$, integrando sobre $y$ y restando ambas ecuaciones obtenemos:
+\begin{eqnarray}
+\nonumber \int d^{4}y\left[G(y-x)K_{y}\phi-\phi K_{x}G(y-x)\right]&=&\int d^{4}y\left[G(y-x)\frac{\partial\mathcal{L}_{int}}{\partial\phi}-\phi\delta(y-x)\right]\\
+&&\\
+&=&\int d^{4}yG(y-x)\frac{\partial\mathcal{L}_{int}}{\partial\phi}-\phi(x)
+\end{eqnarray}
+Ahora:
+\begin{equation}
+LHS(2.181)=-\int d^{3}ydy_{0}\left[(G\nabla^{2}\phi-\phi\nabla^{2}G)-\left(G\frac{\partial^{2}\phi}{\partial y_{0}^{2}}-\phi\frac{\partial^{2}G}{\partial y_{0}^{2}}\right)\right]
+\end{equation}
+La parte espacial de la ecuación (2.183) se anula debido al teorema de Green y la suposición de que el campo y las derivadas del mismo se anulan en el infinito, por tanto:
+\begin{equation}
+\int d^{3}ydy_{0}\left[(G\nabla^{2}\phi-\phi\nabla^{2}G)\right]=\int dSdy_{0}\cdot(G\nabla\phi-\phi\nabla G)=0
+\end{equation}
+Para el segundo término de (2.183) que tiene que ver con las derivadas temporales tenemos:
+\begin{equation}
+G\frac{\partial^{2}\phi}{\partial y_{0}^{2}}-\phi\frac{\partial^{2}G}{\partial y_{0}^{2}}=\frac{\partial}{\partial y_{o}}\left(G\frac{\partial\phi}{\partial y_{0}}-\phi\frac{\partial G}{\partial y_{0}}\right)=\frac{\partial}{\partial y_{o}}\left(G\overleftrightarrow{\partial}_{0}\phi\right)
+\end{equation}
+Combinando las ecuaciones (2.182),(2.183),(2.184) y (2.185) obtenemos:
+\begin{equation}
+\phi(x)=-\left(\int_{y_{o}^{+}}-\int_{y_{0}^{-}}\right)d^{3}yG(x-y)\overleftrightarrow{\partial}_{0}\phi(y)+\int_{y_{o}^{-}}^{y_{o}^{+}}d^{4}yG(x-y)\frac{\partial\mathcal{L}_{int}}{\partial\phi(y)}
+\end{equation}
+En esta última expresión la integración ha sido ejecutada en tiempos $(y_{o}^{+},y_{o}^{-})$, los cuales definen dos hipersuperficies espaciales $\sigma^+$ y $\sigma^-$.La ecuación (2.186) es la solución para $\phi$ aunque no en la forma que se desea. De la teoría de ecuaciones diferenciales sabemos que la solución para $\phi$ debe ser la suma de $\phi_0$ (Libre), más la convolución del término inhomogeneo con la función de Green. Este último es fácil de reconocer en la ecuación (2.186), es el último término, pero el campo libre, es decir, el primer término depende de las condiciones de frontera.  Para poder hacer un mejor análisis de este término definamos las funciones de Green avanzadas y ratardadas como:
+\[   K_x\triangle_{adv,ret}(x)=\delta^4(x)\ ;\
+     \begin{cases}
+       \triangle_{ret}(x)=0\  \text{para}\ x^2>0,x_0<0\\
+       \triangle_{adv}(x)=0\  \text{para}\ x^2>0,x_0>0 \\
+      
+     \end{cases}
+\]
+Adicionalmente $\triangle_{ret}(x)=\triangle_{adv}(-x)$, ahora sustituyamos $G=\triangle_{adv}$ en (2.186), así obtenemos:
+\begin{equation}
+\phi(x)=\int_{y_{0}^{-}}d^{3}y\triangle_{ret}(x-y)\overleftrightarrow{\partial}_{0}\phi(y)+\int dy\triangle_{ret}(x-y)\frac{\partial\mathcal{L}_{int}}{\partial\phi(y)}
+\end{equation}
+Analicemos el primer término, de (2.187), si hacemos $y_o\to -\infty$, tenemos:
+\begin{equation}
+\phi_{-\infty}(x)=\lim_{y_{o}\to-\infty}\int d^{3}y\triangle_{ret}(x-y)\overleftrightarrow{\partial}_{0}\phi(y)
+\end{equation}
+Verifiquemos que este campo en efecto cumple la ecuación de Klein-Gordon, es decir es un campo libre,aplicando $(\square_x +m^2)$ a cada lado de (2.188):
+\begin{eqnarray}
+\nonumber (\square_{x}+m^{2})\phi_{-\infty}(x)&=&\lim_{y_{o}\to-\infty}(\square_{x}+m^{2})\int d^{3}y\triangle_{ret}(x-y)\overleftrightarrow{\partial}_{0}\phi(y)\\
+\nonumber &=&\lim_{y_{o}\to-\infty}\int d^{3}y\delta^{4}(x-y)\overleftrightarrow{\partial}\phi(y)\\
+\nonumber &=& \lim_{y_{o}\to-\infty}\delta(y_{0})\overleftrightarrow{\partial_{0}}\phi(x)\ \text{y como}\ \lim_{y_{o}\to-\infty}\delta(y_{0})=0\\
+&=&0
+\end{eqnarray}
+Por tanto $\phi_{-\infty}(x)$ es un campo libre y podemos identificarlo con $\phi_{in}(x)$. Queda claro entonces que usando la ecuación (2.179) y utilizando el razonamiento anterior podemos escribir:
+\begin{eqnarray}
+\nonumber \phi(x)&=&\phi_{out}(x)+\int dy\triangle_{adv}(x-y)K_{y}\phi(y)\\
+\nonumber \phi(x)&=&\phi_{in}(x)+\int dy\triangle_{ret}(x-y)K_{y}\phi(y)\\
+\end{eqnarray}
+De alguna manera se requiere que se cumpla la condición asintótica:
+\begin{equation}
+ \phi(x)\longrightarrow_{\begin{array}{c}
+t\to+\infty\\
+t\to-\infty
+\end{array}}\phi_{\begin{array}{c}
+out\\
+in
+\end{array}}(x)	
+\end{equation} 
+Sin embargo si la condición es tomada como el la ecuación (2.191), es decir, a nivel de operadores, obtenemos un valor nulo para los elementos de la matriz $S$. El formalismo LSZ(Lehmann, Zymanzik, Ziemmermann) (1955) establece la condición correcta [2], esta es:
+\begin{equation}
+\lim_{t\to\pm\infty}\langle a|\phi|b\rangle=\langle a|\phi_{out,in}|b\rangle
+\end{equation}
+Donde $|a\rangle,|b\rangle$ son estados arbitrarios del espacio de Fock.
+\\
+\\
+De ahora en adelante nuestro trabajo se centrará en encontrar una expresión para la matriz $S$, primero definimos el funcional:
+\begin{equation}
+I[J]=T\text{Exp}\left\{ i\int J(x)\phi(x)dx\right\} 
+\end{equation}
+Donde $T$ es el operador de ordenamiento temporal. Derivando:
+\begin{equation}
+\frac{1}{i}\frac{\delta I[J]}{\delta J(x)}=T(\phi(x)I[J])
+\end{equation} 
+Comparando esta ecuación y las derivadas de orden superior con (2.119) vemos que:
+\begin{equation}
+\langle 0|I[J]|0\rangle=Z[J]
+\end{equation}
+Si multiplicamos (2.190) por $I[J]$ y aplicamos $T$, obtenemos:
+\begin{eqnarray}
+\nonumber \frac{1}{i}\frac{\delta I[J]}{\delta J(x)}&=&\phi_{out}(x)I[J]+\int dy\triangle_{adv}(x-y)K_{y}\frac{1}{i}\frac{\delta I[J]}{\delta J(Y)}\\
+\nonumber \frac{1}{i}\frac{\delta I[J]}{\delta J(x)}&=&\phi_{in}(x)I[J]+\int dy\triangle_{ret}(x-y)K_{y}\frac{1}{i}\frac{\delta I[J]}{\delta J(y)}\\
+\end{eqnarray}
+Restando estas últimas dos ecuaciones obtenmos:
+\begin{equation}
+\phi_{out}(x)I[J]-I[J]\phi_{in}(x)=i\int dy\triangle(x-y)K_y\frac{\delta I[J]}{\delta J(y)}
+\end{equation}
+Donde $\triangle(x-y)=\triangle_{adv}(x-y)-\triangle_{ret}(x-y)$, reemplazando $\phi_{out}=S^{\dagger}\phi_{in}S$, tenemos que la ecuación (2.197) se puede escribir como:
+\begin{equation}
+\left[\phi_{in},SI[J]\right]=i\int dy\triangle(x-y)K_{y}\frac{\delta (SI[J])}{\delta J(y)}
+\end{equation}
+Por otro lado para dos operadores cuyo conmutador es no nulo,se cumple que debido a la identidad de Baker-Haussdorf-Campbell:
+\begin{equation}
+[A,B]e^B=[A,e^B]
+\end{equation} 
+Debido a que $[\phi_{in}(x),\phi_{in}(y)]=i\triangle(x-y)$, la solución para $SI[J]$ se "sugiere a sí misma":
+\begin{equation}
+SI[J]=\text{Exp}\left\{ \int\phi_{in}(z)K_{z}\frac{\delta}{\delta J(z)}dz\right\} F[J]
+\end{equation}
+Donde F[J] es un funcional arbitrario, veamos que en efecto la ecuación (2.200) soluciona (2.198), calculemos el LHS de (2.198) usando (2.199):
+ 
+
+
+
+
+
+
 
 
 
