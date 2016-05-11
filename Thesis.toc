@@ -23,17 +23,17 @@
 \contentsline {subsection}{\numberline {2.3.3}Funcional generatriz para campos interactuantes.}{27}{subsection.162}
 \contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{31}{section.180}
 \contentsline {subsection}{\numberline {2.4.1}La matriz S y la f\IeC {\'o}rmula de reducci\IeC {\'o}n.}{34}{subsection.206}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{39}{section.238}
-\contentsline {subsection}{\numberline {2.5.1}Un ejemplo: Integraci\IeC {\'o}n en 2D.}{39}{subsection.239}
-\contentsline {subsection}{\numberline {2.5.2}El m\IeC {\'e}todo de Faddevv-Popov.}{39}{subsection.240}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{39}{section.241}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{40}{chapter.242}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{41}{section.244}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{41}{subsection.245}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{41}{section.246}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{41}{section.247}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{41}{section.248}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{41}{section.249}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{40}{section.238}
+\contentsline {subsection}{\numberline {2.5.1}Un ejemplo: Integraci\IeC {\'o}n en 2D.}{40}{subsection.241}
+\contentsline {subsection}{\numberline {2.5.2}El m\IeC {\'e}todo de Faddevv-Popov.}{40}{subsection.242}
+\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{40}{section.243}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{41}{chapter.244}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{42}{section.246}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{42}{subsection.247}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{42}{section.248}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{42}{section.249}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{42}{section.250}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{42}{section.251}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}An Appendix}{42}{appendix.250}
+\contentsline {chapter}{\numberline {A}An Appendix}{43}{appendix.252}
 \vspace {2em}
