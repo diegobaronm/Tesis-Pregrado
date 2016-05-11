@@ -1069,13 +1069,39 @@ Debido a que $[\phi_{in}(x),\phi_{in}(y)]=i\triangle(x-y)$, la solución para $S
 SI[J]=\text{Exp}\left\{ \int\phi_{in}(z)K_{z}\frac{\delta}{\delta J(z)}dz\right\} F[J]
 \end{equation}
 Donde F[J] es un funcional arbitrario, veamos que en efecto la ecuación (2.200) soluciona (2.198), calculemos el LHS de (2.198) usando (2.199):
- 
-
-
-
-
-
-
+\begin{eqnarray}
+\nonumber \left[\phi_{in},SI[J]\right]&=&i\int\triangle_{F}(x-y)K\frac{\delta}{\delta J(y)}dy\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]F[J]\\
+&=&\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]i\int\triangle_{F}(x-y)K\frac{\delta F[J]}{\delta J(y)}dy
+\end{eqnarray}
+Y ahora el RHS de (2.198) es:
+\begin{eqnarray}
+\nonumber \frac{\delta(SI[J])}{\delta J(y)}&=&\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]\frac{\delta F[J]}{\delta J(y)}\\
+\Rightarrow \text{RHS(2.198)}&=& \text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]i\int\triangle_{F}(x-y)K\frac{\delta F[J]}{\delta J(y)}dy
+\end{eqnarray}
+Como las ecuaciones (2.201) y (2.202) son iguales, entonces la propuessta para $SI[J]$ es correcta. Por último solo nos falta calcular qué es $F[J]$, sabemos que para cualquier operador normalmente ordenado (lo cual denotaremos como, si $A$ está normalmente ordenado escribiremos $:A:$) se cumple que $\langle 0|:e^A:|0\rangle=1$ por tanto si ordenamos normalmente el exponencial en (2.200) obtenemos:
+\begin{equation}
+\langle 0|SI[J]|0\rangle=F[J]
+\end{equation}
+Por otro lado en ausencia de campos externos, el vacío evoluciona en el vacío por tanto podemos escribir $\langle 0|S=\langle 0|$, y con esto:
+\begin{equation}
+\langle 0|SI[J]|0\rangle=\langle 0|I[J]|0\rangle=Z[J]
+\end{equation}
+Combinando la ecuación (2.203) y (2.204):
+\begin{equation}
+F[J]=Z[J]\Rightarrow SI[J]=:\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]
+\end{equation}
+Y tomando el limite $J\to 0\Rightarrow I[J]\to 1$ entonces de (2.205) obtenemos finalmente que:
+\begin{equation}
+S=:\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]|_{J=0}
+\end{equation} 
+La ecuación (2.206) se conoce como la \textit{fórmula de la reducción} en forma funcional. La forma en que funciona como veremos más adelante es la siguiente: Un término típico en la expansión (2.206) contiene $\frac{\delta^n}{\delta J^N}Z[J]|_{J=0}$, esto no es más que la función de Green de n-puntos. Por cada partícula externa tenemos un operador $\vec{K}$ el cual reduce el propagador a una función delta, la cual finalmente es multiplicada por el campo $\phi_{in}(x)$ que es la función de la partícula libre entrante.
+\\
+\\
+Sabemos que $\frac{1}{i}\frac{\delta}{\delta J(x_{1})}\frac{1}{i}\frac{\delta}{\delta J(x_{2})}...\frac{1}{i}\frac{\delta}{\delta J(x_{n})}Z[J]|_{J=0}=G(x_{1},x_{2},...,x_{n})$ son las funciones de Green de n-puntos. Multiplicando por los operadores $\prod_{i}(\square_{x_i}+m^2)$ y por los campos $\prod_{i}\phi_{in}(x_i)$, encontramos el elemento de matriz de S para $n$ partículas:
+\begin{equation}
+S_{n}(x_{1},x_{2},...,x_{n})=\prod_{i}\phi_{in}(x_{i})(\square_{x_{i}}+m^{2})G(x_{1},x_{2},...,x_{n})
+\end{equation}
+La ecuación (2.207) se cumple para campos escalares, pero basta con reemplazar $\vec{K}=(\square_{x_{i}}+m^{2})$ por $\vec{D}=(i\gamma\cdot\partial-m)$ para incluir campos fermiónicos.
 
 
 
@@ -1084,4 +1110,10 @@ Donde F[J] es un funcional arbitrario, veamos que en efecto la ecuación (2.200)
 
 
 \section{Teorías Gauge y campos de Yang-Mills}
+\subsection{Un ejemplo: Integración en 2D.}
+\subsection{El método de Faddevv-Popov.}
+
+
+
+
 \section{La teoria de Yukawa}
