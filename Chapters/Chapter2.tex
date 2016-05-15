@@ -1125,14 +1125,91 @@ De esta forma expresamos que cada potencial $A_\mu$ puede ser obtenido a partir 
 \begin{equation}
 Z=\int\mathcal{D}A_{\mu}e^{iS}\sim\int\mathcal{D}\bar{A_{\mu}}e^{iS}\int\mathcal{D}\Lambda
 \end{equation}  	  	
-Como $S$ es invariante Gauge, la integración funcional sobre $\Lambda$ se separa, es este termino, $\int \mathcal{D}\Lambda$, el cual da lugar al "sobreconteo" y hace que $Z$ diverja. Faddeev y Popov [2]		
+Como $S$ es invariante Gauge, la integración funcional sobre $\Lambda$ se separa, es este término, $\int \mathcal{D}\Lambda$, el cual da lugar al "sobreconteo" y hace que $Z$ diverja. Faddeev y Popov [2] mostraron por primera vez como hacer esta separación de forma rigurosa, este argumento no es facil de digerir a primera vista y está basado en métodos funcionales. Por tanto es útil hacer una analogía con la integración común en 2D.
+ 		
 
 
 
 \subsection{Un ejemplo: Integración en 2D.}
+Tomaremos como ejemplo la integral:
+\begin{equation}
+I=\int \int dxdy\ e^{-(x^2+y^2)}
+\end{equation}
+La integral $I$ es invariante ratacional. Si cambiamos a coordenadas polares obtenemos:
+\begin{equation}
+I=\int d\theta \int dr r\ e^{-r^2}
+\end{equation}
+El factor $\int d\theta(=2\pi)$ es el análogo a $\int\mathcal{D}\Lambda$ en la expresión (2.210). Sin embargo queremos una expresión más general aún para la separación. Escribamos:
+\begin{equation}
+I=\int d\theta \int drd\theta r\ e^{-r^2} \delta(\theta)
+\end{equation}  
+La función $\delta(\theta)$ reduce la integración a lo largo del eje $x, (\theta=0)$, sin embargo escojamos otro camino de integración que no sea este, al final debido a que la integral es invariante rotacional deberiamos obtener lo mismo. El camino que escogemos es $y\cos\theta=x\sin\theta$, o:
+\begin{equation}
+f(\theta)=y\cos\theta-x\sin\theta=0
+\end{equation}
+Veamos como cambia la escogencia de este camino la integral (2.213), para esto recordemos:
+\begin{equation}
+\delta(f(\theta))=\sum_{i}\frac{1}{|\frac{df(\theta_{i})}{d\theta}|}\delta(\theta-\theta_{i})
+\end{equation}
+Donde $\theta_i$ son los ceros de $f(\theta)$, de (2.214) vemos que $f(\theta)=0$ en:
+\begin{equation}
+\theta_1=tan^{-1}(y/x); \hspace{0.3cm} \theta_1=\pi+tan^{-1}(y/x)
+\end{equation} 
+En estos puntos:
+\begin{equation}
+\frac{df(\theta)}{d\theta}|_{\theta_{1},\theta_{2}}=-r=-\sqrt{x^{2}+y^{2}}
+\end{equation}
+Por tanto:
+\begin{equation}
+\delta(f(\theta))=\frac{1}{r}\left[\delta(\theta-\theta_{1})+\delta(\theta-\theta_{2})\right]
+\end{equation}
+Así:
+\begin{equation}
+\int\delta(f(\theta))d\theta=\frac{2}{r}=\frac{2}{\sqrt{x^{2}+y^{2}}}
+\end{equation}
+Esto puede ser escrito en la forma:
+\begin{equation}
+\triangle(r)\int\delta(f(\theta))d\theta=1;\ \ \ \triangle(r)=\text{\ensuremath{\triangle}}(\sqrt{x^{2}+y^{2}})=\frac{\sqrt{x^{2}+y^{2}}}{2}
+\end{equation}
+Sin embargo es claro que $f(\theta)$ puede ser obtenida de una rotación, por tanto:
+\begin{eqnarray}
+\nonumber y^{\prime}&=&y\cos \theta -x\sin \theta\\
+x^{\prime}&=&x\cos \theta +y\sin \theta 
+\end{eqnarray}
+Por tanto se cumple $x^{\prime 2}+y^{\prime 2}=x^2+y^2$, así la ecuación (2.220) se convierte en:
+\begin{equation}
+\triangle(\sqrt{x^{\prime2}+y^{\prime2}})\int\delta(y^{\prime})d\theta=1
+\end{equation}
+Viendo la expresión (2.222) como la identidad, insertamos esta en (2.211), lo cual nos lleva a:
+\begin{equation}
+I=\int d\theta \int dx^{\prime}dy^{\prime}\ e^{-(x^{\prime 2}+y^{\prime 2})}\triangle(\sqrt{x^{\prime2}+y^{\prime2}})\int\delta(y^{\prime})
+\end{equation}
+La expresión (2.223) exhibe la forma general de la separación de variables hecha despues de la transformación de rotación. La segunda integral en este caso es independiente de $\theta$ y por tanto es un factor multiplicativo global. $\triangle (r)$ puede ser escrito de una forma más compacta como:
+\begin{eqnarray}
+\nonumber (\triangle (r))^{-1}&=&\int \delta(f(\theta))d\theta \\
+\nonumber &=& \int \delta(f(\theta))det|\frac{d\theta}{df}|d\theta\\
+&=&det|\frac{d\theta}{df}|_{f=0}
+\end{eqnarray}
+Así:
+\begin{equation}
+\triangle (r)=det|\frac{df}{d\theta}|_{f=0}
+\end{equation}
 \subsection{El método de Faddevv-Popov.}
-
-
-
+Ahora si vamos a poner nuestra atención en aislar el factor de sobreconteo en teorías Gauge donde la acción es invariante Gauge. 	Sabemos que una transformación Gauge se puede escribir como [3]:
+\begin{equation}
+A_{\mu}^{U}=UA_{\mu}U^{\dagger}-i(\partial_{\mu}U)U^{\dagger};\ \ \ U=e^{i\text{\ensuremath{\Lambda}}^{a}(x)T^{a}}
+\end{equation} 
+En forma infinitesimal:
+\begin{equation}
+A_{\mu}^{\prime a}=A_{\mu}^{a}+f^{abc}A_{\mu}^{b}\Lambda^{c}+\partial_{\mu}\Lambda^{a}
+\end{equation}
+Donde el $f^{abc}$ son las constantes de estructura del grupo G que representa la transformación Gauge. Una condición para fijar el Gauge se puede escribir de forma general como:
+\begin{equation}
+F^a[A_\mu]=0
+\end{equation}
+Donde $a$ es un índice de color (no-abeliano). En QED por ejemplo la condición Gauge es $\partial_\mu A^\mu=0$ por tanto, $F=\partial_\mu A^\mu$. Ahora consideremos:
+\begin{equation}
+\triangle_{F}^{-1}[A_{\mu}]=\int\mathcal{D}U\delta[F^{a}[A_{\mu}^{U}]]
+\end{equation}
 
 \section{La teoria de Yukawa}
