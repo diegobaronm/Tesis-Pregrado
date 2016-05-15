@@ -1211,5 +1211,70 @@ Donde $a$ es un índice de color (no-abeliano). En QED por ejemplo la condición
 \begin{equation}
 \triangle_{F}^{-1}[A_{\mu}]=\int\mathcal{D}U\delta[F^{a}[A_{\mu}^{U}]]
 \end{equation}
-
-\section{La teoria de Yukawa}
+La expresión $F[A_{\mu}^{U}]$ se anula para algún $A_{\mu}^{U}$ y $\delta(F)$ es un 	\textit{delta funcional},
+\begin{equation}
+\delta(F^{a}[A])=\prod_{x^{\mu}.a}\delta(F^{a}[A(x^{\mu})])
+\end{equation} 
+Un producto de funciones delta en cada punto del espacio-tiempo. Primero veamos que $\triangle_{F}^{-1}[A_\mu]$ es invariante Gauge, si $A_\mu \to A_{\mu}^{U^{\prime}}$ en (2.229):
+\begin{equation}
+\triangle_{F}^{-1}[A_{\mu}^{U^{\prime}}]=\int\mathcal{D}U\delta[F^{a}[A_{\mu}^{U^{\prime}U}]]
+\end{equation}
+Si ahora $U^{\prime \prime}=U^{\prime}U$ y usamos el hecho de que para todo grupo compacto el elemento de volumen en el espacio de grupo define una medida invariante:
+\begin{equation}
+\mathcal{D}U=\mathcal{D}U^{\prime \prime}
+\end{equation}
+Entonces:
+\begin{equation}
+\triangle_{F}^{-1}[A_{\mu}^{U^{\prime}}]=\int\mathcal{D}U^{\prime\prime}\delta[F^{a}[A_{\mu}^{U^{\prime\prime}}]]=\triangle_{F}^{-1}[A_{\mu}]
+\end{equation}
+Por tanto $\triangle_{F}^{-1}[A_\mu]$ es invariante Gauge. Escribiendo la ecuación (2.229) como, (ecuación análoga a (2.222)):
+\begin{equation}
+1=\triangle_{F}[A_{\mu}]\int\mathcal{D}U\delta[F^{a}[A_{\mu}^{U}]]
+\end{equation}
+Insertando esta expresión para la indentidad en (2.208):
+\begin{equation}
+Z=\int\mathcal{D}A_{\mu}e^{iS}\triangle_{F}[A_{\mu}]\int\mathcal{D}U\delta[F^{a}[A_{\mu}^{U}]]
+\end{equation}
+Si ahora hacemos una transformación Gauge que lleve $A_{\mu}^{U} \to A_\mu$ y teniendo en cuenta que $S,\mathcal{A_\mu}, \triangle_{F}[A_{\mu}] $ son invariantes Gauge podemos escribir:
+\begin{eqnarray}
+\nonumber Z&=&\int\mathcal{D}A_{\mu}e^{iS}\triangle_{F}[A_{\mu}]\int\mathcal{D}U\delta[F^{a}[A_{\mu}^{U}]]\\
+&=&\int\mathcal{D}A_{\mu}e^{iS}\triangle_{F}[A_{\mu}]\delta[F^{a}[A_{\mu}]]\int\mathcal{D}U
+\end{eqnarray}
+Por tanto hemos logrado aislar (2.208) en dos partes, una de las cuales es independiente del Gauge. El primer factor en (2.236) es independiente de $U $ por tanto el útimo factor es simplemente un factor multiplicativo en $Z$, así la expresión correcta para el funcional generatriz es:
+\begin{equation}
+Z=\int\mathcal{D}A_{\mu}\triangle_{F}[A_{\mu}]\delta[F^{a}[A_{\mu}]]e^{iS}
+\end{equation}
+Ahora queremos una expresión para $ \triangle_{F}[A_{\mu}]$ en analogía con (2.225) escribimos:
+\begin{equation}
+\triangle_{F}[A_{\mu}]=det|\frac{\delta F}{\delta\Lambda}|_{F=0}\equiv detM
+\end{equation} 
+Ahora cambiamos $M$ por $iM$ para usar la fórmula (2.162) y escribir:
+\begin{equation}
+det(iM)=\int\mathcal{D}\bar{\eta}\mathcal{D}\eta\text{Exp}\left\{ -i\int\bar{\eta}^{a}M_{ab}\eta^{b}dx\right\} 
+\end{equation}
+Posteriormente introduciremos esta expresión en (2.237). Como una modificación final es conveniente modificar la condición para fijar el Gauge, por ejemplo en lugar de la condición de Lorentz podemos pedir que:
+\begin{equation}
+F^a=\partial^\mu A_{\mu}^{a}+C^a(x)
+\end{equation} 
+Donde $C^a(x)$ es una función arbitraria. Así el funcional generatriz queda como:
+\begin{equation}
+Z=\int\mathcal{D}A_{\mu}\triangle_{F}[A_{\mu}]\delta[F^{a}[A_{\mu}]-C^a]e^{iS}
+\end{equation}
+Como $C$ es independiente de $A$ la ecuación (2.238) sigue siendo correcta y además de esto, debido a que Z es independiente de $C$ podemos multiplicar $Z$ por un factor cualquiera función de $C$. Por tanto multiplicamos Z por el factor:
+\begin{equation}
+\text{Exp}\left\{ -\frac{i}{2\alpha}\int C_{a}^{2}(x)dx\right\} 
+\end{equation}
+Y con esto obtenemos la forma final de $Z$:
+\begin{equation}
+Z=\mathcal{N}\int\mathcal{D}A_{\mu}\mathcal{D}\bar{\eta}\mathcal{D}\eta\text{Exp}\left\{ i\int[\mathcal{L}-\frac{F^{2}}{2\alpha}-\bar{\eta}^aM_{ab}\eta^{b}]dx\right\} 
+\end{equation}
+Donde $\mathcal{N}$ es un factor de normalización irrelevante. La ecuación (2.243) puede ser reescrita como:
+\begin{equation}
+Z=\mathcal{N}\int\mathcal{D}A_{\mu}\mathcal{D}\bar{\eta}\mathcal{D}\eta\text{Exp}\left\{ i\int\mathcal{L}_{\text{eff}}dx\right\}
+\end{equation}
+Donde la densidad lagrangiana efectiva es:
+\begin{eqnarray}
+\nonumber \mathcal{L}_{\text{eff}}&=&\mathcal{L}-\frac{F^{2}}{2\alpha}-\bar{\eta}^aM_{ab}\eta^{b}\\
+&=& \mathcal{L}+\mathcal{L}_{GF}+\mathcal{L}_{FPG}
+\end{eqnarray}
+$\mathcal{L}_{GF}$ es el término de fijación del Gauge y $\mathcal{L}_{FPG}$ es el término de los fantasmas de Faddeev-Popov. Los campos de Grassmann $\eta,\bar{\eta}$ son llamados campos fantasmas debido a que su spin-estadisistica no física (son campos fermionicos que satisfacen la ecuación de KG) solo les permite aparecer en las partes internas de los diagramas de Feynmann, nunca como campos externos. 

@@ -26,14 +26,13 @@
 \contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{40}{section.238}
 \contentsline {subsection}{\numberline {2.5.1}Un ejemplo: Integraci\IeC {\'o}n en 2D.}{40}{subsection.242}
 \contentsline {subsection}{\numberline {2.5.2}El m\IeC {\'e}todo de Faddevv-Popov.}{42}{subsection.258}
-\contentsline {section}{\numberline {2.6}La teoria de Yukawa}{42}{section.263}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{43}{chapter.264}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{44}{section.266}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection}{44}{subsection.267}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{44}{section.268}
-\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{44}{section.269}
-\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{44}{section.270}
-\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{44}{section.271}
-\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{45}{chapter.272}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{45}{chapter.279}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{46}{section.281}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection}{46}{subsection.282}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schrodinger en espacio curvo.}{46}{section.283}
+\contentsline {section}{\numberline {3.3}Cambios de coordenadas.}{46}{section.284}
+\contentsline {section}{\numberline {3.4}Campos fermi\IeC {\'o}nicos.}{46}{section.285}
+\contentsline {section}{\numberline {3.5}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno.}{46}{section.286}
+\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{47}{chapter.287}
 \vspace {2em}
 \vspace {2em}
