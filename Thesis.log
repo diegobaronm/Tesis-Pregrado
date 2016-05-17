@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  16 MAY 2016 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  17 MAY 2016 00:03
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1308,18 +1308,28 @@ Cap\'{\i }tulo 3.
  3 Integrales de trayectoria en espacios curvos.
 ------------------------------------------------------------------------------
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
 
 [45
 
-]) (Chapters/Chapter4.tex [46]
+] [46] [47]
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+[48]) (Chapters/Chapter4.tex [49]
 Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Bibliograf\IeC {\'\i }a.
 ------------------------------------------------------------------------------
-) [47
+) [50
 
 ]
 ------------------------------------------------------------------------------
@@ -1335,7 +1345,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FF9AB81A04EEFE6A138202C55EFDAD24;8640.
+(rerunfilecheck)             Checksum: 1DC5609A5EC17AC7284A3F5B307DB3BE;8640.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1343,13 +1353,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14671 strings out of 493673
- 204884 string characters out of 3141530
+ 14694 strings out of 493673
+ 205157 string characters out of 3141530
  283847 words of memory out of 3000000
- 17427 multiletter control sequences out of 15000+200000
+ 17431 multiletter control sequences out of 15000+200000
  16387 words of font info for 62 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 49i,18n,48p,980b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,18n,48p,1327b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/P
@@ -1379,9 +1389,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (56 pages, 1116168 bytes).
+Output written on Thesis.pdf (59 pages, 1131497 bytes).
 PDF statistics:
- 894 PDF objects out of 1000 (max. 8388607)
- 346 named destinations out of 1000 (max. 500000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 365 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 

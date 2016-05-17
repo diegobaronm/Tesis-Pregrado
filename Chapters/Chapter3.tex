@@ -1,17 +1,103 @@
 \chapter{Integrales de trayectoria en espacios curvos.}
-Al nivel más fundamental la situación que nos presenta la fisica teórica es un modelo, con un alto grado de soporte experimental, en el cual solo hay tres interacciones: la cromo-dinámica cuaántica (QCD), que explica la interacción mediante la cual los quarks interactúan para formar los hadrones; la interacción débil (EW) que explica los procesos de decaimiento radiactivo y los fenomenos electromagneticos en una teoría unificada; y finalmente la gravedad. Las primeras dos interacciones se entienden en el contexto de la teoria cuántica de campos, en particular la teoría de campos Gauge, donde las interacciones se explican mediante el intercambio de bosones Gauge (gluones para QCD y el fotón y los bosones W,Z para EW). Sin embargo la teoría que mejor explica los fenómenos gravitatorios. la relativdad general (GR), es una teoría totalmente diferente debido a su naturaleza geométrica.
-\\
-\\
-Sin embargo el objetivo de la física es reducir el numero de teorías, conceptos y esquemas al mínimo, es por esto que muchos físicos trabajan en teorías que unifiquen estos dos esquemas: supergravedad, teoría de supercuerdas, gravedad cuántica de lazos, etc.
 
 
 	   	
 \section{Teoría clásica de campos en espacios curvos.}
-
-Quisque tristique urna in lorem laoreet at laoreet quam congue. Donec dolor turpis, blandit non imperdiet aliquet, blandit et felis. In lorem nisi, pretium sit amet vestibulum sed, tempus et sem. Proin non ante turpis. Nulla imperdiet fringilla convallis. Vivamus vel bibendum nisl. Pellentesque justo lectus, molestie vel luctus sed, lobortis in libero. Nulla facilisi. Aliquam erat volutpat. Suspendisse vitae nunc nunc. Sed aliquet est suscipit sapien rhoncus non adipiscing nibh consequat. Aliquam metus urna, faucibus eu vulputate non, luctus eu justo.
-
+Al nivel más fundamental la situación que nos presenta la fisica teórica es un modelo, con un alto grado de soporte experimental, en el cual solo hay tres interacciones: la cromo-dinámica cuaántica (QCD), que explica la interacción mediante la cual los quarks interactúan para formar los hadrones; la interacción débil (EW) que explica los procesos de decaimiento radiactivo y los fenomenos electromagneticos en una teoría unificada; y finalmente la gravedad. Las primeras dos interacciones se entienden en el contexto de la teoria cuántica de campos, en particular la teoría de campos Gauge, donde las interacciones se explican mediante el intercambio de bosones Gauge (gluones para QCD y el fotón y los bosones W,Z para EW). Sin embargo la teoría que mejor explica los fenómenos gravitatorios. la relativdad general (GR), es una teoría totalmente diferente debido a su naturaleza geométrica.
+\\
+\\
+Sin embargo el objetivo de la física es reducir el numero de teorías, conceptos y esquemas al mínimo, es por esto que muchos físicos trabajan en teorías que unifiquen estos dos esquemas: supergravedad, teoría de supercuerdas, gravedad cuántica de lazos, etc. Debido a que las otras dos interacciones fundamentales se entienden en términos de teorías cuánticas de campo, ¿no deberia darsele a la gravedad un tratamiento cuántico?
+\\
+Por tanto, en una busqueda de teorías más alla de GR, ¿hacia dónde nos dirigimos?. Es bien sabido que no se puede hacer con las otras fuerzas fundamentales lo mismo que con la gravedad, en la teoría gravitatoria uno cambia la aceleración producida por la fuerza gravitacional por un sistema de referencia acelerado y esto se puede hacer debido a la equivalencia entre masa inercial y masa gravitatoria. Sin embargo esto no se puede hacer con las fuerzas fundamentales restantes, por ejemplo, la aceleración que sufre una partícula cargada electricamente es proporcional a su carga e inversamente proporcional a su masa inercial ($a\propto \frac{q}{m}$). Como esta razón no es la misma para todas las partículas uno no puede encontrar un sistema de referencia donde globalmente "desaparezca" la fuerza eléctrica. Sin embargo en los 60`s se dieron cuenta que al \textit{calibrar} (traducción del ingles "gauging", refiríendose a transformaciones Gauge como transformaciones de calibre) la simetría de Lorentz, uno termina con una teoría muy parecida a la GR. En esta primera sección introduciremos esta idea, sin embargo antes daremos un ejemplo de teorías Gauge abelianas (electromagnetismo) y no-abelianas (campos de Yang Mills).
 \subsection{Caso abeliano.}
+Consideremeos un campo escalar complejo que obedece la ecuacion de K-G y tiene una densidad Lagrangiana:
+\begin{equation}
+\mathcal{L}=\partial_{\mu}\phi\partial^{\mu}\phi^{*}+m^{2}\phi\phi^{*}
+\end{equation}
+Esta densidad lagrangiana posee una simetría bago $\phi\to e^{-i\Lambda}\phi,\ \ \phi^{*}\to e^{i\Lambda}\phi^{*}$ donde $\Lambda$ es un parámetro constante, vemos que esta transformación deja a $\mathcal{L}$ invariante es decir $\delta\mathcal{L}$. Esta transformación es llamada transformación Gauge del primer tipo. En la versión infinitesimal de la transformación tenemos:
+\begin{equation}
+\delta\phi=-i\Lambda\phi,\ \ \delta\phi^{*}=i\Lambda\phi^{*},\ \ \delta(\partial_{\mu}\phi)=-i\Lambda\partial_{\mu}\phi,\ \ \delta(\partial_{\mu}\phi^{*})=i\Lambda\partial_{\mu}\phi^{*}
+\end{equation}
+Con esto definimos la corriente $j^{\mu}$ como:
+\begin{eqnarray}
+\nonumber \Lambda j^{\mu}&=&\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}(\delta\phi)+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi^{*})}(\delta\phi^{*})=(\partial_{\mu}\phi^{*})(-i\Lambda\phi)+(\partial_{\mu}\phi)(i\Lambda\phi^{*})\\
+j^\mu &=& i((\partial_{\mu}\phi)\phi^{*}-\phi(\partial_{\mu}\phi^{*}))
+\end{eqnarray}
+De donde
+\begin{eqnarray}
+\partial_\mu j^\mu &=& 0\\
+\partial_{0}j^{0}=\partial_{i}j^{i}&\Rightarrow &\partial_{0}\int_{V}j^{0}dV=\int_{V}\nabla\cdot\vec{j}dV=\int_{\partial V}\vec{n}\cdot\vec{j}dS=0
+\end{eqnarray} 
+Por tanto
+\begin{equation}
+\partial_{0}\int_{V}j^{0}dV=0\Rightarrow\frac{dQ}{dt}=0;\ \ Q=\int_{V}j^{0}dV
+\end{equation}
+Identificando $Q$ con la carga eléctrica tenemos que el campo $\phi$ porta una carga eléctrica la cual es conservada. Sin embargo la transformación anterior demanda que $\phi$ cambie la cantidad indicada al mismo tiempo en todos los puntos del espacio-tiempo, este tipo de transformación no tiene el espíritu de la relatividad, la transformación deberá ser \textit{local} en vez de \textit{globar}, es decir, el parámetro $\Lambda$ debe depender de las coordenadas $\Lambda=\Lambda(x^\mu)$. Así:
+\begin{equation}
+\phi(x)\to e^{-i\Lambda(x)}\phi(x),\ \ \phi(x)^{*}\to e^{i\Lambda(x)}\phi(x)^{*}
+\end{equation}
+Esta es llamada una transformación Gauge del segundo tipo. En la versión infinitesimal:
+\begin{eqnarray}
+\nonumber \delta\phi=-i\Lambda(x)\phi &;&\ \ \delta\phi^{*}=i\Lambda(x)\phi^{*}\\
+\delta(\partial_{\mu}\phi)=-i(\Lambda\partial_{\mu}\phi+\phi\partial_{\mu}\Lambda)&;&\ \ \delta(\partial_{\mu}\phi^{*})=i(\Lambda\partial_{\mu}\phi^{*}+\phi^{*}\partial_{\mu}\Lambda)
+\end{eqnarray}
+Por tanto el lagrangiano no es invariante
+\begin{equation}
+\delta\mathcal{L}=-i\phi\partial_{\mu}\Lambda\partial_{\mu}\phi^{*}+i\phi^{*}\partial_{\mu}\Lambda\partial_{\mu}\phi=(\partial_{\mu}\Lambda)j^{\mu}
+\end{equation}
+Para mantener el lagrangiano invariante debemos agregar un nuevo campo a $\mathcal{L}$, de tal manera que $\mathcal{L}_1=-ej^\mu A_\mu$. Y pedir que bajo una transformación local 
+\begin{equation}
+A_\mu \to A_\mu +\frac{1}{e}\partial_\mu\Lambda
+\end{equation} 
+Así:
+\begin{eqnarray}
+\nonumber \delta\mathcal{L}_{1}&=&-e(\delta j^{\mu})A_{\mu}-j^{\mu}\partial_{\mu}\Lambda\\
+\delta\mathcal{L}+\delta\mathcal{L}_{1}&=&-e(\delta j^{\mu})A_{\mu}=-2eA^{\mu}\partial_{\mu}\Lambda(\phi\phi^{*})
+\end{eqnarray}
+Y si agregamos $\mathcal{L}_2=e^2\phi\phi^{*}A_\mu A^\mu\Rightarrow \delta\mathcal{L}_2=2eA^{\mu}\partial_{\mu}\Lambda(\phi\phi^{*})$, por tanto:
+\begin{equation}
+\delta\mathcal{L}+\delta\mathcal{L}_1+\delta\mathcal{L}_2=0
+\end{equation}
+Al introducir el campo $ A^\mu$ debemos introducir un término diferente del acople con el campo escalar, este término debe ser el que de las ecuaciones de movimiento de $ A^\mu$ en ausencia de fuentes. Si definimos $F^{\mu\nu}=\partial^{\mu}A^{\nu}-\partial^{\nu}A^{\mu}$, bajo la transformación Gauge $\delta(\partial^{\mu}A^{\nu})=\frac{1}{e}\partial_{\mu}\partial_{\nu}\Lambda\Rightarrow\delta F^{\mu\nu}=0$. Entonces el lagrangiano $\mathcal{L}_{3}=\frac{1}{4}F^{\mu\nu}F_{\mu\nu}$ es invariante bajo la transformación gauge local $\mathcal{L}_3=0$. Finalmente tenemos:
+\begin{eqnarray}
+\nonumber\mathcal{L}_{\text{total}}&=&\mathcal{L}+\mathcal{L}_1+\mathcal{L}_2+\mathcal{L}_3\\
+\nonumber &=& (\partial_{\mu}\phi+ieA_{\mu}\phi)(\partial^{\mu}\phi^{*}-ieA^{\mu}\phi^{*})+m^{2}\phi\phi^{*}+\frac{1}{4}F^{\mu\nu}F_{\mu\nu}\\
+&=& D_{\mu}\phi D^{\mu}\phi^{*}m^{2}\phi\phi^{*}+\frac{1}{4}F^{\mu\nu}F_{\mu\nu}
+\end{eqnarray}
+Habiendo definido la derivada covariante como $D_{\mu}\phi=\partial_{\mu}\phi+ieA_{\mu}\phi$. Ahora generalizemos la corriente $j^\mu$ a una corriente $J^\mu$ que dependa de las derivadas covariantes, así:\begin{eqnarray}
+\nonumber \Lambda J^{\mu}&=&\frac{\partial\mathcal{L}}{\partial(D_{\mu}\phi)}(\delta\phi)+\frac{\partial\mathcal{L}}{\partial(D_{\mu}\phi^{*})}(\delta\phi^{*})=(D_{\mu}\phi^{*})(-i\Lambda\phi)+(D_{\mu}\phi)(i\Lambda\phi^{*})\\
+J^\mu &=& i((D_{\mu}\phi)\phi^{*}-\phi(D_{\mu}\phi^{*}))
+\end{eqnarray}
+Esta corriente es conservada, las ecuaciones de movimiento de $A_\mu$ son:
+\begin{equation}
+\partial_{\nu}F^{\nu\mu}=-eJ^{\mu}\Rightarrow\partial_{\mu}J^{\mu}=\partial_{\mu}\partial_{\nu}F^{\nu\mu}=0
+\end{equation} 
+Esto último debido a que el tensor $F^{\nu\mu}$ es antisimétrico.
+\\
+\\
+Recordemos ahora que en GR el tensor de curvatura es proporcional al conmutador de las derivadas covariantes, es decir, $[\nabla_{\mu},\nabla_{\nu}]e_{k}=R_{k\mu\nu}^{\rho}e_{\rho}$. Si notamos que $[D_{\mu},D_{\nu}]\phi=ie(\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu})=ieF_{\mu\nu}\phi$, podemos establecer una analogía entre la curvatura y la intesidad del campo Gauge. Otro hecho que podemos notar es que recordando la definición del tensor de Rienmann [4] $R_{***}^{*}=\partial[_{*}\Gamma_{*}]+[\Gamma,\Gamma] $ y también que $F_{**}=\partial[_{*}A_{*}]$ se puede asociar el potencial $A$ en electrodinámica con el coeficiente de conexión $\Gamma$ en GR. En el caso  del campo electromagnético el segundo término de la definición del tensor de Rienmann no tiene un análogo, pero veremos como esta situación cambia cuando generalicemos al caso de una simetría Gauge local no abeliana. Para terminar esta sección escribamos el análisis anterior de una forma más compacta, consideremos una transformación:
+\begin{equation}
+\phi\to U\phi,\ \ \phi^{*}\to U^{\dagger}\phi^{*}\text{con}\ \ U=e^{i\Lambda}\Rightarrow UU^{\dagger}=1
+\end{equation}
+Bajo una transformación Gauge local tenemos $\partial_\mu U=i\partial_\mu\Lambda U$, así la transformación del campo $A_\mu$ es:
+\begin{equation}
+A_{\mu}\to A_{\mu}-\frac{i}{e}U^{\dagger}\partial_{\mu}U\Rightarrow F_{\mu\nu}\to F_{\mu\nu}
+\end{equation}
+Si dos matrices $U_1,U_2$ obedecen la última relación de la ecuación (3.16) entonces $U^{\prime}=U_1U_2$ también la obedece, si la cada matriz $U$ tiene un inverso $U^{-1}$ entonces este grupo de matrices forman un grupo. En particular este grupo es llamado el grupo de matrices unitarias de dimensión 1 (U(1)). Este es el grupo de simetría de la electrodinámica.
+
+
+
 \subsection{Caso No-abeliano.}
+Sería interesante extender la simetría U(1) para la electrodinámica solo por ver "que sucede", pero de hecho hay una motivación física para hacerlo. La primera vez que fue hecho esto sucedió en el contexto de la física nuclear y la idea original es de Yang y Mills [5]. La propuesta trataba sobre una cantidad física que hoy en día se conoce como el isospín. Estos dos físicos se dieron cuenta que había una relación entre la carga eléctrica de las partículas y la tercera componente de su isospín, asi si pensamos el isopín como la consecuencia de la simetría bajo rotación en un espacio abstracto ¿no es factible entonces entender esta cantidad extendiendo el grupo gauge de U(1) a SU(2)?
+\\
+\\
+El caso de SU(2) es un poco diferente, ya que este es un grupo no abeliano. SU(2) es elgripo especial unitario de dimensión 2, un elemento del grupo es tal que: 
+
+
+
+
+
+
 \subsection{La simetría de Lorentz como teoría Gauge.}
 \subsection{La ecuación de Dirac en el espacio de Schwarzschild.}
 
