@@ -92,6 +92,98 @@ Sería interesante extender la simetría U(1) para la electrodinámica solo por 
 \\
 \\
 El caso de SU(2) es un poco diferente, ya que este es un grupo no abeliano. SU(2) es elgripo especial unitario de dimensión 2, un elemento del grupo es tal que: 
+\begin{equation}
+U=\left(\begin{array}{cc}
+a & b\\
+-b^{*} & a^{*}
+\end{array}\right),\ |a|^{2}+|b|^{2}=1,\text{\ U}^{\dagger}U=1=UU^{\dagger}
+\end{equation}
+Podemos escribir un elemento general de SU(2) como: 
+\begin{equation}
+U=\text{Exp}\left(\frac{i}{2}\vec{\eta}\cdot\vec{\sigma}_\alpha\right)
+\end{equation}
+Donde $\vec{\sigma}$ son las matrices de Pauli:
+\begin{equation}
+\sigma_{x}=\left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right);\ \sigma_{y}=\left(\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right);\ \sigma_{z}=\left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)
+\end{equation}
+Estas obedecen el álgebra $[\frac{\sigma_i}{2},\frac{\sigma_j}{2}]=\frac{i}{2}\epsilon_{ijk}\sigma_k$.
+Introduciendo el doblete $\phi=\left(\begin{array}{c}
+\phi_{1}\\
+\phi_{2}
+\end{array}\right);\ \phi^{\dagger}=\left(\begin{array}{cc}
+\phi_{1}^{*} & \phi_{2}^{*}\end{array}\right)$ de SU(2) la densidad lagrangiana:
+\begin{equation}
+\mathcal{L}=\partial_{\mu}\phi\partial^{\mu}\phi^{\dagger}+m^{2}\phi\phi^{\dagger}
+\end{equation}
+Es invariante bajo transformaciones de SU(2):$\phi\to U\phi;\ \phi^\dagger\to\phi^\dagger U^\dagger$, si los parámetros de la transformación son independientes de las coordenadas (transformación Gauge del primer tipo), la corriente conservada es:
+\begin{equation}
+\delta\phi=\frac{i}{2}\sigma^{a}\alpha^{a}\phi,\ \ \delta\phi^{\dagger}=\frac{-i}{2}\sigma^{a}\alpha^{a}\phi^{\dagger},\ \ \delta(\partial_{\mu}\phi)=\frac{i}{2}\sigma^{a}\alpha^{a}\partial_{\mu}\phi,\ \ \delta(\partial_{\mu}\phi^{\dagger})=\frac{-i}{2}\sigma^{a}\alpha^{a}\partial_{\mu}\phi^{\dagger}
+\end{equation}
+Así:
+\begin{eqnarray}
+\nonumber \alpha^{a}j_{a}^{\mu}&=&\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}(\delta\phi)+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi^{\dagger})}(\delta\phi^{\dagger})\\
+j^{a}_{\mu}&=& \frac{i}{2}[\partial_{\mu}\phi^{\dagger}\sigma^{a}\phi-\phi^{\dagger}\sigma^{a}\partial_{\mu}\phi]
+\end{eqnarray}
+Esta corriente tiene cuatro componentes espaciales y tres internas de isospín. También, debido a que $(\square-m^2)(\phi,\phi^\dagger)=0\Rightarrow \partial_\mu j^{\mu}_{a}=0$. Ahora veamos que pasa si los parámetros $\alpha^a$ dependen de las coordenadas. Si $U=\text{Exp}\left(\frac{i}{2}\sigma^a\alpha^a(x)\right)$,tenemos que:
+\begin{equation}
+\delta\phi(x)=\frac{i}{2}\sigma^{a}(x)\alpha^{a}\phi(x)
+\end{equation}
+Para que la densidad lagrangiana (3.21) sea invariante SU(2), entonces los términos con la derivada del campo deben transformar de la misma forma que el campo en sí mismo. Así definimos la derivdada covariante tal que esta transforme como:
+\begin{equation}
+\delta\phi_{;\mu}=\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{;\mu}
+\end{equation}  
+\\
+
+Esto se cumple si $\phi_{;\mu}\equiv D_{\mu}\phi=\phi_{,\mu}-igA_{\mu}^{a}\frac{\sigma^{a}}{2}\phi$ y $A_{\mu}^{a}$ transforma como $A_{\mu}^{a}\to A_{\mu}^{a}+\partial_{\mu}\alpha^{a}-g\epsilon_{abc}\alpha^{b}A_{\mu}^{c}$, veamos:
+\begin{eqnarray}
+\nonumber \delta\phi_{;\mu}&=&\frac{i}{2}g\sigma^{a}\alpha^{a}(\phi_{,\mu}-igA_{\mu}^{b}\frac{\sigma^{b}}{2}\phi)=\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}-\frac{i^{2}g^{2}}{4}\sigma^{a}\alpha^{a}A_{\mu}^{b}\sigma^{b}\phi\\
+&=&\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}+\frac{g^{2}}{4}\alpha^{a}A_{\mu}^{b}\phi+\frac{i}{2}g^{2}\epsilon_{abc}\sigma^{a}A_{\mu}^{b}\alpha^{c}\phi
+\end{eqnarray}
+Por otro lado:
+\begin{eqnarray}
+\nonumber \delta\phi_{;\mu}&=&\delta\phi_{,\mu}-ig[\delta(A_{\mu}^{b})\frac{\sigma^{b}}{2}\phi+A_{\mu}^{b}\frac{\sigma^{b}}{2}\delta\phi]\\
+&=&\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}+\frac{g^{2}}{4}\alpha^{a}A_{\mu}^{b}\phi+\frac{i}{2}g^{2}\epsilon_{abc}\sigma^{a}A_{\mu}^{b}\alpha^{c}\phi 
+\end{eqnarray}
+Observando que las ecuaciones (3.26) y (3.27) son las mismas podemos concluir que la definición de la dereviada covariante es válida. Mostremos ahora que la transformación del campo Gauge se puede derivar de la definición de como actúa una transformación Gauge del segundo tipo en un campo vectorial, sabemos que:
+\begin{equation}
+A_\mu \to UA_\mu U^\dagger -\frac{i}{g}(\partial_\mu U)U^\dagger 
+\end{equation}
+Para una transformación infinitesimal:
+\begin{eqnarray}
+\nonumber UA_\mu U^{\dagger}&=&\left(1+\frac{i}{2}g\frac{\sigma^{a}}{2}\alpha^{a}\right)A_{\mu}^{b}\frac{\sigma^{b}}{2}(1-\frac{i}{2}g\frac{\sigma^{c}}{2}\alpha^{c})\\
+\nonumber &=&A_\mu+\frac{ig}{4}A_{\mu}^{b}(\sigma^{a}\sigma^{b}\alpha^{a}-\sigma^{b}\sigma^{a}\alpha^{a})=A_{\mu}+\frac{ig}{4}A_{\mu}^{b}[\sigma^{a},\sigma^{b}]\alpha^{a}\\
+&=&A_{\mu}-gA_{\mu}^{b}\epsilon_{abc}\frac{\sigma^{c}}{2}\alpha^{a}
+\end{eqnarray}
+Y 
+\begin{equation}
+(\partial_\mu U)U^\dagger=\frac{ig}{2}\sigma^a\partial_\mu \alpha^a
+\end{equation}
+Por tanto si reemplazamos (3.29) y (3.30) en (3.28) obtenemos:
+\begin{equation}
+A_{\mu}^{a}\to A_{\mu}^{a}+\partial_{\mu}\alpha^{a}-g\epsilon_{abc}\alpha^{b}A_{\mu}^{c}
+\end{equation}
+Ahora generalizando el tensor de intensidad como $F_{\mu\nu}=\frac{i}{g}[D_\mu,D_\nu]A$
+\begin{equation}
+F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}-ig[A_{\mu},A_{\nu}]\Rightarrow F_{\mu\nu}^{a}=\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c}
+\end{equation}
+Así en el caso no-abeliano el tensor de intensidad $F_{\mu\nu}$ ha adquirido in término cuadrático en $A_\mu$. Veamos que el tensor $F_{\mu\nu}$ NO es invariante Gauge:
+\begin{eqnarray}
+\nonumber F_{\mu\nu}^{\prime a}&=&\partial_{\mu}A_{\nu}^{\prime a}-\partial_{\nu}A_{\mu}^{\prime a}+g\epsilon_{abc}A_{\mu}^{\prime b}A_{\nu}^{\prime c}\\
+asd
+\end{eqnarray}
+
+
+
+
 
 
 
