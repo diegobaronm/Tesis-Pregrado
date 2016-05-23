@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  22 MAY 2016 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  23 MAY 2016 11:43
 entering extended mode
 **Chapter4.tex
 (Chapter4.tex
@@ -665,6 +665,82 @@ Overfull \hbox (20.18877pt too wide) in paragraph at lines 8--9
 
 Overfull \hbox (3.85553pt too wide) in paragraph at lines 8--9
 \OT1/cmr/m/it/10 I
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (21.53596pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Gen-
+ []
+
+
+Overfull \hbox (15.97209pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 eral
+ []
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Rel-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (14.56654pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 tiv-
+ []
+
+
+Overfull \hbox (14.311pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 ity.
  []
 
 )

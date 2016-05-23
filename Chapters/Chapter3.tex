@@ -294,7 +294,76 @@ La propuesta de la ecuación (3.53) cumple con la regla de transformación (3.51
 
 
 \subsection{La ecuación de Dirac en el espacio de Schwarzschild.}
-
+En esta sección derivaremos la ecuación de Dirac en el espacio-tiempo de Schwarzschild, la densidad lagrangiana (3.54) nos lleva a la ecuación de movimiento para $\psi$:
+\begin{equation}
+\{i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta})+m_{D}\}\psi=0
+\end{equation}
+En el espacio de Schwarzschild el elemento de linea es [7]:
+\begin{equation}
+ds^{2}=-\left(1-\frac{2m}{r}\right)c^{2}dt^{2}+\left(1-\frac{2m}{r}\right)^{-1}dr^{2}+r^{2}(d\theta^{2}+\text{Sin}^{2}\theta d\phi^{2})
+\end{equation}
+Llevemos lo anterior al lenguaje de marcos ortogonales locales (vierbeins), si escribimos:
+\begin{equation}
+ds^{2}=-(\mathbf{\theta}^{0})^{2}+(\mathbf{\theta}^{1})^{2}+(\mathbf{\theta}^{2})^{2}+(\mathbf{\theta}^{3})^{2}
+\end{equation}
+Con $g_{\mu\nu}=\eta_{\mu\nu}$ y
+\begin{equation}
+\mathbf{\theta}^{0}=\left(1-\frac{2m}{r}\right)^{1/2}cdt\ ;\ \mathbf{\theta}^{1}=\left(1-\frac{2m}{r}\right)^{-1/2}dr\ ;\ \mathbf{\theta}^{2}=rd\theta\ ;\ \mathbf{\theta}^{3}=r\text{Sin}\theta d\phi
+\end{equation}
+La base dual es:
+\begin{equation}
+\mathbf{e_{0}}=\frac{1}{c}\left(1-\frac{2m}{r}\right)^{-1/2}\frac{\partial}{\partial t}\ ;\ \mathbf{e}_{1}=\left(1-\frac{2m}{r}\right)^{1/2}\frac{\partial}{\partial r}\ ;\ \mathbf{e}_{2}=\frac{1}{r}\frac{\partial}{\partial\theta}\ ;\ \mathbf{e}_{3}=\frac{1}{r\text{Sin}\theta}\frac{\partial}{\partial\phi}
+\end{equation}
+(hay que notar que $m$ es la masa de Schwarzschild, diferente de la masa de la partícula ($m_D$)). Los conmutadores de las cantidades definidas en (3.59) se pueden calcular como:
+\begin{equation}
+\nonumber [\mathbf{e_{0}},\mathbf{e_{1}}]=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\mathbf{e_{0}}\Rightarrow C_{01}^{\ \ 1}=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\Rightarrow C_{010}=-\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}
+\end{equation}
+Los conmutadores que resultan ser no nulos son:
+\begin{eqnarray}
+\nonumber C_{010}&=&-\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}=-C_{100}\\
+\nonumber C_{122}=-C_{212}&=&-\frac{1}{r}\left(1-\frac{2m}{r}\right)^{1/2}=C_{133}=-C_{313}\\
+C_{233}&=&-C_{323}=-\frac{\cot\theta}{r}
+\end{eqnarray}
+Los coeficientes $\Gamma_{\mu\alpha\beta}$ se pueden calcular como:
+\begin{equation}
+\Gamma_{\mu\alpha\beta}=-\frac{1}{8}[C_{\mu\alpha\beta}+C_{\alpha\beta\mu}-C_{\beta\mu\alpha}]	
+\end{equation}
+Por tanto:
+\begin{eqnarray}
+\nonumber \Gamma_{010}=-\Gamma_{100}&=&\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2},\ \ \Gamma_{001}=0\\
+\nonumber \Gamma_{122}=-\Gamma_{212}&=&\Gamma_{133}=-\Gamma_{313}=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{1/2},\ \ \Gamma_{221}=\Gamma_{331}=0\\
+\Gamma_{233}=-\Gamma_{323}&=&\frac{\cot\theta}{r},\ \ \Gamma_{332}=0
+\end{eqnarray}
+Si definimos $\Gamma_{\mu}=\frac{1}{8}\Gamma_{\mu\alpha\beta}[\gamma^\alpha,\gamma^\beta]$, entonces tenemos:
+\begin{eqnarray}
+\nonumber \Gamma_{0}&=&\frac{m}{2r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\alpha^{1}\\
+\nonumber \Gamma_{1}=0,\ \ \Gamma_{2}&=&-\frac{im}{2r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\delta^{3}\\
+\Gamma_{3}&=&\frac{im}{2r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\delta^{2}-\frac{i\cot\theta}{2r}\delta^{1}
+\end{eqnarray}
+Donde,  
+\begin{equation}
+\alpha^{1}=\left(\begin{array}{cc}
+0 & \sigma^{1}\\
+\sigma^{1} & 0
+\end{array}\right)\ \ ;\delta^{i}=\left(\begin{array}{cc}
+\sigma^{i} & 0\\
+0 & \sigma^{i}
+\end{array}\right)
+\end{equation}
+Si finalmente notamos que:
+\begin{equation}
+\gamma^{0}\alpha^{1}=-\gamma^{1},\ \gamma^{2}\delta^{3}=-\gamma^{3}\delta^{2}=i\gamma^{1},\ \gamma^{3}\delta^{1}=i\gamma^{2}
+\end{equation}	
+Podemos reemplazar (3.63) y (3.59) en la eucación de Dirac
+\begin{equation}
+i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\Gamma_{\mu})\psi=m_{D}\psi
+\end{equation}
+Para obtener la ecuación de Dirac en el espacio de Schwarzschild:
+\begin{eqnarray}
+\nonumber i\left\{ \left(1-\frac{2m}{r}\right)^{-1/2}\left[\gamma^{0}\frac{1}{c}\frac{\partial\psi}{\partial t}-\frac{m}{2r^{2}}\gamma^{1}\psi\right]+\left(1-\frac{2m}{r}\right)^{1/2}\gamma^{1}\frac{\partial\psi}{\partial r}\right\}\\
++i\left\{ \gamma^{2}\frac{1}{r}\frac{\partial\psi}{\partial\theta}+\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\gamma^{1}\psi+\gamma^{3}\frac{1}{r\text{sin}\theta}\frac{\partial\psi}{\partial\phi}+\frac{\cot\theta}{2r}\right\} =m_{D}\psi 
+\end{eqnarray}
+\newpage
 \section{La ecuación de Schrodinger en espacio curvo.}
 
 \section{Transformaciones de coordenadas.}
