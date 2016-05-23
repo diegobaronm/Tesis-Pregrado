@@ -178,10 +178,22 @@ F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}-ig[A_{\mu},A_{\nu}]\Right
 Así en el caso no-abeliano el tensor de intensidad $F_{\mu\nu}$ ha adquirido in término cuadrático en $A_\mu$. Veamos que el tensor $F_{\mu\nu}$ NO es invariante Gauge:
 \begin{eqnarray}
 \nonumber F_{\mu\nu}^{\prime a}&=&\partial_{\mu}A_{\nu}^{\prime a}-\partial_{\nu}A_{\mu}^{\prime a}+g\epsilon_{abc}A_{\mu}^{\prime b}A_{\nu}^{\prime c}\\
-asd
+\nonumber &=& \partial_{\mu}UA_{\nu}^{a}U^{-1}-\partial_{\nu}UA_{\mu}^{a}U^{-1}-\frac{i}{g}\partial_{\mu}[(\partial_{\nu}U)U^{-1}]+\frac{i}{g}\partial_{\nu}[(\partial_{\mu}U)U^{-1}]\\
+\nonumber && +g\epsilon_{abc}UA_{\mu}^{b}A_{\nu}^{c}U^{-1}-\frac{i}{g}(\partial_{\mu}U)U^{-1}UA_{\nu}U^{-1}-\frac{i}{g}UA_{\mu}U^{-1}(\partial_{\nu}U)U^{-1}\\
+&=& U[\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c}]U^{-1}=UF_{\mu\nu}^{a}U^{-1}
 \end{eqnarray}
-
-
+Por tanto $F_{\mu\nu}$ NO es invariante Gauge y tampoco $F_{\mu\nu}F^{\mu\nu}$ ya que:
+\begin{equation}
+F_{\mu\nu}F^{\mu\nu}\to UF_{\mu\nu}F^{\mu\nu} U^{-1}
+\end{equation}
+Sin embargo la traza de esta cantidad es invariante, veamos:
+\begin{equation}
+Tr[F_{\mu\nu}F^{\mu\nu}]= Tr[UF_{\mu\nu}F^{\mu\nu} U^{-1}]=Tr[U^{-1}UF_{\mu\nu}F^{\mu\nu}]=Tr[F_{\mu\nu}F^{\mu\nu}]
+\end{equation}
+Lo último debido a la propiedad de ciclicidad de la traza, por tanto con todo lo anterior la densidad lagrangiana invariante de SU(2) es:
+\begin{equation}
+\mathcal{L}=D_{\mu}\phi^{\dagger}D^{\mu}\phi+m^{2}\phi^{\dagger}\phi-\frac{1}{2}Tr[F^{\mu\nu}F_{\mu\nu}]
+\end{equation}
 
 
 
@@ -191,6 +203,96 @@ asd
 
 
 \subsection{La simetría de Lorentz como teoría Gauge.}
+En las primeras dos secciones hemos tratado de hacer invariante Gauge local un campo escalar, sin embargo en lo que sigue de aquí en adelante consideraremos un campo espinorial, estos campos satisfacen la famosa ecuación de Dirac:
+\begin{equation}
+(i\gamma^\mu\partial_\mu-m)\psi=0
+\end{equation}		
+Donde las matrices de Dirac. $\gamma^\mu$ satisfacen el álgebra $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$. Una transformación de Lorentz infinitesimal para un campo escalar es de la forma 
+\begin{equation}
+\phi^\prime(x)=\left(1-\frac{i}{2}\omega_{\mu\nu}J^{\mu\nu}\right)\phi(x);\ \ J_{\mu\nu}=-i(x_\mu\partial_\nu-x_\nu\partial_\mu) 
+\end{equation} 
+Sin embargo para campos espinoriales hay una contribución matricial adicional a $J_{\mu\nu}$, la cual corresponde al espín intrínseco del campo, asi:
+\begin{equation}
+J_{\mu\nu}=L_{\mu\nu}+\Sigma_{\mu\nu};\ \ \Sigma_{\mu\nu}=\frac{i}{4}[\gamma_\mu,\gamma_\nu]
+\end{equation}
+Ahora para hacer la ecuación (3.37) invariante \textit{local} de Lorentz debemos hacer los parámetros de la transformación dependientes de las coordenadas e intentar introducir una derivada covariante que deje la ecuación de Dirac invariante Guage.
+
+Pero primero debemos hacer un alto en el camino y hacernos la siguiente pregunta: ¿cómo vamos a tratar los campos espinoriales en RG? En particular como vamos a tratar las derivadas covariantes sobre ellos. Nosotros estamos familiarizados con la construcción de derivadas covariantes para vectores y tensores de diferente rango, pero, ¿qué hay de los espinores? Esta no es una pregunta trivial y esto recae en el hecho de que el grupo de transformaciones generales de coordenadas. que se encuentra bajo los cimientos de la RG, tiene representaciones vectoriales y tensoriales, más no representaciones de espín.
+\\
+\\
+Una situación similar ocurre para las rotaciones y las transformaciones de Lorentz. Las rotaciones están descritas por el grupo SO(3) del cual hay representaciones vectoriales y tensoriales, pero no espinoriales. Sin embargo el grupo SU(2) que es homeomórfico a SO(3) si tiene representación espinorial. Sin embargo no hay tal solución en RG, el grupo de transformaciones generales de coordenadas es un grupo de infinitos parámetros y no hay forma de encontrar un grupo similar con representación espinorial. Asi que de nuevo, volviendo a la pregunta ¿ cómo tratamos los espinores en RG? La respuesta fue dada por primera vez por Weyl [6] y en lo que sigue de aquí en adelante seguiremos un argumento que va en la misma dirección del argumento de Weyl en 1929. 
+
+Sea $\mathcal{M}$ una variedad Lorentziana 4-dimensional, los \textit{vierbein} están definidos como: 
+\begin{equation}
+g_{\mu\nu}=e_{\mu}^{\alpha}e_{\nu}^{\beta}\eta_{\alpha\beta}
+\end{equation}
+Estos a su vez definen un marco ortogonal
+\begin{equation}
+\hat{\theta^{\alpha}}=e_{\mu}^{\alpha}dx^{\mu}
+\end{equation}
+Vamos a diferenciar los indices del marco ortogonal ($\alpha ,\beta ,\gamma ...$) y los indices de espacio-tiempo (coordenados) ($\mu ,\nu ,\lambda ...$). Con respecto al marco ortogonal local las matrices de Dirac $\gamma^\alpha=e^{\alpha}_{\mu}\gamma^\mu$ satisfacen el álgebra $\{\gamma^{\alpha},\gamma^{\beta}\}=2\eta^{\alpha\beta}$ y a su vez definen las correspondientes contrapartes en el espacio curvo mediante $\gamma^{\mu}=e_{\alpha}^{\mu}\gamma^{\alpha}$.
+\\
+\\
+En el marco local (Espacio de Minkowski) un espinor transforma como:
+\begin{equation}
+\psi\to\rho(\Lambda)\psi \ \ ;\ \ \bar{\psi}\to\bar{\psi}\rho^{-1}(\Lambda)
+\end{equation}
+Donde $\rho(\Lambda)$ es la representación espinorial de las transformaciones de Lorentz.
+\begin{equation}
+\rho(\Lambda)=\text{Exp}\left[\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right]\ \ ;\ \ \Sigma_{\alpha\beta}=\frac{i}{4}[\gamma_{\alpha},\gamma_{\beta}]
+\end{equation}
+Si por otro lado queremos que el lagrangiano de Dirac
+\begin{equation}
+\mathcal{L}_D=i\bar{\psi}\gamma^{\alpha}\nabla_{\alpha}\psi+m\bar{\psi}\psi
+\end{equation}
+Sea invariante bajo transformaciones \textit{locales} de Lorentz debemos pedir que:
+\begin{equation}
+\nabla_{\alpha}\psi\to\rho(\Lambda)\Lambda_{\alpha}^{\beta}\nabla_{\beta}\psi
+\end{equation}
+Es decir que la derivada covariante transforme como un espinor y a la vez como un vector de Lorentz, así:
+\begin{eqnarray}
+\nonumber \mathcal{L}_{D}^{\prime}=\bar{\psi^{\prime}}\{i\gamma^{\prime\alpha}\nabla_{\alpha}^{\prime}+m\}\psi^{\prime}&=& 	\bar{\psi}\{i\Lambda_{\delta}^{\alpha}e_{\mu}^{\delta}\gamma^{\mu}\Lambda_{\alpha}^{\beta}\nabla_{\beta}+m\}\psi\\
+\nonumber &=& \bar{\psi}\{ie_{\mu}^{\delta}\gamma^{\mu}\Lambda_{\delta}^{\alpha}\eta^{\alpha h}\Lambda_{h}^{\beta}\nabla_{\beta}+m\}\psi;\ \ \text{Usando }\Lambda_{\delta}^{\alpha}\eta^{\alpha h}\Lambda_{h}^{\beta}=\eta^{\delta h}\\
+&=& \bar{\psi}\{ie_{\mu}^{\delta}\gamma^{\mu}\eta^{\delta h}\nabla_{\beta}+m\}\psi=\bar{\psi}\{i\gamma^{\delta}\nabla_{\delta}+m\}\psi
+\end{eqnarray}
+Vamos a encontrar una expresión para la derivada covariante $\nabla_\alpha$, si suponemos que:
+\begin{equation}
+\nabla_{\alpha}\psi=e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}]\psi
+\end{equation}
+Bajo una transformación local la ecuación (3.47) queda:
+\begin{eqnarray}
+\nonumber \nabla_{\alpha}^{\prime}\psi^{\prime}&=& e_{\alpha}^{\prime\mu}[\partial_{\mu}+\Omega_{\mu}^{\prime}]\psi^{\prime}\\
+\nonumber  \rho(\Lambda)\Lambda_{\alpha}^{\beta}\nabla_{\beta}\psi &=&\Lambda_{\alpha}^{\beta}e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}^{\prime}]\rho(\Lambda)\psi\\
+\nonumber \rho(\Lambda)\Lambda_{\alpha}^{\beta}e_{\beta}^{\mu}[\partial_{\mu}+\Omega_{\mu}]\psi &=& \Lambda_{\alpha}^{\beta}e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}^{\prime}]\rho(\Lambda)\psi\\
+\Rightarrow\Omega_{\mu}^{\prime}&=&\rho(\Lambda)\Omega_{\mu}\rho^{-1}(\Lambda)-(\partial_{\mu}\rho(\Lambda))\rho^{-1}(\Lambda)
+\end{eqnarray}
+Para encontrar la forma explícita de $\Omega_\mu$ consideremos una transformación infinitesimal de Lorentz.
+\begin{equation}
+\rho(\Lambda)\approx1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}
+\end{equation} 
+En la ecuación (3.49) $\Sigma_{\alpha\beta}$ son los generadores del grupo de Lorentz en su representación espinorial , estos satisfacen el álgebra:
+\begin{equation}
+i[\Sigma_{\alpha\beta},\Sigma_{\gamma\delta}]=\eta_{\gamma\beta}\Sigma_{\alpha\delta}-\eta_{\gamma\alpha}\Sigma_{\beta\delta}+\eta_{\delta\beta}\Sigma_{\gamma\alpha}-\eta_{\delta\alpha}\Sigma_{\gamma\beta}
+\end{equation}
+Así bajo la transformación infinitesimal (3.49):
+\begin{eqnarray}
+\nonumber \Omega_{\mu}&\to &\left(1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)\Omega_{\mu}\left(1-\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)-\left(1-\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)\partial_{\mu}\left(1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)\\
+&\to &\Omega_{\mu}+\frac{i}{2}\varepsilon^{\alpha\beta}[\Sigma_{\alpha\beta},\Omega_{\mu}]-\partial_{\mu}\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}
+\end{eqnarray}
+Recordando que la 1-forma conexión transforma bajo transformaciones locales de Lorentz [4] como:
+\begin{equation}
+\omega_{\beta}^{\alpha}\to\omega_{\beta}^{\alpha}+\varepsilon_{\gamma}^{\alpha}\omega_{\beta}^{\gamma}-\omega_{\gamma}^{\alpha}\varepsilon_{\beta}^{\gamma}-d\varepsilon_{\beta}^{\alpha} \ ; \ \omega_{\beta}^{\alpha}\equiv\Gamma_{\gamma\beta}^{\alpha}\hat{\theta^{\gamma}}
+\end{equation}
+Al observar las ecuaciones (3.51) y (3.52) nos podemos hacer una guía de lo que debería ser una propuesta para $\Omega_\mu$, así:
+\begin{equation}
+\Omega_{\mu}=\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta}
+\end{equation} 
+La propuesta de la ecuación (3.53) cumple con la regla de transformación (3.51). Así encontramos que la densidad lagrangiana que es invariante bajo transformaciones de coordenadas y transformaciones de Lorentz locales es:
+\begin{equation}
+\mathcal{L}_{D}=\bar{\psi}\{i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta})+m\}\psi
+\end{equation}
+
+
 \subsection{La ecuación de Dirac en el espacio de Schwarzschild.}
 
 \section{La ecuación de Schrodinger en espacio curvo.}
