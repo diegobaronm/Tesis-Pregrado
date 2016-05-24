@@ -55,45 +55,45 @@ Calculemos uno de estos elementos:
 \begin{eqnarray}
 \nonumber \langle q_{j+1}t_{j+1}|q_jt_j\rangle &=&\langle q_{j+1}|e^{-iHt_{j+1}/\hbar}e^{iHt_j/\hbar}|q_j=\langle q_{j+1}|e^{-i\tau H/\hbar}|q_j\rangle \hspace{0.4cm}\text{A primer orden,}\\
 \nonumber &=&\langle q_{j+1}|1-i\tau H/\hbar|q_j\rangle=\delta(q_{j+1}-q_j)-i\tau\hbar\langle q_{j+1}|H|q_j\rangle\\
-&=& \frac{1}{2\pi\hbar}\int dp\ \text{Exp}[\frac{ip}{\hbar}(q_{j+1}-q_j)]-\frac{i\tau}{\hbar}\langle q_{j+1}|H|q_j\rangle 
+&=& \frac{1}{2\pi\hbar}\int dp\ \ \exp[\frac{ip}{\hbar}(q_{j+1}-q_j)]-\frac{i\tau}{\hbar}\langle q_{j+1}|H|q_j\rangle 
 \end{eqnarray}	
 Si asumimos que el Hamiltoniano es una función de $p$ y $q$de la forma: $H=\frac{p^2}{2m}+V(q)$, entonces:
 \begin{eqnarray}
-\nonumber \langle q_{j+1}|\frac{p^2}{2m}|q_j \rangle &=& \int dpdp\prime \langle q_{j+1}|p\prime\rangle\langle p\prime|\frac{p^2}{2m}|p\rangle \langle p|q_j \rangle\\
-\nonumber &=&\int \frac{dpdp\prime}{2\pi\hbar}\ \text{Exp}[\frac{i}{\hbar}(p\prime q_{j+1}-pq_j)]\frac{p^2}{2m}\delta(p-p\prime)\\
-&=& \int \frac{dp}{2\pi\hbar}\ \text{Exp}[\frac{i}{\hbar}p(q_{j+1}-q_j)]\frac{p^2}{2m}
+\nonumber \langle q_{j+1}|\frac{p^2}{2m}|q_j \rangle &=& \int dpdp^{\prime} \langle q_{j+1}|p^{\prime}\rangle\langle p^{\prime}|\frac{p^2}{2m}|p\rangle \langle p|q_j \rangle\\
+\nonumber &=&\int \frac{dpdp^{\prime}}{2\pi\hbar}\ \ \exp[\frac{i}{\hbar}(p^{\prime} q_{j+1}-pq_j)]\frac{p^2}{2m}\delta(p-p^{\prime})\\
+&=& \int \frac{dp}{2\pi\hbar}\ \ \exp[\frac{i}{\hbar}p(q_{j+1}-q_j)]\frac{p^2}{2m}
 \end{eqnarray}
 De una manera similar:
 \begin{eqnarray}
 \nonumber \langle q_{j+1}|V(q)|q_j \rangle &=& V(\frac{q_{j+1}+q_j}{2})\langle q_{j+1}|q_j\rangle\\
 \nonumber &=& V(\frac{q_{j+1}+q_j}{2})\delta(q_{j+1}-q_j)\\
-\langle q_{j+1}|V(q)|q_j \rangle &=& V(\frac{q_{j+1}+q_j}{2})\int \frac{dp}{2\pi\hbar}\ \text{Exp}[\frac{i}{\hbar}p(q_{j+1}-q_j)]
+\langle q_{j+1}|V(q)|q_j \rangle &=& V(\frac{q_{j+1}+q_j}{2})\int \frac{dp}{2\pi\hbar}\ \ \exp[\frac{i}{\hbar}p(q_{j+1}-q_j)]
 \end{eqnarray}
-Por tanto $\langle q_{j+1}|H|q_j\rangle=\int \frac{dp}{h}\ \text{Exp}[\frac{i}{h}p(q_{j+1}-q_j)]H(p,q)$ y:
+Por tanto $\langle q_{j+1}|H|q_j\rangle=\int \frac{dp}{h}\ \ \exp[\frac{i}{h}p(q_{j+1}-q_j)]H(p,q)$ y:
 \begin{equation}
-\langle q_{j+1}t_{j+1}|q_jt_j\rangle=\frac{1}{h}\int dp_j\ \text{Exp}[\frac{i}{\hbar}[p_j(q_{j+1}-q_j)-\tau H(p_j,q_j)]]
+\langle q_{j+1}t_{j+1}|q_jt_j\rangle=\frac{1}{h}\int dp_j\ \ \exp[\frac{i}{\hbar}[p_j(q_{j+1}-q_j)-\tau H(p_j,q_j)]]
 \end{equation}
 Finalmente:
 \begin{equation}
-\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N \to \infty}\int\prod_{j=1}^{N}dq_j\prod_{j=0}^{N}\frac{dp_j}{h}\ \text{Exp}\left\{ \frac{i}{\hbar}\sum_{j=0}^{N}[p_{j}(q_{j+1}-q_{j})-\tau H(p_{j},q_{j})]\right\}
+\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N \to \infty}\int\prod_{j=1}^{N}dq_j\prod_{j=0}^{N}\frac{dp_j}{h}\ \ \exp\left\{ \frac{i}{\hbar}\sum_{j=0}^{N}[p_{j}(q_{j+1}-q_{j})-\tau H(p_{j},q_{j})]\right\}
 \end{equation}
 En el continuo:
 \begin{equation}
-\langle q_{f}t_{f}|q_it_i\rangle=\int\frac{\mathcal{D}q\mathcal{D}p}{h}\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}(p\dot{q}-H(p,q))dt\right\} }}
+\langle q_{f}t_{f}|q_it_i\rangle=\int\frac{\mathcal{D}q\mathcal{D}p}{h}\ \exp\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}(p\dot{q}-H(p,q))dt\right\} 
 \end{equation}
 En el continuo $q$ se vuelve una función de $t$ y la integral anterior, es una integral funcional. La expresión (2.15) es la integral de trayectoria para la amplitud de transición entre $(q_i,t_i)$ y $(q_f,t_f)$. Esta integral se hace sobre todas las posibles trayectorias en el espacio de fase y $q(t), p(t)$ son funciones y no operadores, sin embargo es natural preguntarse por la convergencia de (2.15), esto es algo no trivial, sin embargo, de ahora en adelante asumiremos que esta integral existe y converge. 	
 \\
 Si el Hamiltoniano es tal que $H=\frac{p^2}{2m}+V(q)$
 \begin{equation}
-\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N \to \infty}\int\prod_{j=1}^{N}dq_j\prod_{j=0}^{N}\frac{dp_j}{h}\ \text{Exp}\left\{ \frac{i}{\hbar}\sum_{j=0}^{N}[p_{j}(q_{j+1}-q_{j})-\tau \frac{p_j^2}{2m}-V(q)\tau]\right\}
+\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N \to \infty}\int\prod_{j=1}^{N}dq_j\prod_{j=0}^{N}\frac{dp_j}{h}\ \ \exp\left\{ \frac{i}{\hbar}\sum_{j=0}^{N}[p_{j}(q_{j+1}-q_{j})-\tau \frac{p_j^2}{2m}-V(q)\tau]\right\}
 \end{equation}
-Y sabiendo que: $\int_{-\infty}^{\infty}\text{Exp}[-ax^{2}+bx+c]dx=\text{Exp}[\frac{b^{2}}{4a}+c](\frac{\pi}{a})^{\frac{1}{2}}$, entonces:
+Y sabiendo que: $\int_{-\infty}^{\infty}\ \exp[-ax^{2}+bx+c]dx=\ \exp[\frac{b^{2}}{4a}+c](\frac{\pi}{a})^{\frac{1}{2}}$, entonces:
 \begin{equation}
-\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N\to\infty}[\frac{1}{h}(\frac{\text{\ensuremath{\pi\hbar}2m}}{i\tau})^{\frac{1}{2}}]^{N+1}\int\prod_{1}^{N}dq_{j}\text{Exp}\left\{ \frac{i}{\hbar}\sum_{0}^{N}\left((\frac{q_{j+1}-q_{j}}{\tau})^{2}\frac{m}{2}-V\right)\tau\right\} 
+\langle q_{f}t_{f}|q_it_i\rangle=\lim_{N\to\infty}[\frac{1}{h}(\frac{\text{\ensuremath{\pi\hbar}2m}}{i\tau})^{\frac{1}{2}}]^{N+1}\int\prod_{1}^{N}dq_{j}\ \exp\left\{ \frac{i}{\hbar}\sum_{0}^{N}\left((\frac{q_{j+1}-q_{j}}{\tau})^{2}\frac{m}{2}-V\right)\tau\right\} 
 \end{equation}
 En el continuo:
 \begin{equation}
-\langle q_{f}t_{f}|q_it_i\rangle=\mathcal{N}\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}(q,\dot{q})dt\right\} }}
+\langle q_{f}t_{f}|q_it_i\rangle=\mathcal{N}\int\mathcal{D}q\ \exp\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}(q,\dot{q})dt\right\} 
 \end{equation}
 Donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo esto solo pasa si asumimos una forma específica del Hamiltoniano, cuando esto no es asi se tiene una acción efectiva. En teorñia de campos por ejemplo esta descomposición solo se puede hacer en el caso de campos Abelianos.
 \newpage
@@ -104,26 +104,26 @@ Donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo esto solo
 
 Vamos a ilustrar cómo usar el método de integrales de trayectoria en procesos de dispersión, este tipo de procesos involucran la interacción de una partícula con un potencial $V(x)$. Debido a que no siempre podemos calcular analíticamente la integral (2.18) entonces es necesario acudir a la teoría de perturbaciones, esta es aplicable en el regimen en que la energía de interacción $E_I<\hbar$. En este caso podemos escribir:
 \begin{equation}
-\text{Exp}\left[\frac{-i}{\hbar}\int_{t_{i}}^{t_{f}}V(x,t)dt\right]=1-\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}V(x,t)dt+\left(\frac{i}{\hbar}\right)^{2}\frac{1}{2!}\left[\int_{t_{i}}^{t_{f}}V(x,t)dt\right]^{2}+...
+\ \exp\left[\frac{-i}{\hbar}\int_{t_{i}}^{t_{f}}V(x,t)dt\right]=1-\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}V(x,t)dt+\left(\frac{i}{\hbar}\right)^{2}\frac{1}{2!}\left[\int_{t_{i}}^{t_{f}}V(x,t)dt\right]^{2}+...
 \end{equation}
 Cuando reemplazamos esto en la expresión (2.18) obtenemos:
 \begin{equation}
-K=K_0+K_1+K_2+...\ \text{donde}\ K_0=\mathcal{N}\int \mathcal{D}x \text{Exp}\left[ \frac{i}{\hbar}\int \frac{1}{2}m\dot{x}^2dt\right] 
+K=K_0+K_1+K_2+...\ \text{donde}\ K_0=\mathcal{N}\int \mathcal{D}x \ \exp\left[ \frac{i}{\hbar}\int \frac{1}{2}m\dot{x}^2dt\right] 
 \end{equation}
 Para calcular $K_0$, escribamos la forma discretizada de (2.20)
 \begin{eqnarray}
-\nonumber K_0&=&\lim_{n\to\infty}\left(\frac{m}{i\hbar\tau}\right)^{\left(\frac{n+1}{2}\right)}\int_{-\infty}^{\text{\ensuremath{\infty}}}\prod_{j=1}^{n}dx_{j}\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{n}\left(x_{j+1}-x_{j}\right)^{2}\right]\\
-\nonumber &=& \lim_{n\to\infty}\left(\frac{m}{i\hbar\tau}\right)^{\left(\frac{n+1}{2}\right)}\frac{1}{\left(n+1\right)^{\frac{1}{2}}}\left(\frac{i\hbar\tau}{m}\right)^{\frac{n}{2}}\text{Exp}\left[\frac{im}{2\hbar(n+1)\tau}\left(x_{f}-x_{i}\right)^{2}\right]\\
-K_0(x_ft_f,x_it_i)&=& \Theta(t_{f}-t_{i})\left(\frac{m}{i\hbar(t_{f}-t_{i})}\right)^{1/2}\text{Exp}\left[\frac{im}{2\hbar(t_{f}-t_{i})}\left(x_{f}-x_{i}\right)^{2}\right] 
+\nonumber K_0&=&\lim_{n\to\infty}\left(\frac{m}{i\hbar\tau}\right)^{\left(\frac{n+1}{2}\right)}\int_{-\infty}^{\text{\ensuremath{\infty}}}\prod_{j=1}^{n}dx_{j}\ \exp\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{n}\left(x_{j+1}-x_{j}\right)^{2}\right]\\
+\nonumber &=& \lim_{n\to\infty}\left(\frac{m}{i\hbar\tau}\right)^{\left(\frac{n+1}{2}\right)}\frac{1}{\left(n+1\right)^{\frac{1}{2}}}\left(\frac{i\hbar\tau}{m}\right)^{\frac{n}{2}}\ \exp\left[\frac{im}{2\hbar(n+1)\tau}\left(x_{f}-x_{i}\right)^{2}\right]\\
+K_0(x_ft_f,x_it_i)&=& \Theta(t_{f}-t_{i})\left(\frac{m}{i\hbar(t_{f}-t_{i})}\right)^{1/2}\ \exp\left[\frac{im}{2\hbar(t_{f}-t_{i})}\left(x_{f}-x_{i}\right)^{2}\right] 
 \end{eqnarray}
 Calculemos ahora $K_1$:
 \begin{equation}
-K_1=\lim_{n\to\infty}\frac{-i}{\hbar}N^{(n+1)/2}\sum_{i=1}^{n}\int\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{n}(x_{j+1}-x_{j})^{2}\right]V(x_{i},t_{i})dx_{1}...dx_{n}
+K_1=\lim_{n\to\infty}\frac{-i}{\hbar}N^{(n+1)/2}\sum_{i=1}^{n}\int\ \exp\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{n}(x_{j+1}-x_{j})^{2}\right]V(x_{i},t_{i})dx_{1}...dx_{n}
 \end{equation}
 Ahora como solo $V(x)$ depende de $x_i$, separamos (2.22) como:
 \begin{eqnarray}
-\nonumber K_1&=&\lim_{n\to\infty}\frac{-i}{\hbar}\sum_{i=1}^{n}\left\{ \int N^{(n-i+1)/2}\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=i}^{n}(x_{j+1}-x_{j})^{2}\right]dx_{i}...dx_{n}\right\}\\
-& &\times  \left\{ \int N^{i/2}\text{Exp}\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{i-1}(x_{j+1}-x_{j})^{2}\right]dx_{1}...dx_{i-1}\right\} V(x_{i},t_{i})
+\nonumber K_1&=&\lim_{n\to\infty}\frac{-i}{\hbar}\sum_{i=1}^{n}\left\{ \int N^{(n-i+1)/2}\ \exp\left[\frac{im}{2\hbar\tau}\sum_{j=i}^{n}(x_{j+1}-x_{j})^{2}\right]dx_{i}...dx_{n}\right\}\\
+& &\times  \left\{ \int N^{i/2}\ \exp\left[\frac{im}{2\hbar\tau}\sum_{j=0}^{i-1}(x_{j+1}-x_{j})^{2}\right]dx_{1}...dx_{i-1}\right\} V(x_{i},t_{i})
 \end{eqnarray}
 Los dos términos en corchetes en (2.23) son $K_0(xt,x_ft_f)$ y $K_0(x_it_i,xt)$, así:
 \begin{equation}
@@ -187,8 +187,8 @@ En (2.31) el superíndice $(+)$ denota que $\psi^{(+)}(\vec{x}t)$ era una onda l
 \end{eqnarray}
 Si los momentos iniciales y finales son $\vec{p}_i=\hbar\vec{k}_i$,$\vec{p}_f=\hbar\vec{k}_f$ respectivamente, entonces tenemos que:
 \begin{eqnarray}
-\psi_{in}(\vec{x}t)&=&\frac{1}{\sqrt{\tau}}\text{Exp}\left( \frac{i}{\hbar}(\vec{p}_i\cdot \vec{x}-E_it )\right)\\
-\psi_{out}(\vec{x}t)&=&\frac{1}{\sqrt{\tau}}\text{Exp}\left( \frac{i}{\hbar}(\vec{p}_f\cdot \vec{x}-E_ft )\right)
+\psi_{in}(\vec{x}t)&=&\frac{1}{\sqrt{\tau}}\ \exp\left( \frac{i}{\hbar}(\vec{p}_i\cdot \vec{x}-E_it )\right)\\
+\psi_{out}(\vec{x}t)&=&\frac{1}{\sqrt{\tau}}\ \exp\left( \frac{i}{\hbar}(\vec{p}_f\cdot \vec{x}-E_ft )\right)
 \end{eqnarray}
 Donde $E^2=\frac{p^2}{2m}$ y $\tau$ es el volumen de integración, el cual es arbitrario. Si sustituimos las expresiones (2.33) y (2.34) en (2.32) obtenemos:
 \begin{equation}
@@ -217,8 +217,8 @@ Este diagrama lo podemos descomponer usando la siguiente convención:
 \\
 Por ejemplo el diagrama correspondiente a término de segundo orden:
 \begin{eqnarray}
-\nonumber \mathcal{A}^{(2)}&=&\left(-\frac{i}{\hbar}\right)^2\int d\vec{x}_{f}d\vec{x_{i}}d\vec{x\prime}dt\prime d\vec{x}dtK_{0}(\vec{x}t,\vec{x}_it_i)V(\vec{x}t)K_{0}(\vec{x}\prime t\prime,\vec{x}t)\\
-&&\times V(\vec{x}\prime t\prime)K_{0}(\vec{x}_{f}t_{f},\vec{x}\prime t\prime)\psi_{out}^{*}(\vec{x}_{f}t_{f})\psi_{in}(\vec{x}_{i}t_{i})
+\nonumber \mathcal{A}^{(2)}&=&\left(-\frac{i}{\hbar}\right)^2\int d\vec{x}_{f}d\vec{x_{i}}d\vec{x^{\prime}}dt^{\prime} d\vec{x}dtK_{0}(\vec{x}t,\vec{x}_it_i)V(\vec{x}t)K_{0}(\vec{x}^{\prime} t^{\prime},\vec{x}t)\\
+&&\times V(\vec{x}^{\prime} t^{\prime})K_{0}(\vec{x}_{f}t_{f},\vec{x}^{\prime} t^{\prime})\psi_{out}^{*}(\vec{x}_{f}t_{f})\psi_{in}(\vec{x}_{i}t_{i})
 \end{eqnarray}
 Es el siguiente:
 \begin{SCfigure}[1.3][h]
@@ -227,9 +227,9 @@ Es el siguiente:
 \end{SCfigure}
 En algunos casos es útil conocer una expresión para el propagador  $K_0$en el espacio de momentos, definimos $\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_2t_2)$ como la amplitud de que una partícula con momento $\vec{p}_2$ en un instante $t_2$, sea observada un instante de tiempo después en $t_1$ con momento $\vec{p}_1$. Así:
 \begin{eqnarray}
-\nonumber \mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)&=&\int \text{Exp}\left(\frac{-i}{\hbar}(\vec{p}_1\cdot\vec{x}_1)\right) K_0(\vec{x}_1t_1,\vec{x}_0t_0)\text{Exp}\left(\frac{-i}{\hbar}(\vec{p}_0\cdot\vec{x}_0)\right)d\vec{x}_0d\vec{x}_1\\
-&&\nonumber \Theta(t_{1}-t_{0})\left(\frac{m}{i\hbar(t_{1}-t_{0})}\right)^{1/2}\int\text{Exp}\left[\frac{i}{\hbar}(\vec{p}_{0}\cdot\vec{x}_{0}-\vec{p}_{1}\cdot\vec{x}_{1})\right]\\
-&& \times \text{Exp}\left[\frac{im(\vec{x}_{0}-\vec{x}_{1})^{2}}{2\hbar(t_{1}-t_{0})}\right]d\vec{x}_{0}d\vec{x}_{1}
+\nonumber \mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)&=&\int \ \exp\left(\frac{-i}{\hbar}(\vec{p}_1\cdot\vec{x}_1)\right) K_0(\vec{x}_1t_1,\vec{x}_0t_0)\ \exp\left(\frac{-i}{\hbar}(\vec{p}_0\cdot\vec{x}_0)\right)d\vec{x}_0d\vec{x}_1\\
+&&\nonumber \Theta(t_{1}-t_{0})\left(\frac{m}{i\hbar(t_{1}-t_{0})}\right)^{1/2}\int\ \exp\left[\frac{i}{\hbar}(\vec{p}_{0}\cdot\vec{x}_{0}-\vec{p}_{1}\cdot\vec{x}_{1})\right]\\
+&& \times \ \exp\left[\frac{im(\vec{x}_{0}-\vec{x}_{1})^{2}}{2\hbar(t_{1}-t_{0})}\right]d\vec{x}_{0}d\vec{x}_{1}
 \end{eqnarray}
 Ahora si introducimos las siguientes variables:
 \begin{equation}
@@ -237,11 +237,11 @@ Ahora si introducimos las siguientes variables:
 \end{equation}
 Teniendo en cuenta que el Jacobiano de esta transformación es $J=\left(\frac{1}{2}\right)^3=\frac{1}{8}$ y con $\alpha=\frac{m}{2\hbar (t_1-t_0)}$  podemos escribir:
 \begin{equation}
-\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)=\Theta(t_{1}-t_{0})\left(\frac{\alpha}{i\pi}\right)^{3/2}\frac{1}{8}\int\text{Exp}\left[\frac{i\vec{p}\cdot\vec{X}}{2\hbar}\right]d\vec{X}\int\text{Exp}\left[\frac{i\vec{P}\cdot\vec{x}}{2\hbar)}\right]e^{i\alpha x^{2}}d\vec{x}
+\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)=\Theta(t_{1}-t_{0})\left(\frac{\alpha}{i\pi}\right)^{3/2}\frac{1}{8}\int\ \exp\left[\frac{i\vec{p}\cdot\vec{X}}{2\hbar}\right]d\vec{X}\int\ \exp\left[\frac{i\vec{P}\cdot\vec{x}}{2\hbar)}\right]e^{i\alpha x^{2}}d\vec{x}
 \end{equation}
-La primera integral es $I_1=8(2\pi\hbar)^3\delta(\vec{p}_0-\vec{p}_1)$, la segunda la podemos calcular con la identidad $ \int e^{-ax^2+bx+c}=e^{\frac{b^2}{4a}+c}\left(\frac{\pi}{a}\right)^(1/2)$, por tanto $I_2=\left(\frac{i\pi}{\alpha}\right)^{3/2}\text{Exp}\left[\frac{-i\vec{P}^{2}}{8\hbar^{3}4i\alpha}\right]$, por tanto:
+La primera integral es $I_1=8(2\pi\hbar)^3\delta(\vec{p}_0-\vec{p}_1)$, la segunda la podemos calcular con la identidad $ \int e^{-ax^2+bx+c}=e^{\frac{b^2}{4a}+c}\left(\frac{\pi}{a}\right)^(1/2)$, por tanto $I_2=\left(\frac{i\pi}{\alpha}\right)^{3/2}\ \exp\left[\frac{-i\vec{P}^{2}}{8\hbar^{3}4i\alpha}\right]$, por tanto:
 \begin{equation}
-\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)=(2\pi\hbar)^3\Theta(t_1-t_0)\delta(\vec{p}_1-\vec{p}_0)\text{Exp}\left[\frac{-i\vec{P}^{2}(t_{1}-t_{0})}{8m\hbar}\right]
+\mathcal{K}_0(\vec{p}_1t_1,\vec{p}_0t_0)=(2\pi\hbar)^3\Theta(t_1-t_0)\delta(\vec{p}_1-\vec{p}_0)\ \exp\left[\frac{-i\vec{P}^{2}(t_{1}-t_{0})}{8m\hbar}\right]
 \end{equation}
 Si también realizamos la transformada de Fourier en el tiempo, obtenemos:
 \begin{equation}
@@ -268,52 +268,52 @@ Podemos modificar el Lagrangiano de la de la siguiente manera: $\mathcal{L} \to 
 \begin{equation}
 Z[J]\propto \langle 0,\infty|0,-\infty\rangle ^J
 \end{equation}
-La fuente $J(t)=0$ para $t>t\prime$ , $t\prime \prime < t$. Instroduzcamos entonces $T$ y $T\prime $ de tal manera que $T<t\prime\prime $ , $T\prime>t\prime $ por tanto la amplitud (2.44) es:
+La fuente $J(t)=0$ para $t>t^{\prime}$ , $t^{\prime} < t$. Instroduzcamos entonces $T$ y $T^{\prime} $ de tal manera que $T<t^{\prime} $ , $T^{\prime}>t^{\prime} $ por tanto la amplitud (2.44) es:
 \begin{equation}
-\langle 	Q\prime T\prime |QT\rangle=\mathcal{N}\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{T}^{T\prime}\mathcal{L}(q,\dot{q})dt\right\} }}
+\langle 	Q^{\prime} T^{\prime} |QT\rangle=\mathcal{N}\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{T}^{T^{\prime}}\mathcal{L}(q,\dot{q})dt\right\} }}
 \end{equation}
 Podemos escribir:
 \begin{equation}
-\langle Q\prime T\prime |QT \rangle^J=\int dq\prime dq\langle Q\prime T\prime | q\prime t\prime  \rangle\langle q\prime t\prime | qt \rangle\langle qt|QT \rangle
+\langle Q^{\prime} T^{\prime} |QT \rangle^J=\int dq^{\prime} dq\langle Q^{\prime} T^{\prime} | q^{\prime} t^{\prime}  \rangle\langle q^{\prime} t^{\prime} | qt \rangle\langle qt|QT \rangle
 \end{equation}
 Ahora si denotamos $|E_q\rangle$ como un autoestado del hamiltoniano podemos usar estos estados para expandir:
 \begin{eqnarray}
-\nonumber \langle Q\prime T\prime | q\prime t\prime  \rangle &=& \langle Q\prime|\text{Exp}\left[\frac{-i}{\hbar}HT\prime\right]\text{Exp}\left[\frac{i}{\hbar}Ht\prime\right]|q\prime\rangle\\
-\nonumber &=& \sum_{mn}\phi^{*}(q\prime)\phi(Q\prime)\langle E_{Q\prime}|\text{Exp}\left[\frac{-i}{\hbar}HT\prime\right]\text{Exp}\left[\frac{i}{\hbar}Ht\prime\right]|E_{q\prime}\rangle\\
-&=&\sum_{m}\phi^{*}(q\prime)\phi(Q\prime)Exp\left[\frac{i}{\hbar}E_{m}(t\prime-T\prime)\right]
+\nonumber \langle Q^{\prime} T^{\prime} | q^{\prime} t^{\prime}  \rangle &=& \langle Q\prime|\ \exp\left[\frac{-i}{\hbar}HT^{\prime}\right]\ \exp\left[\frac{i}{\hbar}Ht^{\prime}\right]|q^{\prime}\rangle\\
+\nonumber &=& \sum_{mn}\phi^{*}(q^{\prime})\phi(Q^{\prime})\langle E_{Q^{\prime}}|\ \exp\left[\frac{-i}{\hbar}HT^{\prime}\right]\ \exp\left[\frac{i}{\hbar}Ht^{\prime}\right]|E_{q^{\prime}}\rangle\\
+&=&\sum_{m}\phi^{*}(q^{\prime})\phi(Q^{\prime}) \exp\left[\frac{i}{\hbar}E_{m}(t^{\prime}-T^{\prime})\right]
 \end{eqnarray}
 De la misma manera:
 \begin{equation}
-\langle qt|	QT  \rangle=\sum_{m}\phi^{*}(Q)\phi(q)Exp\left[\frac{i}{\hbar}E_{m}(t-T)\right]
+\langle qt|	QT  \rangle=\sum_{m}\phi^{*}(Q)\phi(q)\ \exp\left[\frac{i}{\hbar}E_{m}(t-T)\right]
 \end{equation}
 Introduciendo (2.47) y (2.48) en (2.46):
 \begin{eqnarray}
-\nonumber \langle Q\prime T\prime|QT\rangle &=&\int dq\prime dq\sum_{m}\phi_{m}(Q\prime)\phi_{m}(q\prime,t)Exp\left[\frac{-i}{\hbar}E_{m}T\prime\right]\\
-&&\times  \sum_{n}\phi_{n}^{*}(Q)\phi_{n}^{*}(q,t)Exp\left[\frac{i}{\hbar}E_{n}T\right]\langle q\prime t\prime|qt\rangle^{J}
+\nonumber \langle Q^{\prime} T^{\prime}|QT\rangle &=&\int dq^{\prime} dq\sum_{m}\phi_{m}(Q^{\prime})\phi_{m}(q^{\prime},t)\ \exp\left[\frac{-i}{\hbar}E_{m}T^{\prime}\right]\\
+&&\times  \sum_{n}\phi_{n}^{*}(Q)\phi_{n}^{*}(q,t)\ \exp\left[\frac{i}{\hbar}E_{n}T\right]\langle q^{\prime} t^{\prime}|qt\rangle^{J}
 \end{eqnarray}
-Si hacemos una rotación de Wick de $T$ y $T\prime $ nos damos cuenta que el el término que menos sufre de supresión en la integral (2.49) es el asociado a $m=n=0$, por tanto:
+Si hacemos una rotación de Wick de $T$ y $T^{\prime} $ nos damos cuenta que el el término que menos sufre de supresión en la integral (2.49) es el asociado a $m=n=0$, por tanto:
 \begin{equation}
-\int dq\prime dq\phi_{0}^{*}(q\prime,t\prime)\langle q\prime t\prime|qt\rangle^{J}\phi_{0}(q,t)=\lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T\prime\to\text{\ensuremath{\infty}e}^{-i\delta}}\frac{\langle Q\prime T\prime|QT\rangle^{J}}{\phi_{0}^{*}(Q)\phi_{0}(Q\prime)\text{Exp}\left[\frac{-i}{\hbar}E_{0}(T\prime-T)\right]}
+\int dq^{\prime} dq\phi_{0}^{*}(q^{\prime},t^{\prime})\langle q^{\prime} t^{\prime}|qt\rangle^{J}\phi_{0}(q,t)=\lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T^{\prime}\to\text{\ensuremath{\infty}e}^{-i\delta}}\frac{\langle Q^{\prime} T^{\prime}|QT\rangle^{J}}{\phi_{0}^{*}(Q)\phi_{0}(Q^{\prime})\ \exp\left[\frac{-i}{\hbar}E_{0}(T^{\prime}-T)\right]}
 \end{equation}
 El lado de (2.50) es simplemente el valor de expectación en el vacio de la amplitud de transcición, justo lo que buscabamos y el denominador de la parte derecha de la ecuación es simplemente una constante, así:
 \begin{equation}
-\langle 0,\infty| 0,-\infty \rangle ^J \propto \lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T\prime\to\text{\ensuremath{\infty}e}^{-i\delta}}\langle Q\prime T\prime|QT\rangle^{J}
+\langle 0,\infty| 0,-\infty \rangle ^J \propto \lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T^{\prime}\to\text{\ensuremath{\infty}e}^{-i\delta}}\langle Q^{\prime} T^{\prime}|QT\rangle^{J}
 \end{equation}
 Otra forma equivalente de obtener este mismo resultado es: en vez de hacer una rotación de Wick, podemos agregar una pequeña cantidad imaginaria negativa al hamiltoniano $H+(-\frac{1}{2}i\epsilon q^2)$, lo cual es equivalente a restar esta misma cantidad a $\mathcal{L}$, de aquí que:
 \begin{equation}
-Z[J]=\int\mathcal{D}q\text{Exp\ensuremath{\left\{ \frac{i}{\hbar}\int_{-\infty}^{\infty}(\mathcal{L}(q,\dot{q})+\hbar Jq + \frac{1}{2}i\epsilon q^2)dt\right\} }}
+Z[J]=\int\mathcal{D}q\ \exp\left\{ \frac{i}{\hbar}\int_{-\infty}^{\infty}(\mathcal{L}(q,\dot{q})+\hbar Jq + \frac{1}{2}i\epsilon q^2)dt\right\} 
 \end{equation}
 En general se cumple que:
 \begin{equation}
- \langle q_{f}t_{f}|T[q(t_{1})...q(t_{n})]|q_{i}t_{i}\rangle=\mathcal{N}\int\mathcal{D}qq(t_{1})...q(t_{n})\text{Exp}\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
+ \langle q_{f}t_{f}|T[q(t_{1})...q(t_{n})]|q_{i}t_{i}\rangle=\mathcal{N}\int\mathcal{D}qq(t_{1})...q(t_{n})\ \exp\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
 \end{equation}
 Donde $T$ es el operador de ordenamiento temporal. Si derivamos funcionalmente la expresión para $Z[J]$ respecto a $J(t)$ obtenemos:
 \begin{equation}
-\frac{\delta Z[J]}{\delta J(t_{1}).}|_{J=0}=i\mathcal{N}\int\mathcal{D}qq(t_{1})\text{Exp}\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
+\frac{\delta Z[J]}{\delta J(t_{1}).}|_{J=0}=i\mathcal{N}\int\mathcal{D}qq(t_{1})\ \exp\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
 \end{equation}	
 Haciendo esto $n$ veces:
 \begin{equation}
-\frac{\delta^{n}Z[J]}{\delta J(t_{1})...\delta J(t_{n}).}|_{J=0}=i^{n}\mathcal{N}\int\mathcal{D}qq(t_{1})...q(t_{n})\text{Exp}\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
+\frac{\delta^{n}Z[J]}{\delta J(t_{1})...\delta J(t_{n}).}|_{J=0}=i^{n}\mathcal{N}\int\mathcal{D}qq(t_{1})...q(t_{n})\ \exp\left[\frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}dt\right]
 \end{equation}
 De igualar las ecuaciones (2.53), (2.55) y al tener en cuenta agregar el factor $\frac{1}{2}i\epsilon q^2$ (el cual simplemente va a hacer converger los estados inicial y final en (2.53) a estados de vacío) obtenemos:
 \begin{equation}
@@ -331,32 +331,32 @@ En esta sección aplicaremos lo aprendido en la $\mathsection$2.1 para resolver 
 Con este objetivo en mente primero necesitamos conocer el propagador de una partícula libre, sabemos que en un espacio plano de una dimensión la integral de trayectoria está dada por la expresión (2.17),podemos hacer facilmente una analogía para un espacio euclídeo d-dimensional. En este caso el propagador es:
 \begin{eqnarray}
 \nonumber K(x_{f}t_{f,},x_{i,}t_{i})&=&\lim_{n\to\infty}\frac{1}{(2\pi i\hbar\epsilon/m)^{d/2}}\prod_{k=1}^{n}\int\frac{d^{d}x_{k}}{(2\pi i\hbar\epsilon/m)^{d/2}}\\
-&&\times \text{Exp}\left\{ \frac{i}{\hbar}\sum_{k=1}^{n}\epsilon\left[\frac{m(x_{k}-x_{k-1})^{2}}{2\epsilon^{2}}-V(x_{k})\right]\right\} 
+&&\times \ \exp\left\{ \frac{i}{\hbar}\sum_{k=1}^{n}\epsilon\left[\frac{m(x_{k}-x_{k-1})^{2}}{2\epsilon^{2}}-V(x_{k})\right]\right\} 
 \end{eqnarray}
 donde $\epsilon=(t_i-t_f)/n$; para una partícula libre $V(x_k)=0$, entonces:
 \begin{equation}
-K(x_{f}t_{f,},x_{i,}t_{i})=\lim_{n\to\infty}\frac{1}{(2\pi i\hbar\epsilon/m)^{d/2}}\prod_{k=1}^{n}\int\frac{d^{d}x_{k}}{(2\pi i\hbar\epsilon/m)^{d/2}}\text{Exp}\left\{ \frac{i}{\hbar}\sum_{k=1}^{n}\left[\frac{m(x_{k}-x_{k-1})^{2}}{2\epsilon}\right]\right\}
+K(x_{f}t_{f,},x_{i,}t_{i})=\lim_{n\to\infty}\frac{1}{(2\pi i\hbar\epsilon/m)^{d/2}}\prod_{k=1}^{n}\int\frac{d^{d}x_{k}}{(2\pi i\hbar\epsilon/m)^{d/2}}\ \exp\left\{ \frac{i}{\hbar}\sum_{k=1}^{n}\left[\frac{m(x_{k}-x_{k-1})^{2}}{2\epsilon}\right]\right\}
 \end{equation}
 Para $d=1$, integremos los términos que tienen que ver con $x_1$:
 \begin{eqnarray}
-\nonumber &\frac{1}{(2\pi i\hbar\epsilon/m)^{1/2}}\prod_{k=1}^{n}\int\frac{dx_{1}}{(2\pi i\hbar\epsilon/m)^{1/2}}\text{Exp}\left\{ \frac{im(x_{1}-x_{0})^{2}}{2\hbar\epsilon}\right\} \text{Exp}\left\{ \frac{im(x_{2}-x_{1})^{2}}{2\hbar\epsilon}\right\}\\
-\nonumber &=\frac{1}{(2\pi i\hbar\epsilon/m)}\int dx_{1}\text{Exp}\left\{ \frac{-m}{2i\epsilon\hbar}\left(2x_{1}^{2}-2x_{1}(x_{2}+x_{0})+x_{0}^{2}+x_{2}^{2}\right)\right\}\\
+\nonumber &\frac{1}{(2\pi i\hbar\epsilon/m)^{1/2}}\prod_{k=1}^{n}\int\frac{dx_{1}}{(2\pi i\hbar\epsilon/m)^{1/2}}\ \exp\left\{ \frac{im(x_{1}-x_{0})^{2}}{2\hbar\epsilon}\right\} \ \exp\left\{ \frac{im(x_{2}-x_{1})^{2}}{2\hbar\epsilon}\right\}\\
+\nonumber &=\frac{1}{(2\pi i\hbar\epsilon/m)}\int dx_{1}\ \exp\left\{ \frac{-m}{2i\epsilon\hbar}\left(2x_{1}^{2}-2x_{1}(x_{2}+x_{0})+x_{0}^{2}+x_{2}^{2}\right)\right\}\\
 \nonumber &\text{Usando} \ \int e^{-ax^{2}+bx+c}dx=e^{^{\frac{b^{2}}{4a}+c}}\left(\frac{\pi}{a}\right)^{1/2}\\
-\nonumber &=\frac{1}{\sqrt{2\pi i\hbar(2\epsilon)/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{2}-x_{0})^{2}}{2\hbar(2\epsilon)}\right\} }}
+\nonumber &=\frac{1}{\sqrt{2\pi i\hbar(2\epsilon)/m}}\ \exp\left\{ \frac{im(x_{2}-x_{0})^{2}}{2\hbar(2\epsilon)}\right\} 
 \end{eqnarray}
 Ahora al seguir con la integral de $x_2$ queda:
 \begin{eqnarray}
-\nonumber & \frac{1}{(2\pi i\hbar\epsilon/m)\sqrt{2}}\int dx_{2}\text{Exp}\left\{ \frac{im}{2\hbar(2\epsilon)}\left(x_{2}-x_{o}\right)^{2}\right\} \text{Exp}\left\{ \frac{im}{2\hbar\epsilon}\left(x_{3}-x_{2}\right)^{2}\right\} \\
-&=\frac{1}{\sqrt{2\pi i\hbar(3\epsilon)/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{3}-x_{0})^{2}}{2\hbar(3\epsilon)}\right\} }}
+\nonumber & \frac{1}{(2\pi i\hbar\epsilon/m)\sqrt{2}}\int dx_{2}\ \exp\left\{ \frac{im}{2\hbar(2\epsilon)}\left(x_{2}-x_{o}\right)^{2}\right\} \ \exp\left\{ \frac{im}{2\hbar\epsilon}\left(x_{3}-x_{2}\right)^{2}\right\} \\
+&=\frac{1}{\sqrt{2\pi i\hbar(3\epsilon)/m}}\ \exp\left\{ \frac{im(x_{3}-x_{0})^{2}}{2\hbar(3\epsilon)}\right\} 
 \end{eqnarray}
 Así por inducción:
 \begin{eqnarray}
-\nonumber K(x_{f}t_{f},x_{i}t_{i})&=&\lim_{n\to\infty}\frac{1}{\sqrt{2\pi i\hbar(n\epsilon)/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{f}-x_{i})^{2}}{2\hbar(n\epsilon)}\right\} }}\\
-&=& \frac{1}{\sqrt{2\pi i\hbar(t_{f}-t_{i})/m}}\text{Exp\ensuremath{\left\{ \frac{im(x_{f}-x_{i})^{2}}{2\hbar(t_{f}-t_{i})}\right\} }}
+\nonumber K(x_{f}t_{f},x_{i}t_{i})&=&\lim_{n\to\infty}\frac{1}{\sqrt{2\pi i\hbar(n\epsilon)/m}}\ \exp\left\{ \frac{im(x_{f}-x_{i})^{2}}{2\hbar(n\epsilon)}\right\} \\
+&=& \frac{1}{\sqrt{2\pi i\hbar(t_{f}-t_{i})/m}}\ \exp\left\{ \frac{im(x_{f}-x_{i})^{2}}{2\hbar(t_{f}-t_{i})}\right\} 
 \end{eqnarray}
 Por tanto en 3-D:
 \begin{equation}
-K^{3D}(x_{f}t_{f},x_{i}t_{i})\equiv K_{0}^{3D}=\left(\frac{m}{2\pi i\hbar(t_{f}-t_{i})}\right)^{3/2}\text{Exp\ensuremath{\left\{ \frac{im|\vec{x}_{f}-\vec{x}_{i}|^{2}}{2\hbar(t_{f}-t_{i})}\right\} }}
+K^{3D}(x_{f}t_{f},x_{i}t_{i})\equiv K_{0}^{3D}=\left(\frac{m}{2\pi i\hbar(t_{f}-t_{i})}\right)^{3/2}\ \exp\left\{ \frac{im|\vec{x}_{f}-\vec{x}_{i}|^{2}}{2\hbar(t_{f}-t_{i})}\right\} 
 \end{equation}
 
 
@@ -365,10 +365,10 @@ Consideremos el siguiente experimento: una fuente de electrones en $(x,y,z)=(0,0
 \\
 Así reducimos la dimensión del propagador en $y$:
 \begin{eqnarray}
-\nonumber K_{0}^{2D}(\vec{r}t,\vec{r}\prime t\prime)&=&\int_{-\infty}^{\infty}dyK_{0}^{3D}(\vec{r}t,\vec{r}\prime t\prime)\\
-&=& \frac{m}{2\pi i\hbar(t-t\prime)}Exp\left\{ \frac{im|\vec{x}-\vec{x}\prime|^{2}}{2\hbar(t-t\prime)}\right\} 
+\nonumber K_{0}^{2D}(\vec{r}t,\vec{r}^{\prime} t^{\prime})&=&\int_{-\infty}^{\infty}dyK_{0}^{3D}(\vec{r}t,\vec{r}^{\prime} t^{\prime})\\
+&=& \frac{m}{2\pi i\hbar(t-t^{\prime})}\ \exp\left\{ \frac{im|\vec{x}-\vec{x}^{\prime}|^{2}}{2\hbar(t-t^{\prime})}\right\} 
 \end{eqnarray}
-Donde $|\vec{x}-\vec{x}\prime|^{2}$ se define como el módulo cuadrádo de la distancia en el plano $z-x$. Para modelar las rendijas vamos a usar las siguientes funciones escalón:
+Donde $|\vec{x}-\vec{x}^{\prime}|^{2}$ se define como el módulo cuadrádo de la distancia en el plano $z-x$. Para modelar las rendijas vamos a usar las siguientes funciones escalón:
 \[   
 \chi_{[b-a,b+a]}(\omega) = 
      \begin{cases}
@@ -416,11 +416,11 @@ Organicemos de una manera diferente el exponencial de la ecuación (2.65):
 \end{eqnarray}
 Por tanto reemplazando (2.66) en (2.65)
 \begin{equation}
-A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{2\pi i\hbar(T+\tau)/m}}\int_{b-a}^{b+a}d\omega\sqrt{\frac{T+\tau}{2\pi\hbar T\tau/m}}\text{Exp}\left\{ \frac{i(T+\tau)}{2\hbar T\tau/m}\left(\omega-\frac{x}{1+\tau/T}\right)^{2}\right\}
+A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{2\pi i\hbar(T+\tau)/m}}\int_{b-a}^{b+a}d\omega\sqrt{\frac{T+\tau}{2\pi\hbar T\tau/m}}\ \exp\left\{ \frac{i(T+\tau)}{2\hbar T\tau/m}\left(\omega-\frac{x}{1+\tau/T}\right)^{2}\right\}
 \end{equation}
-Ahora si $\omega\prime=\sqrt{\frac{T+\tau}{\pi\hbar T\tau/m}}\left(\omega-\frac{x}{1+\tau/T}\right)$:
+Ahora si $\omega^{\prime}=\sqrt{\frac{T+\tau}{\pi\hbar T\tau/m}}\left(\omega-\frac{x}{1+\tau/T}\right)$:
 \begin{equation}
-\Rightarrow A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{2\pi i\hbar(T+\tau)/m}}\int_{\alpha_{-}(x)}^{\alpha_{+}(x)}d\omega\prime\sqrt{\frac{T+\tau}{2\pi\hbar T\tau/m}}\text{Exp}\left\{ \frac{i\pi\omega\prime^{2}}{2}\right\} 
+\Rightarrow A_{1}(x;a,b)=\frac{e^{\frac{imx^{2}}{2\hbar(T+\tau)}}}{\sqrt{2\pi i\hbar(T+\tau)/m}}\int_{\alpha_{-}(x)}^{\alpha_{+}(x)}d\omega^{\prime}\sqrt{\frac{T+\tau}{2\pi\hbar T\tau/m}}\ \exp\left\{ \frac{i\pi\omega^{\prime 2}}{2}\right\} 
 \end{equation}
 Donde $\alpha_{\pm}(x)=\sqrt{\frac{T+\tau}{\pi\hbar T\tau/m}}(b\pm a)-\frac{x}{\sqrt{\pi\hbar\tau/m}}\sqrt{\frac{T}{T+\tau}}$.
 Si descomponemos el exponencial de la ecuación (2.68) en su parte imaginaria y real, obtenemos las famosas integrales de Fressnel, definidas como:
@@ -545,15 +545,15 @@ En el caso de dos rendijas de ancho $2a$ y separadas por una distancia $2b$, en 
 \section{Campos escalares.}
 En analogía con lo estudiado en la sección anterior para una partícula, definimos la transición vacío-vacío en presencia de una fuente $J(x)$ para un campo $\phi(x)$ como:
 \begin{equation}
-Z[J]=\int\mathcal{D}\phi\text{Exp}\left\{ i\int d^{4}x\left[\mathcal{L}(\phi)+J(x)\phi(x)+\frac{i}{2}\epsilon\phi^{2}(x)\right]\right\}
+Z[J]=\int\mathcal{D}\phi\ \exp\left\{ i\int d^{4}x\left[\mathcal{L}(\phi)+J(x)\phi(x)+\frac{i}{2}\epsilon\phi^{2}(x)\right]\right\}
 \end{equation}
 En este caso en vez de dividir el espacio-tiempo en segmentos, dividimos el espacio 4 dimensional (4D) de Minkowski en hipervolúmenes (4D) asumiendo que en cada uno de estos volúmenes $\phi(x)$ es constante. Si $\mathcal{L}=\mathcal{L}(Klein-Gordon)=\frac{1}{2}(\partial_\mu\phi\partial^\mu\phi-m^2 \phi^2)$, tenemos:
 \begin{equation}
-Z_{0}[J]=\text{\ensuremath{\int\mathcal{D}}}\phi\text{Exp}\left\{ i\int d^{4}x\left[\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-(m^{2}-i\epsilon)\phi^{2}))+J\phi\right]\right\} 
+Z_{0}[J]=\text{\ensuremath{\int\mathcal{D}}}\phi\ \exp\left\{ i\int d^{4}x\left[\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-(m^{2}-i\epsilon)\phi^{2}))+J\phi\right]\right\} 
 \end{equation} 	
 Ahora como $\int\partial_{\mu}\phi\partial^{\mu}\phi=\int\partial_{\mu}(\phi\partial^{\mu}\phi)-\int\phi\square\phi=0-\int\phi\square\phi$, donde hemos usado que la primera integral es una cuadridivergencia y puede ser expresada como una integral de superficie, y poniendo la condición de frontera de que los campos se anulan en el borde, este término es cero. Por tanto (2.92) queda:
 \begin{equation}
-Z_{0}[J]=\text{\ensuremath{\int\mathcal{D}}}\phi\text{Exp}\left\{ -i\int d^{4}x\left[\frac{1}{2}(\phi\square\phi+(m^{2}-i\epsilon)\phi^{2}))-J\phi\right]\right\} 
+Z_{0}[J]=\text{\ensuremath{\int\mathcal{D}}}\phi\ \exp\left\{ -i\int d^{4}x\left[\frac{1}{2}(\phi\square\phi+(m^{2}-i\epsilon)\phi^{2}))-J\phi\right]\right\} 
 \end{equation}
 El campo $\phi(x)$ no satisface la ecuacion de K-G. Para evaluar $Z_0[J]$ separemos $\phi(x)$:
 \begin{equation}
@@ -582,40 +582,40 @@ Donde $\triangle_F(x-y)$, llamado el propagador de Feynmann, es la función de g
 \end{equation}
 Con todo lo anterior podemos escribir $Z_0[J]$ como:
 \begin{equation}
-Z_0[J]=\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\} \int\mathcal{D}\phi\text{Exp}\left\{ -\frac{i}{2}\int d^{4}x\left[\frac{1}{2}(\phi(\square +m^{2}-i\epsilon)\phi\right]\right\} 
+Z_0[J]=\ \exp\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\} \int\mathcal{D}\phi\ \exp\left\{ -\frac{i}{2}\int d^{4}x\left[\frac{1}{2}(\phi(\square +m^{2}-i\epsilon)\phi\right]\right\} 
 \end{equation}
 Por tanto hemos logrado separar el funcional generatriz en dos partes, una que depende unicamente de $J(x)$ y otra de $\phi(x)$, esta última de hecho es simplemente un número que llamaremos $\mathcal{N}$, así:
 \begin{equation}
-Z_{0}[J]=\mathcal{N}\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\}
+Z_{0}[J]=\mathcal{N}\ \exp\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\}
 \end{equation}
 \subsection{Integración funcional.}
 Vamos a generalizar la fórmula de integración Gaussiana a $n$ variables discretas para luego analizar este tipo de fórmulas en el caso de cálculo funcional. Sabemos que 
 \begin{equation}
-\int_{-\infty}^{\infty}e^{-\frac{1}{2}ax^{2}}dx=\left(\frac{2\pi}{a}\right)^{1/2}\Rightarrow\int\text{Exp}\left(-\frac{1}{2}\sum a_{n}x_{n}^{2}\right)dx_{1}...dx_{n}=\frac{(2\pi)^{n/2}}{\prod_{i=1}^{n}a_{i}^{1/2}}
+\int_{-\infty}^{\infty}e^{-\frac{1}{2}ax^{2}}dx=\left(\frac{2\pi}{a}\right)^{1/2}\Rightarrow\int\ \exp\left(-\frac{1}{2}\sum a_{n}x_{n}^{2}\right)dx_{1}...dx_{n}=\frac{(2\pi)^{n/2}}{\prod_{i=1}^{n}a_{i}^{1/2}}
 \end{equation}
 Sea $A$ una matriz diagonal y $x$ un vector, el producto escalar de $Ax$ y $x$ es $(x,Ax)=\sum_n a_nx_{n}^{2}$ y $det(A)=\prod_{i=1}^{n}a_i$. Por tanto podemos escribir (2.102) como:
 \begin{equation}
-\int\text{Exp}\left[-\frac{1}{2}(x,Ax)\right]d^{n}x=(2\pi)^{n/2}(detA)^{-1/2}
+\int\ \exp\left[-\frac{1}{2}(x,Ax)\right]d^{n}x=(2\pi)^{n/2}(detA)^{-1/2}
 \end{equation}
 Si definimos la medida $dx=d^nx(2\pi)^{-n/2}$, tenemos:
 \begin{equation}
-\int\text{Exp}\left[-\frac{1}{2}(x,Ax)\right]dx=(detA)^{-1/2}
+\int\ \exp\left[-\frac{1}{2}(x,Ax)\right]dx=(detA)^{-1/2}
 \end{equation}
 Esta ecuación puede ser extendida a formas cuadráticas $Q(x)=\frac{1}{2}(x,Ax)+(b,x)+c$.En este caso tenemos:
 \begin{equation}
-\int\text{Exp}\left[-\frac{1}{2}\left\{ (x,Ax)+(b,x)+c\right\} \right]dx=\text{Exp}\left[\frac{1}{2}(b,A^{-1}b)-c\right]det(A)^{-1/2}
+\int\ \exp\left[-\frac{1}{2}\left\{ (x,Ax)+(b,x)+c\right\} \right]dx=\ \exp\left[\frac{1}{2}(b,A^{-1}b)-c\right]det(A)^{-1/2}
 \end{equation}
 La generalización funcional de la ecuación (2.104) es:
 \begin{equation}
-\int\mathcal{D}\phi\text{Exp}\left[-\frac{1}{2}\int\phi(x)A\phi(x)dx\right]=(detA)^{-1/2}
+\int\mathcal{D}\phi\ \exp\left[-\frac{1}{2}\int\phi(x)A\phi(x)dx\right]=(detA)^{-1/2}
 \end{equation}
-Así si partimos de $Z_{0}[J]=\int\mathcal{D}\phi\text{Exp}\left\{ -i\int\left[\frac{1}{2}\phi(\square+m^{2}-i\epsilon)\phi-J\phi\right]d^{4}x\right\} $ y aplicando (2.105),(2.106) con $A=i(\square+m^2-i\epsilon)$, $b=-iJ(x)$,$c=0$. Tenemos:
+Así si partimos de $Z_{0}[J]=\int\mathcal{D}\phi\ \exp\left\{ -i\int\left[\frac{1}{2}\phi(\square+m^{2}-i\epsilon)\phi-J\phi\right]d^{4}x\right\} $ y aplicando (2.105),(2.106) con $A=i(\square+m^2-i\epsilon)$, $b=-iJ(x)$,$c=0$. Tenemos:
 \begin{equation}
-Z_{0}[J]=\text{Exp}\left[\frac{i}{2}\int J(x)(\square+m^{2}-i\epsilon)^{-1}J(y)dxdy\right]det(i(\square+m^{2}-i\epsilon))^{-1/2}
+Z_{0}[J]=\ \exp\left[\frac{i}{2}\int J(x)(\square+m^{2}-i\epsilon)^{-1}J(y)dxdy\right]det(i(\square+m^{2}-i\epsilon))^{-1/2}
 \end{equation}
 Como sabemos $(\square +m^2-i\epsilon)^{-1}=-\triangle_F(x-y)$ y con la ecuación (2.106):
 \begin{equation}
-Z_0[J]=\text{Exp}\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\} \int\mathcal{D}\phi\text{Exp}\left\{ -\frac{i}{2}\int d^{4}x\left[\frac{1}{2}(\phi(\square +m^{2}-i\epsilon)\phi\right]\right\} 
+Z_0[J]=\ \exp\left\{ -\frac{i}{2}\int d^{4}xd^{4}yJ(x)\triangle_{F}(x-y)J(y)\right\} \int\mathcal{D}\phi\ \exp\left\{ -\frac{i}{2}\int d^{4}x\left[\frac{1}{2}(\phi(\square +m^{2}-i\epsilon)\phi\right]\right\} 
 \end{equation}
 Esta es la misma ecuación que (2.100)!
 
@@ -674,7 +674,7 @@ T_{n}(x_{1},...,x_{n})=\frac{\delta}{\delta y(x_{1})}...\frac{\delta}{\delta y(x
 \end{equation}
 Y $F[y]$ es llamado el \textit{funcional generatriz} de las funciones  $T_{n}(x_{1},...,x_{n})$. Si escogemos una normalización tal que $Z_0[J]|_{J=0}=1 \Rightarrow \mathcal{N}=1$, por tanto:
 \begin{equation}
-Z_{0}[J]=\text{Exp}\left\{ -\frac{i}{2}\int dxdyJ(x)\triangle_{F}(x-y)J(y)\right\} 
+Z_{0}[J]=\ \exp\left\{ -\frac{i}{2}\int dxdyJ(x)\triangle_{F}(x-y)J(y)\right\} 
 \end{equation}
 Asi $Z_0[J]$ es el funcional generatriz de:
 \begin{equation}
@@ -693,7 +693,7 @@ A las funciones $\tau(x_1,...,x_n)$ se les llama funciones de Green o funciones 
 \tau(x,y)=-\frac{\delta^2Z_0[J]}{\delta J(x)\delta J(y)}|_{J=0}
 \end{equation}
 \begin{eqnarray}
-\nonumber \Rightarrow \frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&-\int\triangle_{F}(x-x_{1})J(x_{1})\times\text{Exp}\left\{ -\frac{i}{2}\int dxdy\text{\ensuremath{\triangle}}_{F}(x_{1}-x_{2})J(x_{1})J(x_{2})\right\}\\
+\nonumber \Rightarrow \frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&-\int\triangle_{F}(x-x_{1})J(x_{1})\times\ \exp\left\{ -\frac{i}{2}\int dxdy\text{\ensuremath{\triangle}}_{F}(x_{1}-x_{2})J(x_{1})J(x_{2})\right\}\\
 \nonumber &=& -\int\triangle_{F}(x-x_{1})J(x_{1})\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\ 
 \nonumber \Rightarrow \frac{1}{i}\frac{\delta}{\delta J(y)}\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}&=&\int\triangle_{F}(x-x_{1})J(x_{1})\int\triangle_{F}(y-x_{1})J(x_{1})\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
 &&+ i\triangle_{F}(x-y)\text{\ensuremath{\times}Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}
@@ -729,11 +729,11 @@ Es claro ahora que la función de 1-punto es:
 \end{equation}
 Calculemos entonces la función de 3-puntos, partiendo de (2.122):
 \begin{eqnarray}
-\nonumber\left(\frac{1}{i}\right)^{3}\frac{\delta}{\delta J_{1}}\frac{\delta}{\delta J_{2}}\frac{\delta}{\delta J_{3}}Z_{0}[J]&=&-i\triangle_{F}(x_{3}-x_{2})\int\triangle_{F}(x_{1}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
-\nonumber && -i\triangle_{F}(x_{2}-x_{1})\int\triangle_{F}(x_{3}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
-\nonumber &&-i\triangle_{F}(x_{3}-x_{1})\int\triangle_{F}(x_{2}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\nonumber\left(\frac{1}{i}\right)^{3}\frac{\delta}{\delta J_{1}}\frac{\delta}{\delta J_{2}}\frac{\delta}{\delta J_{3}}Z_{0}[J]&=&-i\triangle_{F}(x_{3}-x_{2})\int\triangle_{F}(x_{1}-x)J(x)dx\ \exp\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\nonumber && -i\triangle_{F}(x_{2}-x_{1})\int\triangle_{F}(x_{3}-x)J(x)dx\ \exp\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
+\nonumber &&-i\triangle_{F}(x_{3}-x_{1})\int\triangle_{F}(x_{2}-x)J(x)dx\ \exp\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}\\
 \nonumber &&-\int\triangle_{F}(x_{3}-x)J(x)dx\int\triangle_{F}(x_{2}-x)J(x)dx\\
-&&\times\int\triangle_{F}(x_{1}-x)J(x)dx\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}
+&&\times\int\triangle_{F}(x_{1}-x)J(x)dx\ \exp\left\{ \frac{-i}{2}\int J\triangle_{F}J\right\}
 \end{eqnarray}
 Si evaluamos en $J=0$ la ecuación (2.129) vemos que $\tau(x_1,x_2,x_3)=0$. Para encontrar la función de 4-puntos derivamos de nuevo, los términos que sobreviven al hacer $J=0$ son:
 \begin{eqnarray}
@@ -752,11 +752,11 @@ Así uno puede darse cuenta que si $n$ es impar la función de n-puntos se anula
 \subsection{Funcional generatriz para campos interactuantes.}
 Ahora debemos lidiar con el problema de encontrar el funcional generatriz para el caso de una teoría con términos de interacción en $\mathcal{L}$, en general para campos escalares $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$. El funcional generatriz normalizado, con $S=\int \mathcal{L}dx$ es:
 \begin{equation}
-\frac{\int\mathcal{D}\phi\text{Exp}\left(iS+\int J\phi dx\right)}{\int\mathcal{D}\phi\text{Exp}\left(iS\right)}
+\frac{\int\mathcal{D}\phi\ \exp\left(iS+\int J\phi dx\right)}{\int\mathcal{D}\phi\ \exp\left(iS\right)}
 \end{equation}
 Por tanto queremos encontrar la ecuación diferencial que obedece $Z[J]$ y resolverla en términos de $Z_0[J]$. Para esto primero veamos la ecuación diferencial que satiscace $Z_0[J]$. Sabemos que:
 \begin{equation}
-\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}=-\int\triangle_{F}(x-y)J(y)dy\text{Exp}\left\{ \frac{-i}{2}\int J\triangle_{F}Jdxdy\right\} 
+\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}=-\int\triangle_{F}(x-y)J(y)dy\ \exp\left\{ \frac{-i}{2}\int J\triangle_{F}Jdxdy\right\} 
 \end{equation}
 Por tanto si aplicamos$(\square +m^2)$ a izquierda y derecha de (2.133), tenemos:
 \begin{equation}
@@ -765,39 +765,39 @@ Por tanto si aplicamos$(\square +m^2)$ a izquierda y derecha de (2.133), tenemos
 Esta es la ecuación diferencial que buscabamos, si definimos el funcional $\hat{Z}_0[\phi]=\frac{e^{iS}}{\int \mathcal{D}\phi e^{iS}}$, notamos que:
 
 \begin{equation}
-Z[J]=\int\mathcal{D}\phi\hat{Z}[\phi]\text{Exp}\left\{ i\int J\phi dx\right\}
+Z[J]=\int\mathcal{D}\phi\hat{Z}[\phi]\ \exp\left\{ i\int J\phi dx\right\}
 \end{equation}
 Esta última ecuación define el análogo funcional a la transformada de Fourier, si hacemos la derivada funcional de $\hat{Z}_0[\phi]$ obtenemos:
 \begin{equation}
 i\frac{\delta\hat{Z}[\phi]}{\delta\phi}=\left\{ (\square+m^{2})\phi-\frac{\partial\mathcal{L}_{int}}{\partial\phi}\right\} \hat{Z}[\phi]
 \end{equation}
-Si en el lado derecho de la ecuacion (2.135) multiplicamos por $\text{Exp}[i\int J\phi dx]$, integramos en $\phi(x)$ y cambiamos $\phi \rightarrow \frac{1}{i}\frac{\delta}{\delta J}$, conseguimos la siguiente ecuación:
+Si en el lado derecho de la ecuacion (2.135) multiplicamos por $\ \exp[i\int J\phi dx]$, integramos en $\phi(x)$ y cambiamos $\phi \rightarrow \frac{1}{i}\frac{\delta}{\delta J}$, conseguimos la siguiente ecuación:
 \begin{equation}
-RHS(1.135)=\left\{ (\square +m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]
+RHS(1.135)=\left\{ (\square +m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]
 \end{equation} 
 Si hacemos lo mismo en el lado izquierdo nos queda:
 \begin{eqnarray}
-\nonumber LHS(2.135)=i\int\mathcal{D}\phi\frac{\delta\hat{Z}[\phi]}{\delta\phi}\text{Exp}\left(i\int J\phi dx\right)&=& i\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
-\nonumber &&+\int\mathcal{D}\phi J(x)\hat{Z}[\phi]\text{Exp}\left(i\int J\phi dx\right)\\
+\nonumber LHS(2.135)=i\int\mathcal{D}\phi\frac{\delta\hat{Z}[\phi]}{\delta\phi}\ \exp\left(i\int J\phi dx\right)&=& i\hat{Z}[\phi]\ \exp\left(i\int J\phi dx\right)\\
+\nonumber &&+\int\mathcal{D}\phi J(x)\hat{Z}[\phi]\ \exp\left(i\int J\phi dx\right)\\
 \end{eqnarray}
 El primer término del lado derecho de la ecuación (2.138) es un término de superficio, por tanto se anula. Por tanto, la ecuación que cumple $Z[J]$ es:
 \begin{equation}
-\left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J]
+\left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J]
 \end{equation}
 Vamos a probar que la solución de esta ecuación es:
 \begin{equation}
-Z[J]=\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]Z_{0}[J]
+Z[J]=\mathcal{N}\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]Z_{0}[J]
 \end{equation} 
 Para esto primero obtengamos la siguiente identidad:
 \begin{equation}
-\text{Exp}\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]J(x)\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]=J(x)-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]
+\ \exp\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]J(x)\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]=J(x)-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]
 \end{equation}
 Sabemos que el conmutador $\left[J(x),\frac{1}{i}\frac{\delta}{\delta J(y)}\right]=i\delta(x-y)\Rightarrow\left[J(x),\frac{1}{i}\frac{\delta^{n}}{\delta J^{n}(y)}\right]=i\delta(x-y)n\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n-1}$, con esto podemos calcular:
 \begin{eqnarray}
-\nonumber \left[J(x),\int F\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]&=&\left[J(x),\int\left\{ F[0]+\frac{1}{i}\frac{\delta}{\delta J(y)}F\prime[0]+...+\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n}\frac{F^{n}[0]}{n!}\right\} dy\right]\\
+\nonumber \left[J(x),\int F\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]&=&\left[J(x),\int\left\{ F[0]+\frac{1}{i}\frac{\delta}{\delta J(y)}F^{\prime}[0]+...+\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n}\frac{F^{n}[0]}{n!}\right\} dy\right]\\
 \nonumber &=& \left[J(x),\int\sum_{n=0}^{\infty}\frac{1}{n!}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n}F^{n}[0]\right]\\
 \nonumber &=& \sum_{n=0}^{\infty}\frac{1}{n!}\int i\delta(x-y)n\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n-1}F^{n}[0]dy\\
-&=& i\sum_{k=1}^{\infty}\frac{1}{k!}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{k}F^{k+1}[0]=iF\prime\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)
+&=& i\sum_{k=1}^{\infty}\frac{1}{k!}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{k}F^{k+1}[0]=iF^{\prime}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)
 \end{eqnarray}
 De la formula de Hausdorff tenemos que:
 \begin{equation}
@@ -805,24 +805,24 @@ e^ABe^{-A}=B+[B,A]+\frac{1}{2!}[A,[A,B]]+...
 \end{equation}
 Si $A=-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy$ y $B=J(x)$, tenemos que sólo los dos primeros términos de la ecuación (2.143) contribuyen y usando el resultado de (2.142) obtenemos:
 \begin{equation}
-\text{Exp}\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]J(x)\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]=J(x)-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]
+\ \exp\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]J(x)\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)dy\right]=J(x)-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]
 \end{equation}
 Ahora veamos lo siguiente:
 \begin{equation}
-J(x)Z[J]=\mathcal{N}J(x)\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]Z_{0}[J]
+J(x)Z[J]=\mathcal{N}J(x)\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]Z_{0}[J]
 \end{equation}
 Si hacemos el siguiente truco para introducir:
 \begin{equation}
-1=\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\times\text{Exp}\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]
+1=\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\times\ \exp\left[-i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]
 \end{equation}
 \begin{eqnarray}
-\nonumber \Rightarrow J(x)Z[J]&=&\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\times\left[J(x)-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]\right]Z_{0}[J]\\
-\nonumber &=&\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right](\square+m^{2})\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}\\
-&&-\mathcal{N}\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]Z_{0}[J]
+\nonumber \Rightarrow J(x)Z[J]&=&\mathcal{N}\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\times\left[J(x)-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]\right]Z_{0}[J]\\
+\nonumber &=&\mathcal{N}\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right](\square+m^{2})\frac{1}{i}\frac{\delta Z_{0}[J]}{\delta J(x)}\\
+&&-\mathcal{N}\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta J(x)}\right)dx\right]\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J(x)}\right]Z_{0}[J]
 \end{eqnarray}
 Así:
 \begin{equation}
-\left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}\prime\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J]
+\left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J]
 \end{equation}
 Esta es la ecuación diferencial que teníamos al principio (2.139), por tanto la propuesta (2.140) es correcta.
 \newpage
@@ -897,35 +897,35 @@ Para describir un campo, en el caso que nos interesa, el campo de Dirac debemos 
 \end{equation}
 En analogía con la ecuación (2.91) construimos el funcional generatriz para el campo de Dirac usando en este caso $\mathcal{L}=i\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi$, así tenemos:
 \begin{equation}
-Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi+\bar{\eta}\psi+\bar{\psi}\eta\right]dx\right\}
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\ \exp\left\{ i\int\left[\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi+\bar{\eta}\psi+\bar{\psi}\eta\right]dx\right\}
 \end{equation}
 Donde escogemos la normalización tal que:
 \begin{equation}
-Z_{0}[0,0]=1\Rightarrow\mathcal{N}=\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi\right]dx\right\} 
+Z_{0}[0,0]=1\Rightarrow\mathcal{N}=\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\ \exp\left\{ i\int\left[\bar{\psi}\gamma^{\mu}\partial_{\mu}\psi-m\bar{\psi}\psi\right]dx\right\} 
 \end{equation}
 En este caso $\bar{\eta}$ es la fuente de $\bar{\psi}$ y $\eta$ es la fuente de $\psi$. Con el objetivo de simplificar la notación definamos $S^{-1}\equiv i\gamma^{\mu}\partial_{\mu}-m$, entonces:
 \begin{equation}
-Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[\bar{\psi}S^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta\right]dx\right\}
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\ \exp\left\{ i\int\left[\bar{\psi}S^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta\right]dx\right\}
 \end{equation} 
 Si $Q(\psi,\bar{\psi})=\bar{\psi}S^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta$, los valores de $\bar{\psi},\psi$ que minimizan Q son $\psi_m=-S\eta$ y $\bar{\psi}_m=-\bar{\eta}S$, por tanto $Q_m=-\bar{\eta}S\eta$. Así $Q=Q_m+(\bar{\psi}-\bar{\psi}_m)S^{-1}(\psi-\psi_m)$. Con lo anterior podemos escribir la ecuación (2.166) como:
 \begin{equation}
-Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[Q_{m}+(\bar{\psi}-\bar{\psi}_{m})S^{-1}(\psi-\psi_{m})\right]dx\right\} 
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\ \exp\left\{ i\int\left[Q_{m}+(\bar{\psi}-\bar{\psi}_{m})S^{-1}(\psi-\psi_{m})\right]dx\right\} 
 \end{equation}
 Ahora, solo dos terminos del exponencial en (2.167) sobreviven: el que tiene que ver con $Q_m$ ya que este es independiente de $(\psi,\bar{\psi})$ y:
 \begin{equation}
-\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[(\bar{\psi}S^{-1}\psi\right]dx\right\} =det(iS^{-1})
+\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\ \exp\left\{ i\int\left[(\bar{\psi}S^{-1}\psi\right]dx\right\} =det(iS^{-1})
 \end{equation}
 Con lo anterior:
 \begin{equation}
-Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\text{Exp}\left\{ -i\int\bar{\eta}(x)S(x-y)\eta(y)dxdy\right\} det(iS^{-1})
+Z_{0}[\eta,\bar{\eta}]=\frac{1}{\mathcal{N}}\ \exp\left\{ -i\int\bar{\eta}(x)S(x-y)\eta(y)dxdy\right\} det(iS^{-1})
 \end{equation}
 Pero como de (2.165):
 \begin{equation}
-\mathcal{N}=\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\text{Exp}\left\{ i\int\left[(\bar{\psi}S^{-1}\psi\right]dx\right\} =det(iS^{-1})
+\mathcal{N}=\int\mathcal{D}\bar{\psi}\mathcal{\mathcal{D}}\psi\ \exp\left\{ i\int\left[(\bar{\psi}S^{-1}\psi\right]dx\right\} =det(iS^{-1})
 \end{equation}
 Finalmente de (2.169) y (2.170):
 \begin{equation}
-Z_{0}[\eta,\bar{\eta}]=\text{Exp}\left\{ -i\int\bar{\eta}(x)S(x-y)\eta(y)dxdy\right\} 
+Z_{0}[\eta,\bar{\eta}]=\ \exp\left\{ -i\int\bar{\eta}(x)S(x-y)\eta(y)dxdy\right\} 
 \end{equation}
 Sin embargo falta mostrar que $S$ existe. Este está dado por:
 \begin{equation}
@@ -941,7 +941,7 @@ La función de 2-puntos (o propagador) es $\tau(x,y)=-\frac{\delta^{2}Z_{0}[\eta
 \end{equation}
 Como conclusión podemos decir que tanto en el caso del campo escalar como para el campo fermiónico el propagador es el funcional inverso al término cuadrático que aparece en la densidad lagrangiana. El funcional generatriz para campos interactuantes se puede generalizar para el caso fermiónico haciendo una analogía con la ecuación (2.140),así:
 \begin{equation}
-Z[\eta,\bar{\eta}]=\text{Exp}\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta\eta},\frac{1}{i}\frac{\delta}{\delta\bar{\eta}}\right)dx\right]Z_{0}[\eta,\bar{\eta}]
+Z[\eta,\bar{\eta}]=\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\delta}{\delta\eta},\frac{1}{i}\frac{\delta}{\delta\bar{\eta}}\right)dx\right]Z_{0}[\eta,\bar{\eta}]
 \end{equation}
 
 \subsection{La matriz S y la fórmula de reducción.}
@@ -1037,7 +1037,7 @@ Donde $|a\rangle,|b\rangle$ son estados arbitrarios del espacio de Fock.
 \\
 De ahora en adelante nuestro trabajo se centrará en encontrar una expresión para la matriz $S$, primero definimos el funcional:
 \begin{equation}
-I[J]=T\text{Exp}\left\{ i\int J(x)\phi(x)dx\right\} 
+I[J]=T\ \exp\left\{ i\int J(x)\phi(x)dx\right\} 
 \end{equation}
 Donde $T$ es el operador de ordenamiento temporal. Derivando:
 \begin{equation}
@@ -1066,17 +1066,17 @@ Por otro lado para dos operadores cuyo conmutador es no nulo,se cumple que debid
 \end{equation} 
 Debido a que $[\phi_{in}(x),\phi_{in}(y)]=i\triangle(x-y)$, la solución para $SI[J]$ se "sugiere a sí misma":
 \begin{equation}
-SI[J]=\text{Exp}\left\{ \int\phi_{in}(z)K_{z}\frac{\delta}{\delta J(z)}dz\right\} F[J]
+SI[J]=\ \exp\left\{ \int\phi_{in}(z)K_{z}\frac{\delta}{\delta J(z)}dz\right\} F[J]
 \end{equation}
 Donde F[J] es un funcional arbitrario, veamos que en efecto la ecuación (2.200) soluciona (2.198), calculemos el LHS de (2.198) usando (2.199):
 \begin{eqnarray}
-\nonumber \left[\phi_{in},SI[J]\right]&=&i\int\triangle_{F}(x-y)K\frac{\delta}{\delta J(y)}dy\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]F[J]\\
-&=&\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]i\int\triangle_{F}(x-y)K\frac{\delta F[J]}{\delta J(y)}dy
+\nonumber \left[\phi_{in},SI[J]\right]&=&i\int\triangle_{F}(x-y)K\frac{\delta}{\delta J(y)}dy\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]F[J]\\
+&=&\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]i\int\triangle_{F}(x-y)K\frac{\delta F[J]}{\delta J(y)}dy
 \end{eqnarray}
 Y ahora el RHS de (2.198) es:
 \begin{eqnarray}
-\nonumber \frac{\delta(SI[J])}{\delta J(y)}&=&\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]\frac{\delta F[J]}{\delta J(y)}\\
-\Rightarrow \text{RHS(2.198)}&=& \text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]i\int\triangle_{F}(x-y)K\frac{\delta F[J]}{\delta J(y)}dy
+\nonumber \frac{\delta(SI[J])}{\delta J(y)}&=&\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]\frac{\delta F[J]}{\delta J(y)}\\
+\Rightarrow \text{RHS(2.198)}&=& \ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]i\int\triangle_{F}(x-y)K\frac{\delta F[J]}{\delta J(y)}dy
 \end{eqnarray}
 Como las ecuaciones (2.201) y (2.202) son iguales, entonces la propuessta para $SI[J]$ es correcta. Por último solo nos falta calcular qué es $F[J]$, sabemos que para cualquier operador normalmente ordenado (lo cual denotaremos como, si $A$ está normalmente ordenado escribiremos $:A:$) se cumple que $\langle 0|:e^A:|0\rangle=1$ por tanto si ordenamos normalmente el exponencial en (2.200) obtenemos:
 \begin{equation}
@@ -1088,11 +1088,11 @@ Por otro lado en ausencia de campos externos, el vacío evoluciona en el vacío 
 \end{equation}
 Combinando la ecuación (2.203) y (2.204):
 \begin{equation}
-F[J]=Z[J]\Rightarrow SI[J]=:\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]
+F[J]=Z[J]\Rightarrow SI[J]=:\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]
 \end{equation}
 Y tomando el limite $J\to 0\Rightarrow I[J]\to 1$ entonces de (2.205) obtenemos finalmente que:
 \begin{equation}
-S=:\text{Exp}\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]|_{J=0}
+S=:\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]|_{J=0}
 \end{equation} 
 La ecuación (2.206) se conoce como la \textit{fórmula de la reducción} en forma funcional. La forma en que funciona como veremos más adelante es la siguiente: Un término típico en la expansión (2.206) contiene $\frac{\delta^n}{\delta J^N}Z[J]|_{J=0}$, esto no es más que la función de Green de n-puntos. Por cada partícula externa tenemos un operador $\vec{K}$ el cual reduce el propagador a una función delta, la cual finalmente es multiplicada por el campo $\phi_{in}(x)$ que es la función de la partícula libre entrante.
 \\
@@ -1173,16 +1173,16 @@ Esto puede ser escrito en la forma:
 \end{equation}
 Sin embargo es claro que $f(\theta)$ puede ser obtenida de una rotación, por tanto:
 \begin{eqnarray}
-\nonumber y^{\prime}&=&y\cos \theta -x\sin \theta\\
-x^{\prime}&=&x\cos \theta +y\sin \theta 
+\nonumber y^{^{\prime}}&=&y\cos \theta -x\sin \theta\\
+x^{^{\prime}}&=&x\cos \theta +y\sin \theta 
 \end{eqnarray}
-Por tanto se cumple $x^{\prime 2}+y^{\prime 2}=x^2+y^2$, así la ecuación (2.220) se convierte en:
+Por tanto se cumple $x^{^{\prime} 2}+y^{^{\prime} 2}=x^2+y^2$, así la ecuación (2.220) se convierte en:
 \begin{equation}
-\triangle(\sqrt{x^{\prime2}+y^{\prime2}})\int\delta(y^{\prime})d\theta=1
+\triangle(\sqrt{x^{^{\prime}2}+y^{^{\prime}2}})\int\delta(y^{^{\prime}})d\theta=1
 \end{equation}
 Viendo la expresión (2.222) como la identidad, insertamos esta en (2.211), lo cual nos lleva a:
 \begin{equation}
-I=\int d\theta \int dx^{\prime}dy^{\prime}\ e^{-(x^{\prime 2}+y^{\prime 2})}\triangle(\sqrt{x^{\prime2}+y^{\prime2}})\int\delta(y^{\prime})
+I=\int d\theta \int dx^{^{\prime}}dy^{^{\prime}}\ e^{-(x^{^{\prime} 2}+y^{^{\prime} 2})}\triangle(\sqrt{x^{^{\prime}2}+y^{^{\prime}2}})\int\delta(y^{^{\prime}})
 \end{equation}
 La expresión (2.223) exhibe la forma general de la separación de variables hecha despues de la transformación de rotación. La segunda integral en este caso es independiente de $\theta$ y por tanto es un factor multiplicativo global. $\triangle (r)$ puede ser escrito de una forma más compacta como:
 \begin{eqnarray}
@@ -1201,7 +1201,7 @@ A_{\mu}^{U}=UA_{\mu}U^{\dagger}-i(\partial_{\mu}U)U^{\dagger};\ \ \ U=e^{i\text{
 \end{equation} 
 En forma infinitesimal:
 \begin{equation}
-A_{\mu}^{\prime a}=A_{\mu}^{a}+f^{abc}A_{\mu}^{b}\Lambda^{c}+\partial_{\mu}\Lambda^{a}
+A_{\mu}^{^{^{^{^{}}}} a}=A_{\mu}^{a}+f^{abc}A_{\mu}^{b}\Lambda^{c}+\partial_{\mu}\Lambda^{a}
 \end{equation}
 Donde el $f^{abc}$ son las constantes de estructura del grupo G que representa la transformación Gauge. Una condición para fijar el Gauge se puede escribir de forma general como:
 \begin{equation}
@@ -1250,7 +1250,7 @@ Ahora queremos una expresión para $ \triangle_{F}[A_{\mu}]$ en analogía con (2
 \end{equation} 
 Ahora cambiamos $M$ por $iM$ para usar la fórmula (2.162) y escribir:
 \begin{equation}
-det(iM)=\int\mathcal{D}\bar{\eta}\mathcal{D}\eta\text{Exp}\left\{ -i\int\bar{\eta}^{a}M_{ab}\eta^{b}dx\right\} 
+det(iM)=\int\mathcal{D}\bar{\eta}\mathcal{D}\eta\ \exp\left\{ -i\int\bar{\eta}^{a}M_{ab}\eta^{b}dx\right\} 
 \end{equation}
 Posteriormente introduciremos esta expresión en (2.237). Como una modificación final es conveniente modificar la condición para fijar el Gauge, por ejemplo en lugar de la condición de Lorentz podemos pedir que:
 \begin{equation}
@@ -1262,15 +1262,15 @@ Z=\int\mathcal{D}A_{\mu}\triangle_{F}[A_{\mu}]\delta[F^{a}[A_{\mu}]-C^a]e^{iS}
 \end{equation}
 Como $C$ es independiente de $A$ la ecuación (2.238) sigue siendo correcta y además de esto, debido a que Z es independiente de $C$ podemos multiplicar $Z$ por un factor cualquiera función de $C$. Por tanto multiplicamos Z por el factor:
 \begin{equation}
-\text{Exp}\left\{ -\frac{i}{2\alpha}\int C_{a}^{2}(x)dx\right\} 
+\ \exp\left\{ -\frac{i}{2\alpha}\int C_{a}^{2}(x)dx\right\} 
 \end{equation}
 Y con esto obtenemos la forma final de $Z$:
 \begin{equation}
-Z=\mathcal{N}\int\mathcal{D}A_{\mu}\mathcal{D}\bar{\eta}\mathcal{D}\eta\text{Exp}\left\{ i\int[\mathcal{L}-\frac{F^{2}}{2\alpha}-\bar{\eta}^aM_{ab}\eta^{b}]dx\right\} 
+Z=\mathcal{N}\int\mathcal{D}A_{\mu}\mathcal{D}\bar{\eta}\mathcal{D}\eta\ \exp\left\{ i\int[\mathcal{L}-\frac{F^{2}}{2\alpha}-\bar{\eta}^aM_{ab}\eta^{b}]dx\right\} 
 \end{equation}
 Donde $\mathcal{N}$ es un factor de normalización irrelevante. La ecuación (2.243) puede ser reescrita como:
 \begin{equation}
-Z=\mathcal{N}\int\mathcal{D}A_{\mu}\mathcal{D}\bar{\eta}\mathcal{D}\eta\text{Exp}\left\{ i\int\mathcal{L}_{\text{eff}}dx\right\}
+Z=\mathcal{N}\int\mathcal{D}A_{\mu}\mathcal{D}\bar{\eta}\mathcal{D}\eta\ \exp\left\{ i\int\mathcal{L}_{\text{eff}}dx\right\}
 \end{equation}
 Donde la densidad lagrangiana efectiva es:
 \begin{eqnarray}

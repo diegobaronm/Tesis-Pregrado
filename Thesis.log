@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  23 MAY 2016 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  23 MAY 2016 23:13
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1080,19 +1080,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--268
  []
 
 [10 <./Imagenes/Fig6.png> <./Imagenes/Fig7.png>]
-Overfull \hbox (2.54366pt too wide) detected at line 297
-[] [] \OML/cmm/m/it/10.95 dq\OMS/cmsy/m/n/10.95 0\OML/cmm/m/it/10.95 dq[]\OT1/
-cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q\OMS/cmsy/m/n/10.95 0\OML/cmm/m/it/10.95 ; 
-t\OMS/cmsy/m/n/10.95 0\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10
-.95 q\OMS/cmsy/m/n/10.95 0\OML/cmm/m/it/10.95 t\OMS/cmsy/m/n/10.95 0j\OML/cmm/m
-/it/10.95 qt\OMS/cmsy/m/n/10.95 i[]\OML/cmm/m/it/10.95 []\OT1/cmr/m/n/10.95 (\
-OML/cmm/m/it/10.95 q; t\OT1/cmr/m/n/10.95 ) = [] []
+Overfull \hbox (4.38237pt too wide) detected at line 297
+[] [] \OML/cmm/m/it/10.95 dq[]dq[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q[];
+ t[]\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10.95 q[]t[]\OMS/cms
+y/m/n/10.95 j\OML/cmm/m/it/10.95 qt\OMS/cmsy/m/n/10.95 i[]\OML/cmm/m/it/10.95 
+[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q; t\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 [11] [12]
-Overfull \hbox (0.58177pt too wide) detected at line 339
+Overfull \hbox (2.25465pt too wide) detected at line 339
 []\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]t[]; x[]t[]\O
-T1/cmr/m/n/10.95 ) = [] [] [] [] [][] []
+T1/cmr/m/n/10.95 ) = [] [] [] [] []  [] []
  []
 
 [13]
@@ -1130,6 +1128,13 @@ Overfull \hbox (11.89442pt too wide) in alignment at lines 412--416
  [][][] []
  []
 
+
+Overfull \hbox (1.5977pt too wide) detected at line 420
+[]\OML/cmm/m/it/10.95 A[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/
+10.95 ; \OML/cmm/m/it/10.95 a; b\OT1/cmr/m/n/10.95 ) = [] [][] \OML/cmm/m/it/10
+.95 d![]  [] []
+ []
+
 [16] <Imagenes/Fig9.png, id=425, 657.2053pt x 214.55156pt>
 File: Imagenes/Fig9.png Graphic file (type png)
 
@@ -1160,15 +1165,15 @@ File: Imagenes/Fig11.png Graphic file (type png)
 Package pdftex.def Info: Imagenes/Fig11.png used on input line 535.
 (pdftex.def)             Requested size: 412.56496pt x 265.59322pt.
  [20 <./Imagenes/Fig11.png>] [21]
-Overfull \hbox (38.1368pt too wide) detected at line 586
+Overfull \hbox (39.6576pt too wide) detected at line 586
 []\OML/cmm/m/it/10.95 Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 J\OT1/cmr/m/n/
-10.95 ] = [] [] [] \OMS/cmsy/m/n/10.95 D\OML/cmm/m/it/10.95 [] []
+10.95 ] =  [] [] [] \OMS/cmsy/m/n/10.95 D\OML/cmm/m/it/10.95   [] []
  []
 
 [22]
-Overfull \hbox (38.1368pt too wide) detected at line 619
+Overfull \hbox (39.6576pt too wide) detected at line 619
 []\OML/cmm/m/it/10.95 Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 J\OT1/cmr/m/n/
-10.95 ] = [] [] [] \OMS/cmsy/m/n/10.95 D\OML/cmm/m/it/10.95 [] []
+10.95 ] =  [] [] [] \OMS/cmsy/m/n/10.95 D\OML/cmm/m/it/10.95   [] []
  []
 
 
@@ -1236,7 +1241,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 655--660
  []
 
 [24 <./Imagenes/Fig12.png> <./Imagenes/Fig13.png> <./Imagenes/Fig14.png>]
-Overfull \hbox (29.90297pt too wide) in alignment at lines 695--700
+Overfull \hbox (30.96754pt too wide) in alignment at lines 695--700
  [][][] []
  []
 
@@ -1251,6 +1256,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 717--727
 
  []
 
+
+Overfull \hbox (2.58446pt too wide) in alignment at lines 731--737
+ [][][] []
+ []
+
 [26 <./Imagenes/Fig15.png>]
 <Imagenes/Fig16.png, id=526, 286.82156pt x 137.7647pt>
 File: Imagenes/Fig16.png Graphic file (type png)
@@ -1259,22 +1269,22 @@ File: Imagenes/Fig16.png Graphic file (type png)
 Package pdftex.def Info: Imagenes/Fig16.png used on input line 747.
 (pdftex.def)             Requested size: 227.62204pt x 109.3332pt.
  [27 <./Imagenes/Fig16.png>] [28]
-Overfull \hbox (9.67842pt too wide) detected at line 794
-[][] [] \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/
-m/n/10.95 )[] [] = \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95
- x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   L[]0 []
+Overfull \hbox (10.01295pt too wide) detected at line 794
+[]  [] [] \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cm
+r/m/n/10.95 )  [] [] = \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
+0.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   L[] []
  []
 
 
-Overfull \hbox (39.7599pt too wide) in alignment at lines 796--801
+Overfull \hbox (39.55423pt too wide) in alignment at lines 796--801
  [][][] []
  []
 
 
-Overfull \hbox (9.67842pt too wide) detected at line 809
-[][] [] \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/
-m/n/10.95 )[] [] = \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95
- x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   L[]0 []
+Overfull \hbox (10.01295pt too wide) detected at line 809
+[]  [] [] \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cm
+r/m/n/10.95 )  [] [] = \OML/cmm/m/it/10.95 J\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
+0.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95   L[] []
  []
 
 [29] [30]
@@ -1412,7 +1422,7 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (67 pages, 1167077 bytes).
+Output written on Thesis.pdf (67 pages, 1167625 bytes).
 PDF statistics:
  1022 PDF objects out of 1200 (max. 8388607)
  424 named destinations out of 1000 (max. 500000)
