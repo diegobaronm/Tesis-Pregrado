@@ -363,7 +363,83 @@ para obtener la ecuación de Dirac en el espacio de Schwarzschild:
 +i\left\{ \gamma^{2}\frac{1}{r}\frac{\partial\psi}{\partial\theta}+\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\gamma^{1}\psi+\gamma^{3}\frac{1}{r\text{sin}\theta}\frac{\partial\psi}{\partial\phi}+\frac{\cot\theta}{2r}\right\} =m_{D}\psi .
 \end{eqnarray}
 \newpage
-\section{La ecuación de Schrodinger en espacio curvo.}
+
+
+
+
+
+\section{La ecuación de Schrödinger en espacio curvo.}
+En esta sección se realizará la introducción de las integrales de trayectoria en espacios curvos. En específico construiremos el propagador para una partícula que se mueve en una variedad de Rienmann d-dimensional, con tensor de curvatura no nulo. Esto es importante de cara a dos tipos de problemas: primero, problemas de mecánica cuántica donde el espacio de configuración es curvo (incluído el ambicioso objetivo de fromular una teoría cuántica de la gravedad mediante integrales de trayectoria). Segundo. este formalismo es necesario para resolver un problema tan conocido y básico como la formulación mediante integrales de trayectoria de una partícula cuántica que se mueve bajo la influencia de un potencial Columbiano.
+
+
+\subsection{El problema del ordenamiento.}
+Para empezar vamos a considerar la ecuación de Schrödinger en una variedad d-dimensional de Rienmmann $\mathcal{M}$, con coordenadas $q^a$, métrica $g^{ab}(q)$ y elemento de línea
+\begin{equation}
+ds^2=g_{ab}(q)dq^adq^b.
+\end{equation}	
+La ecuación de Schrödinger en estas condiciones es:
+\begin{equation}
+-i\hbar\frac{\partial}{\partial t}\psi(q,t)=\left[-\frac{\hbar^{2}}{2m}\triangle_{LB}+V(q)\right]\psi(q,t),
+\end{equation}
+donde $\psi(q,t)$ es una función de estado definida en un espacio de Hilber $\mathcal{L}^2(\mathbb{R}^d)$ y cuadrado integrable en el sentido del producto escalar:
+\begin{equation}
+\langle\psi_{1}|\psi_{2}\rangle=\int_{\mathcal{M}}d^{d}q\sqrt{g}\bar{\psi}_{1}(q)\psi_{2}(q),
+\end{equation}
+donde $g=\det (g_{ab}(q))$ y $\triangle_{LB}$ es el operador de Laplace-Beltrami, $\triangle_{LB}\equiv g^{-1/2}\partial_{a}g^{1/2}g^{ab}\partial_{b}$.
+La evolución del estado $\psi(q,t)$ vía el propagador $K(q,t,q_0,t_0)$ se describe mediante:
+\begin{equation}
+\psi(q,t)=\int d^{d}(q_{0})\sqrt{g(q_{0})}K(q,t,q_{0},t_{0})\psi(q_{0},t_{0}).
+\end{equation}
+La construcción del propagador en el caso de un espacio curvo no es tan sencilla como en el caso del espacio plano. Esto se debe a que en el caso de un espacio curvo el Hamiltoniano es sensible al ordenamiento de los operadores, la primera derivación de este casi fue hecha en 1957 por De Witt [9]. El resultado que obtuvo para el propagador es:
+\begin{equation}
+K(q,t,q_{0},t_{0})=\int_{C\{q_{0},t_{o}|q,t\}}\mathcal{D}[\sqrt{g(\tau)}q(\tau)]\exp\left\{ \frac{i}{\hbar}\int_{t_{0}}^{t}dt\left[\frac{m}{2}g_{an}(q)\dot{q}^{a}\dot{q}^{b}-V(q)+\hbar^{2}\frac{\mathcal{R}}{6m}\right]\right\}, 
+\end{equation}
+donde $\mathcal{R}$ es el escalar de Ricci, ${C\{q_{0},t_{o}|q,t\}}$, denota que la integral se hace sobre todas las posibles trayectorias que conectan $P=(q_0,t_0)$ con $Q=(q,t)$ y $\mathcal{D}[\sqrt{g(\tau)}q(\tau)]$ es la medida de integración. La diferencia más notable con el caso de espacio plano es que en el exponencial de (3.72) encontramos un término adicional de $\mathcal{O}(\hbar^2)$, asi la integral de camino tiene la siguiente forma general:
+\begin{equation}
+K(q,t,q_{0},t_{0})\propto\int_{C\{q_{0},t_{o}|q,t\}}\mathcal{D}[\sqrt{g(\tau)}q(\tau)]\exp\left\{ \frac{i}{\hbar}S_{eff}\right\} ,
+\end{equation}
+con la acción efectiva $S_{eff}=\int dt\mathcal{L}_{eff}\equiv\int dt(\mathcal{L}-\triangle V_{DeW})$, donde la correción cuántica $\triangle V_{DeW}=\frac{-\hbar^2\mathcal{R}}{6m}$ es necesaria para que el propagador (3.72) sea la solución a la ecuación de Schrödinger generalizada (3.69).
+
+De aquí en adelante vamos a ver como obtener una expresión para el propagador en espacio curvo, sin embargo seguiremos otro camino diferente al de DeWitt, esta sección esta basada en [10] y el ordenamiento que usaremos es el llamado \textbf{ordenamiento de Weyl}. Para empezar debemos escoger nuestros operadores $\hat{p}$ y$\hat{q}$ de tal manera que sigan la misma "álgebra cuantica" (2.1). Una escogencia que funciona es:
+\begin{equation}
+\hat{q}_{a}\leftrightarrow q_{a}\ ;\ \hat{p}_{b}\leftrightarrow p_{b}=\frac{\hbar}{i}g^{-1/4}\frac{\partial}{\partial q^{b}}g^{1/4},
+\end{equation}
+veamos que efectivamente funciona:
+\begin{equation}
+[q_{a},p_{b}]O=q_{a}\frac{\hbar}{i}g^{-1/4}\frac{\partial}{\partial q^{b}}(g^{1/4}O)-\frac{\hbar}{i}g^{-1/4}\frac{\partial}{\partial q^{b}}(g^{1/4}Oq_{a})=-\frac{\hbar}{i}\delta_{ab}O\Rightarrow[q_{a},p_{b}]=i\hbar\delta_{ab}.
+\end{equation}
+De esta manera:
+\begin{equation}
+\hat{H}=\frac{1}{2}g^{-1/4}\hat{p}_{a}g^{ab}(\hat{q})\hat{p}_{b}g^{-1/4}.
+\end{equation}
+Sabemos que para obtener el propagador debemos calcular:
+\begin{equation}
+K(q,t,q_{0},t_{0})=\langle q|\exp\left[\frac{-i}{\hbar}\hat{H}(\hat{q},\hat{p})\right]|q_{0}\rangle,
+\end{equation}
+y para esto debemos escoger primero un ordenamiento para $\hat{H}$, como ya dijimos escogeremos el ordenamiento de Weyl.
+
+\subsection{Ordenamiento de Weyl.}
+Para evualuar elementos de matriz de la forma $M=\langle z|\hat{O}|y\rangle$, con $|z,y\rangle $ autoestados del operdador de posición y $\hat{O}(\hat{x},\hat{p})$ un operador arbitrario, primero se suele insertar un conjunto completo de autoestados del momentum $I=\int d^np|p\rangle\langle p|$,
+\begin{equation}
+\Rightarrow M=\int\langle z|\hat{O}|p\rangle\langle p|y\rangle d^{n}p.
+\end{equation}
+Es conveniente reescribir $\hat{O}$ como un operador Weyl-ordenado debido a que un operador Weyl-ordenado cumple la propiedad:
+\begin{equation}
+M=\int\langle z|p\rangle O_{W}\left(\frac{1}{2}(z+y),p\right)\langle p|y\rangle d^{n}p,
+\end{equation}
+es decir al actuar sobre estados $|p\rangle$ sale de los brakets como una función de numeros complejos (en vez de operadores), en especifico lleva $\hat{x}\to \frac{1}{2}(z+y)$ y $\hat{p}\to p$. Un operador Weyl-ordenado se define como igual al operador original pero escrito de tal manera que todos los operadores $\hat{x},\hat{p}$ que lo componen aparezcan simétricamente. 
+\\
+\\
+Demos un ejemplo: escribamos $\hat{x}\hat{p}$ de tal manera que este simétricamente ordenado:
+
+
+
+
+
+
+
+
+
 
 \section{Transformaciones de coordenadas.}
 \section{El átomo de Hidrógeno vía integrales de trayectoria.}
