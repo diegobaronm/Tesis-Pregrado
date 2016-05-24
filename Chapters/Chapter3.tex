@@ -12,76 +12,76 @@ Por tanto, en una busqueda de teorías más alla de GR, ¿hacia dónde nos dirig
 \subsection{Caso abeliano.}
 Consideremeos un campo escalar complejo que obedece la ecuacion de K-G y tiene una densidad Lagrangiana:
 \begin{equation}
-\mathcal{L}=\partial_{\mu}\phi\partial^{\mu}\phi^{*}+m^{2}\phi\phi^{*}
+\mathcal{L}=\partial_{\mu}\phi\partial^{\mu}\phi^{*}+m^{2}\phi\phi^{*}.
 \end{equation}
-Esta densidad lagrangiana posee una simetría bago $\phi\to e^{-i\Lambda}\phi,\ \ \phi^{*}\to e^{i\Lambda}\phi^{*}$ donde $\Lambda$ es un parámetro constante, vemos que esta transformación deja a $\mathcal{L}$ invariante es decir $\delta\mathcal{L}$. Esta transformación es llamada transformación Gauge del primer tipo. En la versión infinitesimal de la transformación tenemos:
+Esta densidad lagrangiana posee una simetría bago $\phi\to e^{-i\Lambda}\phi,\ \ \phi^{*}\to e^{i\Lambda}\phi^{*}$ donde $\Lambda$ es un parámetro constante, vemos que esta transformación deja a $\mathcal{L}$ invariante es decir $\delta\mathcal{L}=0$. Esta transformación es llamada transformación Gauge del primer tipo. En la versión infinitesimal de la transformación tenemos:
 \begin{equation}
-\delta\phi=-i\Lambda\phi,\ \ \delta\phi^{*}=i\Lambda\phi^{*},\ \ \delta(\partial_{\mu}\phi)=-i\Lambda\partial_{\mu}\phi,\ \ \delta(\partial_{\mu}\phi^{*})=i\Lambda\partial_{\mu}\phi^{*}
+\delta\phi=-i\Lambda\phi,\ \ \delta\phi^{*}=i\Lambda\phi^{*},\ \ \delta(\partial_{\mu}\phi)=-i\Lambda\partial_{\mu}\phi,\ \ \delta(\partial_{\mu}\phi^{*})=i\Lambda\partial_{\mu}\phi^{*},
 \end{equation}
-Con esto definimos la corriente $j^{\mu}$ como:
+con esto definimos la corriente $j^{\mu}$ como:
 \begin{eqnarray}
 \nonumber \Lambda j^{\mu}&=&\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}(\delta\phi)+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi^{*})}(\delta\phi^{*})=(\partial_{\mu}\phi^{*})(-i\Lambda\phi)+(\partial_{\mu}\phi)(i\Lambda\phi^{*})\\
-j^\mu &=& i((\partial_{\mu}\phi)\phi^{*}-\phi(\partial_{\mu}\phi^{*}))
+j^\mu &=& i((\partial_{\mu}\phi)\phi^{*}-\phi(\partial_{\mu}\phi^{*})),
 \end{eqnarray}
-De donde
+de donde
 \begin{eqnarray}
 \partial_\mu j^\mu &=& 0\\
-\partial_{0}j^{0}=\partial_{i}j^{i}&\Rightarrow &\partial_{0}\int_{V}j^{0}dV=\int_{V}\nabla\cdot\vec{j}dV=\int_{\partial V}\vec{n}\cdot\vec{j}dS=0
+\partial_{0}j^{0}=\partial_{i}j^{i}&\Rightarrow &\partial_{0}\int_{V}j^{0}dV=\int_{V}\nabla\cdot\vec{j}dV=\int_{\partial V}\vec{n}\cdot\vec{j}dS=0,
 \end{eqnarray} 
-Por tanto
+por tanto
 \begin{equation}
-\partial_{0}\int_{V}j^{0}dV=0\Rightarrow\frac{dQ}{dt}=0;\ \ Q=\int_{V}j^{0}dV
+\partial_{0}\int_{V}j^{0}dV=0\Rightarrow\frac{dQ}{dt}=0;\ \ Q=\int_{V}j^{0}dV.
 \end{equation}
 Identificando $Q$ con la carga eléctrica tenemos que el campo $\phi$ porta una carga eléctrica la cual es conservada. Sin embargo la transformación anterior demanda que $\phi$ cambie la cantidad indicada al mismo tiempo en todos los puntos del espacio-tiempo, este tipo de transformación no tiene el espíritu de la relatividad, la transformación deberá ser \textit{local} en vez de \textit{globar}, es decir, el parámetro $\Lambda$ debe depender de las coordenadas $\Lambda=\Lambda(x^\mu)$. Así:
 \begin{equation}
-\phi(x)\to e^{-i\Lambda(x)}\phi(x),\ \ \phi(x)^{*}\to e^{i\Lambda(x)}\phi(x)^{*}
+\phi(x)\to e^{-i\Lambda(x)}\phi(x),\ \ \phi(x)^{*}\to e^{i\Lambda(x)}\phi(x)^{*},
 \end{equation}
-Esta es llamada una transformación Gauge del segundo tipo. En la versión infinitesimal:
+esta es llamada una transformación Gauge del segundo tipo. En la versión infinitesimal:
 \begin{eqnarray}
 \nonumber \delta\phi=-i\Lambda(x)\phi &;&\ \ \delta\phi^{*}=i\Lambda(x)\phi^{*}\\
-\delta(\partial_{\mu}\phi)=-i(\Lambda\partial_{\mu}\phi+\phi\partial_{\mu}\Lambda)&;&\ \ \delta(\partial_{\mu}\phi^{*})=i(\Lambda\partial_{\mu}\phi^{*}+\phi^{*}\partial_{\mu}\Lambda)
+\delta(\partial_{\mu}\phi)=-i(\Lambda\partial_{\mu}\phi+\phi\partial_{\mu}\Lambda)&;&\ \ \delta(\partial_{\mu}\phi^{*})=i(\Lambda\partial_{\mu}\phi^{*}+\phi^{*}\partial_{\mu}\Lambda),
 \end{eqnarray}
-Por tanto el lagrangiano no es invariante
+por tanto el lagrangiano no es invariante
 \begin{equation}
-\delta\mathcal{L}=-i\phi\partial_{\mu}\Lambda\partial_{\mu}\phi^{*}+i\phi^{*}\partial_{\mu}\Lambda\partial_{\mu}\phi=(\partial_{\mu}\Lambda)j^{\mu}
+\delta\mathcal{L}=-i\phi\partial_{\mu}\Lambda\partial_{\mu}\phi^{*}+i\phi^{*}\partial_{\mu}\Lambda\partial_{\mu}\phi=(\partial_{\mu}\Lambda)j^{\mu}.
 \end{equation}
 Para mantener el lagrangiano invariante debemos agregar un nuevo campo a $\mathcal{L}$, de tal manera que $\mathcal{L}_1=-ej^\mu A_\mu$. Y pedir que bajo una transformación local 
 \begin{equation}
-A_\mu \to A_\mu +\frac{1}{e}\partial_\mu\Lambda
+A_\mu \to A_\mu +\frac{1}{e}\partial_\mu\Lambda,
 \end{equation} 
-Así:
+así:
 \begin{eqnarray}
 \nonumber \delta\mathcal{L}_{1}&=&-e(\delta j^{\mu})A_{\mu}-j^{\mu}\partial_{\mu}\Lambda\\
-\delta\mathcal{L}+\delta\mathcal{L}_{1}&=&-e(\delta j^{\mu})A_{\mu}=-2eA^{\mu}\partial_{\mu}\Lambda(\phi\phi^{*})
+\delta\mathcal{L}+\delta\mathcal{L}_{1}&=&-e(\delta j^{\mu})A_{\mu}=-2eA^{\mu}\partial_{\mu}\Lambda(\phi\phi^{*}).
 \end{eqnarray}
-Y si agregamos $\mathcal{L}_2=e^2\phi\phi^{*}A_\mu A^\mu\Rightarrow \delta\mathcal{L}_2=2eA^{\mu}\partial_{\mu}\Lambda(\phi\phi^{*})$, por tanto:
+Si agregamos $\mathcal{L}_2=e^2\phi\phi^{*}A_\mu A^\mu\Rightarrow \delta\mathcal{L}_2=2eA^{\mu}\partial_{\mu}\Lambda(\phi\phi^{*})$, por tanto:
 \begin{equation}
-\delta\mathcal{L}+\delta\mathcal{L}_1+\delta\mathcal{L}_2=0
+\delta\mathcal{L}+\delta\mathcal{L}_1+\delta\mathcal{L}_2=0.
 \end{equation}
 Al introducir el campo $ A^\mu$ debemos introducir un término diferente del acople con el campo escalar, este término debe ser el que de las ecuaciones de movimiento de $ A^\mu$ en ausencia de fuentes. Si definimos $F^{\mu\nu}=\partial^{\mu}A^{\nu}-\partial^{\nu}A^{\mu}$, bajo la transformación Gauge $\delta(\partial^{\mu}A^{\nu})=\frac{1}{e}\partial_{\mu}\partial_{\nu}\Lambda\Rightarrow\delta F^{\mu\nu}=0$. Entonces el lagrangiano $\mathcal{L}_{3}=\frac{1}{4}F^{\mu\nu}F_{\mu\nu}$ es invariante bajo la transformación gauge local $\mathcal{L}_3=0$. Finalmente tenemos:
 \begin{eqnarray}
 \nonumber\mathcal{L}_{\text{total}}&=&\mathcal{L}+\mathcal{L}_1+\mathcal{L}_2+\mathcal{L}_3\\
 \nonumber &=& (\partial_{\mu}\phi+ieA_{\mu}\phi)(\partial^{\mu}\phi^{*}-ieA^{\mu}\phi^{*})+m^{2}\phi\phi^{*}+\frac{1}{4}F^{\mu\nu}F_{\mu\nu}\\
-&=& D_{\mu}\phi D^{\mu}\phi^{*}m^{2}\phi\phi^{*}+\frac{1}{4}F^{\mu\nu}F_{\mu\nu}
+&=& D_{\mu}\phi D^{\mu}\phi^{*}m^{2}\phi\phi^{*}+\frac{1}{4}F^{\mu\nu}F_{\mu\nu},
 \end{eqnarray}
-Habiendo definido la derivada covariante como $D_{\mu}\phi=\partial_{\mu}\phi+ieA_{\mu}\phi$. Ahora generalizemos la corriente $j^\mu$ a una corriente $J^\mu$ que dependa de las derivadas covariantes, así:\begin{eqnarray}
+habiendo definido la derivada covariante como $D_{\mu}\phi=\partial_{\mu}\phi+ieA_{\mu}\phi$. Ahora generalizemos la corriente $j^\mu$ a una corriente $J^\mu$ que dependa de las derivadas covariantes, así:\begin{eqnarray}
 \nonumber \Lambda J^{\mu}&=&\frac{\partial\mathcal{L}}{\partial(D_{\mu}\phi)}(\delta\phi)+\frac{\partial\mathcal{L}}{\partial(D_{\mu}\phi^{*})}(\delta\phi^{*})=(D_{\mu}\phi^{*})(-i\Lambda\phi)+(D_{\mu}\phi)(i\Lambda\phi^{*})\\
-J^\mu &=& i((D_{\mu}\phi)\phi^{*}-\phi(D_{\mu}\phi^{*}))
+J^\mu &=& i((D_{\mu}\phi)\phi^{*}-\phi(D_{\mu}\phi^{*})).
 \end{eqnarray}
 Esta corriente es conservada, las ecuaciones de movimiento de $A_\mu$ son:
 \begin{equation}
-\partial_{\nu}F^{\nu\mu}=-eJ^{\mu}\Rightarrow\partial_{\mu}J^{\mu}=\partial_{\mu}\partial_{\nu}F^{\nu\mu}=0
+\partial_{\nu}F^{\nu\mu}=-eJ^{\mu}\Rightarrow\partial_{\mu}J^{\mu}=\partial_{\mu}\partial_{\nu}F^{\nu\mu}=0,
 \end{equation} 
-Esto último debido a que el tensor $F^{\nu\mu}$ es antisimétrico.
+esto último debido a que el tensor $F^{\nu\mu}$ es antisimétrico.
 \\
 \\
 Recordemos ahora que en GR el tensor de curvatura es proporcional al conmutador de las derivadas covariantes, es decir, $[\nabla_{\mu},\nabla_{\nu}]e_{k}=R_{k\mu\nu}^{\rho}e_{\rho}$. Si notamos que $[D_{\mu},D_{\nu}]\phi=ie(\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu})=ieF_{\mu\nu}\phi$, podemos establecer una analogía entre la curvatura y la intesidad del campo Gauge. Otro hecho que podemos notar es que recordando la definición del tensor de Rienmann [4] $R_{***}^{*}=\partial[_{*}\Gamma_{*}]+[\Gamma,\Gamma] $ y también que $F_{**}=\partial[_{*}A_{*}]$ se puede asociar el potencial $A$ en electrodinámica con el coeficiente de conexión $\Gamma$ en GR. En el caso  del campo electromagnético el segundo término de la definición del tensor de Rienmann no tiene un análogo, pero veremos como esta situación cambia cuando generalicemos al caso de una simetría Gauge local no abeliana. Para terminar esta sección escribamos el análisis anterior de una forma más compacta, consideremos una transformación:
 \begin{equation}
-\phi\to U\phi,\ \ \phi^{*}\to U^{\dagger}\phi^{*}\text{con}\ \ U=e^{i\Lambda}\Rightarrow UU^{\dagger}=1
+\phi\to U\phi,\ \ \phi^{*}\to U^{\dagger}\phi^{*}\text{con}\ \ U=e^{i\Lambda}\Rightarrow UU^{\dagger}=1,
 \end{equation}
-Bajo una transformación Gauge local tenemos $\partial_\mu U=i\partial_\mu\Lambda U$, así la transformación del campo $A_\mu$ es:
+bajo una transformación Gauge local tenemos $\partial_\mu U=i\partial_\mu\Lambda U$, así la transformación del campo $A_\mu$ es:
 \begin{equation}
-A_{\mu}\to A_{\mu}-\frac{i}{e}U^{\dagger}\partial_{\mu}U\Rightarrow F_{\mu\nu}\to F_{\mu\nu}
+A_{\mu}\to A_{\mu}-\frac{i}{e}U^{\dagger}\partial_{\mu}U\Rightarrow F_{\mu\nu}\to F_{\mu\nu}.
 \end{equation}
 Si dos matrices $U_1,U_2$ obedecen la última relación de la ecuación (3.16) entonces $U^{\prime}=U_1U_2$ también la obedece, si la cada matriz $U$ tiene un inverso $U^{-1}$ entonces este grupo de matrices forman un grupo. En particular este grupo es llamado el grupo de matrices unitarias de dimensión 1 (U(1)). Este es el grupo de simetría de la electrodinámica.
 
@@ -96,13 +96,13 @@ El caso de SU(2) es un poco diferente, ya que este es un grupo no abeliano. SU(2
 U=\left(\begin{array}{cc}
 a & b\\
 -b^{*} & a^{*}
-\end{array}\right),\ |a|^{2}+|b|^{2}=1,\text{\ U}^{\dagger}U=1=UU^{\dagger}
+\end{array}\right),\ |a|^{2}+|b|^{2}=1,\text{\ U}^{\dagger}U=1=UU^{\dagger}.
 \end{equation}
 Podemos escribir un elemento general de SU(2) como: 
 \begin{equation}
-U=\ \exp\left(\frac{i}{2}\vec{\eta}\cdot\vec{\sigma}_\alpha\right)
+U=\ \exp\left(\frac{i}{2}\vec{\eta}\cdot\vec{\sigma}_\alpha\right),
 \end{equation}
-Donde $\vec{\sigma}$ son las matrices de Pauli:
+donde $\vec{\sigma}$ son las matrices de Pauli:
 \begin{equation}
 \sigma_{x}=\left(\begin{array}{cc}
 0 & 1\\
@@ -113,7 +113,7 @@ i & 0
 \end{array}\right);\ \sigma_{z}=\left(\begin{array}{cc}
 1 & 0\\
 0 & -1
-\end{array}\right)
+\end{array}\right) .
 \end{equation}
 Estas obedecen el álgebra $[\frac{\sigma_i}{2},\frac{\sigma_j}{2}]=\frac{i}{2}\epsilon_{ijk}\sigma_k$.
 Introduciendo el doblete $\phi=\left(\begin{array}{c}
@@ -122,77 +122,76 @@ Introduciendo el doblete $\phi=\left(\begin{array}{c}
 \end{array}\right);\ \phi^{\dagger}=\left(\begin{array}{cc}
 \phi_{1}^{*} & \phi_{2}^{*}\end{array}\right)$ de SU(2) la densidad lagrangiana:
 \begin{equation}
-\mathcal{L}=\partial_{\mu}\phi\partial^{\mu}\phi^{\dagger}+m^{2}\phi\phi^{\dagger}
+\mathcal{L}=\partial_{\mu}\phi\partial^{\mu}\phi^{\dagger}+m^{2}\phi\phi^{\dagger},
 \end{equation}
-Es invariante bajo transformaciones de SU(2):$\phi\to U\phi;\ \phi^\dagger\to\phi^\dagger U^\dagger$, si los parámetros de la transformación son independientes de las coordenadas (transformación Gauge del primer tipo), la corriente conservada es:
+es invariante bajo transformaciones de SU(2):$\phi\to U\phi;\ \phi^\dagger\to\phi^\dagger U^\dagger$, si los parámetros de la transformación son independientes de las coordenadas (transformación Gauge del primer tipo), la corriente conservada es:
 \begin{equation}
-\delta\phi=\frac{i}{2}\sigma^{a}\alpha^{a}\phi,\ \ \delta\phi^{\dagger}=\frac{-i}{2}\sigma^{a}\alpha^{a}\phi^{\dagger},\ \ \delta(\partial_{\mu}\phi)=\frac{i}{2}\sigma^{a}\alpha^{a}\partial_{\mu}\phi,\ \ \delta(\partial_{\mu}\phi^{\dagger})=\frac{-i}{2}\sigma^{a}\alpha^{a}\partial_{\mu}\phi^{\dagger}
+\delta\phi=\frac{i}{2}\sigma^{a}\alpha^{a}\phi,\ \ \delta\phi^{\dagger}=\frac{-i}{2}\sigma^{a}\alpha^{a}\phi^{\dagger},\ \ \delta(\partial_{\mu}\phi)=\frac{i}{2}\sigma^{a}\alpha^{a}\partial_{\mu}\phi,\ \ \delta(\partial_{\mu}\phi^{\dagger})=\frac{-i}{2}\sigma^{a}\alpha^{a}\partial_{\mu}\phi^{\dagger},
 \end{equation}
-Así:
+así:
 \begin{eqnarray}
 \nonumber \alpha^{a}j_{a}^{\mu}&=&\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}(\delta\phi)+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi^{\dagger})}(\delta\phi^{\dagger})\\
-j^{a}_{\mu}&=& \frac{i}{2}[\partial_{\mu}\phi^{\dagger}\sigma^{a}\phi-\phi^{\dagger}\sigma^{a}\partial_{\mu}\phi]
+j^{a}_{\mu}&=& \frac{i}{2}[\partial_{\mu}\phi^{\dagger}\sigma^{a}\phi-\phi^{\dagger}\sigma^{a}\partial_{\mu}\phi].
 \end{eqnarray}
-Esta corriente tiene cuatro componentes espaciales y tres internas de isospín. También, debido a que $(\square-m^2)(\phi,\phi^\dagger)=0\Rightarrow \partial_\mu j^{\mu}_{a}=0$. Ahora veamos que pasa si los parámetros $\alpha^a$ dependen de las coordenadas. Si $U=\ \exp\left(\frac{i}{2}\sigma^a\alpha^a(x)\right)$,tenemos que:
+Esta corriente tiene cuatro componentes espaciales y tres internas de isospín. También, debido a que $(\square-m^2)(\phi,\phi^\dagger)=0\Rightarrow \partial_\mu j^{\mu}_{a}=0$. Ahora veamos que pasa si los parámetros $\alpha^a$ dependen de las coordenadas. Si $U=\ \exp\left(\frac{i}{2}\sigma^a\alpha^a(x)\right)$, tenemos que:
 \begin{equation}
-\delta\phi(x)=\frac{i}{2}\sigma^{a}(x)\alpha^{a}\phi(x)
+\delta\phi(x)=\frac{i}{2}\sigma^{a}(x)\alpha^{a}\phi(x),
 \end{equation}
-Para que la densidad lagrangiana (3.21) sea invariante SU(2), entonces los términos con la derivada del campo deben transformar de la misma forma que el campo en sí mismo. Así definimos la derivdada covariante tal que esta transforme como:
+para que la densidad lagrangiana (3.21) sea invariante SU(2), entonces los términos con la derivada del campo deben transformar de la misma forma que el campo. Así definimos la derivdada covariante tal que transforme como:
 \begin{equation}
-\delta\phi_{;\mu}=\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{;\mu}
+\delta\phi_{;\mu}=\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{;\mu}.
 \end{equation}  
 \\
-
 Esto se cumple si $\phi_{;\mu}\equiv D_{\mu}\phi=\phi_{,\mu}-igA_{\mu}^{a}\frac{\sigma^{a}}{2}\phi$ y $A_{\mu}^{a}$ transforma como $A_{\mu}^{a}\to A_{\mu}^{a}+\partial_{\mu}\alpha^{a}-g\epsilon_{abc}\alpha^{b}A_{\mu}^{c}$, veamos:
 \begin{eqnarray}
 \nonumber \delta\phi_{;\mu}&=&\frac{i}{2}g\sigma^{a}\alpha^{a}(\phi_{,\mu}-igA_{\mu}^{b}\frac{\sigma^{b}}{2}\phi)=\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}-\frac{i^{2}g^{2}}{4}\sigma^{a}\alpha^{a}A_{\mu}^{b}\sigma^{b}\phi\\
-&=&\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}+\frac{g^{2}}{4}\alpha^{a}A_{\mu}^{b}\phi+\frac{i}{2}g^{2}\epsilon_{abc}\sigma^{a}A_{\mu}^{b}\alpha^{c}\phi
+&=&\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}+\frac{g^{2}}{4}\alpha^{a}A_{\mu}^{b}\phi+\frac{i}{2}g^{2}\epsilon_{abc}\sigma^{a}A_{\mu}^{b}\alpha^{c}\phi ,
 \end{eqnarray}
-Por otro lado:
+por otro lado:
 \begin{eqnarray}
 \nonumber \delta\phi_{;\mu}&=&\delta\phi_{,\mu}-ig[\delta(A_{\mu}^{b})\frac{\sigma^{b}}{2}\phi+A_{\mu}^{b}\frac{\sigma^{b}}{2}\delta\phi]\\
-&=&\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}+\frac{g^{2}}{4}\alpha^{a}A_{\mu}^{b}\phi+\frac{i}{2}g^{2}\epsilon_{abc}\sigma^{a}A_{\mu}^{b}\alpha^{c}\phi 
+&=&\frac{i}{2}g\sigma^{a}\alpha^{a}\phi_{,\mu}+\frac{g^{2}}{4}\alpha^{a}A_{\mu}^{b}\phi+\frac{i}{2}g^{2}\epsilon_{abc}\sigma^{a}A_{\mu}^{b}\alpha^{c}\phi .
 \end{eqnarray}
 Observando que las ecuaciones (3.26) y (3.27) son las mismas podemos concluir que la definición de la dereviada covariante es válida. Mostremos ahora que la transformación del campo Gauge se puede derivar de la definición de como actúa una transformación Gauge del segundo tipo en un campo vectorial, sabemos que:
 \begin{equation}
-A_\mu \to UA_\mu U^\dagger -\frac{i}{g}(\partial_\mu U)U^\dagger 
+A_\mu \to UA_\mu U^\dagger -\frac{i}{g}(\partial_\mu U)U^\dagger ,
 \end{equation}
-Para una transformación infinitesimal:
+para una transformación infinitesimal:
 \begin{eqnarray}
 \nonumber UA_\mu U^{\dagger}&=&\left(1+\frac{i}{2}g\frac{\sigma^{a}}{2}\alpha^{a}\right)A_{\mu}^{b}\frac{\sigma^{b}}{2}(1-\frac{i}{2}g\frac{\sigma^{c}}{2}\alpha^{c})\\
 \nonumber &=&A_\mu+\frac{ig}{4}A_{\mu}^{b}(\sigma^{a}\sigma^{b}\alpha^{a}-\sigma^{b}\sigma^{a}\alpha^{a})=A_{\mu}+\frac{ig}{4}A_{\mu}^{b}[\sigma^{a},\sigma^{b}]\alpha^{a}\\
-&=&A_{\mu}-gA_{\mu}^{b}\epsilon_{abc}\frac{\sigma^{c}}{2}\alpha^{a}
+&=&A_{\mu}-gA_{\mu}^{b}\epsilon_{abc}\frac{\sigma^{c}}{2}\alpha^{a} ,
 \end{eqnarray}
-Y 
+y 
 \begin{equation}
-(\partial_\mu U)U^\dagger=\frac{ig}{2}\sigma^a\partial_\mu \alpha^a
+(\partial_\mu U)U^\dagger=\frac{ig}{2}\sigma^a\partial_\mu \alpha^a .
 \end{equation}
 Por tanto si reemplazamos (3.29) y (3.30) en (3.28) obtenemos:
 \begin{equation}
-A_{\mu}^{a}\to A_{\mu}^{a}+\partial_{\mu}\alpha^{a}-g\epsilon_{abc}\alpha^{b}A_{\mu}^{c}
+A_{\mu}^{a}\to A_{\mu}^{a}+\partial_{\mu}\alpha^{a}-g\epsilon_{abc}\alpha^{b}A_{\mu}^{c}.
 \end{equation}
 Ahora generalizando el tensor de intensidad como $F_{\mu\nu}=\frac{i}{g}[D_\mu,D_\nu]A$
 \begin{equation}
-F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}-ig[A_{\mu},A_{\nu}]\Rightarrow F_{\mu\nu}^{a}=\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c}
+F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}-ig[A_{\mu},A_{\nu}]\Rightarrow F_{\mu\nu}^{a}=\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c} ,
 \end{equation}
-Así en el caso no-abeliano el tensor de intensidad $F_{\mu\nu}$ ha adquirido in término cuadrático en $A_\mu$. Veamos que el tensor $F_{\mu\nu}$ NO es invariante Gauge:
+así en el caso no-abeliano el tensor de intensidad $F_{\mu\nu}$ ha adquirido in término cuadrático en $A_\mu$. Veamos que el tensor $F_{\mu\nu}$ NO es invariante Gauge:
 \begin{eqnarray}
 \nonumber F_{\mu\nu}^{\prime a}&=&\partial_{\mu}A_{\nu}^{\prime a}-\partial_{\nu}A_{\mu}^{\prime a}+g\epsilon_{abc}A_{\mu}^{\prime b}A_{\nu}^{\prime c}\\
 \nonumber &=& \partial_{\mu}UA_{\nu}^{a}U^{-1}-\partial_{\nu}UA_{\mu}^{a}U^{-1}-\frac{i}{g}\partial_{\mu}[(\partial_{\nu}U)U^{-1}]+\frac{i}{g}\partial_{\nu}[(\partial_{\mu}U)U^{-1}]\\
 \nonumber && +g\epsilon_{abc}UA_{\mu}^{b}A_{\nu}^{c}U^{-1}-\frac{i}{g}(\partial_{\mu}U)U^{-1}UA_{\nu}U^{-1}-\frac{i}{g}UA_{\mu}U^{-1}(\partial_{\nu}U)U^{-1}\\
-&=& U[\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c}]U^{-1}=UF_{\mu\nu}^{a}U^{-1}
+&=& U[\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c}]U^{-1}=UF_{\mu\nu}^{a}U^{-1} ,
 \end{eqnarray}
-Por tanto $F_{\mu\nu}$ NO es invariante Gauge y tampoco $F_{\mu\nu}F^{\mu\nu}$ ya que:
+por tanto $F_{\mu\nu}$ NO es invariante Gauge y tampoco $F_{\mu\nu}F^{\mu\nu}$ ya que:
 \begin{equation}
-F_{\mu\nu}F^{\mu\nu}\to UF_{\mu\nu}F^{\mu\nu} U^{-1}
+F_{\mu\nu}F^{\mu\nu}\to UF_{\mu\nu}F^{\mu\nu} U^{-1}.
 \end{equation}
 Sin embargo la traza de esta cantidad es invariante, veamos:
 \begin{equation}
-Tr[F_{\mu\nu}F^{\mu\nu}]= Tr[UF_{\mu\nu}F^{\mu\nu} U^{-1}]=Tr[U^{-1}UF_{\mu\nu}F^{\mu\nu}]=Tr[F_{\mu\nu}F^{\mu\nu}]
+Tr[F_{\mu\nu}F^{\mu\nu}]= Tr[UF_{\mu\nu}F^{\mu\nu} U^{-1}]=Tr[U^{-1}UF_{\mu\nu}F^{\mu\nu}]=Tr[F_{\mu\nu}F^{\mu\nu}],
 \end{equation}
-Lo último debido a la propiedad de ciclicidad de la traza, por tanto con todo lo anterior la densidad lagrangiana invariante de SU(2) es:
+lo último debido a la propiedad de ciclicidad de la traza, por tanto con todo lo anterior la densidad lagrangiana invariante de SU(2) es:
 \begin{equation}
-\mathcal{L}=D_{\mu}\phi^{\dagger}D^{\mu}\phi+m^{2}\phi^{\dagger}\phi-\frac{1}{2}Tr[F^{\mu\nu}F_{\mu\nu}]
+\mathcal{L}=D_{\mu}\phi^{\dagger}D^{\mu}\phi+m^{2}\phi^{\dagger}\phi-\frac{1}{2}Tr[F^{\mu\nu}F_{\mu\nu}].
 \end{equation}
 
 
@@ -205,15 +204,15 @@ Lo último debido a la propiedad de ciclicidad de la traza, por tanto con todo l
 \subsection{La simetría de Lorentz como teoría Gauge.}
 En las primeras dos secciones hemos tratado de hacer invariante Gauge local un campo escalar, sin embargo en lo que sigue de aquí en adelante consideraremos un campo espinorial, estos campos satisfacen la famosa ecuación de Dirac:
 \begin{equation}
-(i\gamma^\mu\partial_\mu-m)\psi=0
+(i\gamma^\mu\partial_\mu-m)\psi=0,
 \end{equation}		
-Donde las matrices de Dirac. $\gamma^\mu$ satisfacen el álgebra $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$. Una transformación de Lorentz infinitesimal para un campo escalar es de la forma 
+donde las matrices de Dirac. $\gamma^\mu$ satisfacen el álgebra $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$. Una transformación de Lorentz infinitesimal para un campo escalar es de la forma 
 \begin{equation}
-\phi^\prime(x)=\left(1-\frac{i}{2}\omega_{\mu\nu}J^{\mu\nu}\right)\phi(x);\ \ J_{\mu\nu}=-i(x_\mu\partial_\nu-x_\nu\partial_\mu) 
+\phi^\prime(x)=\left(1-\frac{i}{2}\omega_{\mu\nu}J^{\mu\nu}\right)\phi(x);\ \ J_{\mu\nu}=-i(x_\mu\partial_\nu-x_\nu\partial_\mu) ,
 \end{equation} 
-Sin embargo para campos espinoriales hay una contribución matricial adicional a $J_{\mu\nu}$, la cual corresponde al espín intrínseco del campo, asi:
+sin embargo para campos espinoriales hay una contribución matricial adicional a $J_{\mu\nu}$, la cual corresponde al espín intrínseco del campo, asi:
 \begin{equation}
-J_{\mu\nu}=L_{\mu\nu}+\Sigma_{\mu\nu};\ \ \Sigma_{\mu\nu}=\frac{i}{4}[\gamma_\mu,\gamma_\nu]
+J_{\mu\nu}=L_{\mu\nu}+\Sigma_{\mu\nu};\ \ \Sigma_{\mu\nu}=\frac{i}{4}[\gamma_\mu,\gamma_\nu] .
 \end{equation}
 Ahora para hacer la ecuación (3.37) invariante \textit{local} de Lorentz debemos hacer los parámetros de la transformación dependientes de las coordenadas e intentar introducir una derivada covariante que deje la ecuación de Dirac invariante Guage.
 
@@ -224,123 +223,123 @@ Una situación similar ocurre para las rotaciones y las transformaciones de Lore
 
 Sea $\mathcal{M}$ una variedad Lorentziana 4-dimensional, los \textit{vierbein} están definidos como: 
 \begin{equation}
-g_{\mu\nu}=e_{\mu}^{\alpha}e_{\nu}^{\beta}\eta_{\alpha\beta}
+g_{\mu\nu}=e_{\mu}^{\alpha}e_{\nu}^{\beta}\eta_{\alpha\beta} ,
 \end{equation}
-Estos a su vez definen un marco ortogonal
+estos a su vez definen un marco ortogonal
 \begin{equation}
-\hat{\theta^{\alpha}}=e_{\mu}^{\alpha}dx^{\mu}
+\hat{\theta^{\alpha}}=e_{\mu}^{\alpha}dx^{\mu} .
 \end{equation}
 Vamos a diferenciar los indices del marco ortogonal ($\alpha ,\beta ,\gamma ...$) y los indices de espacio-tiempo (coordenados) ($\mu ,\nu ,\lambda ...$). Con respecto al marco ortogonal local las matrices de Dirac $\gamma^\alpha=e^{\alpha}_{\mu}\gamma^\mu$ satisfacen el álgebra $\{\gamma^{\alpha},\gamma^{\beta}\}=2\eta^{\alpha\beta}$ y a su vez definen las correspondientes contrapartes en el espacio curvo mediante $\gamma^{\mu}=e_{\alpha}^{\mu}\gamma^{\alpha}$.
 \\
 \\
 En el marco local (Espacio de Minkowski) un espinor transforma como:
 \begin{equation}
-\psi\to\rho(\Lambda)\psi \ \ ;\ \ \bar{\psi}\to\bar{\psi}\rho^{-1}(\Lambda)
+\psi\to\rho(\Lambda)\psi \ \ ;\ \ \bar{\psi}\to\bar{\psi}\rho^{-1}(\Lambda),
 \end{equation}
-Donde $\rho(\Lambda)$ es la representación espinorial de las transformaciones de Lorentz.
+donde $\rho(\Lambda)$ es la representación espinorial de las transformaciones de Lorentz.
 \begin{equation}
-\rho(\Lambda)=\ \exp\left[\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right]\ \ ;\ \ \Sigma_{\alpha\beta}=\frac{i}{4}[\gamma_{\alpha},\gamma_{\beta}]
+\rho(\Lambda)=\ \exp\left[\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right]\ \ ;\ \ \Sigma_{\alpha\beta}=\frac{i}{4}[\gamma_{\alpha},\gamma_{\beta}] .
 \end{equation}
 Si por otro lado queremos que el lagrangiano de Dirac
 \begin{equation}
-\mathcal{L}_D=i\bar{\psi}\gamma^{\alpha}\nabla_{\alpha}\psi+m\bar{\psi}\psi
+\mathcal{L}_D=i\bar{\psi}\gamma^{\alpha}\nabla_{\alpha}\psi+m\bar{\psi}\psi ,
 \end{equation}
-Sea invariante bajo transformaciones \textit{locales} de Lorentz debemos pedir que:
+sea invariante bajo transformaciones \textit{locales} de Lorentz debemos pedir que:
 \begin{equation}
-\nabla_{\alpha}\psi\to\rho(\Lambda)\Lambda_{\alpha}^{\beta}\nabla_{\beta}\psi
+\nabla_{\alpha}\psi\to\rho(\Lambda)\Lambda_{\alpha}^{\beta}\nabla_{\beta}\psi .
 \end{equation}
 Es decir que la derivada covariante transforme como un espinor y a la vez como un vector de Lorentz, así:
 \begin{eqnarray}
 \nonumber \mathcal{L}_{D}^{\prime}=\bar{\psi^{\prime}}\{i\gamma^{\prime\alpha}\nabla_{\alpha}^{\prime}+m\}\psi^{\prime}&=& 	\bar{\psi}\{i\Lambda_{\delta}^{\alpha}e_{\mu}^{\delta}\gamma^{\mu}\Lambda_{\alpha}^{\beta}\nabla_{\beta}+m\}\psi\\
 \nonumber &=& \bar{\psi}\{ie_{\mu}^{\delta}\gamma^{\mu}\Lambda_{\delta}^{\alpha}\eta^{\alpha h}\Lambda_{h}^{\beta}\nabla_{\beta}+m\}\psi;\ \ \text{Usando }\Lambda_{\delta}^{\alpha}\eta^{\alpha h}\Lambda_{h}^{\beta}=\eta^{\delta h}\\
-&=& \bar{\psi}\{ie_{\mu}^{\delta}\gamma^{\mu}\eta^{\delta h}\nabla_{\beta}+m\}\psi=\bar{\psi}\{i\gamma^{\delta}\nabla_{\delta}+m\}\psi
+&=& \bar{\psi}\{ie_{\mu}^{\delta}\gamma^{\mu}\eta^{\delta h}\nabla_{\beta}+m\}\psi=\bar{\psi}\{i\gamma^{\delta}\nabla_{\delta}+m\}\psi .
 \end{eqnarray}
 Vamos a encontrar una expresión para la derivada covariante $\nabla_\alpha$, si suponemos que:
 \begin{equation}
-\nabla_{\alpha}\psi=e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}]\psi
+\nabla_{\alpha}\psi=e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}]\psi ,
 \end{equation}
-Bajo una transformación local la ecuación (3.47) queda:
+bajo una transformación local la ecuación (3.47) queda:
 \begin{eqnarray}
 \nonumber \nabla_{\alpha}^{\prime}\psi^{\prime}&=& e_{\alpha}^{\prime\mu}[\partial_{\mu}+\Omega_{\mu}^{\prime}]\psi^{\prime}\\
 \nonumber  \rho(\Lambda)\Lambda_{\alpha}^{\beta}\nabla_{\beta}\psi &=&\Lambda_{\alpha}^{\beta}e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}^{\prime}]\rho(\Lambda)\psi\\
 \nonumber \rho(\Lambda)\Lambda_{\alpha}^{\beta}e_{\beta}^{\mu}[\partial_{\mu}+\Omega_{\mu}]\psi &=& \Lambda_{\alpha}^{\beta}e_{\alpha}^{\mu}[\partial_{\mu}+\Omega_{\mu}^{\prime}]\rho(\Lambda)\psi\\
-\Rightarrow\Omega_{\mu}^{\prime}&=&\rho(\Lambda)\Omega_{\mu}\rho^{-1}(\Lambda)-(\partial_{\mu}\rho(\Lambda))\rho^{-1}(\Lambda)
+\Rightarrow\Omega_{\mu}^{\prime}&=&\rho(\Lambda)\Omega_{\mu}\rho^{-1}(\Lambda)-(\partial_{\mu}\rho(\Lambda))\rho^{-1}(\Lambda).
 \end{eqnarray}
-Para encontrar la forma explícita de $\Omega_\mu$ consideremos una transformación infinitesimal de Lorentz.
+Para encontrar la forma explícita de $\Omega_\mu$ consideremos una transformación infinitesimal de Lorentz:
 \begin{equation}
-\rho(\Lambda)\approx1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}
+\rho(\Lambda)\approx1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}.
 \end{equation} 
 En la ecuación (3.49) $\Sigma_{\alpha\beta}$ son los generadores del grupo de Lorentz en su representación espinorial , estos satisfacen el álgebra:
 \begin{equation}
-i[\Sigma_{\alpha\beta},\Sigma_{\gamma\delta}]=\eta_{\gamma\beta}\Sigma_{\alpha\delta}-\eta_{\gamma\alpha}\Sigma_{\beta\delta}+\eta_{\delta\beta}\Sigma_{\gamma\alpha}-\eta_{\delta\alpha}\Sigma_{\gamma\beta}
+i[\Sigma_{\alpha\beta},\Sigma_{\gamma\delta}]=\eta_{\gamma\beta}\Sigma_{\alpha\delta}-\eta_{\gamma\alpha}\Sigma_{\beta\delta}+\eta_{\delta\beta}\Sigma_{\gamma\alpha}-\eta_{\delta\alpha}\Sigma_{\gamma\beta} ,
 \end{equation}
-Así bajo la transformación infinitesimal (3.49):
+así bajo la transformación infinitesimal (3.49):
 \begin{eqnarray}
 \nonumber \Omega_{\mu}&\to &\left(1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)\Omega_{\mu}\left(1-\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)-\left(1-\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)\partial_{\mu}\left(1+\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}\right)\\
-&\to &\Omega_{\mu}+\frac{i}{2}\varepsilon^{\alpha\beta}[\Sigma_{\alpha\beta},\Omega_{\mu}]-\partial_{\mu}\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta}
+&\to &\Omega_{\mu}+\frac{i}{2}\varepsilon^{\alpha\beta}[\Sigma_{\alpha\beta},\Omega_{\mu}]-\partial_{\mu}\frac{i}{2}\varepsilon^{\alpha\beta}\Sigma_{\alpha\beta} .
 \end{eqnarray}
 Recordando que la 1-forma conexión transforma bajo transformaciones locales de Lorentz [4] como:
 \begin{equation}
-\omega_{\beta}^{\alpha}\to\omega_{\beta}^{\alpha}+\varepsilon_{\gamma}^{\alpha}\omega_{\beta}^{\gamma}-\omega_{\gamma}^{\alpha}\varepsilon_{\beta}^{\gamma}-d\varepsilon_{\beta}^{\alpha} \ ; \ \omega_{\beta}^{\alpha}\equiv\Gamma_{\gamma\beta}^{\alpha}\hat{\theta^{\gamma}}
+\omega_{\beta}^{\alpha}\to\omega_{\beta}^{\alpha}+\varepsilon_{\gamma}^{\alpha}\omega_{\beta}^{\gamma}-\omega_{\gamma}^{\alpha}\varepsilon_{\beta}^{\gamma}-d\varepsilon_{\beta}^{\alpha} \ ; \ \omega_{\beta}^{\alpha}\equiv\Gamma_{\gamma\beta}^{\alpha}\hat{\theta^{\gamma}} ,
 \end{equation}
-Al observar las ecuaciones (3.51) y (3.52) nos podemos hacer una guía de lo que debería ser una propuesta para $\Omega_\mu$, así:
+al observar las ecuaciones (3.51) y (3.52) nos podemos hacer una guía de lo que debería ser una propuesta para $\Omega_\mu$, así:
 \begin{equation}
-\Omega_{\mu}=\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta}
+\Omega_{\mu}=\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta} .
 \end{equation} 
 La propuesta de la ecuación (3.53) cumple con la regla de transformación (3.51). Así encontramos que la densidad lagrangiana que es invariante bajo transformaciones de coordenadas y transformaciones de Lorentz locales es:
 \begin{equation}
-\mathcal{L}_{D}=\bar{\psi}\{i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta})+m\}\psi
+\mathcal{L}_{D}=\bar{\psi}\{i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta})+m\}\psi .
 \end{equation}
 
 
 \subsection{La ecuación de Dirac en el espacio de Schwarzschild.}
 En esta sección derivaremos la ecuación de Dirac en el espacio-tiempo de Schwarzschild, la densidad lagrangiana (3.54) nos lleva a la ecuación de movimiento para $\psi$:
 \begin{equation}
-\{i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta})+m_{D}\}\psi=0
+\{i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\frac{i}{2}\Gamma_{\mu}^{\alpha\beta}\Sigma_{\alpha\beta})+m_{D}\}\psi=0 .
 \end{equation}
 En el espacio de Schwarzschild el elemento de linea es [7]:
 \begin{equation}
-ds^{2}=-\left(1-\frac{2m}{r}\right)c^{2}dt^{2}+\left(1-\frac{2m}{r}\right)^{-1}dr^{2}+r^{2}(d\theta^{2}+\text{Sin}^{2}\theta d\phi^{2})
+ds^{2}=-\left(1-\frac{2m}{r}\right)c^{2}dt^{2}+\left(1-\frac{2m}{r}\right)^{-1}dr^{2}+r^{2}(d\theta^{2}+\text{Sin}^{2}\theta d\phi^{2}),
 \end{equation}
-Llevemos lo anterior al lenguaje de marcos ortogonales locales (vierbeins), si escribimos:
+si llevamos lo anterior al lenguaje de marcos ortogonales locales (vierbeins), debemos escribir:
 \begin{equation}
-ds^{2}=-(\mathbf{\theta}^{0})^{2}+(\mathbf{\theta}^{1})^{2}+(\mathbf{\theta}^{2})^{2}+(\mathbf{\theta}^{3})^{2}
+ds^{2}=-(\mathbf{\theta}^{0})^{2}+(\mathbf{\theta}^{1})^{2}+(\mathbf{\theta}^{2})^{2}+(\mathbf{\theta}^{3})^{2} ,
 \end{equation}
-Con $g_{\mu\nu}=\eta_{\mu\nu}$ y
+con $g_{\mu\nu}=\eta_{\mu\nu}$ y
 \begin{equation}
-\mathbf{\theta}^{0}=\left(1-\frac{2m}{r}\right)^{1/2}cdt\ ;\ \mathbf{\theta}^{1}=\left(1-\frac{2m}{r}\right)^{-1/2}dr\ ;\ \mathbf{\theta}^{2}=rd\theta\ ;\ \mathbf{\theta}^{3}=r\text{Sin}\theta d\phi
+\mathbf{\theta}^{0}=\left(1-\frac{2m}{r}\right)^{1/2}cdt\ ;\ \mathbf{\theta}^{1}=\left(1-\frac{2m}{r}\right)^{-1/2}dr\ ;\ \mathbf{\theta}^{2}=rd\theta\ ;\ \mathbf{\theta}^{3}=r\text{Sin}\theta d\phi .
 \end{equation}
 La base dual es:
 \begin{equation}
-\mathbf{e_{0}}=\frac{1}{c}\left(1-\frac{2m}{r}\right)^{-1/2}\frac{\partial}{\partial t}\ ;\ \mathbf{e}_{1}=\left(1-\frac{2m}{r}\right)^{1/2}\frac{\partial}{\partial r}\ ;\ \mathbf{e}_{2}=\frac{1}{r}\frac{\partial}{\partial\theta}\ ;\ \mathbf{e}_{3}=\frac{1}{r\text{Sin}\theta}\frac{\partial}{\partial\phi}
+\mathbf{e_{0}}=\frac{1}{c}\left(1-\frac{2m}{r}\right)^{-1/2}\frac{\partial}{\partial t}\ ;\ \mathbf{e}_{1}=\left(1-\frac{2m}{r}\right)^{1/2}\frac{\partial}{\partial r}\ ;\ \mathbf{e}_{2}=\frac{1}{r}\frac{\partial}{\partial\theta}\ ;\ \mathbf{e}_{3}=\frac{1}{r\text{Sin}\theta}\frac{\partial}{\partial\phi} ,
 \end{equation}
 (hay que notar que $m$ es la masa de Schwarzschild, diferente de la masa de la partícula ($m_D$)). Los conmutadores de las cantidades definidas en (3.59) se pueden calcular como:
 \begin{equation}
-\nonumber [\mathbf{e_{0}},\mathbf{e_{1}}]=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\mathbf{e_{0}}\Rightarrow C_{01}^{\ \ 1}=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\Rightarrow C_{010}=-\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}
+\nonumber [\mathbf{e_{0}},\mathbf{e_{1}}]=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\mathbf{e_{0}}\Rightarrow C_{01}^{\ \ 1}=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\Rightarrow C_{010}=-\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2} ,
 \end{equation}
-Los conmutadores que resultan ser no nulos son:
+aquellos que resultan ser no nulos son:
 \begin{eqnarray}
 \nonumber C_{010}&=&-\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}=-C_{100}\\
 \nonumber C_{122}=-C_{212}&=&-\frac{1}{r}\left(1-\frac{2m}{r}\right)^{1/2}=C_{133}=-C_{313}\\
-C_{233}&=&-C_{323}=-\frac{\cot\theta}{r}
+C_{233}&=&-C_{323}=-\frac{\cot\theta}{r} .
 \end{eqnarray}
 Los coeficientes $\Gamma_{\mu\alpha\beta}$ se pueden calcular como:
 \begin{equation}
-\Gamma_{\mu\alpha\beta}=-\frac{1}{8}[C_{\mu\alpha\beta}+C_{\alpha\beta\mu}-C_{\beta\mu\alpha}]	
+\Gamma_{\mu\alpha\beta}=-\frac{1}{8}[C_{\mu\alpha\beta}+C_{\alpha\beta\mu}-C_{\beta\mu\alpha}]	,
 \end{equation}
-Por tanto:
+por tanto:
 \begin{eqnarray}
 \nonumber \Gamma_{010}=-\Gamma_{100}&=&\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2},\ \ \Gamma_{001}=0\\
 \nonumber \Gamma_{122}=-\Gamma_{212}&=&\Gamma_{133}=-\Gamma_{313}=\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{1/2},\ \ \Gamma_{221}=\Gamma_{331}=0\\
-\Gamma_{233}=-\Gamma_{323}&=&\frac{\cot\theta}{r},\ \ \Gamma_{332}=0
+\Gamma_{233}=-\Gamma_{323}&=&\frac{\cot\theta}{r},\ \ \Gamma_{332}=0 .
 \end{eqnarray}
 Si definimos $\Gamma_{\mu}=\frac{1}{8}\Gamma_{\mu\alpha\beta}[\gamma^\alpha,\gamma^\beta]$, entonces tenemos:
 \begin{eqnarray}
 \nonumber \Gamma_{0}&=&\frac{m}{2r^{2}}\left(1-\frac{2m}{r}\right)^{-1/2}\alpha^{1}\\
 \nonumber \Gamma_{1}=0,\ \ \Gamma_{2}&=&-\frac{im}{2r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\delta^{3}\\
-\Gamma_{3}&=&\frac{im}{2r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\delta^{2}-\frac{i\cot\theta}{2r}\delta^{1}
+\Gamma_{3}&=&\frac{im}{2r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\delta^{2}-\frac{i\cot\theta}{2r}\delta^{1},
 \end{eqnarray}
-Donde,  
+donde  
 \begin{equation}
 \alpha^{1}=\left(\begin{array}{cc}
 0 & \sigma^{1}\\
@@ -348,20 +347,20 @@ Donde,
 \end{array}\right)\ \ ;\delta^{i}=\left(\begin{array}{cc}
 \sigma^{i} & 0\\
 0 & \sigma^{i}
-\end{array}\right)
+\end{array}\right) .
 \end{equation}
 Si finalmente notamos que:
 \begin{equation}
-\gamma^{0}\alpha^{1}=-\gamma^{1},\ \gamma^{2}\delta^{3}=-\gamma^{3}\delta^{2}=i\gamma^{1},\ \gamma^{3}\delta^{1}=i\gamma^{2}
+\gamma^{0}\alpha^{1}=-\gamma^{1},\ \gamma^{2}\delta^{3}=-\gamma^{3}\delta^{2}=i\gamma^{1},\ \gamma^{3}\delta^{1}=i\gamma^{2} ,
 \end{equation}	
-Podemos reemplazar (3.63) y (3.59) en la eucación de Dirac
+podemos reemplazar (3.63) y (3.59) en la eucación de Dirac
 \begin{equation}
-i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\Gamma_{\mu})\psi=m_{D}\psi
+i\gamma^{\alpha}e_{\alpha}^{\mu}(\partial_{\mu}+\Gamma_{\mu})\psi=m_{D}\psi ,
 \end{equation}
-Para obtener la ecuación de Dirac en el espacio de Schwarzschild:
+para obtener la ecuación de Dirac en el espacio de Schwarzschild:
 \begin{eqnarray}
 \nonumber i\left\{ \left(1-\frac{2m}{r}\right)^{-1/2}\left[\gamma^{0}\frac{1}{c}\frac{\partial\psi}{\partial t}-\frac{m}{2r^{2}}\gamma^{1}\psi\right]+\left(1-\frac{2m}{r}\right)^{1/2}\gamma^{1}\frac{\partial\psi}{\partial r}\right\}\\
-+i\left\{ \gamma^{2}\frac{1}{r}\frac{\partial\psi}{\partial\theta}+\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\gamma^{1}\psi+\gamma^{3}\frac{1}{r\text{sin}\theta}\frac{\partial\psi}{\partial\phi}+\frac{\cot\theta}{2r}\right\} =m_{D}\psi 
++i\left\{ \gamma^{2}\frac{1}{r}\frac{\partial\psi}{\partial\theta}+\frac{m}{r^{2}}\left(1-\frac{2m}{r}\right)^{1/2}\gamma^{1}\psi+\gamma^{3}\frac{1}{r\text{sin}\theta}\frac{\partial\psi}{\partial\phi}+\frac{\cot\theta}{2r}\right\} =m_{D}\psi .
 \end{eqnarray}
 \newpage
 \section{La ecuación de Schrodinger en espacio curvo.}

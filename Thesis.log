@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  24 MAY 2016 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  24 MAY 2016 13:21
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1339,27 +1339,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
-[50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
-
- []
-
-[52] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
+[50] [51] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 232--237
+Underfull \hbox (badness 10000) in paragraph at lines 231--236
 
  []
 
 [55] [56]
-Overfull \hbox (16.58284pt too wide) detected at line 320
+Overfull \hbox (21.44948pt too wide) detected at line 319
 []\OT1/cmr/m/n/10.95 [[]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ] = [] [][] 
 [] \OMS/cmsy/m/n/10.95 ) \OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 = [] [][] \
 OMS/cmsy/m/n/10.95 ) \OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n
-/10.95  [] [][]
+/10.95  [] [][] \OML/cmm/m/it/10.95 ;
  []
 
 [57] [58]) (Chapters/Chapter4.tex [59]
@@ -1427,7 +1422,7 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (69 pages, 737711 bytes).
+Output written on Thesis.pdf (69 pages, 737844 bytes).
 PDF statistics:
  1029 PDF objects out of 1200 (max. 8388607)
  426 named destinations out of 1000 (max. 500000)
