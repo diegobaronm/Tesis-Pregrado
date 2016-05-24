@@ -49,7 +49,7 @@
 \setlength{\parskip}{2.0ex plus0.5ex minus0.2ex}
 \usepackage{vmargin}
 \setmarginsrb           { 1.5in}  % left margin
-                        { 0.6in}  % top margin
+                        { 0.8in}  % top margin
                         { 1.0in}  % right margin
                         { 0.8in}  % bottom margin
                         {  20pt}  % head height
@@ -185,9 +185,6 @@
   \hypersetup{pdfkeywords=\keywordnames}
   \thispagestyle{empty}
   \begin{titlepage}
-  \begin{center}
-  \includegraphics[scale=0.15]{Imagenes/Escudoudea.jpg}
-  \end{center}
    \let\footnotesize\small
     \let\footnoterule\relax
     \let \footnote \thanks
@@ -208,7 +205,7 @@
       {\large Nelson Vanegas Arbeláez \par}
       \bigskip
       \bigskip
-      {\large Tesis para optar por el título de: \par}
+      {\large Trabajo de grado para optar por el título de: \par}
       {\large Físico \par}
       \bigskip
       \bigskip
@@ -218,7 +215,7 @@
       \bigskip
       \bigskip
       \bigskip
-      {\Large Abril 2016 \par}
+      {\Large Mayo 2016 \par}
       \bigskip
     \end{center}
     \par
