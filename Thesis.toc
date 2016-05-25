@@ -35,9 +35,9 @@
 \contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schr\IeC {\"o}dinger en espacio curvo.}{59}{section.352}
 \contentsline {subsection}{\numberline {3.2.1}El problema del ordenamiento.}{59}{subsection.353}
 \contentsline {subsection}{\numberline {3.2.2}Ordenamiento de Weyl.}{61}{subsection.364}
-\contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{61}{section.367}
-\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{61}{section.368}
-\contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{61}{section.369}
-\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{62}{chapter.370}
+\contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{65}{section.387}
+\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{65}{section.388}
+\contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{65}{section.389}
+\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{66}{chapter.390}
 \vspace {2em}
 \vspace {2em}

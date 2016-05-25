@@ -431,16 +431,129 @@ es decir al actuar sobre estados $|p\rangle$ sale de los brakets como una funci�
 \\
 \\
 Demos un ejemplo: escribamos $\hat{x}\hat{p}$ de tal manera que este simétricamente ordenado:
-
-
-
-
-
-
-
-
+\begin{equation}
+(\hat{x}\hat{p})_S=\frac{1}{2}(\hat{x}\hat{p}+\hat{p}\hat{x}),
+\end{equation}
+para que la expresión (3.80) sea igual a $\hat{x}\hat{p}$ debemos agregar
+\begin{equation}
+\hat{x}\hat{p}-\frac{1}{2}(\hat{x}\hat{p}+\hat{p}\hat{x})=\frac{1}{2}i\hbar ,
+\end{equation}
+por tanto:
+\begin{equation}
+(\hat{x}\hat{p})_W=(\hat{x}\hat{p})_S+\frac{1}{2}i\hbar .
+\end{equation}
+Haciendo este mismo procedimiento encontramos que $(\hat{p}\hat{x})_W=(\hat{p}\hat{x})_S-\frac{1}{2}i\hbar$, notemos entonces que:
+\begin{equation}
+(\hat{x}\hat{p})_S=(\hat{p}\hat{x})_S \ \ \text{pero},\ (\hat{x}\hat{p})_W\neq(\hat{p}\hat{x})_W. 
+\end{equation}
+En general
+\begin{eqnarray}
+\nonumber (\hat{x}^{m}\hat{p}^{r})_{S}&=&\frac{1}{2^{m}}\sum_{l=0}^{m}\left(\begin{array}{c}
+m\\
+l
+\end{array}\right)\hat{x}^{m-l}\hat{p}^{r}\hat{x}^{l}\ \ (\text{manteniendo $\hat{p}^r$ juntos})\\
+&=& \frac{1}{2^{r}}\sum_{k=0}^{r}\left(\begin{array}{c}
+r\\
+k
+\end{array}\right)\hat{p}^{r-k}\hat{x}^{m}\hat{p}^{k} \ \ (\text{manteniendo $\hat{x}^m$ juntos}).
+\end{eqnarray}
+Si $M=\langle z|(\hat{x}^{m}\hat{p}^{r})_{S}|y\rangle $, entonces usando (3.84):
+\begin{eqnarray}
+\nonumber M&=&\int\langle z||\frac{1}{2^{m}}\sum_{l=0}^{m}\left(\begin{array}{c}
+m\\
+l
+\end{array}\right)\hat{x}^{m-l}\hat{p}^{r}|p\rangle\langle p|\hat{x}^{l}|y\rangle d^{n}p\\
+\nonumber &=&\int\langle z|p\rangle\frac{1}{2^{m}}\sum_{l=0}^{m}\left(\begin{array}{c}
+m\\
+l
+\end{array}\right)z^{m-l}p^{r}y^{l}\langle p|y\rangle d^{n}p\\
+M&=&\int\langle z|p\rangle\left(\frac{z+y}{2}\right)^{m}p^{r}\langle p|y\rangle d^{n}p .
+\end{eqnarray}
+Por tanto, si tenemos un operador simetricamente ordenado:
+\begin{equation}
+\langle z|\hat{H}_{W}(\hat{x},\hat{p})|y\rangle=\int\langle z|p\rangle H_{W}\left(\frac{1}{2}(z+y),p\right)\langle p|y\rangle d^{n}p.
+\end{equation} 
+Ahora si tenemos las herramientas necesarias para calcular la expresión (3.77). Primero debemos escribir (3.76) de manera Weyl-Ordenada, para esto movamos $p_i$ a la izquierda y $p_j$ a la derecha (en adelante vamos a prescindir de los gorros para denotar los operadores a menos que se diga lo contrario). Usando $[x,f(p)]=[x,p]\frac{\partial f(p)}{\partial x}=i\hbar\frac{\partial f(p)}{\partial x}$, tenemos:
+\begin{eqnarray}
+\nonumber H&=&\frac{1}{2}\left(p_{i}g^{-1/4}-i\hbar\partial_{i}g^{-1/4}\right)g^{1/2}g^{ij}\left(g^{-1/4}p_{j}+i\hbar\partial_{j}g^{-1/4}\right)\\
+\nonumber \text{notando que,}&&\ \ \partial_{j}g^{-1/4}=-\frac{1}{4}g^{-1/4}\partial_{i}\ln g\\
+\nonumber\Rightarrow H &=&\frac{1}{2}\left(p_{i}-\frac{1}{4}i\hbar\partial_{i}\ln g\right)g^{-1/4}g^{1/2}g^{ij}g^{-1/4}\left(p_{j}+\frac{1}{4}i\hbar\partial_{j}\ln g\right)\\
+&=&\frac{1}{2}p_{i}g^{ij}p_{j}+\frac{\hbar^{2}}{8}\partial_{i}(g^{ij}\partial_j\ln g)+\frac{\hbar^{2}}{32}g^{ij}(\partial_{i}\ln g)(\partial_{j}\ln g).
+\end{eqnarray}
+El primer término es el único que contiene combinaciones de $x$ y $p$, por tanto es el único que debe ser Weyl-ordenado, veamos:
+\begin{equation}
+\frac{1}{2}(p_{i}g^{ij}p_{j})_{S}=\frac{1}{8}(p_{i}p_{j}g^{ij}+2p_{i}g^{ij}p_{j}+g^{ij}p_{i}p_{j}),
+\end{equation}
+ahora debemos encontrar la diferencia entre el operador original y el simetrizado, esta es:
+\begin{eqnarray}
+\nonumber \frac{1}{2}(p_{i}g^{ij}p_{j})-\frac{1}{2}(p_{i}g^{ij}p_{j})_{S}&=&\frac{p_{i}}{8}[g^{ij},p_{j}]-\frac{1}{8}[g^{ij},p_{i}]p_{j}\\
+\nonumber &=& \frac{1}{8}[p_{i},[g^{ij},p_{j}]]=\frac{i\hbar}{8}[p_{i},\partial_{j}g^{ij}]\\
+&=& \frac{(i\hbar)(-i\hbar)}{8}\partial_{i}\partial_{j}g^{ij}=\frac{\hbar^{2}}{8}\partial_{i}\partial_{j}g^{ij}.
+\end{eqnarray}
+Así
+\begin{equation}
+H_W= \frac{1}{2}(p_{i}g^{ij}p_{j})_{S}+\frac{\hbar^{2}}{8}[\partial_{i}\partial_{j}g^{ij}+\partial_{i}(g^{ij}\partial_{j}\ln g)+\frac{1}{4}g^{ij}(\partial_{i}\ln g)(\partial_{j}\ln g)],
+\end{equation}
+y usando que $\frac{1}{2}\partial_{i}\ln g=\Gamma_{ik}^{k}$ podemos escribir (3.90) como:
+\begin{equation}
+H_{W}=\frac{1}{2}(p_{i}g^{ij}p_{j})_{S}+\frac{\hbar^{2}}{8}[\mathcal{R}+g^{ij}\Gamma_{ik}^{l}\Gamma_{jl}^{k}].
+\end{equation}
+Ahora si calculemos $\langle q|\exp\left\{ -\frac{i}{\hbar}H_{W}(t-t_{o})\right\} |q_{0}\rangle $, para esto debemos discretizar el intervalo temporal $t-t_0$ en $N$ partes de igual duración, de tal manera que $\frac{t-t_0}{N}=\epsilon$, así:
+\begin{eqnarray}
+\nonumber \langle q|\exp\left\{ -\frac{i}{\hbar}N\epsilon H_{W}\right\} |q_{0}\rangle &=& \langle q|\left(\exp\left\{ -\frac{i}{\hbar}\epsilon H_{W}\right\} \right)^{N}|q_{0}\rangle\\
+\nonumber &=& \langle q|\exp\left\{ -\frac{i}{\hbar}\epsilon H_{W}\right\} |p_{N}\rangle\int d^{n}p_{N}\langle p_{N}|q_{N-1}\rangle\int d^{n}q_{N-1}\sqrt{g(q_{N-1})}\\
+ \nonumber &&\times \langle q_{N-1}|\exp\left\{ -\frac{i}{\hbar}\epsilon H_{W}\right\} |p_{N-1}\rangle\int d^{n}p_{N-1}\langle p_{N-1}|q_{N-2}\rangle...\\
+ && \times \langle q_{1}|\exp\left\{ -\frac{i}{\hbar}\epsilon H_{W}\right\} |p_{1}\rangle\int d^{n}p_{1}\langle p_{1}|q_{0}\rangle.
+\end{eqnarray}	
+Un elemento general de esta serie es:
+\begin{eqnarray}
+\nonumber A&=& \int\langle q_{k}|\exp\left\{ -\frac{i}{\hbar}\epsilon H_{W}\right\} |p_{k}\rangle\langle p_{k}|q_{k-1}\rangle d^{n}p_{k}\\
+&=& \int\exp\left\{ -i\frac{\epsilon}{\hbar}H\left(\frac{q_{k}+q_{k-1}}{2},p_{k}\right)\right\} \langle q_{k}|p_{k}\rangle\langle p_{k}|q_{k-1}\rangle d^{n}p_{k},
+\end{eqnarray}
+teniendo en cuenta que $\langle q|p\rangle=\frac{e^{\frac{i}{\hbar}q_{j}p^{j}}}{(2\pi\hbar)^{n/2}g^{1/4}}$, entonces:
+\begin{equation}
+A= \int\exp\left\{ -\frac{i\epsilon}{\hbar}H\left(\frac{q_{k}+q_{k-1}}{2},p_{k}\right)\right\} \frac{\exp\left\{ \frac{i}{\hbar}p_{k}^{j}(q_{j,k}-q_{k-1,j})\right\} }{(2\pi\hbar)^{n/2}g^{1/2}}d^{n}p_{k},
+\end{equation}
+donde el índice $k$ es de la discretización y $j$ de las coordenadas de espacio-tiempo. Si definimos $\bar{q}_{k-\frac{1}{2}}=\frac{q_k+q_{k+1}}{2}$ entonces:
+\begin{eqnarray}
+\nonumber \exp\left\{ -\frac{i\epsilon}{\hbar}H(\bar{q}_{k-\frac{1}{2}},p_{k})\right\} &=&\exp\left\{ -\frac{i\epsilon}{\hbar}\left[\frac{1}{2}g^{ij}(\bar{q}_{k-\frac{1}{2}})p_{k,i}p_{k,j}\right]\right\} \\
+\nonumber && \times \exp\left\{ \frac{\hbar^{2}}{8}[\mathcal{R}(\bar{q}_{k-\frac{1}{2}})+g^{ij}(\bar{q}_{k-\frac{1}{2}})\Gamma_{ik}^{l}(\bar{q}_{k-\frac{1}{2}})\Gamma_{jl}^{k}(\bar{q}_{k-\frac{1}{2}})]\right\} ,\\
+\end{eqnarray}
+y cuando $N\to \infty $ la ecuación (3.92) toma la forma:
+\begin{eqnarray}
+\nonumber K(q,t,q_{0},t_{0})&=&\lim_{N\to\infty}[g(q)g(q_{0})]^{-\frac{1}{4}}\int\prod_{k=1}^{N}\frac{d^{n}p_{k}}{(2\pi\hbar)^{n}}\prod_{l=1}^{N-1}d^{n}q_{l}\\
+&&\times \exp\left\{ \sum_{k=1}^{N}\frac{i}{\hbar}p_{k}(q_{k}-q_{k-1})-\frac{i\epsilon}{\hbar}H(\bar{q}_{k-\frac{1}{2}},p_{k})\right\} .
+\end{eqnarray}
+El primer término aparece debido a que los únicos facores $g^{-1/4}$ que no se compensan totalmente en (3.92) son el primero y el último. Al realizar la integración en $p_k$ en (3.96), obtenemos finalmente:
+\begin{eqnarray}
+\nonumber K(q,t,q_{0},t_{0})&=&[g(q)g(q_{0})]^{-\frac{1}{4}}\lim_{N\to\infty}\left(\frac{m}{2\pi i\epsilon\hbar}\right)^{\frac{nN}{2}}\int\prod_{j=1}^{N-1}dq_{j}\sqrt{q(\bar{q}_{k-\frac{1}{2}})}\\
+\nonumber && \times \prod_{j=1}^{N}\exp\left\{ \frac{i}{\hbar}\left[\frac{m}{2\epsilon}g_{ab}(\bar{q}_{j-\frac{1}{2}})\triangle q_{j}^{a}\triangle q_{j}^{b}-\epsilon V(\bar{q}_{j-\frac{1}{2}})-\epsilon\triangle V_{Weyl}\right]\right\},\\ 
+\end{eqnarray}
+con $\triangle V_{Weyl}=\frac{\hbar^{2}}{8}[\mathcal{R}(\bar{q}_{k-\frac{1}{2}})+g^{ij}(\bar{q}_{k-\frac{1}{2}})\Gamma_{ik}^{l}(\bar{q}_{k-\frac{1}{2}})\Gamma_{jl}^{k}(\bar{q}_{k-\frac{1}{2}})]$, en el continuo la ecuación (3.97) es:
+\begin{equation}
+K(q,t,q_{0},t_{0})=[g(q)g(q_{0})]^{-\frac{1}{4}}\int_{\{q_{0,},t_{o},q,t\}}\mathcal{D}[\sqrt{g}q(\tau)]\exp\left\{ \frac{i}{\hbar}\int_{t_{0}}^{t}dt\mathcal{L}_{eff}(q,\dot{q})\right\} ,
+\end{equation}
+donde 
+\begin{equation}
+\mathcal{L}_{eff}=\frac{m}{2}g_{ab}\dot{q}^{a}\dot{q}^{b}-V(q)-\frac{\hbar^{2}}{8}(\mathcal{R}+g^{ab}\Gamma_{ac}^{d}\Gamma_{bd}^{c}).
+\end{equation}
+\newpage 
 
 
 \section{Transformaciones de coordenadas.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{El átomo de Hidrógeno vía integrales de trayectoria.}
 \section{El propagador para el efecto Sagnac.}

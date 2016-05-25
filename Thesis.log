@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  24 MAY 2016 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  24 MAY 2016 22:06
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1385,12 +1385,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--434
 
  []
 
-) (Chapters/Chapter4.tex [61]
+[61] [62]
+Overfull \hbox (28.77623pt too wide) in alignment at lines 502--507
+ [][][] []
+ []
+
+[63] [64]) (Chapters/Chapter4.tex [65]
 Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Bibliograf\IeC {\'\i }a.
 ------------------------------------------------------------------------------
-) [62
+) [66
 
 ]
 ------------------------------------------------------------------------------
@@ -1406,7 +1411,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 803BA0BF219E1C0FCCF666E507FDE072;9096.
+(rerunfilecheck)             Checksum: 79665AFC4185E27891356950CFE645B8;9096.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1414,11 +1419,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14774 strings out of 493673
- 206022 string characters out of 3141530
+ 14800 strings out of 493673
+ 206309 string characters out of 3141530
  283802 words of memory out of 3000000
- 17435 multiletter control sequences out of 15000+200000
- 16699 words of font info for 63 fonts, out of 3000000 for 9000
+ 17436 multiletter control sequences out of 15000+200000
+ 17008 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,18n,48p,1327b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -1450,9 +1455,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (71 pages, 755562 bytes).
+Output written on Thesis.pdf (75 pages, 773080 bytes).
 PDF statistics:
- 1064 PDF objects out of 1200 (max. 8388607)
- 442 named destinations out of 1000 (max. 500000)
+ 1106 PDF objects out of 1200 (max. 8388607)
+ 466 named destinations out of 1000 (max. 500000)
  377 words of extra memory for PDF output out of 10000 (max. 10000000)
 
