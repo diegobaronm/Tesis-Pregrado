@@ -541,19 +541,90 @@ donde
 
 
 \section{Transformaciones de coordenadas.}
+En esta sección veremos como puede resultar útil hacer una transformación de coordenadas, para calcular el propagador de un sistema físico en el que el potencial tiene una forma funcinal complicada y no integrable de forma trivial. Consideremos un sistema 1-D en el espacio plano, con el Hamiltoniano:
+\begin{equation}
+\hat{H}=\frac{\hat{p}^{2}}{2m}+V(\hat{x}),
+\end{equation} 
+y la ecuación de Schrödinger estacionaria $\hat{H}|\psi\rangle=E|\psi\rangle $, en coordenadas tenemos:
+\begin{equation}
+\frac{-\hbar^{2}}{2m}\frac{d^{2}\psi(x)}{dx^{2}}+V(x)\psi(x)=E\psi(x).
+\end{equation}
+Si asumimos que el potencial V(x) es tan complicado que una solución directa no es posible, podemos ayudarnos del siguiente truco: hagamos una transformación de coordenadas
+\begin{equation}
+x=F(q)\ \ \Rightarrow\ \ \frac{d}{dx}=F^{\prime-1}\frac{d}{dq},
+\end{equation}
+entonces la ecuación de Schrödinger (3.101) queda:
+\begin{equation}
+-\frac{\hbar^{2}}{2m}\frac{1}{F^{'2}}\frac{d^{2}\psi}{dq^{2}}+\frac{F^{''}}{F^{'3}}\frac{d\psi}{dq}+V(F(q))\psi=E\psi .
+\end{equation}
+Si hacemos la sustitución $\psi (F(q))=\sqrt{F^{'}(q)}\varphi(q)$, obtenemos:
+\begin{eqnarray}
+&-\frac{\hbar^{2}}{2m}\frac{d^{2}\varphi}{dq^{2}}+\left(W(q)-EF^{'2}(q)\right)\varphi=0&\\
+\nonumber &\text{con}\ \ \ W(q)\equiv F^{'2}V(F(q))+\frac{\hbar^{2}}{4m}\left[\frac{3}{2}\left(\frac{F^{''}}{F^{'}}\right)^{2}-\frac{F^{'''}}{F^{'}}\right] . &
+\end{eqnarray}
+La ecuación (3.104) tiene la forma de una ecuación tipo Scrhödinger con potencial $W(q)-EF^{'2}(q)$ y autovalor $0$. Si este nuevo potencial nos deja resolver el problema de autovalores:
+\begin{equation}
+-\frac{\hbar^{2}}{2m}\frac{d^{2}\varphi_{n}}{dq^{2}}+\left(W(q)-EF^{'2}(q)\right)\varphi_{n}=\varepsilon_{n}\varphi_{n},
+\end{equation}
+por tanto los autovalores del problema inicial pueden ser encontrados mediante $\varepsilon_{n}(E)=0$ y las autofunciones son $\psi_n(F(q))=\sqrt{F^{'}}\varphi_n(q)$. Este procedimieno que hemos hecho para cambiar la forma de la ecuación (3.101) puede ser aplicado para calcular integrales de trayectoria complicadas.
 
+\subsection{Transformaciones de coordenadas e intregrales de trayectoria.}
+Consideremos la integral de trayectoria unidimensional:
+\begin{equation}
+K(x,x_{0},t,t_{0})=\int_{\{x_{0}.t_{0}|x,t\}}\mathcal{D}x(\tau)\exp\left[\frac{i}{\hbar}\int_{t_{0}}^{t}\left(\frac{m}{2}\dot{x}^{2}-V(x)\right)dt\right] ,
+\end{equation}
+si asumimos que el potencial, de nuevo, es complicado como para hacer el cálculo directo de (3.106) inviable, entonces veamos como inspirados por la sección anterior, podemos hacer un cambio de coordenadas que nos permita calcular $K(x,x_{0},t,t_{0})$. Esta técnica fue originalmente desarrollada por Duru y Kleinert (1979,1982)[11,12].
+\\
+\\
+Primero introduzcamos un Hamiltoniano más general que contega la variable de energía:
+\begin{equation}
+\hat{H}_{E}=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}+V(x)-E,
+\end{equation}
+por tanto:
+\begin{equation}
+K(x,x_{0},t,t_{0})=e^{ \left(\frac{iET}{\hbar}\right)}K(x^{''},x^{'},T),\ \  \text{donde}\ T\equiv t-t_0. 
+\end{equation}
+Sabemos que si hacemos $x=F(q)$, entonces:
+\begin{equation}
+\hat{H}_{E}=-\frac{\hbar^{2}}{2m}\frac{1}{F^{'2}}\frac{d^{2}}{dq^{2}}+\frac{F^{''}}{F^{'3}}\frac{d}{dq}+V(F(q))-E.
+\end{equation} 
+La transformación anterior la hemos hecho para la ecuación de Schrödinger estacionaria, para remover el factor que acompaña a la segunda derivada respecto a $q$ en (3.110) debemos hacer un cambio en la ecuación de Schrödinger dependiente del tiempo, en específico:
+\begin{equation}
+dt=f(x)ds,\ \ \text{donde}\ \ f(F(q))=F^{'2}(q),
+\end{equation}
+así:
+\begin{equation}
+\frac{\partial}{\partial t}=\frac{1}{f}\frac{\partial}{\partial s}\Rightarrow-i\hbar\frac{\partial\psi}{\partial t}=\hat{H}_{E}\psi\to-i\hbar\frac{\partial\psi}{\partial s}=f\ \hat{H}_{E}\psi .
+\end{equation}
+Así introducimos el nuevo Hamiltoniano $\tilde{H}=f\hat{H}_E$:
+\begin{eqnarray}
+\nonumber \tilde{H}&=&\frac{-\hbar^{2}}{2m}\left[\frac{d^{2}}{dq^{2}}-\frac{F^{''}}{F^{'}}\frac{d}{dq}\right]+f[F]\left[V(F)-E\right]\\
+&=& \frac{-\hbar^{2}}{2m}\left[\frac{d^{2}}{dq^{2}}-\Gamma(q)\frac{d}{dq}\right]+f[F]\left[V(F)-E\right]\ \ ;\ \ \Gamma(q)=\frac{F^{''}}{F^{'}},
+\end{eqnarray}
+si introducimos $p_q=-i\hbar\left[\frac{d}{dq}+\frac{1}{2}\Gamma(q)\right]$, entonces:
+\begin{equation}
+p_{q}^{2}=-\hbar^{2}\left[\frac{d^{2}}{dq^{2}}+\Gamma\frac{d}{dq}+\frac{1}{2}\frac{d\Gamma}{dq}+\frac{\Gamma^{2}}{4}\right],
+\end{equation}
+y notando que:
+\begin{equation}
+\frac{1}{2}\frac{d\Gamma}{dq}=-\frac{1}{2}\left(\frac{F^{'''}}{F^{'}}-\left(\frac{F^{''}}{F^{'}}\right)^{2}\right)\ \text{y}\ \frac{\Gamma^{2}}{4}=\frac{1}{4}\left(\frac{F^{''}}{F^{'}}\right)^{2}\Rightarrow\frac{1}{2}\frac{d\Gamma}{dq}+\frac{\Gamma^{2}}{4}
+ =\frac{3}{4}\left(\frac{F^{''}}{F^{'}}\right)^{2}-\frac{1}{2}\frac{F^{\text{'''}}}{F^{'}},
+\end{equation}
+finalmente podemos escribir:
+\begin{equation}
+\tilde{H}=\frac{p_{q}^{2}}{2m}+f[V-E]+\frac{\hbar^{2}}{8m}\left[3\left(\frac{F^{''}}{F^{'}}\right)-2\frac{F^{\text{'''}}}{F^{'}}\right] .
+\end{equation}
+Por tanto la integral de trayectoria correspondiente a $\hat{H}$ es:
+\begin{equation}
+K(q,q_{0},s)=\int_{\{q_{0}.t_{0}|q,t\}}\mathcal{D}q(\sigma)\ \exp\left[\frac{i}{\hbar}\int_{s_{0}}^{s}\left(\frac{m}{2}\dot{q}^{2}-f[V-E]-\triangle V(q))\right)d\sigma\right] ,
+\end{equation} 
+donde $\triangle V(q)=\frac{\hbar^{2}}{8m}\left[3\left(\frac{F^{''}}{F^{'}}\right)-2\frac{F^{\text{'''}}}{F^{'}}\right]$. El propagador (3.116) soluciona:
+\begin{equation}
+i\hbar\frac{\partial}{\partial s}\tilde{\psi}(q,s)=\tilde{H}\tilde{\psi}(q,s).
+\end{equation}
+\subsection{Integrales de trayectoria en coordenadas polares.}
+En esta sección haremos uso de las transformaciones de coordenadas para ver como se mapea la integral de trayectoria de coordenas cartesianas a coordenadas polares, este análisis está basado en [13,14]. Consideremos un sistema mecánico cuántico con invarianza rotacional del Hamiltoniano, es conveniente introducir las coordenadas polares $\vec{x}=(x r\cos \varphi,r\sin \varphi)$. En el caso del formalismo de operadores el tratamiento que se hace es separar la ecuación de Schrödinger en una parte radial y otra angular, lo mismo intentaremos en el caso de integrales de trayectoria, otra modificación que es conveniente introducir es el tiempo imaginario $\tau=it$. Con esto la integral de trayectoria toma la forma:
 
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 \section{El átomo de Hidrógeno vía integrales de trayectoria.}
 \section{El propagador para el efecto Sagnac.}
