@@ -38,8 +38,8 @@
 \contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{65}{section.387}
 \contentsline {subsection}{\numberline {3.3.1}Transformaciones de coordenadas e intregrales de trayectoria.}{66}{subsection.394}
 \contentsline {subsection}{\numberline {3.3.2}Integrales de trayectoria en coordenadas polares.}{67}{subsection.407}
-\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{68}{section.408}
-\contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{68}{section.409}
-\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{69}{chapter.410}
+\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{68}{section.413}
+\contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{68}{section.414}
+\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{69}{chapter.415}
 \vspace {2em}
 \vspace {2em}

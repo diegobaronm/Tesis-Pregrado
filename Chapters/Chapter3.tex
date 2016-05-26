@@ -624,7 +624,31 @@ i\hbar\frac{\partial}{\partial s}\tilde{\psi}(q,s)=\tilde{H}\tilde{\psi}(q,s).
 \end{equation}
 \subsection{Integrales de trayectoria en coordenadas polares.}
 En esta sección haremos uso de las transformaciones de coordenadas para ver como se mapea la integral de trayectoria de coordenas cartesianas a coordenadas polares, este análisis está basado en [13,14]. Consideremos un sistema mecánico cuántico con invarianza rotacional del Hamiltoniano, es conveniente introducir las coordenadas polares $\vec{x}=(x r\cos \varphi,r\sin \varphi)$. En el caso del formalismo de operadores el tratamiento que se hace es separar la ecuación de Schrödinger en una parte radial y otra angular, lo mismo intentaremos en el caso de integrales de trayectoria, otra modificación que es conveniente introducir es el tiempo imaginario $\tau=it$. Con esto la integral de trayectoria toma la forma:
+\begin{equation}
+\langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\int\mathcal{D}q(\tau)\ \exp\left[-\frac{1}{\hbar}\int_{\tau_{a}}^{\tau_{b}}\left(\frac{m}{2}\dot{\vec{x}}^{2}+V(r)\right)d\tau\right],
+\end{equation}
+de forma discretizada:
+\begin{equation}
+\langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\prod_{n=1}^{N}\left[\int\frac{d^{2}x_{n}}{2\pi\hbar\epsilon/m}\right]\exp\left\{ \frac{-\epsilon}{\hbar}\sum_{n=1}^{N+1}\left[\frac{m}{2\epsilon^{2}}(\vec{x}_{n}-\vec{x}_{n-1})+V(r_{n})\right]\right\} .
+\end{equation}
+Al ir a coordenas polares $\int_{-\infty}^{\infty}\frac{d^{2}x_{n}}{2\pi\epsilon\hbar/m}\to\int_{0}^{\infty}dr_{n}\ r_{n}\int_{0}^{2\pi}\frac{d\varphi_{n}}{2\pi\hbar\epsilon/m}$, el término cinético transforma como:
+\begin{equation}
+\exp\left[\frac{-m}{2\epsilon\hbar}(\vec{x}_{n}-\vec{x}_{n-1})^{2}\right]=\exp\left[-\frac{m}{2\epsilon\hbar}(r_{n}^{2}+r_{n-1}^{2}-2r_{n}r_{n-1}\cos(\varphi_{n}-\varphi_{n-1}))\right] .
+\end{equation}
+Ahora con el objetivo de realizar las integrales en $\varphi$ separemos la parte radial y angular haciendo de la siguiente identidad:
+\begin{equation}
+e^{a\cos\varphi}=\sum_{m=-\infty}^{m=\infty}I_{m}(a)e^{im\varphi},
+\end{equation}
+donde $I_m(z)$ son las funciones de Bessel modificadas, por tanto:
+\begin{equation}
+\exp\left[\frac{-m}{2\epsilon\hbar}(\vec{x}_{n}-\vec{x}_{n-1})^{2}\right]=\exp\left[-\frac{m}{2\epsilon\hbar}(r_{n}^{2}+r_{n-1}^{2})\right]\sum_{m=-\infty}^{m=\infty}I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)e^{im(\varphi_{n}-\varphi_{n-1})} .
+\end{equation}
+En la integral de trayectoria discretizada (3.119) hay $N+1$ factores de este tipo, las $N$ integrales sobre las variables $\varphi$ arrojan $N$ deltas de Kronecker $\prod_{n=1}^{N}2\pi\delta_{m_{n},m_{n-1}}$, estas se usan para eliminar todas, menos una de las sumas sobre $m$, esto aplicado en (3.119) nos lleva a:
 
- 
+
+
+
+
+
 \section{El átomo de Hidrógeno vía integrales de trayectoria.}
 \section{El propagador para el efecto Sagnac.}
