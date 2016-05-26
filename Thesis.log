@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  25 MAY 2016 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  26 MAY 2016 17:38
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1395,14 +1395,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 575--580
 
  []
 
-[66] [67]) (Chapters/Chapter4.tex [68]
+[66] [67]
+Overfull \hbox (53.36298pt too wide) in alignment at lines 652--659
+ [][][] []
+ []
+
+[68]
+Overfull \hbox (66.3469pt too wide) in alignment at lines 661--664
+ [][][] []
+ []
+
+
+Overfull \hbox (48.50323pt too wide) in alignment at lines 670--673
+ [][][] []
+ []
+
+[69]
+Overfull \hbox (16.71803pt too wide) in paragraph at lines 679--681
+\OT1/cmr/m/n/10.95 este re-sul-ta-do se si-gue de usar la iden-ti-dad $[][] \OM
+L/cmm/m/it/10.95 dr re[]I[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 r\OT1/cmr/m
+/n/10.95 )\OML/cmm/m/it/10.95 I[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 r\OT1
+/cmr/m/n/10.95 ) = []\OML/cmm/m/it/10.95 e[]I[] []$\OT1/cmr/m/n/10.95 ,
+ []
+
+) (Chapters/Chapter4.tex [70]
 Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Bibliograf\IeC {\'\i }a.
 ------------------------------------------------------------------------------
-[69
+[71
 
-]) [70]
+]) [72]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1416,7 +1439,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7A314602A71B59AEB4527E06A4E63E41;9867.
+(rerunfilecheck)             Checksum: C4B9681830B001C142A9AF57D3606642;9867.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1424,9 +1447,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14832 strings out of 493673
- 206688 string characters out of 3141530
- 283805 words of memory out of 3000000
+ 14843 strings out of 493673
+ 206810 string characters out of 3141530
+ 284805 words of memory out of 3000000
  17439 multiletter control sequences out of 15000+200000
  17008 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1460,9 +1483,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (79 pages, 795386 bytes).
+Output written on Thesis.pdf (81 pages, 805989 bytes).
 PDF statistics:
- 1162 PDF objects out of 1200 (max. 8388607)
- 495 named destinations out of 1000 (max. 500000)
+ 1182 PDF objects out of 1200 (max. 8388607)
+ 506 named destinations out of 1000 (max. 500000)
  393 words of extra memory for PDF output out of 10000 (max. 10000000)
 

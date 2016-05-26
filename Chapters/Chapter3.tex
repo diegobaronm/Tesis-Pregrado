@@ -643,7 +643,54 @@ donde $I_m(z)$ son las funciones de Bessel modificadas, por tanto:
 \begin{equation}
 \exp\left[\frac{-m}{2\epsilon\hbar}(\vec{x}_{n}-\vec{x}_{n-1})^{2}\right]=\exp\left[-\frac{m}{2\epsilon\hbar}(r_{n}^{2}+r_{n-1}^{2})\right]\sum_{m=-\infty}^{m=\infty}I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)e^{im(\varphi_{n}-\varphi_{n-1})} .
 \end{equation}
-En la integral de trayectoria discretizada (3.119) hay $N+1$ factores de este tipo, las $N$ integrales sobre las variables $\varphi$ arrojan $N$ deltas de Kronecker $\prod_{n=1}^{N}2\pi\delta_{m_{n},m_{n-1}}$, estas se usan para eliminar todas, menos una de las sumas sobre $m$, esto aplicado en (3.119) nos lleva a:
+En la integral de trayectoria discretizada (3.119) hay $N+1$ factores de este tipo, las $N$ integrales sobre las variables $\varphi$ arrojan $N$ deltas de Kronecker $\prod_{n=1}^{N}2\pi\delta_{m_{n},m_{n-1}}$, estas se usan para eliminar todas, menos una de las sumas sobre $m$, esto aplicado en (3.119) nos lleva a: 
+\begin{eqnarray}
+\nonumber \langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle &=&\frac{2\pi}{2\pi\hbar\epsilon/m}\prod_{n=1}^{N}\left[\int_{0}^{\infty}\frac{dr_{n}r_{n}2\pi}{2\pi\hbar\epsilon/m}\right]\sum_{m=-\infty}^{m=\infty}\frac{1}{2\pi}e^{im(\varphi_{b}-\varphi_{a})}\\
+\nonumber && \times \prod_{n=1}^{N+1}\exp\left\{ \frac{-m}{2\epsilon\hbar}(r_{n}^{2}+r_{n-1}^{2})\right\} I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)\exp\left\{ \frac{-\epsilon}{\hbar}\sum_{n=1}^{N+1}V(r_{n})\right\},\\ 
+\end{eqnarray}
+si por último reemplazamos $\tilde{I}_m=\sqrt{2\pi z}e^{-z}I_m(z)$, obtenemos (nos olvidaremos del factor angular y del potencial ya que estos no se ven afectados):
+\begin{eqnarray}
+\nonumber \langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle &\propto &\frac{2\pi}{2\pi\hbar\epsilon/m}\prod_{n=1}^{N}\left[\int_{0}^{\infty}\frac{dr_{n}r_{n}2\pi}{2\pi\hbar\epsilon/m}\right]\prod_{n=1}^{N+1}\exp\left\{ \frac{-m}{2\epsilon\hbar}(r_{n}^{2}+r_{n-1}^{2})\right\} I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)\\
+\nonumber &&\times \prod_{n=1}^{N+1}\frac{\sqrt{2\pi m/\hbar\epsilon r_{n}r_{n-1}}}{\sqrt{2\pi m/\hbar\epsilon r_{n}r_{n-1}}}\ e^{-\frac{m}{\epsilon\hbar}r_{n}r_{n-1}}e^{\frac{m}{\epsilon\hbar}r_{n}r_{n-1}}\\
+\nonumber &\propto &\frac{2\pi}{2\pi\hbar\epsilon/m}\prod_{n=1}^{N}\left[\int_{0}^{\infty}\frac{dr_{n}r_{n}2\pi}{2\pi\hbar\epsilon/m}\right]\left[\prod_{n=1}^{N+1}\frac{1}{\sqrt{2\pi m/\hbar\epsilon r_{n}r_{n-1}}}\right]\prod_{n=1}^{N+1}\exp\left\{ \frac{-m}{2\epsilon\hbar}(r_{n}-r_{n-1})^{2}\right\} \\ 
+\nonumber &&\times I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)\sqrt{2\pi m/\hbar\epsilon r_{n}r_{n-1}}e^{-\frac{m}{\epsilon\hbar}r_{n}r_{n-1}}\\
+\nonumber &\propto & \frac{1}{\sqrt{r_{0}r_{N}}}\frac{1}{\sqrt{2\pi\epsilon /m}}\prod_{n=1}^{N}\left[\int_{0}^{\infty}\frac{dr_{n}}{\sqrt{2\pi\hbar\epsilon/m}}\right]\prod_{n=1}^{N+1}\exp\left\{ \frac{-m}{2\epsilon\hbar}(r_{n}-r_{n-1})^{2}\right\}\\
+&& \times \tilde{I}_{m}\left(\frac{mr_{n}r_{n-1}}{\hbar\epsilon}\right). 
+\end{eqnarray}
+Así:
+\begin{eqnarray}
+\nonumber \langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle &=& \frac{1}{\sqrt{2\pi\epsilon r_{a}r_{b}/m}}\prod_{n=1}^{N}\left[\int_{0}^{\infty}\frac{dr_{n}}{\sqrt{2\pi\hbar\epsilon/m}}\right]\sum_{m=-\infty}^{m=\infty}\frac{1}{2\pi}e^{im(\varphi_{b}-\varphi_{a})}\prod_{n=1}^{N+1}\exp\left\{ \frac{-m}{2\epsilon\hbar}(r_{n}-r_{n-1})^{2}\right\}\\
+&& \times I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)\exp\left\{ \frac{-\epsilon}{\hbar}\sum_{n=1}^{N+1}V(r_{n})\right\}. 
+\end{eqnarray}
+Podemos reorganizar la ecuación (3.125) de tal manera que separamos la integral de trayectoria en una parte angular y otra radial, veamos:
+\begin{equation}
+\langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\frac{1}{\sqrt{r_{a}r_{b}}}\sum_{m=-\infty}^{m=\infty}\frac{1}{2\pi}e^{im(\varphi_{b}-\varphi_{a})}\langle r_{b}\tau_{b}|r_{a}\tau_{a}\rangle_{m} ,
+\end{equation}
+donde la parte radial $\langle r_{b}\tau_{b}|r_{a}\tau_{a}\rangle_{m}$ es:
+\begin{eqnarray}
+\nonumber \langle r_{b}\tau_{b}|r_{a}\tau_{a}\rangle_{m}&=&\frac{1}{\sqrt{2\pi\epsilon\hbar/m}}\prod_{n=1}^{N}\left[\int_{0}^{\infty}\frac{dr_{n}}{\sqrt{2\pi\hbar\epsilon/m}}\right]\prod_{n=1}^{N+1}\left[\exp\left\{ \frac{-m}{2\epsilon\hbar}(r_{n}-r_{n-1})^{2}\right\} I_{m}\left(\frac{m}{\hbar\epsilon}r_{n}r_{n-1}\right)\right]\\
+&&\times \exp\left\{ \frac{-\epsilon}{\hbar}\sum_{n=1}^{N+1}V(r_{n})\right\}.
+\end{eqnarray}
+
+En el caso de una partícula libre $(V(r)=0)$, es facil hacer la integración en $r$, si definimos $r_k=r^{'},\ r_{k+1}=r^{''},\ r_{k-1}=r$ y $m=\hbar =1$, la k-ésima integral es:
+\begin{eqnarray}
+\nonumber &\int_{0}^{\infty}dr^{'}\exp\left(\frac{-(r^{''2}+r^{2})}{2\epsilon}\right)\exp\left(-\frac{-r^{'2}}{\epsilon}\right)\frac{1}{\epsilon}\sqrt{r^{''}r}\ rI_{m}\left(\frac{r^{''}r^{'}}{\epsilon}\right)I_{m}\left(\frac{r^{'}r}{\epsilon}\right)&\\
+&=  \exp\left[-\frac{r^{''2}+r^{2}}{4\epsilon}\right]\frac{\sqrt{r^{``}r}}{2\epsilon}I_{m}\left(\frac{r^{''}r}{2\epsilon}\right) ,&
+\end{eqnarray}
+este resultado se sigue de usar la identidad $\int_{0}^{\infty}dr\ re^{-\frac{r^{2}}{\epsilon^{'}}}I_{\nu}(\beta r)I_{\nu}(\alpha r)=\frac{\epsilon^{'}}{2}e^{\frac{(\alpha^{2}+\beta^{2})\epsilon^{'}}{4}}I_{\nu}\left(\frac{\epsilon^{'}\alpha\beta}{2}\right)$, con $\epsilon^{'}=\epsilon ,\ \alpha=r/\epsilon ,\ \beta=r^{''}/\epsilon $. Por tanto:
+\begin{equation}
+\langle r_{b}\tau_{b}|r_{a}\tau_{a}\rangle =\frac{m}{\hbar}\frac{\sqrt{r_{b}r_{a}}}{\tau_{b}-\tau_{a}}\exp\left[-\frac{m}{2\hbar}\frac{(r_{b}^{2}+r_{a}^{2})}{\tau_{b}-\tau_{a}}\right]I_{m}\left(\frac{mr_{b}r_{a}}{\hbar(\tau_{b}-\tau_{a})}\right) .
+\end{equation}
+Para corroborar que la expresión (3.130) es correcta veamos que se puede obtener lo mismo al expandir el propagador en coordenadas cartesianas para una partícula libre, ecuación (2.62):
+\begin{equation}
+\langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\frac{m}{2m\pi\hbar}\frac{1}{\tau_{b}-\tau_{a}}\exp\left[-\frac{m}{2\hbar}\frac{(\vec{x}_{b}-\vec{x}_{a})}{\tau_{b}-\tau_{a}}\right] ,
+\end{equation}
+pasando directamente a coordenadas polares:
+\begin{equation}
+\langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\frac{m}{2m\pi\hbar}\frac{1}{\tau_{b}-\tau_{a}}\exp\left[-\frac{m}{2\hbar}\frac{(r_{b}^{2}+r_{a}^{2})}{\tau_{b}-\tau_{a}}\right]\exp\left[\frac{m}{\hbar}\frac{r_{b}r_{a}}{\tau_{b}-\tau_{a}}\cos(\varphi_{b}-\varphi_{a})\right].
+\end{equation}
+Usando la ya mencionada identidad 
+
 
 
 
