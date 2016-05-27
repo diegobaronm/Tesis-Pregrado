@@ -689,13 +689,91 @@ pasando directamente a coordenadas polares:
 \begin{equation}
 \langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\frac{m}{2m\pi\hbar}\frac{1}{\tau_{b}-\tau_{a}}\exp\left[-\frac{m}{2\hbar}\frac{(r_{b}^{2}+r_{a}^{2})}{\tau_{b}-\tau_{a}}\right]\exp\left[\frac{m}{\hbar}\frac{r_{b}r_{a}}{\tau_{b}-\tau_{a}}\cos(\varphi_{b}-\varphi_{a})\right].
 \end{equation}
-Usando la ya mencionada identidad 
-
-
+Usando la ya mencionada identidad $e^{a\cos\varphi}=\sum_{m=-\infty}^{m=\infty}I_{m}(a)e^{im\varphi}$, la ecuación (3.131) queda:
+\begin{equation}
+\langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\frac{m}{2m\pi\hbar}\frac{1}{\tau_{b}-\tau_{a}}\exp\left[-\frac{m}{2\hbar}\frac{(r_{b}^{2}+r_{a}^{2})}{\tau_{b}-\tau_{a}}\right]\sum_{m=-\infty}^{m=\infty}\frac{1}{2\pi}e^{im(\varphi_{b}-\varphi_{a})}I_{m}\left(\frac{m}{\hbar}\frac{r_{a}r_{b}}{(\tau_{b}-\tau_{b})}\right).
+\end{equation}
+La parte radial de la ecuación (3.132) coincide con (3.129)!
+\newpage
 
 
 
 
 
 \section{El átomo de Hidrógeno vía integrales de trayectoria.}
+El problema de Coloumb indudablemente es uno de los temas más importantes en física cuántica. Fue Pauili quien lo resolvió por primera vez, usando simetrías especificas del problema. Él encontró el resultado correcto incluso antes de que la formulación final de la mecánica cuántica fuera hecha por Heisenberg y Schrödinger en 1925. Pauli no resolvió ninguna ecuación diferencial como lo haría luego Schrödinger, en vez de eso, explotó la simetria SO(4) oculta en el problema de Kepler-Coulomb. Esta simetría clásicamente da lugar a la conservación de una cantidad llamada el vector de Runge-Lenz.
+\\
+\\
+El cálculo de las autofunciones y las energías en el lenguaje de operadores es un trabajo relativamente simple, pero este problema tan importante no había podido ser abordado por largo tiempo en el formalismo de integrales de trayectoria. En 1979, Duru y Kleinert [1] aplicaron una transformación espacio-temporal, conocida en astronomía como la transformación de Kustaanheimo-Stiefel, a la integral de trayectoria del problema y tuvieron éxito al resolverlo. 
+\\
+\\
+Consideremos el espacio euclidiano 2-D con el potencial singular $V(r)=-\frac{Ze^2}{r}$, ($r=|\vec{x}|,\ \vec{x}\in\mathbb{R}^2 $), $e$ denota la carga del electrón y $Z$ la carga del núcleo, un múltiplo de $e$.
+ Sin embargo hay que notar que este potencial no es el que corresponde a un partícula puntual cargada en $\mathbb{R}^2$ (en partícular, este potencial viola la ley de Gauss, un potencial adecuado sería $V\propto \ln r$). El lagrangiano para el problema de Coulomb tiene la forma:
+\begin{equation}
+\mathcal{L}(x,\dot{x})=\frac{m}{2}\dot{x}^{2}+\frac{Ze^{2}}{r},
+\end{equation}
+la integral de trayectoria correspondiente es:
+\begin{equation}
+K(x.x_{0},T)=\int_{\{x_{0},t_{0},x,t\}}\mathcal{D}x(t)\ \exp\left\{ \frac{i}{\hbar}\int_{t_{0}}^{t}dt\left(\frac{m}{2}\dot{x}^{2}+\frac{Ze^{2}}{r}\right)\right\}. 
+\end{equation}
+Vamos a realizar las siguientes transformaciones:
+\begin{eqnarray}
+&x_{1}=\xi^{2}-\eta^{2},\ \ x_{2}=2\xi\eta &\\
+&\Rightarrow x_{1}^{2}+x_{2}^{2}=r^{2}=(\xi^{2}+\eta^{2})^{2}&\\
+&\Rightarrow \dot{x}_{1}^{2}+\dot{x}_{2}^{2}=4(\xi^{2}+\eta^{2})(\dot{\xi}^{2}+\dot{\eta}^{2}),&
+\end{eqnarray}
+si reemplazamos las ecuaciones (3.135), (3.136) y (3.137) en (3.133) obtenemos:
+\begin{equation}
+\mathcal{L}(\xi.\dot{\xi},\eta,\dot{\eta})=2m(\xi^{2}+\eta^{2})(\dot{\xi}^{2}+\dot{\eta}^{2})+\frac{Ze^{2}}{(\eta^{2}+\xi^{2})}=\mathcal{L}(u,\dot{u})\ ;\ u=\{\xi,\eta\}.
+\end{equation}
+En estas nuevas coordenadas el tensor métrico y su inverso son:
+\begin{equation}
+g_{ab}=4(\xi^{2}+\eta^{2})\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right)\ ,g^{ab}=\frac{1}{4(\xi^{2}+\eta^{2})}\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right) ,
+\end{equation}
+además $\det g_{ab}=g=16(\xi^2+\eta^2)$. La transformación (3.135) produce $dx_{1}dx_{2}=4(\xi^{2}+\eta^{2})d\xi d\eta$, los momentos canónicos:
+\begin{equation}
+p_{\xi}=-i\hbar\left(\frac{\partial}{\partial\xi}+\frac{\xi}{\xi^{2}+\eta^{2}}\right)\ ,\ p_{\eta}=-i\hbar\left(\frac{\partial}{\partial\eta}+\frac{\eta}{\xi^{2}+\eta^{2}}\right),
+\end{equation}
+son hermíticos respecto al producto escalar:
+\begin{equation}
+\langle\psi_{1}|\psi_{2}\rangle=4\int_{-\infty}^{\infty}d\xi d\eta(\xi^{2}+\eta^{2})\psi_{1}^{*}(\xi,\eta)\psi_{2}(\xi,\eta) .
+\end{equation}
+Vamos a aplicar la teoría aprendida en la $\mathsection$ 3.3.1, empezemos considerando el Hamiltoniano con la variable de energía añadida:
+\begin{equation}
+\hat{H}_{E}=-\frac{\hbar^{2}}{2m}\left(\frac{\partial^{2}}{\partial x_{1}^{2}}+\frac{\partial^{2}}{\partial x_{2}^{2}}\right)-\frac{Ze^{2}}{r}-E,
+\end{equation}
+al aplicar (3.135), la ecuación (3.142) se convierte en:
+\begin{equation}
+\hat{H}_{E}=-\frac{\hbar^{2}}{2m}\frac{1}{4(\xi^{2}+\eta^{2})}\left(\frac{\partial^{2}}{\partial\xi^{2}}+\frac{\partial^{2}}{\partial\eta^{2}}\right)-\frac{Ze^{2}}{\xi^{2}+\eta^{2}}-E.
+\end{equation}
+Ahora haciendo la transformación temporal $\varepsilon =f(\xi ,\eta)\delta $ con $f(\xi ,\eta)= 4(\xi^2+\eta^2)$, sobre (3.143), tenemos:
+\begin{equation}
+\tilde{H}=-\frac{\hbar^{2}}{2m}\left(\frac{\partial^{2}}{\partial\xi^{2}}+\frac{\partial^{2}}{\partial\eta^{2}}\right)-4Ze^{2}-4E(\xi^{2}+\eta^{2}),
+\end{equation}
+y con $	p_{\xi}=-i\hbar\frac{\partial}{\partial\xi},\ p_{\eta}=-i\hbar\frac{\partial}{\partial\eta} $:
+\begin{equation}
+\tilde{H}=\frac{1}{2m}\left(p_{\xi}^{2}+p_{\eta}^{2}\right)-4Ze^{2}-4E(\xi^{2}+\eta^{2}).
+\end{equation}
+De esta forma:
+\begin{equation}
+\tilde{K}(u,u_{0},s)=e^{\frac{4iZe^{2}S}{\hbar}}\int\mathcal{D}\xi(s)\mathcal{D}\eta(s)\exp\left\{ \frac{i}{\hbar}\int_{0}^{S}ds\left[\frac{m}{2}(\dot{\xi}^{2}+\dot{\eta}^{2})+4E(\xi^{2}+\eta^{2})\right]\right\} .
+\end{equation} 
+El propagador (3.144) es simplemente el de un oscilador armónico isotrópico bidimensional de frecuencia $\omega=\sqrt{-\frac{8E}{m}}$ [15], por tanto:
+\begin{equation}
+\tilde{K}(u,u_{0},s)=\frac{m\omega}{2i\hbar\sin(\omega s)}\exp\left\{ \frac{4iZe^{2}s}{\hbar}+\frac{im\omega}{2\pi\hbar\sin(\omega s)}\left[(u^{2}+u_{0}^{2})\cos(\omega s)-2uu_{0}\right]\right\}, 
+\end{equation}
+con $u={\xi ,\eta}$. El procedimiento anterior muestra la gran utilidad que resulta tener el método de transformaciones de coordenadas para resolver problemas con potenciales complicados vía integrales de trayectoria.
+\newpage
+
+
+
+
+
+
 \section{El propagador para el efecto Sagnac.}
