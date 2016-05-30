@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  27 MAY 2016 00:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  30 MAY 2016 16:57
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -944,7 +944,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
 [2
 
-] <Imagenes/Fig1.png, id=288, 481.8pt x 334.24875pt>
+] <Imagenes/Fig1.png, id=295, 481.8pt x 334.24875pt>
 File: Imagenes/Fig1.png Graphic file (type png)
  <use Imagenes/Fig1.png>
 Package pdftex.def Info: Imagenes/Fig1.png used on input line 25.
@@ -974,13 +974,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
  []
 
-<Imagenes/Fig2.png, id=348, 164.86594pt x 95.6072pt>
+<Imagenes/Fig2.png, id=355, 164.86594pt x 95.6072pt>
 File: Imagenes/Fig2.png Graphic file (type png)
  <use Imagenes/Fig2.png>
 Package pdftex.def Info: Imagenes/Fig2.png used on input line 205.
 (pdftex.def)             Requested size: 113.81102pt x 66.00111pt.
 
-<Imagenes/Fig3.png, id=349, 136.25906pt x 39.14626pt>
+<Imagenes/Fig3.png, id=356, 136.25906pt x 39.14626pt>
 File: Imagenes/Fig3.png Graphic file (type png)
  <use Imagenes/Fig3.png>
 Package pdftex.def Info: Imagenes/Fig3.png used on input line 210.
@@ -990,7 +990,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 211--211
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig4.png, id=350, 135.50626pt x 59.47218pt>
+<Imagenes/Fig4.png, id=357, 135.50626pt x 59.47218pt>
 File: Imagenes/Fig4.png Graphic file (type png)
  <use Imagenes/Fig4.png>
 Package pdftex.def Info: Imagenes/Fig4.png used on input line 214.
@@ -1000,7 +1000,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 215--215
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig5.png, id=351, 167.12437pt x 94.85437pt>
+<Imagenes/Fig5.png, id=358, 167.12437pt x 94.85437pt>
 File: Imagenes/Fig5.png Graphic file (type png)
  <use Imagenes/Fig5.png>
 Package pdftex.def Info: Imagenes/Fig5.png used on input line 225.
@@ -1019,7 +1019,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--230
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9 <./Imagenes/Fig2.png> <./Imagenes/Fig3.png> <./Imagenes/Fig4.png>]
-<Imagenes/Fig6.png, id=362, 110.66344pt x 41.4047pt>
+<Imagenes/Fig6.png, id=369, 110.66344pt x 41.4047pt>
 File: Imagenes/Fig6.png Graphic file (type png)
  <use Imagenes/Fig6.png>
 Package pdftex.def Info: Imagenes/Fig6.png used on input line 254.
@@ -1029,7 +1029,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 255--255
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig7.png, id=363, 112.92188pt x 65.49469pt>
+<Imagenes/Fig7.png, id=370, 112.92188pt x 65.49469pt>
 File: Imagenes/Fig7.png Graphic file (type png)
  <use Imagenes/Fig7.png>
 Package pdftex.def Info: Imagenes/Fig7.png used on input line 258.
@@ -1052,7 +1052,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--368
 
  []
 
-<Imagenes/Fig8.png, id=412, 496.10344pt x 307.90031pt>
+<Imagenes/Fig8.png, id=419, 496.10344pt x 307.90031pt>
 File: Imagenes/Fig8.png Graphic file (type png)
  <use Imagenes/Fig8.png>
 Package pdftex.def Info: Imagenes/Fig8.png used on input line 384.
@@ -1080,14 +1080,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--409
 
  []
 
-[17] [18] <Imagenes/Fig9.png, id=446, 657.2053pt x 214.55156pt>
+[17] [18] <Imagenes/Fig9.png, id=453, 657.2053pt x 214.55156pt>
 File: Imagenes/Fig9.png Graphic file (type png)
 
 <use Imagenes/Fig9.png>
 Package pdftex.def Info: Imagenes/Fig9.png used on input line 479.
 (pdftex.def)             Requested size: 369.88582pt x 120.7537pt.
  [19 <./Imagenes/Fig9.png>]
-<Imagenes/Fig10.png, id=457, 321.45094pt x 197.98969pt>
+<Imagenes/Fig10.png, id=464, 321.45094pt x 197.98969pt>
 File: Imagenes/Fig10.png Graphic file (type png)
 
 <use Imagenes/Fig10.png>
@@ -1098,7 +1098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--525
 
  []
 
-<Imagenes/Fig11.png, id=465, 657.2053pt x 423.08063pt>
+<Imagenes/Fig11.png, id=472, 657.2053pt x 423.08063pt>
 File: Imagenes/Fig11.png Graphic file (type png)
 
 <use Imagenes/Fig11.png>
@@ -1131,7 +1131,7 @@ Overfull \hbox (11.54457pt too wide) in alignment at lines 633--639
  [][][] []
  []
 
-<Imagenes/Fig12.png, id=504, 195.73125pt x 88.07906pt>
+<Imagenes/Fig12.png, id=511, 195.73125pt x 88.07906pt>
 File: Imagenes/Fig12.png Graphic file (type png)
 
 <use Imagenes/Fig12.png>
@@ -1142,7 +1142,7 @@ Underfull \hbox (badness 1043) in paragraph at lines 644--644
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Dia-gra-ma de Feyn- 
  []
 
-<Imagenes/Fig13.png, id=505, 91.09032pt x 52.69687pt>
+<Imagenes/Fig13.png, id=512, 91.09032pt x 52.69687pt>
 File: Imagenes/Fig13.png Graphic file (type png)
  <use Imagenes/Fig13.png>
 Package pdftex.def Info: Imagenes/Fig13.png used on input line 648.
@@ -1167,7 +1167,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 639--654
 
  []
 
-<Imagenes/Fig14.png, id=506, 376.40625pt x 185.19188pt>
+<Imagenes/Fig14.png, id=513, 376.40625pt x 185.19188pt>
 File: Imagenes/Fig14.png Graphic file (type png)
 
 <use Imagenes/Fig14.png>
@@ -1183,7 +1183,7 @@ Overfull \hbox (2.05998pt too wide) in alignment at lines 696--701
  [][][] []
  []
 
-[27] <Imagenes/Fig15.png, id=535, 302.63063pt x 97.86563pt>
+[27] <Imagenes/Fig15.png, id=542, 302.63063pt x 97.86563pt>
 File: Imagenes/Fig15.png Graphic file (type png)
 
 <use Imagenes/Fig15.png>
@@ -1195,7 +1195,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 718--728
  []
 
 [28 <./Imagenes/Fig15.png>]
-<Imagenes/Fig16.png, id=544, 286.82156pt x 137.7647pt>
+<Imagenes/Fig16.png, id=551, 286.82156pt x 137.7647pt>
 File: Imagenes/Fig16.png Graphic file (type png)
 
 <use Imagenes/Fig16.png>
@@ -1315,7 +1315,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--712
 
  []
 
-[72] [73] [74]) (Chapters/Chapter4.tex [75]
+[72] [73] [74] [75] <Imagenes/Fig17.png, id=1010, 262.73157pt x 245.41687pt>
+File: Imagenes/Fig17.png Graphic file (type png)
+
+<use Imagenes/Fig17.png>
+Package pdftex.def Info: Imagenes/Fig17.png used on input line 819.
+(pdftex.def)             Requested size: 227.62204pt x 212.63092pt.
+) (Chapters/Chapter4.tex [76 <./Imagenes/Fig17.png>]
 Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Bibliograf\IeC {\'\i }a.
@@ -1326,9 +1332,9 @@ Overfull \hbox (1.12505pt too wide) in paragraph at lines 13--15
 ON IN-TO THE FEYN-MAN PATH IN-TE-GRAL.\OT1/cmr/m/n/10.95 ;
  []
 
-[76
+[77
 
-]) [77]
+]) [78]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1342,7 +1348,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7B97E57F9296A77627E84E6DB87DB2F2;9735.
+(rerunfilecheck)             Checksum: 3AE2943C179B3991309B24AA4EEC4BE1;10031.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1350,10 +1356,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 14857 strings out of 493673
- 206986 string characters out of 3141530
- 284817 words of memory out of 3000000
- 17440 multiletter control sequences out of 15000+200000
+ 14875 strings out of 493673
+ 207245 string characters out of 3141530
+ 284821 words of memory out of 3000000
+ 17446 multiletter control sequences out of 15000+200000
  17008 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,18n,48p,1327b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1386,9 +1392,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (85 pages, 822050 bytes).
+Output written on Thesis.pdf (86 pages, 835048 bytes).
 PDF statistics:
- 1209 PDF objects out of 1440 (max. 8388607)
- 522 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1231 PDF objects out of 1440 (max. 8388607)
+ 533 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 

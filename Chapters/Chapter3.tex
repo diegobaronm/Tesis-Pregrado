@@ -777,3 +777,48 @@ con $u={\xi ,\eta}$. El procedimiento anterior muestra la gran utilidad que resu
 
 
 \section{El propagador para el efecto Sagnac.}
+En esta última sección estudiaremos el efecto Sagnac, este efecto consiste en que al enviar dos rayos de luz en  direcciones opuestas en una plataforma rotativa con espejos en su perímetro, al recombinar los rayos estos exhiben un efecto de interferencia. Este efecto debe su nombre a Georges Sagnac quíen en 1913 realizó el primer experimento con el fin de observar los efectos de interferencia [16,17]. Para esa época se creía que este tipo de efecto constituía una prueba de la hipótesis del \textit{éter luminifero}, sin embargo, tiempo después se mostró que el efecto era también compatible con la teoría de la relatividad [18]. En la primera parte de esta sección derivaremos mediante la teoría de la relatividad la diferencia de camino óptico sufrida por los rayos y en la segunda, por medio de las integrales de trayectoria buscaremos reproducir este resultado y compararlo con la teoría clásica.
+	 
+\subsection{Sistemas de coordenadas no inerciales.}
+Vamos a considerar la propagación de la luz en sistemas de referencia no inerciales. Debemos distinguir entre dos tipos de aceleraciones, supongamos que un observador en un sistema de referencia inercial $S$ ve a un observador que se mueve en un sistema de referencia $S^{'}$, con velocidad $\vec{v}$. Si escribimos $\vec{v}v\vec{n}$, donde $\vec{n}$ es un vector unitario en dirección de la velocidad, podemos distinguir dos casos:
+\begin{equation}
+(i)\ \frac{d\vec{n}}{dt}=0,\ \frac{dv}{dt}\neq0\ (ii)\ \frac{d\vec{n}}{dt}\neq0,\ \frac{dv}{dt}=0,
+\end{equation}
+el segundo caso (cambio en la dirección de movimiento con rapidez constante), aplica por ejemplo para un sistema de referencia rotante. Supongamos que $S^{'}$ rota relativamente respecto a $S$ compratiendo el eje común $z$. En $S$:
+\begin{equation}
+ds^{2}=-c^{2}dt^{2}+dr^{2}+r^{2}d\phi^{2}+dz^{2}.
+\end{equation}
+Las coordenadas en $S^{'}$ están relacionadas con las coordenadas en $S$ mediante:
+\begin{equation}
+t=t^{'},\ r=r^{'},\ \phi^{'}=\phi-\omega t,\ z=z^{'}\Rightarrow ds^{'2}=(-c^{2}+\omega^{2}r^{'2})dt^{'2}+2\omega r^{'2}dt^{'}d\phi^{'}+dr^{'2}+r^{'2}d\phi^{'2}+dz^{'2},
+\end{equation}
+por tanto:
+\begin{equation}
+g_{\mu\nu}=\left(\begin{array}{cccc}
+-\left(1-\frac{\omega^{2}r^{2}}{c^{2}}\right) & 0 & \omega r^{2} & 0\\
+0 & 1 & 0 & 0\\
+\omega r^{2} & 0 & r^{2} & 0\\
+0 & 0 & 0 & 1
+\end{array}\right) .
+\end{equation}
+El intervalo invariante (3.150) entre dos eventos $(x^0,x^j)$ y $(x^0+dx^0,x^j)$ es:
+\begin{equation}
+ds^2=g_{00}c^2dt^2=-(c^2-\omega^2r^2)dt^2,
+\end{equation} 
+el parámetro $t$ es el tiempo coordenado, en contraste con el tiempo propio para el cual:
+\begin{equation}
+ds^2=-c^2d\tau^2 \ \Rightarrow d\tau=\sqrt{-g_{00}}dt. 
+\end{equation}
+Para este caso en particular:
+\begin{equation}
+d\tau=\sqrt{1-\frac{\omega^{2}r^{2}}{c^{2}}}dt,
+\end{equation}
+así el tiempo "pasa más lento" en el sistema en rotación ya que $d\tau<dt$, ahora consideremos la medición de un intervalo espacial, para medir distacias es conveniente utilizar rayos de luz, si queremos medir la distancia entre un punto $A$ y $B$ enviamos un rayo de luz desde $A$ hasta $B$ y de nuevo de regreso a $A$, la distancia entre $A$ y $B$ es simplemente \textbf{la mitad} del tiempo propio que se mide en $A$ durante todo el experimento dividido por la velocidad de la luz. Basandonos en la figura 3.1 podemos representar la luz viajando de $A$ a $B$ , la luz sale de $A$ en tiempo coordenado $x^{0}+dx^{0(2)}$, llega a B en $x^0$ y vuelve a $A$ en $x^{0}+dx^{0(1)}$. Sabemos que para la luz $ds^2=0$, así:
+\begin{figure}[h!]
+\centering
+\includegraphics[width=8cm]{Imagenes/Fig17}
+\caption[Medición de distancias en sistemas de coordenadas no inerciales.]{Representación esquematica del método de medición de distancias.}
+\end{figure}
+\begin{eqnarray}
+asd
+\end{eqnarray} 
