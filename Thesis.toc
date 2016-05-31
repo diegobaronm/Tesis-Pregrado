@@ -40,6 +40,7 @@
 \contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{72}{section.421}
 \contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{75}{section.435}
 \contentsline {subsection}{\numberline {3.5.1}Sistemas de coordenadas no inerciales.}{75}{subsection.436}
-\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{77}{chapter.446}
+\contentsline {subsection}{\numberline {3.5.2}El propagador.}{79}{subsection.455}
+\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{80}{chapter.456}
 \vspace {2em}
 \vspace {2em}

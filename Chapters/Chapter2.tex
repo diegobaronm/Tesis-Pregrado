@@ -1,12 +1,12 @@
 \chapter{Integrales de trayectoria	 en espacio plano.}
-El formalismo mas común de la mecánica cuantica se deriva de cambiar las variables clasicas de posición y momentum ($p$ y $q$) por operadores que obedecen el álgebra:
+El formalismo más común de la mecánica cuantica se deriva de cambiar las variables clásicas de posición y momentum ($p$ y $q$) por operadores que obedecen el álgebra:
 \begin{equation}
 [\hat{q},\hat{p}]=i\hbar.
 \end{equation}
 Esta relación se conoce como la condción de cuantización de Heisenberg, en general en la mecánica cuantica de operadores estos últimos viven en un espacio de Hilbert.
 \\
 \\
-La formulación de integrales de camino se basa en la noción de \textbf{propagador}, esta función es tal que dada una funcion de onda en un instante de tiempo $t_1$, $\psi(x_1,t_1)$ da la evolucion hasta un instante de tiempo $t_2$, entregando $\psi(x_2,t_2)$. En cierta manera es parecido al principio de Huygens:
+La formulación de integrales de camino se basa en la noción de \textbf{propagador}, esta función es tal que dada una función de onda en un instante de tiempo $t_1$, $\psi(x_1,t_1)$ da la evolucion hasta un instante de tiempo $t_2$, entregando $\psi(x_2,t_2)$. En cierta manera es parecido al principio de Huygens:
 \begin{equation}
 \psi(x_f,t_f)=\int K(q_f,t_f;q_i,t_i)\psi(q_i,t_i)dq_i.
 \end{equation}
@@ -57,7 +57,7 @@ Calculemos uno de estos elementos:
 \nonumber &=&\langle q_{j+1}|1-i\tau H/\hbar|q_j\rangle=\delta(q_{j+1}-q_j)-i\tau\hbar\langle q_{j+1}|H|q_j\rangle\\
 &=& \frac{1}{2\pi\hbar}\int dp\ \ \exp[\frac{ip}{\hbar}(q_{j+1}-q_j)]-\frac{i\tau}{\hbar}\langle q_{j+1}|H|q_j\rangle , 
 \end{eqnarray}	
-si asumimos que el Hamiltoniano es una función de $p$ y $q$de la forma: $H=\frac{p^2}{2m}+V(q)$, entonces:
+si asumimos que el Hamiltoniano es una función de $p$ y $q$ de la forma: $H=\frac{p^2}{2m}+V(q)$, entonces:
 \begin{eqnarray}
 \nonumber \langle q_{j+1}|\frac{p^2}{2m}|q_j \rangle &=& \int dpdp^{\prime} \langle q_{j+1}|p^{\prime}\rangle\langle p^{\prime}|\frac{p^2}{2m}|p\rangle \langle p|q_j \rangle\\
 \nonumber &=&\int \frac{dpdp^{\prime}}{2\pi\hbar}\ \ \exp[\frac{i}{\hbar}(p^{\prime} q_{j+1}-pq_j)]\frac{p^2}{2m}\delta(p-p^{\prime})\\
@@ -95,7 +95,7 @@ En el continuo:
 \begin{equation}
 \langle q_{f}t_{f}|q_it_i\rangle=\mathcal{N}\int\mathcal{D}q\ \exp\left\{ \frac{i}{\hbar}\int_{t_{i}}^{t_{f}}\mathcal{L}(q,\dot{q})dt\right\} ,
 \end{equation}
-donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo esto solo pasa si asumimos una forma específica del Hamiltoniano, cuando esto no es asi se tiene una acción efectiva. En teoría de campos por ejemplo esta descomposición solo se puede hacer en el caso de campos Abelianos.
+donde $\mathcal{L}(q,\dot{q})$ es el lagrangiano clásico, sin embargo, esto solo pasa si asumimos una forma específica del Hamiltoniano, cuando esto no es así se tiene una acción efectiva. En teoría de campos por ejemplo esta descomposición solo se puede hacer en el caso de campos Abelianos.
  
  
 
@@ -171,7 +171,7 @@ Esto último era lo que queríamos probar.
 
 
 \subsection{Matriz $\mathcal{S}$.}
-En un experimento de dispersión es razonable suponer que las partículas al principio y al final del proceso son partículas libres, estas ondas planas están distribuidas en todo el espacio. Sin embargo esto último lleva a una contradicción ya que la presencia del centro dispersor no permite que en sus cercanias la solución sea una onda plana. Para resolver este inconveniente se puede proponer lo que se llama una fuente dinámica, que se "prenda y apague" lentamente tal que las partículas en los estados (final/incial) puedan ser libres y por tanto la aproximación de ondas planas sea válida en este regimen.\\
+En un experimento de dispersión es razonable suponer que las partículas al principio y al final del proceso son partículas libres, estas ondas planas están distribuidas en todo el espacio. Sin embargo, esto último lleva a una contradicción ya que la presencia del centro dispersor no permite que en sus cercanias la solución sea una onda plana. Para resolver este inconveniente se puede proponer lo que se llama una fuente dinámica, que se "prenda y apague" lentamente tal que las partículas en los estados (final/incial) puedan ser libres y por tanto la aproximación de ondas planas sea válida en este regimen.\\
 \\
 Para empezar definamos $\psi_{in}(\vec{x}_i,t_i)$, $\psi_{out}(\vec{x}_f,t_f)$ como ondas planas para $t\to -\infty$,  $t\to \infty$ respectivamente, la amplitud de dispersión se define como:
 \begin{equation}
@@ -292,7 +292,7 @@ Introduciendo (2.47) y (2.48) en (2.46):
 \nonumber \langle Q^{\prime} T^{\prime}|QT\rangle &=&\int dq^{\prime} dq\sum_{m}\phi_{m}(Q^{\prime})\phi_{m}(q^{\prime},t)\ \exp\left[\frac{-i}{\hbar}E_{m}T^{\prime}\right]\\
 &&\times  \sum_{n}\phi_{n}^{*}(Q)\phi_{n}^{*}(q,t)\ \exp\left[\frac{i}{\hbar}E_{n}T\right]\langle q^{\prime} t^{\prime}|qt\rangle^{J}.
 \end{eqnarray}
-Si hacemos una rotación de Wick de $T$ y $T^{\prime} $ nos damos cuenta que el el término que menos sufre de supresión en la integral (2.49) es el asociado a $m=n=0$, por tanto:
+Si hacemos una rotación de Wick de $T$ y $T^{\prime} $ nos damos cuenta que el término que menos sufre de supresión en la integral (2.49) es el asociado a $m=n=0$, por tanto:
 \begin{equation}
 \int dq^{\prime} dq\phi_{0}^{*}(q^{\prime},t^{\prime})\langle q^{\prime} t^{\prime}|qt\rangle^{J}\phi_{0}(q,t)=\lim_{T\to-\text{\ensuremath{\infty}e}^{-i\delta},T^{\prime}\to\text{\ensuremath{\infty}e}^{-i\delta}}\frac{\langle Q^{\prime} T^{\prime}|QT\rangle^{J}}{\phi_{0}^{*}(Q)\phi_{0}(Q^{\prime})\ \exp\left[\frac{-i}{\hbar}E_{0}(T^{\prime}-T)\right]}.
 \end{equation}
@@ -369,7 +369,7 @@ Así reducimos la dimensión del propagador en $y$:
 \nonumber K_{0}^{2D}(\vec{r}t,\vec{r}^{\prime} t^{\prime})&=&\int_{-\infty}^{\infty}dyK_{0}^{3D}(\vec{r}t,\vec{r}^{\prime} t^{\prime})\\
 &=& \frac{m}{2\pi i\hbar(t-t^{\prime})}\ \exp\left\{ \frac{im|\vec{x}-\vec{x}^{\prime}|^{2}}{2\hbar(t-t^{\prime})}\right\} ,
 \end{eqnarray}
-donde $|\vec{x}-\vec{x}^{\prime}|^{2}$ se define como el módulo cuadrádo de la distancia en el plano $z-x$. Para modelar las rendijas vamos a usar las siguientes funciones escalón:
+donde $|\vec{x}-\vec{x}^{\prime}|^{2}$ se define como el módulo cuadrado de la distancia en el plano $z-x$. Para modelar las rendijas vamos a usar las siguientes funciones escalón:
 \[   
 \chi_{[b-a,b+a]}(\omega) = 
      \begin{cases}
@@ -384,13 +384,13 @@ La pregunta es. ¿cuál es la probabilidad de encontrar un electrón en ($z=L+D,
 \includegraphics[width=10cm]{Imagenes/Fig8}
 \caption[Esquema del experimento de la doble rendija en 2D]{Experimento de la doble rendija.}
 \end{figure}
-Como sabemos la probabilidad está dada por el módulo al cuadrado de la amplitud , la cual calcularemos usando el propagador. Como explicamos anteriormente hemos tomado $d=2$ en el propagador, sin embargo vamos a explicar por qué podemos reducir aún más la complejidad del problema: consideremos la difracción por una sola rendija y que el movimiento está dividido en dos regiones, uno empezando desde la fuente y llegando a las rendijas un tiempo $T$ despues de la emisión y otro de la rendija a la pantalla, este último de duración $\tau$.
+Como sabemos la probabilidad está dada por el módulo al cuadrado de la amplitud, la cual calcularemos usando el propagador. Como explicamos anteriormente hemos tomado $d=2$ en el propagador, sin embargo, vamos a explicar por qué podemos reducir aún más la complejidad del problema: consideremos la difracción por una sola rendija y que el movimiento está dividido en dos regiones, uno empezando desde la fuente y llegando a las rendijas un tiempo $T$ después de la emisión y otro de la rendija a la pantalla, este último de duración $\tau$.
 \\
 \\
-Sin embargo no hay nada en las leyes de la mecánica cuántica que nos diga que podemos separar el movimiento en dos tramos, esto debido a que realmente no tenemos certeza de la posición de la partícula en un tiempo $T$. En pocas palabras no sabemos cuando el electrón ha cruzado la rendija.
+Sin embargo, no hay nada en las leyes de la mecánica cuántica que nos diga que podemos separar el movimiento en dos tramos, esto debido a que realmente no tenemos certeza de la posición de la partícula en un tiempo $T$. En pocas palabras no sabemos cuando el electrón ha cruzado la rendija.
 \\
 \\
-No obstante podemos considerar esta imagen clásica para estudiar el problema, veamos por qué: el electrón tiene un momentum $p_z=\hbar k_z$, el cual esta relacionado con la velocidad clásica como $V_z=D/T=L/\tau$, aquí suponemos que $D$ es suficientemente grande comparado con las dimensiones en $x$ ($x,a,b\ll D,L$). Adicionalmente la longitud de onda $\lambda$ de la partícula es aproximadamente igual a la contribucion en $z$ (esto es como si tomaramos partículas que no se desvían demasiado de la trayectoria clásica). Si $\lambda \approx \lambda_z=2\pi\hbar/(mv_z)$ entonces $\lambda \ll D,L$. Esto quiere decir que el movimiento en $z$ es practicamente clásico. Note que cuánticamente es posible que el electrón pase a través de la rendija varias veces, sin embargo la probabilidad de este suceso ha de ser baja.
+No obstante podemos considerar esta imagen clásica para estudiar el problema, veamos por qué: el electrón tiene un momentum $p_z=\hbar k_z$, el cual está relacionado con la velocidad clásica como $V_z=D/T=L/\tau$, aquí suponemos que $D$ es suficientemente grande comparado con las dimensiones en $x$ ($x,a,b\ll D,L$). Adicionalmente la longitud de onda $\lambda$ de la partícula es aproximadamente igual a la contribucion en $z$ (esto es como si tomaramos partículas que no se desvían demasiado de la trayectoria clásica). Si $\lambda \approx \lambda_z=2\pi\hbar/(mv_z)$ entonces $\lambda \ll D,L$. Esto quiere decir que el movimiento en $z$ es practicamente clásico. Note que cuánticamente es posible que el electrón pase a través de la rendija varias veces, sin embargo la probabilidad de este suceso ha de ser baja.
 
 Teniendo en cuenta lo anterior:
 \begin{eqnarray}
@@ -521,14 +521,14 @@ y el término de interferencia:
 \end{eqnarray}
 Hay que notar que en el caso de dos rendijas hay un término adicional, llamado el \textit{término de interferencia}, este es similar al encontrado en óptica. Esto resulta en un efecto de modulación de la curva de difracción dada por la suma de los términos de la ecuación (2.88).\\
 \\
-Definamos los numeros de Fressnel:
+Definamos los números de Fressnel:
 \begin{equation}
 N_F(a)\equiv 2a^2/\lambda_zL ;\hspace{0.3cm} N_F(b)\equiv 2b^2/\lambda_zL ;\hspace{0.3cm} N_F\equiv 2ab/\lambda_zL=\sqrt{N_F(a)N_F(b)/2} ,
 \end{equation}
 en el caso de dos rendijas de ancho $2a$ y separadas por una distancia $2b$, en el caso en que $b\gg a$ tenemos los siguientes comportamientos, que se dividen en dos fases:
 \begin{itemize}
 \item Si $N_F\ll 1$, estamos en la \textit{fase mezclada}, es decir, encontramos una curva de interferencia modulada por la curva de difración de una rendija de tamaño $a$. En este caso estamos en el regimen de Fressnel, $N_F(a)\ll 1$. Este se muestra en la figura 2.11(a). 
-\item Si $N_F\gg 1$, estamos en la \textit{fase separada},es decir, hay dos curvas de interferencia, moduladas por las curvas de difracción correspondientes a cada rendija, cada curva centrada en $\pm b\eta$.	La forma de las curvas de difracción dependen de $N_F(a)$ y son similares al caso de una rendija (donde teniamos dos regímenes establecidos: Fressnel y Fraunhofer). En la figura 2.11(c), $N_F(a)\ll 1$ y en la figura 2.11(d) $N_F(a)\gg 1$.
+\item Si $N_F\gg 1$, estamos en la \textit{fase separada}, es decir, hay dos curvas de interferencia, moduladas por las curvas de difracción correspondientes a cada rendija, cada curva centrada en $\pm b\eta$.	La forma de las curvas de difracción dependen de $N_F(a)$ y son similares al caso de una rendija (donde teniamos dos regímenes establecidos: Fressnel y Fraunhofer). En la figura 2.11(c), $N_F(a)\ll 1$ y en la figura 2.11(d) $N_F(a)\gg 1$.
 \item Si $N_F\sim 1$ observamos una separación entre dos curvas de interferencia, moduladas por una curva de difracción que corresponde al de una rendija en el caso de regimen intermedio, esto se muestra en la figura 2.11(b). 
 \end{itemize}
 \begin{figure}[h!]
@@ -781,7 +781,7 @@ si hacemos lo mismo en el lado izquierdo nos queda:
 \nonumber LHS(2.135)=i\int\mathcal{D}\phi\frac{\delta\hat{Z}[\phi]}{\delta\phi}\ \exp\left(i\int J\phi dx\right)&=& i\hat{Z}[\phi]\ \exp\left(i\int J\phi dx\right)\\
 \nonumber &&+\int\mathcal{D}\phi J(x)\hat{Z}[\phi]\ \exp\left(i\int J\phi dx\right).\\
 \end{eqnarray}
-El primer término del lado derecho de la ecuación (2.138) es un término de superficio, por tanto se anula. Entonces, la ecuación que cumple $Z[J]$ es:
+El primer término del lado derecho de la ecuación (2.138) es un término de superficie, por tanto se anula. Entonces, la ecuación que cumple $Z[J]$ es:
 \begin{equation}
 \left\{ (\square+m^{2})\frac{1}{i}\frac{\delta}{\delta J}-\mathcal{L}_{int}^{\prime}\left[\frac{1}{i}\frac{\delta}{\delta J}\right]\right\} Z[J]=J(x)Z[J].
 \end{equation}
@@ -800,7 +800,7 @@ Sabemos que el conmutador $\left[J(x),\frac{1}{i}\frac{\delta}{\delta J(y)}\righ
 \nonumber &=& \sum_{n=0}^{\infty}\frac{1}{n!}\int i\delta(x-y)n\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{n-1}F^{n}[0]dy\\
 &=& i\sum_{k=1}^{\infty}\frac{1}{k!}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right)^{k}F^{k+1}[0]=iF^{\prime}\left(\frac{1}{i}\frac{\delta}{\delta J(y)}\right) .
 \end{eqnarray}
-De la formula de Hausdorff tenemos que:
+De la fórmula de Hausdorff tenemos que:
 \begin{equation}
 e^ABe^{-A}=B+[B,A]+\frac{1}{2!}[A,[A,B]]+...
 \end{equation}
@@ -833,7 +833,7 @@ Esta es la ecuación diferencial que teníamos al principio (2.139), por tanto l
 En la aproximación de cuantización canónica el campo $\psi(x)$ es tratado como un operador que obedece relaciones de anticonmutación a tiempos iguales, ${\psi(x),\bar{\psi}(y)}|_{x_0=y_0}=i\delta (x-y)$. Por otro lado en la aproximación funcional, el funcional generatriz es una integral funcional sobre los campos, para el caso de campos escalares estos son tratados como funciones que llevan números complejos a números complejos y conmutan. En el caso de campos fermiónicos es necesario que los campos sean funciones de números complejos anticonmutantes, estos números se conocen como \textit{variables de Grassmann}.
 \\
 \\
-Los generadores $C_i$ de un álgebra de Grassmann n-dimensional cumplen la relacion:
+Los generadores $C_i$ de un álgebra de Grassmann n-dimensional cumplen la relación:
 \begin{equation}
 {C_i,C_j}=0\Rightarrow C_i^2=0 .
 \end{equation}
@@ -946,7 +946,7 @@ Z[\eta,\bar{\eta}]=\ \exp\left[i\int\mathcal{L}_{int}\left(\frac{1}{i}\frac{\del
 \end{equation}
 
 \subsection{La matriz S y la fórmula de reducción.}
-Ya hemos visto como calcular las funciones de Green para una teoría con interacciones. pero todavía nos falta calcular lo mas importante: las secciones eficaces de los procesos físicos reales, como los decaimientos y los procesos de dispersión. El cálculo de estas cantidades implica calcular la \textit{amplitud mecánico cuántica}, la cual da cuenta de la probabilidad de que dicho proceso tome lugar. Una vez se tiene la amplitud, el resto del cálculo es directo. En lo que sigue se mostrará como calcular esta amplitud y como esta se relaciona con las funciones de Green que ya hemos encontrado.
+Ya hemos visto como calcular las funciones de Green para una teoría con interacciones, pero todavía nos falta calcular lo más importante: las secciones eficaces de los procesos físicos reales, como los decaimientos y los procesos de dispersión. El cálculo de estas cantidades implica calcular la \textit{amplitud mecánico cuántica}, la cual da cuenta de la probabilidad de que dicho proceso tome lugar. Una vez se tiene la amplitud, el resto del cálculo es directo. En lo que sigue se mostrará como calcular esta amplitud y como esta se relaciona con las funciones de Green que ya hemos encontrado.
 \\
 \\
 Consideremos un proceso en el cual una configuración inicial de partículas, llamada $\alpha$ evoluciona hacia un estado final $\beta$. Denotaremos la amplitud correspondiente a dicho proceso como $S_{\alpha\beta}$ y lo llamaremos el elemento $\alpha\beta$ de la matriz $S$. Por tanto $S$ es la matriz de todos los posibles procesos $(\beta\alpha)$. Estos estados son definidos asintóticamente en tiempos $t\to -\infty$ y $t\to \infty$, asi:
@@ -1053,7 +1053,7 @@ Si multiplicamos (2.190) por $I[J]$ y aplicamos $T$, obtenemos:
 \nonumber \frac{1}{i}\frac{\delta I[J]}{\delta J(x)}&=&\phi_{out}(x)I[J]+\int dy\triangle_{adv}(x-y)K_{y}\frac{1}{i}\frac{\delta I[J]}{\delta J(Y)}\\
 \nonumber \frac{1}{i}\frac{\delta I[J]}{\delta J(x)}&=&\phi_{in}(x)I[J]+\int dy\triangle_{ret}(x-y)K_{y}\frac{1}{i}\frac{\delta I[J]}{\delta J(y)}.\\
 \end{eqnarray}
-Restando estas últimas dos ecuaciones obtenmos:
+Restando estas últimas dos ecuaciones obtenemos:
 \begin{equation}
 \phi_{out}(x)I[J]-I[J]\phi_{in}(x)=i\int dy\triangle(x-y)K_y\frac{\delta I[J]}{\delta J(y)},
 \end{equation}
@@ -1115,7 +1115,7 @@ En esta sección pretendemos extender lo que hemos hecho en las dos secciones an
 \begin{equation}
 Z=\int\mathcal{D}A_{\mu}e^{i\int\mathcal{L}dx},
 \end{equation}
-donde $\mathcal{L}$ es invariante bajo $A_\mu \to A_\mu+\partial_\mu\Lambda$ e intentamos hacer la integral (2.208) sobre todos los campos $A_\mu$ incluidos los que estan ralacionados simplemente por una transformacion Gauge, entonces esto obviamente traerá una contribución infinita a $Z$ y por tanto a las funciones de Green, lo cual es catastrófico.
+donde $\mathcal{L}$ es invariante bajo $A_\mu \to A_\mu+\partial_\mu\Lambda$ e intentamos hacer la integral (2.208) sobre todos los campos $A_\mu$ incluidos los que están ralacionados simplemente por una transformación Gauge, entonces esto obviamente traerá una contribución infinita a $Z$ y por tanto a las funciones de Green, lo cual es catastrófico.
 \\
 \\
 De una manera esquemática podemos escribir $A_\mu$ como:
@@ -1144,7 +1144,7 @@ el factor $\int d\theta(=2\pi)$ es el análogo a $\int\mathcal{D}\Lambda$ en la 
 \begin{equation}
 I=\int d\theta \int drd\theta r\ e^{-r^2} \delta(\theta),
 \end{equation}  
-la función $\delta(\theta)$ reduce la integración a lo largo del eje $x, (\theta=0)$, sin embargo escojamos otro camino de integración que no sea este, al final debido a que la integral es invariante rotacional deberiamos obtener lo mismo. El camino que escogemos es $y\cos\theta=x\sin\theta$, o:
+la función $\delta(\theta)$ reduce la integración a lo largo del eje $x, (\theta=0)$, sin embargo escojamos otro camino de integración que no sea este, al final debido a que la integral es invariante rotacional deberíamos obtener lo mismo. El camino que escogemos es $y\cos\theta=x\sin\theta$, o:
 \begin{equation}
 f(\theta)=y\cos\theta-x\sin\theta=0.
 \end{equation}
@@ -1185,7 +1185,7 @@ Viendo la expresión (2.222) como la identidad, insertamos esta en (2.211), lo c
 \begin{equation}
 I=\int d\theta \int dx^{^{\prime}}dy^{^{\prime}}\ e^{-(x^{^{\prime} 2}+y^{^{\prime} 2})}\triangle(\sqrt{x^{^{\prime}2}+y^{^{\prime}2}})\int\delta(y^{^{\prime}}).
 \end{equation}
-La expresión (2.223) exhibe la forma general de la separación de variables hecha despues de la transformación de rotación. La segunda integral en este caso es independiente de $\theta$ y por tanto es un factor multiplicativo global. $\triangle (r)$ puede ser escrito de una forma más compacta como:
+La expresión (2.223) exhibe la forma general de la separación de variables hecha después de la transformación de rotación. La segunda integral en este caso es independiente de $\theta$ y por tanto es un factor multiplicativo global. $\triangle (r)$ puede ser escrito de una forma más compacta como:
 \begin{eqnarray}
 \nonumber (\triangle (r))^{-1}&=&\int \delta(f(\theta))d\theta \\
 \nonumber &=& \int \delta(f(\theta))det|\frac{d\theta}{df}|d\theta\\
@@ -1196,7 +1196,7 @@ así:
 \triangle (r)=det|\frac{df}{d\theta}|_{f=0}.
 \end{equation}
 \subsection{El método de Faddevv-Popov.}
-Ahora si, vamos a poner nuestra atención en aislar el factor de sobreconteo en teorías Gauge, donde la acción es invariante de Gauge. 	Sabemos que una transformación Gauge se puede escribir como [3]:
+Ahora sí, vamos a poner nuestra atención en aislar el factor de sobreconteo en teorías Gauge, donde la acción es invariante de Gauge. 	Sabemos que una transformación Gauge se puede escribir como [3]:
 \begin{equation}
 A_{\mu}^{U}=UA_{\mu}U^{\dagger}-i(\partial_{\mu}U)U^{\dagger};\ \ \ U=e^{i\text{\ensuremath{\Lambda}}^{a}(x)T^{a}}.
 \end{equation} 
