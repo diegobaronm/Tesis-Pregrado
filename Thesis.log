@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  31 MAY 2016 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  31 MAY 2016 23:19
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -860,6 +860,11 @@ LaTeX Info: Redefining \selectfont on input line 126.
 ------------------------------------------------------------------------------
  Abstract Page
 ------------------------------------------------------------------------------
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+
+ []
+
 [2
 
 ]
@@ -1355,21 +1360,21 @@ ON IN-TO THE FEYN-MAN PATH IN-TE-GRAL.\OT1/cmr/m/n/10.95 ;
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
 No file Thesis.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
 (Thesis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: ED06286E075AD9E8EE0240A322526B7E;10198.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
  14894 strings out of 493673
@@ -1408,7 +1413,7 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (89 pages, 857700 bytes).
+Output written on Thesis.pdf (89 pages, 859119 bytes).
 PDF statistics:
  1262 PDF objects out of 1440 (max. 8388607)
  546 named destinations out of 1000 (max. 500000)
