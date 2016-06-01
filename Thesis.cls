@@ -217,6 +217,7 @@
       \bigskip
       {\Large Mayo 2016 \par}
       \bigskip
+      \includegraphics[scale=0.08]{Imagenes/Escudoudea}
     \end{center}
     \par
     \@thanks
