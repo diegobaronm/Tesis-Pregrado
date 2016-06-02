@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  2 JUN 2016 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  2 JUN 2016 14:22
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1081,30 +1081,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--411
 
  []
 
-[17] [18] <Imagenes/Fig9.png, id=476, 657.2053pt x 214.55156pt>
+[17] [18] <Imagenes/Fig9.png, id=476, 1130.72438pt x 386.94562pt>
 File: Imagenes/Fig9.png Graphic file (type png)
 
 <use Imagenes/Fig9.png>
 Package pdftex.def Info: Imagenes/Fig9.png used on input line 481.
-(pdftex.def)             Requested size: 369.88582pt x 120.7537pt.
+(pdftex.def)             Requested size: 398.33858pt x 136.31273pt.
  [19 <./Imagenes/Fig9.png>]
-<Imagenes/Fig10.png, id=487, 321.45094pt x 197.98969pt>
+<Imagenes/Fig10.png, id=487, 1081.79156pt x 697.8572pt>
 File: Imagenes/Fig10.png Graphic file (type png)
 
 <use Imagenes/Fig10.png>
 Package pdftex.def Info: Imagenes/Fig10.png used on input line 500.
-(pdftex.def)             Requested size: 284.52756pt x 175.25258pt.
+(pdftex.def)             Requested size: 284.52756pt x 183.54697pt.
  [20 <./Imagenes/Fig10.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 523--527
 
  []
 
-<Imagenes/Fig11.png, id=495, 657.2053pt x 423.08063pt>
+<Imagenes/Fig11.png, id=497, 615.0177pt x 404.2302pt>
 File: Imagenes/Fig11.png Graphic file (type png)
-
-<use Imagenes/Fig11.png>
+ <use Imagenes/Fig11.png>
 Package pdftex.def Info: Imagenes/Fig11.png used on input line 538.
-(pdftex.def)             Requested size: 412.56496pt x 265.59322pt.
+(pdftex.def)             Requested size: 412.56496pt x 271.1659pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1132,7 +1131,7 @@ Overfull \hbox (11.54457pt too wide) in alignment at lines 635--638
  [][][] []
  []
 
-<Imagenes/Fig12.png, id=534, 195.73125pt x 88.07906pt>
+<Imagenes/Fig12.png, id=537, 195.73125pt x 88.07906pt>
 File: Imagenes/Fig12.png Graphic file (type png)
 
 <use Imagenes/Fig12.png>
@@ -1143,7 +1142,7 @@ Underfull \hbox (badness 1043) in paragraph at lines 648--648
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Dia-gra-ma de Feyn- 
  []
 
-<Imagenes/Fig13.png, id=535, 91.09032pt x 52.69687pt>
+<Imagenes/Fig13.png, id=538, 91.09032pt x 52.69687pt>
 File: Imagenes/Fig13.png Graphic file (type png)
  <use Imagenes/Fig13.png>
 Package pdftex.def Info: Imagenes/Fig13.png used on input line 652.
@@ -1168,7 +1167,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--658
 
  []
 
-<Imagenes/Fig14.png, id=536, 376.40625pt x 185.19188pt>
+<Imagenes/Fig14.png, id=539, 376.40625pt x 185.19188pt>
 File: Imagenes/Fig14.png Graphic file (type png)
 
 <use Imagenes/Fig14.png>
@@ -1184,7 +1183,7 @@ Overfull \hbox (2.05998pt too wide) in alignment at lines 700--705
  [][][] []
  []
 
-[27] <Imagenes/Fig15.png, id=566, 1114.91531pt x 569.12625pt>
+[27] <Imagenes/Fig15.png, id=569, 1114.91531pt x 569.12625pt>
 File: Imagenes/Fig15.png Graphic file (type png)
 
 <use Imagenes/Fig15.png>
@@ -1196,7 +1195,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 722--732
  []
 
 [28 <./Imagenes/Fig15.png>]
-<Imagenes/Fig16.png, id=576, 286.82156pt x 137.7647pt>
+<Imagenes/Fig16.png, id=579, 286.82156pt x 137.7647pt>
 File: Imagenes/Fig16.png Graphic file (type png)
 
 <use Imagenes/Fig16.png>
@@ -1316,14 +1315,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--712
 
  []
 
-[72] [73] [74] [75] <Imagenes/Fig17.png, id=1037, 472.76625pt x 648.17157pt>
+[72] [73] [74] [75] <Imagenes/Fig17.png, id=1040, 472.76625pt x 648.17157pt>
 File: Imagenes/Fig17.png Graphic file (type png)
 
 <use Imagenes/Fig17.png>
 Package pdftex.def Info: Imagenes/Fig17.png used on input line 819.
 (pdftex.def)             Requested size: 142.26378pt x 195.04639pt.
  [76 <./Imagenes/Fig17.png>]
-<Imagenes/Fig18.png, id=1047, 256.91985pt x 256.91985pt>
+<Imagenes/Fig18.png, id=1050, 256.91985pt x 256.91985pt>
 File: Imagenes/Fig18.png Graphic file (type png)
 
 <use Imagenes/Fig18.png>
@@ -1410,9 +1409,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (90 pages, 1778780 bytes).
+Output written on Thesis.pdf (90 pages, 3429718 bytes).
 PDF statistics:
- 1285 PDF objects out of 1440 (max. 8388607)
+ 1288 PDF objects out of 1440 (max. 8388607)
  552 named destinations out of 1000 (max. 500000)
  416 words of extra memory for PDF output out of 10000 (max. 10000000)
 
