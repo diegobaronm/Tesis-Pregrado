@@ -3,7 +3,7 @@
 \vspace {1em}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {iii}}{dummy.2}
 \vspace {1em}
-\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {vi}}{dummy.4}
+\contentsline {chapter}{\IeC {\'I}ndice de Figuras}{\es@scroman {vii}}{dummy.4}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.6}
 \contentsline {chapter}{\numberline {2}Integrales de trayectoria en espacio plano.}{2}{chapter.7}
@@ -13,34 +13,34 @@
 \contentsline {subsection}{\numberline {2.1.3}Propiedades adicionales de las integrales de trayectoria.}{11}{subsection.60}
 \contentsline {section}{\numberline {2.2}El experimento de la doble rendija.}{14}{section.75}
 \contentsline {subsection}{\numberline {2.2.1}El propagador de una part\IeC {\'\i }cula libre.}{14}{subsection.76}
-\contentsline {subsection}{\numberline {2.2.2}El problema de difracci\IeC {\'o}n e interferencia.}{15}{subsection.83}
-\contentsline {subsection}{\numberline {2.2.3}Difracci\IeC {\'o}n por una rendija.}{18}{subsection.95}
-\contentsline {subsection}{\numberline {2.2.4}Interferencia y difracci\IeC {\'o}n por dos rendijas.}{20}{subsection.108}
-\contentsline {section}{\numberline {2.3}Campos escalares.}{22}{section.114}
-\contentsline {subsection}{\numberline {2.3.1}Integraci\IeC {\'o}n funcional.}{24}{subsection.126}
-\contentsline {subsection}{\numberline {2.3.2}Funciones de Green de la part\IeC {\'\i }cula libre.}{25}{subsection.134}
-\contentsline {subsection}{\numberline {2.3.3}Funcional generatriz para campos interactuantes.}{29}{subsection.160}
-\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{33}{section.178}
-\contentsline {subsection}{\numberline {2.4.1}La matriz S y la f\IeC {\'o}rmula de reducci\IeC {\'o}n.}{36}{subsection.204}
-\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{42}{section.236}
-\contentsline {subsection}{\numberline {2.5.1}Un ejemplo: Integraci\IeC {\'o}n en 2D.}{42}{subsection.240}
-\contentsline {subsection}{\numberline {2.5.2}El m\IeC {\'e}todo de Faddevv-Popov.}{44}{subsection.256}
-\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{48}{chapter.277}
-\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{48}{section.278}
-\contentsline {subsection}{\numberline {3.1.1}Caso abeliano.}{49}{subsection.279}
-\contentsline {subsection}{\numberline {3.1.2}Caso No-abeliano.}{52}{subsection.296}
-\contentsline {subsection}{\numberline {3.1.3}La simetr\IeC {\'\i }a de Lorentz como teor\IeC {\'\i }a Gauge.}{55}{subsection.316}
-\contentsline {subsection}{\numberline {3.1.4}La ecuaci\IeC {\'o}n de Dirac en el espacio de Schwarzschild.}{58}{subsection.335}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schr\IeC {\"o}dinger en espacio curvo.}{60}{section.350}
-\contentsline {subsection}{\numberline {3.2.1}El problema del ordenamiento.}{60}{subsection.351}
-\contentsline {subsection}{\numberline {3.2.2}Ordenamiento de Weyl.}{62}{subsection.362}
-\contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{66}{section.385}
-\contentsline {subsection}{\numberline {3.3.1}Transformaciones de coordenadas e intregrales de trayectoria.}{67}{subsection.392}
-\contentsline {subsection}{\numberline {3.3.2}Integrales de trayectoria en coordenadas polares.}{68}{subsection.405}
-\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{72}{section.421}
-\contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{75}{section.435}
-\contentsline {subsection}{\numberline {3.5.1}Sistemas de coordenadas no inerciales.}{75}{subsection.436}
-\contentsline {subsection}{\numberline {3.5.2}El propagador.}{79}{subsection.455}
-\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{80}{chapter.456}
+\contentsline {subsection}{\numberline {2.2.2}El problema de difracci\IeC {\'o}n e interferencia.}{15}{subsection.84}
+\contentsline {subsection}{\numberline {2.2.3}Difracci\IeC {\'o}n por una rendija.}{18}{subsection.97}
+\contentsline {subsection}{\numberline {2.2.4}Interferencia y difracci\IeC {\'o}n por dos rendijas.}{20}{subsection.110}
+\contentsline {section}{\numberline {2.3}Campos escalares.}{22}{section.116}
+\contentsline {subsection}{\numberline {2.3.1}Integraci\IeC {\'o}n funcional.}{24}{subsection.128}
+\contentsline {subsection}{\numberline {2.3.2}Funciones de Green de la part\IeC {\'\i }cula libre.}{25}{subsection.136}
+\contentsline {subsection}{\numberline {2.3.3}Funcional generatriz para campos interactuantes.}{29}{subsection.162}
+\contentsline {section}{\numberline {2.4}Campos fermi\IeC {\'o}nicos.}{33}{section.180}
+\contentsline {subsection}{\numberline {2.4.1}La matriz S y la f\IeC {\'o}rmula de reducci\IeC {\'o}n.}{36}{subsection.206}
+\contentsline {section}{\numberline {2.5}Teor\IeC {\'\i }as Gauge y campos de Yang-Mills}{42}{section.238}
+\contentsline {subsection}{\numberline {2.5.1}Un ejemplo: Integraci\IeC {\'o}n en 2D.}{42}{subsection.242}
+\contentsline {subsection}{\numberline {2.5.2}El m\IeC {\'e}todo de Faddevv-Popov.}{44}{subsection.258}
+\contentsline {chapter}{\numberline {3}Integrales de trayectoria en espacios curvos.}{48}{chapter.279}
+\contentsline {section}{\numberline {3.1}Teor\IeC {\'\i }a cl\IeC {\'a}sica de campos en espacios curvos.}{48}{section.280}
+\contentsline {subsection}{\numberline {3.1.1}Caso abeliano.}{49}{subsection.281}
+\contentsline {subsection}{\numberline {3.1.2}Caso No-abeliano.}{52}{subsection.298}
+\contentsline {subsection}{\numberline {3.1.3}La simetr\IeC {\'\i }a de Lorentz como teor\IeC {\'\i }a Gauge.}{55}{subsection.318}
+\contentsline {subsection}{\numberline {3.1.4}La ecuaci\IeC {\'o}n de Dirac en el espacio de Schwarzschild.}{58}{subsection.337}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schr\IeC {\"o}dinger en espacio curvo.}{60}{section.352}
+\contentsline {subsection}{\numberline {3.2.1}El problema del ordenamiento.}{60}{subsection.353}
+\contentsline {subsection}{\numberline {3.2.2}Ordenamiento de Weyl.}{62}{subsection.364}
+\contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{66}{section.387}
+\contentsline {subsection}{\numberline {3.3.1}Transformaciones de coordenadas e intregrales de trayectoria.}{67}{subsection.394}
+\contentsline {subsection}{\numberline {3.3.2}Integrales de trayectoria en coordenadas polares.}{68}{subsection.407}
+\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{72}{section.423}
+\contentsline {section}{\numberline {3.5}El propagador para el efecto Sagnac.}{75}{section.437}
+\contentsline {subsection}{\numberline {3.5.1}Sistemas de coordenadas no inerciales.}{75}{subsection.438}
+\contentsline {subsection}{\numberline {3.5.2}El propagador.}{79}{subsection.457}
+\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{80}{chapter.458}
 \vspace {2em}
 \vspace {2em}

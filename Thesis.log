@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  1 JUN 2016 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  2 JUN 2016 01:35
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -895,7 +895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
 [3
 
-]
+] [4]
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
@@ -927,12 +927,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4
+) [5
 
 
 ])
 \tf@toc=\write4
- [5]
+ [6]
 ------------------------------------------------------------------------------
  \IeC {\'I}ndice de Figuras
 ------------------------------------------------------------------------------
@@ -941,14 +941,14 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write5
- [6
+ [7
 
 
 ]
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[7
+[8
 
 ] (Chapters/Chapter1.tex
 Cap\'{\i }tulo 1.
@@ -971,7 +971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
 [2
 
-] <Imagenes/Fig1.png, id=303, 481.8pt x 334.24875pt>
+] <Imagenes/Fig1.png, id=307, 481.8pt x 334.24875pt>
 File: Imagenes/Fig1.png Graphic file (type png)
  <use Imagenes/Fig1.png>
 Package pdftex.def Info: Imagenes/Fig1.png used on input line 25.
@@ -1001,13 +1001,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
  []
 
-<Imagenes/Fig2.png, id=363, 164.86594pt x 95.6072pt>
+<Imagenes/Fig2.png, id=367, 164.86594pt x 95.6072pt>
 File: Imagenes/Fig2.png Graphic file (type png)
  <use Imagenes/Fig2.png>
 Package pdftex.def Info: Imagenes/Fig2.png used on input line 205.
 (pdftex.def)             Requested size: 113.81102pt x 66.00111pt.
 
-<Imagenes/Fig3.png, id=364, 136.25906pt x 39.14626pt>
+<Imagenes/Fig3.png, id=368, 136.25906pt x 39.14626pt>
 File: Imagenes/Fig3.png Graphic file (type png)
  <use Imagenes/Fig3.png>
 Package pdftex.def Info: Imagenes/Fig3.png used on input line 210.
@@ -1017,7 +1017,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 211--211
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig4.png, id=365, 135.50626pt x 59.47218pt>
+<Imagenes/Fig4.png, id=369, 135.50626pt x 59.47218pt>
 File: Imagenes/Fig4.png Graphic file (type png)
  <use Imagenes/Fig4.png>
 Package pdftex.def Info: Imagenes/Fig4.png used on input line 214.
@@ -1027,7 +1027,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 215--215
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig5.png, id=366, 167.12437pt x 94.85437pt>
+<Imagenes/Fig5.png, id=370, 167.12437pt x 94.85437pt>
 File: Imagenes/Fig5.png Graphic file (type png)
  <use Imagenes/Fig5.png>
 Package pdftex.def Info: Imagenes/Fig5.png used on input line 225.
@@ -1046,7 +1046,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--230
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9 <./Imagenes/Fig2.png> <./Imagenes/Fig3.png> <./Imagenes/Fig4.png>]
-<Imagenes/Fig6.png, id=377, 110.66344pt x 41.4047pt>
+<Imagenes/Fig6.png, id=381, 110.66344pt x 41.4047pt>
 File: Imagenes/Fig6.png Graphic file (type png)
  <use Imagenes/Fig6.png>
 Package pdftex.def Info: Imagenes/Fig6.png used on input line 254.
@@ -1056,7 +1056,7 @@ Underfull \hbox (badness 6078) in paragraph at lines 255--255
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re-pre-sen-ta-cion de 
  []
 
-<Imagenes/Fig7.png, id=378, 112.92188pt x 65.49469pt>
+<Imagenes/Fig7.png, id=382, 112.92188pt x 65.49469pt>
 File: Imagenes/Fig7.png Graphic file (type png)
  <use Imagenes/Fig7.png>
 Package pdftex.def Info: Imagenes/Fig7.png used on input line 258.
@@ -1075,22 +1075,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--269
  []
 
 [11 <./Imagenes/Fig7.png>] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 365--368
+Underfull \hbox (badness 10000) in paragraph at lines 367--370
 
  []
 
-<Imagenes/Fig8.png, id=427, 496.10344pt x 307.90031pt>
+<Imagenes/Fig8.png, id=432, 496.10344pt x 307.90031pt>
 File: Imagenes/Fig8.png Graphic file (type png)
  <use Imagenes/Fig8.png>
-Package pdftex.def Info: Imagenes/Fig8.png used on input line 384.
+Package pdftex.def Info: Imagenes/Fig8.png used on input line 386.
 (pdftex.def)             Requested size: 284.52756pt x 176.59027pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--394
+Underfull \hbox (badness 10000) in paragraph at lines 382--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--394
+Underfull \hbox (badness 10000) in paragraph at lines 382--396
 
  []
 
@@ -1098,138 +1098,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--394
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-Overfull \hbox (8.32521pt too wide) in alignment at lines 396--400
+Overfull \hbox (8.32521pt too wide) in alignment at lines 398--402
  [][][] []
  []
 
 [16 <./Imagenes/Fig8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 405--409
+Underfull \hbox (badness 10000) in paragraph at lines 407--411
 
  []
 
-[17] [18] <Imagenes/Fig9.png, id=461, 657.2053pt x 214.55156pt>
+[17] [18] <Imagenes/Fig9.png, id=467, 657.2053pt x 214.55156pt>
 File: Imagenes/Fig9.png Graphic file (type png)
 
 <use Imagenes/Fig9.png>
-Package pdftex.def Info: Imagenes/Fig9.png used on input line 479.
+Package pdftex.def Info: Imagenes/Fig9.png used on input line 481.
 (pdftex.def)             Requested size: 369.88582pt x 120.7537pt.
  [19 <./Imagenes/Fig9.png>]
-<Imagenes/Fig10.png, id=472, 321.45094pt x 197.98969pt>
+<Imagenes/Fig10.png, id=478, 321.45094pt x 197.98969pt>
 File: Imagenes/Fig10.png Graphic file (type png)
 
 <use Imagenes/Fig10.png>
-Package pdftex.def Info: Imagenes/Fig10.png used on input line 498.
+Package pdftex.def Info: Imagenes/Fig10.png used on input line 500.
 (pdftex.def)             Requested size: 284.52756pt x 175.25258pt.
  [20 <./Imagenes/Fig10.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 521--525
+Underfull \hbox (badness 10000) in paragraph at lines 523--527
 
  []
 
-<Imagenes/Fig11.png, id=480, 657.2053pt x 423.08063pt>
+<Imagenes/Fig11.png, id=486, 657.2053pt x 423.08063pt>
 File: Imagenes/Fig11.png Graphic file (type png)
 
 <use Imagenes/Fig11.png>
-Package pdftex.def Info: Imagenes/Fig11.png used on input line 536.
+Package pdftex.def Info: Imagenes/Fig11.png used on input line 538.
 (pdftex.def)             Requested size: 412.56496pt x 265.59322pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [21] [22 <./Imagenes/Fig11.png>]
-Overfull \hbox (15.61667pt too wide) detected at line 587
+Overfull \hbox (15.61667pt too wide) detected at line 589
 []\OML/cmm/m/it/10.95 Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 J\OT1/cmr/m/n/
 10.95 ] =  [] [] [] \OMS/cmsy/m/n/10.95 D\OML/cmm/m/it/10.95   [] [] :
  []
 
 [23]
-Overfull \hbox (15.61667pt too wide) detected at line 620
+Overfull \hbox (15.61667pt too wide) detected at line 622
 []\OML/cmm/m/it/10.95 Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 J\OT1/cmr/m/n/
 10.95 ] =  [] [] [] \OMS/cmsy/m/n/10.95 D\OML/cmm/m/it/10.95   [] [] :
  []
 
 
-Overfull \hbox (22.57353pt too wide) detected at line 627
+Overfull \hbox (22.57353pt too wide) detected at line 629
 []\OML/cmm/m/it/10.95 Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 J\OT1/cmr/m/n/
 10.95 ] = \OMS/cmsy/m/n/10.95 N [] \OML/cmm/m/it/10.95 ;
  []
 
 [24]
-Overfull \hbox (11.54457pt too wide) in alignment at lines 633--639
+Overfull \hbox (11.54457pt too wide) in alignment at lines 635--641
  [][][] []
  []
 
-<Imagenes/Fig12.png, id=519, 195.73125pt x 88.07906pt>
+<Imagenes/Fig12.png, id=525, 195.73125pt x 88.07906pt>
 File: Imagenes/Fig12.png Graphic file (type png)
 
 <use Imagenes/Fig12.png>
-Package pdftex.def Info: Imagenes/Fig12.png used on input line 643.
+Package pdftex.def Info: Imagenes/Fig12.png used on input line 645.
 (pdftex.def)             Requested size: 156.49014pt x 70.42435pt.
 
-Underfull \hbox (badness 1043) in paragraph at lines 644--644
+Underfull \hbox (badness 1043) in paragraph at lines 646--646
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Dia-gra-ma de Feyn- 
  []
 
-<Imagenes/Fig13.png, id=520, 91.09032pt x 52.69687pt>
+<Imagenes/Fig13.png, id=526, 91.09032pt x 52.69687pt>
 File: Imagenes/Fig13.png Graphic file (type png)
  <use Imagenes/Fig13.png>
-Package pdftex.def Info: Imagenes/Fig13.png used on input line 648.
+Package pdftex.def Info: Imagenes/Fig13.png used on input line 650.
 (pdftex.def)             Requested size: 85.35826pt x 49.38228pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
  [][]\OT1/cmr/m/sc/10 : |\OT1/cmr/m/n/10 Re- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 649--649
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
  \OT1/cmr/m/n/10 pre-sen-ta-cion de 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--654
+Underfull \hbox (badness 10000) in paragraph at lines 641--656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--654
+Underfull \hbox (badness 10000) in paragraph at lines 641--656
 
  []
 
-<Imagenes/Fig14.png, id=521, 376.40625pt x 185.19188pt>
+<Imagenes/Fig14.png, id=527, 376.40625pt x 185.19188pt>
 File: Imagenes/Fig14.png Graphic file (type png)
 
 <use Imagenes/Fig14.png>
-Package pdftex.def Info: Imagenes/Fig14.png used on input line 655.
+Package pdftex.def Info: Imagenes/Fig14.png used on input line 657.
 (pdftex.def)             Requested size: 341.43306pt x 167.99643pt.
  [25 <./Imagenes/Fig12.png> <./Imagenes/Fig13.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 656--661
+Underfull \hbox (badness 10000) in paragraph at lines 658--663
 
  []
 
 [26 <./Imagenes/Fig14.png>]
-Overfull \hbox (2.05998pt too wide) in alignment at lines 696--701
+Overfull \hbox (2.05998pt too wide) in alignment at lines 698--703
  [][][] []
  []
 
-[27] <Imagenes/Fig15.png, id=550, 302.63063pt x 97.86563pt>
+[27] <Imagenes/Fig15.png, id=556, 302.63063pt x 97.86563pt>
 File: Imagenes/Fig15.png Graphic file (type png)
 
 <use Imagenes/Fig15.png>
-Package pdftex.def Info: Imagenes/Fig15.png used on input line 722.
+Package pdftex.def Info: Imagenes/Fig15.png used on input line 724.
 (pdftex.def)             Requested size: 312.9803pt x 101.21336pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--728
+Underfull \hbox (badness 10000) in paragraph at lines 720--730
 
  []
 
 [28 <./Imagenes/Fig15.png>]
-<Imagenes/Fig16.png, id=559, 286.82156pt x 137.7647pt>
+<Imagenes/Fig16.png, id=566, 286.82156pt x 137.7647pt>
 File: Imagenes/Fig16.png Graphic file (type png)
 
 <use Imagenes/Fig16.png>
-Package pdftex.def Info: Imagenes/Fig16.png used on input line 748.
+Package pdftex.def Info: Imagenes/Fig16.png used on input line 750.
 (pdftex.def)             Requested size: 227.62204pt x 109.3332pt.
  [29 <./Imagenes/Fig16.png>]
-Overfull \hbox (18.2658pt too wide) in paragraph at lines 795--797
+Overfull \hbox (18.2658pt too wide) in paragraph at lines 796--798
 \OT1/cmr/m/n/10.95 Sabemos que el con-mu-ta-dor $[] = \OML/cmm/m/it/10.95 i\OT
 1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.9
 5 y\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ) [] \OT1/cmr/m/n/10.95 = \OML/cmm/
@@ -1239,43 +1239,43 @@ ML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 n [][]$\OT1/cmr/m/n/
  []
 
 
-Overfull \hbox (10.64667pt too wide) in alignment at lines 797--802
+Overfull \hbox (10.64667pt too wide) in alignment at lines 798--803
  [][][] []
  []
 
 [30] [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 833--837
+Underfull \hbox (badness 10000) in paragraph at lines 834--838
 
  []
 
 [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 949--953
+Underfull \hbox (badness 10000) in paragraph at lines 950--954
 
  []
 
 [36] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1040
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1035
 
  []
 
 [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1097
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1122
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1117
 
  []
 
 [42] [43] [44]
-Overfull \hbox (0.81522pt too wide) in paragraph at lines 1218--1220
+Overfull \hbox (0.81522pt too wide) in paragraph at lines 1213--1215
 \OT1/cmr/m/n/10.95 Un pro-duc-to de fun-cio-nes del-ta en ca-da pun-to del espa
 cio-tiempo. Pri-me-ro vea-mos que $\OMS/cmsy/m/n/10.95 4[]\OT1/cmr/m/n/10.95 [\
 OML/cmm/m/it/10.95 A[]\OT1/cmr/m/n/10.95 ]$
  []
 
-[45]) [46] (Chapters/Chapter3.tex [47]
+[45] [46]) (Chapters/Chapter3.tex [47]
 Cap\'{\i }tulo 3.
 ------------------------------------------------------------------------------
  3 Integrales de trayectoria en espacios curvos.
@@ -1342,18 +1342,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--712
 
  []
 
-[72] [73] [74] [75] <Imagenes/Fig17.png, id=1018, 262.73157pt x 245.41687pt>
+[72] [73] [74] [75] <Imagenes/Fig17.png, id=1024, 262.73157pt x 245.41687pt>
 File: Imagenes/Fig17.png Graphic file (type png)
 
 <use Imagenes/Fig17.png>
 Package pdftex.def Info: Imagenes/Fig17.png used on input line 819.
 (pdftex.def)             Requested size: 227.62204pt x 212.63092pt.
  [76 <./Imagenes/Fig17.png>]
-<Imagenes/Fig18.png, id=1026, 256.96pt x 256.96pt>
+<Imagenes/Fig18.png, id=1033, 256.91985pt x 256.91985pt>
 File: Imagenes/Fig18.png Graphic file (type png)
- <use Imagenes/Fig18.png>
+
+<use Imagenes/Fig18.png>
 Package pdftex.def Info: Imagenes/Fig18.png used on input line 850.
-(pdftex.def)             Requested size: 199.16928pt x 199.1733pt.
+(pdftex.def)             Requested size: 199.16928pt x 199.17746pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 843--856
 
@@ -1391,7 +1392,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: ED06286E075AD9E8EE0240A322526B7E;10198.
+(rerunfilecheck)             Checksum: FE858FC3D366A7D51854AB3AB431AA2B;10198.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1399,10 +1400,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 14908 strings out of 493673
- 207719 string characters out of 3141530
+ 14912 strings out of 493673
+ 207775 string characters out of 3141530
  284856 words of memory out of 3000000
- 17455 multiletter control sequences out of 15000+200000
+ 17456 multiletter control sequences out of 15000+200000
  17008 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  49i,18n,48p,1327b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1435,9 +1436,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (89 pages, 1110113 bytes).
+Output written on Thesis.pdf (90 pages, 1547991 bytes).
 PDF statistics:
- 1263 PDF objects out of 1440 (max. 8388607)
- 546 named destinations out of 1000 (max. 500000)
+ 1272 PDF objects out of 1440 (max. 8388607)
+ 549 named destinations out of 1000 (max. 500000)
  416 words of extra memory for PDF output out of 10000 (max. 10000000)
 
