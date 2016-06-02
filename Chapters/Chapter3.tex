@@ -623,7 +623,7 @@ donde $\triangle V(q)=\frac{\hbar^{2}}{8m}\left[3\left(\frac{F^{''}}{F^{'}}\righ
 i\hbar\frac{\partial}{\partial s}\tilde{\psi}(q,s)=\tilde{H}\tilde{\psi}(q,s).
 \end{equation}
 \subsection{Integrales de trayectoria en coordenadas polares.}
-En esta sección haremos uso de las transformaciones de coordenadas para ver como se mapea la integral de trayectoria de coordenas cartesianas a coordenadas polares, este análisis está basado en [13,14]. Consideremos un sistema mecánico cuántico con invarianza rotacional del Hamiltoniano, es conveniente introducir las coordenadas polares $\vec{x}=(x r\cos \varphi,r\sin \varphi)$. En el caso del formalismo de operadores el tratamiento que se hace es separar la ecuación de Schrödinger en una parte radial y otra angular, lo mismo intentaremos en el caso de integrales de trayectoria, otra modificación que es conveniente introducir es el tiempo imaginario $\tau=it$. Con esto la integral de trayectoria toma la forma:
+En esta sección haremos uso de las transformaciones de coordenadas para ver como se mapea la integral de trayectoria de coordenas cartesianas a coordenadas polares, este análisis está basado en [13,14]. Consideremos un sistema mecánico cuántico con invarianza rotacional del Hamiltoniano, es conveniente introducir las coordenadas polares $\vec{x}=(x r\cos \varphi,r\sen \varphi)$. En el caso del formalismo de operadores el tratamiento que se hace es separar la ecuación de Schrödinger en una parte radial y otra angular, lo mismo intentaremos en el caso de integrales de trayectoria, otra modificación que es conveniente introducir es el tiempo imaginario $\tau=it$. Con esto la integral de trayectoria toma la forma:
 \begin{equation}
 \langle x_{b}\tau_{b}|x_{a}\tau_{a}\rangle=\int\mathcal{D}q(\tau)\ \exp\left[-\frac{1}{\hbar}\int_{\tau_{a}}^{\tau_{b}}\left(\frac{m}{2}\dot{\vec{x}}^{2}+V(r)\right)d\tau\right],
 \end{equation}
@@ -766,7 +766,7 @@ De esta forma:
 \end{equation} 
 El propagador (3.144) es simplemente el de un oscilador armónico isotrópico bidimensional de frecuencia $\omega=\sqrt{-\frac{8E}{m}}$ [15], por tanto:
 \begin{equation}
-\tilde{K}(u,u_{0},s)=\frac{m\omega}{2i\hbar\sin(\omega s)}\exp\left\{ \frac{4iZe^{2}s}{\hbar}+\frac{im\omega}{2\pi\hbar\sin(\omega s)}\left[(u^{2}+u_{0}^{2})\cos(\omega s)-2uu_{0}\right]\right\}, 
+\tilde{K}(u,u_{0},s)=\frac{m\omega}{2i\hbar\sen(\omega s)}\exp\left\{ \frac{4iZe^{2}s}{\hbar}+\frac{im\omega}{2\pi\hbar\sen(\omega s)}\left[(u^{2}+u_{0}^{2})\cos(\omega s)-2uu_{0}\right]\right\}, 
 \end{equation}
 con $u={\xi ,\eta}$. El procedimiento anterior muestra la gran utilidad que resulta tener el método de transformaciones de coordenadas para resolver problemas con potenciales complicados vía integrales de trayectoria.
 \newpage
@@ -816,7 +816,7 @@ d\tau=\sqrt{1-\frac{\omega^{2}r^{2}}{c^{2}}}dt,
 así el tiempo "pasa más lento" en el sistema en rotación ya que $d\tau<dt$, ahora consideremos la medición de un intervalo espacial, para medir distacias es conveniente utilizar rayos de luz, si queremos medir la distancia entre un punto $A$ y $B$ enviamos un rayo de luz desde $A$ hasta $B$ y de nuevo de regreso a $A$, la distancia entre $A$ y $B$ es simplemente \textbf{la mitad} del tiempo propio que se mide en $A$ durante todo el experimento dividido por la velocidad de la luz. Basandonos en la figura 3.1 podemos representar la luz viajando de $A$ a $B$ , la luz sale de $A$ en tiempo coordenado $x^{0}+dx^{0(2)}$, llega a B en $x^0$ y vuelve a $A$ en $x^{0}+dx^{0(1)}$. Sabemos que para la luz $ds^2=0$, así:
 \begin{figure}[h!]
 \centering
-\includegraphics[width=8cm]{Imagenes/Fig17}
+\includegraphics[width=5cm]{Imagenes/Fig17}
 \caption[Medición de distancias en sistemas de coordenadas no inerciales.]{Representación esquemática del método de medición de distancias.}
 \end{figure}
 \begin{eqnarray}
@@ -874,3 +874,5 @@ En el experimento realizado por Sagnac $\omega=14\text{rad/s},\ \pi r^2=0.0863 m
 \end{equation}
 valor que concuerda con el experimento.
 \subsection{El propagador.}
+
+
