@@ -807,9 +807,46 @@ si evaluamos en $J=0$ la ecuación (2.129) vemos que $\tau(x_1,x_2,x_3)=0$. Para
 &&+\triangle_{F}(x_{3}-x_{1})\triangle_{F}(x_{2}-x_{4})].
 \end{eqnarray}
 La ecuación (2.130) es el producto de funciones de 2-puntos:
-\begin{equation}
-\includegraphics[width=8cm]{Imagenes/Fig16}.
-\end{equation}
+\begin{fmffile}{cruz}
+ 	\setlength{\unitlength}{0.25mm}
+ 	\begin{equation}
+ 	\tau(x_1,x_2,x_3,x_4)=
+ 	\begin{gathered} 	
+     \begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2} 
+ 			\fmfright{o1,o2}  
+            \fmf{plain}{i1,o1}
+            \fmf{plain}{i2,o2}
+            \fmflabel{$x_1$}{i1}
+            \fmflabel{$x_2$}{i2}
+            \fmflabel{$x_3$}{o1}
+            \fmflabel{$x_4$}{o2}
+ 		\end{fmfgraph*}\end{gathered}
+ 		 +\ \ \ \begin{gathered}
+ 		\begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2} 
+ 			\fmfright{o1,o2}  
+            \fmf{plain}{i1,i2}
+            \fmf{plain}{o1,o2}
+            \fmflabel{$x_1$}{i1}
+            \fmflabel{$x_2$}{i2}
+            \fmflabel{$x_3$}{o1}
+            \fmflabel{$x_4$}{o2}
+ 		\end{fmfgraph*} 
+ 		\end{gathered}+\ \ \ \begin{gathered}
+ 		\begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2} 
+ 			\fmfright{o1,o2}  
+            \fmf{plain}{i1,o2}
+            \fmf{plain}{i2,o1}
+            \fmflabel{$x_1$}{i1}
+            \fmflabel{$x_2$}{i2}
+            \fmflabel{$x_3$}{o1}
+            \fmflabel{$x_4$}{o2}
+ 		\end{fmfgraph*} 
+ 		\end{gathered}\ \ \ \ .
+ 	\end{equation} 		
+ 	\end{fmffile}	
 Así uno puede darse cuenta que si $n$ es impar la función de n-puntos se anula y si es par, es la suma de los productos de las diferentes permutaciones de funciones de 2-puntos.
 
 
