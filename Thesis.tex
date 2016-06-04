@@ -5,6 +5,27 @@
 % Set up the document
 \documentclass[letterpaper, 11pt, oneside]{Thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
 \graphicspath{Figures/}  % Location of the graphics files (set up for graphics to be in PDF format)
+%AQUI INSERTE COSAS RARAS
+\usepackage{amsmath}
+
+\usepackage[final]{feynmp} 
+ \DeclareGraphicsRule{*}{mps}{*}{} 
+ \makeatletter 
+ \def\endfmffile{% 
+ 	\fmfcmd{\p@rcent\space the end.^^J% 
+ 			end.^^J% 
+ 			endinput;}% 
+ 	\if@fmfio 
+ 		\immediate\closeout\@outfmf 
+ 	\fi 
+ 	\ifnum\pdfshellescape=\@ne 
+ 		\immediate\write18{mpost \thefmffile}% 
+ 	\fi} 
+ \makeatother 
+%AQUI INSERTE COSAS RARAS
+
+
+
 
 % Include any extra LaTeX packages required
 \usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
@@ -17,6 +38,12 @@
 
 %% ----------------------------------------------------------------
 \begin{document}
+%AQUI INSERTE COSAS RARAS
+\unitlength=1mm 
+%AQUI INSERTE COSAS RARAS
+
+
+
 \frontmatter      % Begin Roman style (i, ii, iii, iv...) page numbering
 
 % Set up the Title Page

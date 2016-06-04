@@ -1,0 +1,14 @@
+This is MetaPost, version 1.999 (MiKTeX 2.9) (MiKTeX 2.9)  4 JUN 2016 17:49
+**.\compton.mp
+(C:/Program Files (x86)/MiKTeX 2.9/metapost/base/mpost.mp
+(C:/Program Files (x86)/MiKTeX 2.9/metapost/base/plain.mp
+Preloading the plain mem file, version 1.004) ) (././compton.mp
+(C:/Users/diego/AppData/Roaming/MiKTeX/2.9/metapost/feynmf/feynmp.mp) [1] [2] [3] )
+ 
+Here is how much of MetaPost's memory you used:
+ 302 strings using 4454 characters
+ 1110308 bytes of node memory
+ 923 symbolic tokens
+ 12i,77n,22p,110b,3f stack positions out of 16i,96n,25p,200b,4f
+3 output files written: compton.1 .. compton.3
+

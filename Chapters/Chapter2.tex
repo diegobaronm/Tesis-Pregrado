@@ -644,20 +644,79 @@ integrando en $x,y$:
 Si identificamos la expresión anterior mediante las reglas de la figura 2.12,
 \begin{SCfigure}[1][h]
 \caption[Diagrama de Feynmann segunda cuantización]{Diagrama de Feynmann segunda cuantización}
-\includegraphics[width=5.5cm]{Imagenes/Fig12}
+\includegraphics[width=7cm]{Imagenes/Fig12}
 \end{SCfigure}
 entonces la integral (2.111) puede ser identificada con el diagrama que aparece en la figura 2.13:
 \begin{SCfigure}[1][h!]
 \caption[Diagrama de Feynmann segunda cuantización]{Representación de (2.111)}
-\includegraphics[width=3cm]{Imagenes/Fig13}
+\includegraphics[width=5cm]{Imagenes/Fig13}
 \end{SCfigure}
 \\
 \\
 \\
 por tanto finalmente:
-\begin{equation}
-\includegraphics[width=12cm]{Imagenes/Fig14}
-\end{equation}
+\begin{fmffile}{compton}
+ 	\setlength{\unitlength}{0.25mm}
+ 	\begin{equation}
+ 	\nonumber
+ 	Z_0=1+\frac{1}{2}
+ 	\begin{gathered} 	
+     \begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1} 
+ 			\fmfright{o1}
+ 			\fmfdot{i1,o1}  
+            \fmf{plain}{i1,o1} 
+ 		\end{fmfgraph*}\end{gathered}
+ 		 +\frac{1}{2!}\left(\frac{1}{2}\right)^2\begin{gathered}
+ 		\begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2} 
+ 			\fmfright{o1,o2} 
+            \fmfdot{i1,i2,o1,o2} 
+ 			\fmf{plain}{i2,o2} 
+ 			\fmf{plain}{i1,o1} 
+ 		\end{fmfgraph*} 
+ 		\end{gathered}+\frac{1}{3!}\left(\frac{1}{2}\right)^3\begin{gathered}
+ 		\begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2,i3} 
+ 			\fmfright{o1,o2,o3} 
+            \fmfdot{i1,i2,i3,o1,o2,o3}
+ 			\fmf{plain}{i2,o2} 
+ 			\fmf{plain}{i1,o1}
+ 			\fmf{plain}{i3,o3} 
+ 		\end{fmfgraph*} 
+ 		\end{gathered}+...
+ 	\end{equation} 		
+ 	\end{fmffile}
+\begin{fmffile}{diagrama}
+ 	\setlength{\unitlength}{0.25mm}
+ 	\begin{equation}
+ 	=1+\frac{1}{2}
+ 	\begin{gathered} 	
+     \begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2,i3,i4} 
+ 			\fmfright{o1,o2,o3,o4}  
+            \fmf{plain}{i1,o1}
+            \fmfdot{i3,i2}
+            \fmf{plain}{i2,i3}
+            \fmf{plain}{i4,o4}
+            \fmflabel{$\infty$}{o1}
+            \fmflabel{$-\infty$}{o4} 
+ 		\end{fmfgraph*}\end{gathered}
+ 		 +\frac{1}{2!}\left(\frac{1}{2}\right)^2\begin{gathered}
+ 		\begin{fmfgraph*}(80,50) 
+ 			\fmfleft{i1,i2,i3,i4} 
+ 			\fmfright{o1,o2,o3,o4}  
+            \fmf{plain}{i1,o1}
+            \fmfdot{i3,i2,o3,o2}
+            \fmf{plain}{i2,i3}
+            \fmf{plain}{o2,o3}
+            \fmf{plain}{i4,o4} 
+            \fmflabel{$\infty$}{o1}
+            \fmflabel{$-\infty$}{o4}
+ 		\end{fmfgraph*} 
+ 		\end{gathered}+...
+ 	\end{equation} 		
+ 	\end{fmffile}	
 Podemos interpretar esta serie como la propagación y posterior aniquilación de  una partícula entre fuentes, de dos partículas entre fuentes y así sucesivamente. Tenemos por tanto una teoría de muchos cuerpos, lo cual es consistente con nuestra idea inicial de utilizar un campo. Cada término en la serie es una función de Green por tanto $Z_0[J]$ es llamada un \textit{funcional generatriz} para las funciones de Green de la teoría.
 \\
 \\
