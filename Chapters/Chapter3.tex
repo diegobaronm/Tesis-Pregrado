@@ -795,7 +795,7 @@ t=t^{'},\ r=r^{'},\ \phi^{'}=\phi-\omega t,\ z=z^{'}\Rightarrow ds^{'2}=(-c^{2}+
 por tanto:
 \begin{equation}
 g_{\mu\nu}=\left(\begin{array}{cccc}
--\left(1-\frac{\omega^{2}r^{2}}{c^{2}}\right) & 0 & \omega r^{2} & 0\\
+-c^2\left(1-\frac{\omega^{2}r^{2}}{c^{2}}\right) & 0 & \omega r^{2} & 0\\
 0 & 1 & 0 & 0\\
 \omega r^{2} & 0 & r^{2} & 0\\
 0 & 0 & 0 & 1
@@ -874,5 +874,149 @@ En el experimento realizado por Sagnac $\omega=14\text{rad/s},\ \pi r^2=0.0863 m
 \end{equation}
 valor que concuerda con el experimento.
 \subsection{El propagador.}
-
-
+En esta última sección vamos a derivar el propagador para una partícula que se mueve en una trayectoria circular en un espacio-tiempo rotante, como ya hemos visto, en este tipo de sistemas de coordenadas aparecen efectos nuevos, como el efecto Sagnac. Esto último debido a que son sistemas de coordenadas no inerciales, es por esta razón que resulta interesante estudiar este problema desde un punto de vista cuántico.
+\\
+\\
+Para un espacio-tiempo (1+2) dimensional, rotante (con velocidad angular $\omega$), la métrica esta dada por:
+\begin{equation}
+g_{\mu\nu}=\left(\begin{array}{ccc}
+(1-r^{2}\omega^{2}) & 0 & -r^{2}\omega\\
+0 & -1 & 0\\
+-r^{2}\omega & 0 & -r^{2}
+\end{array}\right),
+\end{equation}
+notemos que hemos cambiado la signatura de la mética a $(-,+,+)$ y de ahora en adelante usaremos unidades naturales $(\hbar=c=G=1)$. Si calculamos el determinante de la ecuación (3.165) obtenemos:
+\begin{equation}
+\det g_{\mu\nu}=r^{2}\Rightarrow g=\sqrt{\det g_{\mu\nu}}=r,
+\end{equation}
+este es el mismo resultado que obtendriamos para el caso del espacio de Minkowski en coordenadas polares, por tanto, el espacio-tiempo sigue siendo plano. Una partícula relativista de masa $\mu$, espín cero y que se mueve en un espacio-tiempo curvo obedece la ecuación de Klein-Gordon en espacio curvo:
+\begin{equation}
+\left(\square-\frac{\mathcal{R}}{8}-\mu^{2}\right)\psi=0\ ;\ \square=g^{\mu\nu}\nabla_{\mu}\nabla_{\nu},
+\end{equation} 
+donde $\mathcal{R}$ es el escalar de Ricci. El propagador para esta partícula es:
+\begin{equation}
+K(t^{'},t^{''},r^{'},r^{''},\theta^{'}.\theta^{''})=\int\exp(iS)\mathcal{D}[x],
+\end{equation}
+donde
+\begin{equation}
+S=\int_{0}^{\Lambda}\left[\frac{1}{2}g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}-k^{2}\right]d\lambda\ ;\ k^{2}=\frac{1}{2}\left[-\frac{1}{24}\mathcal{R}+\mu^{2}\right].	
+\end{equation}
+Sabemos de las secciones anteriores que el término proporcional al escalar de Ricci en la ecuación (3.169) viene del hecho de llevar a cabo el cálculo de la integral de trayectoria en espacio-tiempo curvo, sin embargo, como consecuencia directa de la ecuación (3.166) (el espacio-tiempo es plano), entonces $\mathcal{R}=0$. Tomando en cuenta todo lo anterior:
+\begin{equation}
+S=\int_{0}^{\Lambda}\left[-\frac{1}{2}\dot{t}^{2}(1-\omega^{2}r^{2})+\frac{\dot{r}^{2}}{2}+\frac{r^{2}\dot{\theta}^{2}}{2}+r^{2}\omega\dot{\theta}\dot{t}-\frac{\mu^{2}}{2}\right]d\lambda.
+\end{equation} 
+En la expresión anterior hemos usado la notación $\dot{x}\equiv\frac{dx}{d\lambda}$, si escribimos el propagador (3.168) en forma discretizada:
+\begin{equation}
+K(t^{'},t^{''},r^{'},r^{''},\theta^{'}.\theta^{''})=\lim_{N\to\infty}\int\prod_{j=1}^{N}\exp(iS_{j})\mathcal{D}[x],
+\end{equation}
+donde:
+\begin{equation}
+\mathcal{D}[x]=\lim_{N\to\infty}\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)^{\frac{3}{2}}\prod_{j=1}^{N-1}g_{j}^{\frac{1}{2}}dt_{j}dr_{j}d\theta_{j}=\lim_{N\to\infty}\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)^{\frac{3}{2}}\prod_{j=1}^{N-1}r_{j}dt_{j}dr_{j}d\theta_{j},
+\end{equation}
+y
+\begin{equation}
+S_{j}=-\frac{1}{2}(1-\omega^{2}r_{j}^{2})\frac{(\triangle t_{j})^{2}}{\epsilon_{j}}+\frac{(\triangle r_{j})^{2}}{2\epsilon_{j}}+r_{j}^{2}\frac{(\triangle\theta_{j})^{2}}{2\epsilon_{j}}+r_{j}^{2}\omega\frac{\triangle\theta_{j}\triangle t_{j}}{\epsilon_{j}}-\frac{\mu^{2}\epsilon_{j}}{2}.
+\end{equation}
+Podemos fijar la variable radial a un valor $r=R$, mediante la siguiente relación:
+\begin{equation}
+\left(\frac{1}{2\pi i\epsilon_{j}}\right)^{\frac{1}{2}}\exp\left(\frac{i(\triangle r_{j})^{2}}{2\epsilon_{j}}\right)=\delta(r_{j}-r_{j-1}),
+\end{equation}
+por tanto el propagador queda:
+\begin{equation}
+K(t^{'},t^{''},\theta^{'}.\theta^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\lim_{N\to\infty}\int\prod_{j=1}^{N}\exp(iS_{j}(t,\theta))\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)\prod_{j=1}^{N-1}Rdt_{j}d\theta_{j},
+\end{equation}
+con
+\begin{equation}
+S_{j}(t,\theta)=-\frac{1}{2}(1-\omega^{2}R^{2})\frac{(\triangle t_{j})^{2}}{\epsilon_{j}}+R^{2}\frac{(\triangle\theta_{j})^{2}}{2\epsilon_{j}}+R^{2}\omega\frac{\triangle\theta_{j}\triangle t_{j}}{\epsilon_{j}}.
+\end{equation}
+Si introducimos la variable temporal adimensional $\triangle t_j\omega =\triangle \tau_j$, obtenemos:
+\begin{equation}
+S_{j}(\tau,\theta)=-\frac{1}{2\epsilon_{j}}\left(\frac{1}{\omega^{2}}-R^{2}\right)(\triangle\tau_{j})^{2}+R^{2}\frac{(\triangle\theta_{j})^{2}}{2\epsilon_{j}}+R^{2}\frac{\triangle\theta_{j}\triangle\tau_{j}}{\epsilon_{j}},
+\end{equation}
+y el propagador queda escrito como:
+\begin{equation}
+K(\tau^{'},\tau^{''},\theta^{'},\theta^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\lim_{N\to\infty}\int\prod_{j=1}^{N}\exp(iS_{j}(\tau,\theta))\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)\prod_{j=1}^{N-1}\frac{R}{\omega}d\tau_{j}d\theta_{j}.
+\end{equation}
+Ahora con el fin de eliminar el término proporcional a $\triangle \theta_j\triangle \tau_j$, es decir separar de nuevo las coordenadas, hagamos una rotación de las mismas. Si se tiene una forma cuadrática $F=Ax^2+Bxy+Cy^2$, podemos hacer una rotación de tal manera que es posible escribir $F=A^{'}x^{'2}+C^{'}y^{'2}$, para que esto se cumpla debemos tener que $\cot (2\phi)=\frac{A-C}{B}$, en este caso el término $xy$ se anula y tenemos que:
+\begin{align}
+\nonumber A^{'}&=A\cos^{2}\phi+B\sin\phi\cos\phi+C\sin^{2}\phi\\
+B^{'}&=A\sin^{2}\phi-B\sin\phi\cos\phi+C\cos^{2}\phi.
+\end{align}
+Observando la ecuación (3.177), en nuestro caso:
+\begin{equation}
+A=-\frac{1}{2\epsilon_{j}}\left(\frac{1}{\omega^{2}}-R^{2}\right),\ B=\frac{R^{2}}{\epsilon_{j}},\ C=\frac{R^{2}}{2\epsilon_{j}},
+\end{equation}
+así:
+\begin{equation}
+\cot(2\phi)=-\frac{1}{2R^{2}\omega^{2}}.
+\end{equation}
+Acudiendo a la Figura 3.3, escribimos las siguientes relaciones:
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.8cm]{Imagenes/Fig19}
+\caption[Triángulo de funciones trigonométricas.]{Triángulo para la construcción de funciones trigonométricas.}
+\end{figure}
+\begin{align}
+\nonumber h&=\sqrt{1+4R^4\omega^4}\\
+\nonumber \cos(2\phi)&=-\frac{1}{h}\\
+\nonumber \sin\phi&=\sqrt{\frac{1+\cos\phi}{2}}=\sqrt{\frac{h+1}{2h}}\\
+\nonumber \cos\phi&=\sqrt{\frac{1-\cos\phi}{2}}=\sqrt{\frac{h-1}{2h}}\\
+\sin\phi\cos\phi&=\frac{R^{2}\omega^{2}}{h}.
+\end{align}
+Combinando las ecuaciones (3.179) y (3.182), obtenemos:
+\begin{align}
+\nonumber A^{'}&=\frac{1}{2\epsilon_{j}}\left[R^{2}+\frac{1}{2h\omega^{2}}-\frac{1}{2\omega^{2}}+\frac{2R^{4}\omega^{2}}{h}\right]\\
+C^{'}&=\frac{1}{2\epsilon_{j}}\left[R^{2}-\frac{1}{2h\omega^{2}}-\frac{1}{2\omega^{2}}-\frac{2R^{4}\omega^{2}}{h}\right],
+\end{align}
+por tanto:
+\begin{equation}
+K(\bar{\tau}^{'},\bar{\tau}^{''},\bar{\theta}^{'},\bar{\theta}^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\lim_{N\to\infty}\int\prod_{j=1}^{N}\exp(iS_{j}(\bar{\tau},\bar{\theta}))\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)\prod_{j=1}^{N-1}\frac{R}{\omega}d\bar{\tau}_{j}d\bar{\theta}_{j},
+\end{equation}
+donde
+\begin{equation}
+S_{j}(\bar{\tau},\bar{\theta})=A^{'}(\triangle\bar{\tau}_{j})^{2}+C^{'}(\triangle\bar{\theta}_{j})^{2}.
+\end{equation}
+En estas últimas dos expresiones hemos denotado las coordenadas rotadas como $\bar{\tau},\bar{\theta}$ y debido a que la transformación es una rotación, los diferenciales no se premultiplican por ningún factor debido a que $\det J=1$. Si escribimos:
+\begin{equation}
+S_{j}(\bar{\tau},\bar{\theta})=\left(\frac{1}{2\epsilon_{j}}\right)\alpha(\triangle\bar{\tau}_{j})^{2}+\left(\frac{1}{2\epsilon_{j}}\right)\beta(\triangle\bar{\theta}_{j})^{2},
+\end{equation}
+con
+\begin{equation}
+\alpha=\left[R^{2}+\frac{1}{2h\omega^{2}}-\frac{1}{2\omega^{2}}+\frac{2R^{4}\omega^{2}}{h}\right],\ \beta=\left[R^{2}-\frac{1}{2h\omega^{2}}-\frac{1}{2\omega^{2}}-\frac{2R^{4}\omega^{2}}{h}\right].
+\end{equation}
+Si ahora $T_j=\frac{1}{\omega}\bar{\tau}_j$ y $R\bar{\theta}_j=\Theta_j$, tenemos que la ecuación (3.184) se transforma en:
+\begin{equation}
+K(T^{'},T^{''},\Theta^{'},\Theta^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\lim_{N\to\infty}\int\prod_{j=1}^{N}\exp(iS_{j}(T,\Theta))\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)\prod_{j=1}^{N-1}dT_{j}d\Theta_{j},
+\end{equation}
+donde:
+\begin{eqnarray}
+\nonumber &S_{j}(T,\Theta)=\left(\frac{1}{2\epsilon_{j}}\right)\alpha^{'}(\triangle T_{j})^{2}+\left(\frac{1}{2\epsilon_{j}}\right)\beta^{'}(\triangle\Theta_{j})^{2}&\\
+&\alpha^{'}=\left[R^{2}\omega^{2}+\frac{1}{2h}-\frac{1}{2}+\frac{2R^{4}\omega^{4}}{h}\right],\ \beta^{'}=\left[1-\frac{1}{2hR^{2}\omega^{2}}-\frac{1}{2R^{2}\omega^{2}}-\frac{2R^{2}\omega^{2}}{h}\right]&.
+\end{eqnarray}
+Después de toda la manipulación que hemos hecho a la expresión (3.175), hasta llevarla a (3.188), por fin hemos logrado obtener una forma funcional como la que ya hemos integrado en la sección $\mathsection$2.1.1, en general el resultado que descubrimos en esa sección se puede escribir como:
+\begin{equation}
+\lim_{N\to\infty}\int\prod_{j=1}^{N}\exp\left(\frac{ia(\triangle x_{j})^{2}}{2\epsilon_{j}}\right)\prod_{j=1}^{N}\left(\frac{1}{2\pi i\epsilon_{j}}\right)^{\frac{1}{2}}\prod_{j=1}^{N-1}dx_{j}=\left(\frac{A}{2\pi i\Lambda}\right)^{\frac{1}{2}}\exp\left(\frac{iA}{2\Lambda}(x_{N}-x_{0})^{2}\right),
+\end{equation}
+usando este resultado en (3.188) obtenemos:
+\begin{equation}
+K(T^{'},T^{''},\Theta^{'},\Theta^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{\alpha^{'}\beta^{'}}{(2\pi i\Lambda)^{2}}\right)^{\frac{1}{2}}\exp\left(\frac{i\alpha^{'}}{2\Lambda}(T_{N}-T_{0})^{2}\right)\exp\left(\frac{i\beta^{'}}{2\Lambda}(\Theta{}_{N}-\Theta_{0})^{2}\right).
+\end{equation}
+Para finalizar debemos devolver todas las transformaciones que hemos realizado, primero $T\to\frac{1}{\omega}\bar{\tau}$ y $\Theta\to R\bar{\theta}$, por tanto:
+\begin{equation}
+K(\bar{\tau}^{'},\bar{\tau}^{''},\bar{\theta}^{'},\bar{\theta}^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{\alpha\beta\omega}{(2\pi i\Lambda)^{2}R}\right)^{\frac{1}{2}}\exp\left(\frac{i\alpha}{2\Lambda}(\bar{\tau}^{''}-\bar{\tau}^{'})^{2}\right)\exp\left(\frac{i\beta}{2\Lambda}(\bar{\theta}^{''}-\bar{\theta}^{'})^{2}\right),
+\end{equation}
+notemos que en la expresión (3.192) ya no usamos $\alpha^{'},\beta^{'}$, sino $\alpha,\beta$. La rotación que realizamos se puede escribir como:
+\begin{eqnarray}
+\nonumber \bar{\tau}&=\tau\cos\phi+\theta\sin\phi\Rightarrow\bar{\tau}^{2}=\tau^{2}\cos^{2}\phi+\tau\theta2\sin\phi\cos\phi+\theta^{2}\sin^{2}\phi\\
+\bar{\theta}&=-\tau\sin\phi+\theta\cos\phi\Rightarrow\bar{\theta}^{2}=\tau^{2}\sin^{2}\phi-\tau\theta2\sin\phi\cos\phi+\theta^{2}\cos^{2}\phi ,
+\end{eqnarray} 
+así podemos escribir:
+\begin{eqnarray}
+\nonumber K(\tau^{'},\tau^{''},\theta^{'},\theta^{''})&\propto &\exp\left(\frac{i}{2\Lambda}\left[(\tau^{''}-\tau^{'})^{2}(\alpha\cos^{2}\phi+\beta\sin^{2}\phi)+(\theta^{''}-\theta^{''})^{2}(\alpha\sin^{2}\phi+\beta\cos^{2}\phi)\right]\right)\\
+\nonumber &\times & \exp\left(\frac{i}{2\Lambda}\left[(\tau^{''}-\tau^{'})(\theta^{''}-\theta^{''})2\sin\phi\cos\phi(\alpha-\beta)\right]\right)\\
+\nonumber &\propto & \exp\left(\frac{i}{2\Lambda}\frac{(\tau^{''}-\tau^{'})^{2}}{2}\left[R^{2}-\frac{1}{2\omega^{2}}-\frac{1}{2\omega^{2}h^{2}}-\frac{2R^{4}\omega^{2}}{h^{2}}\right]\right)\\
+\nonumber &\times & \exp\left(\frac{i}{2\Lambda}\frac{(\theta^{''}-\theta^{''})^{2}}{2}\left[R^{2}-\frac{1}{2\omega^{2}}+\frac{1}{2\omega^{2}h^{2}}+\frac{2R^{4}\omega^{2}}{h^{2}}\right]\right)\\
+&\times & \exp\left(\frac{i}{2\Lambda}(\tau^{''}-\tau^{'})(\theta^{''}-\theta^{''})\frac{2R^{2}\omega^{2}}{h^{2}}\left[\frac{1}{\omega^{2}}+4R^{4}\omega^{2}\right]\right).
+\end{eqnarray}
+Finalmente si hacemos la última sustitución, $\tau \to \omega t$:
+ 
