@@ -959,8 +959,8 @@ Acudiendo a la Figura 3.3, escribimos las siguientes relaciones:
 \begin{align}
 \nonumber h&=\sqrt{1+4R^4\omega^4}\\
 \nonumber \cos(2\phi)&=-\frac{1}{h}\\
-\nonumber \sin\phi&=\sqrt{\frac{1+\cos\phi}{2}}=\sqrt{\frac{h+1}{2h}}\\
-\nonumber \cos\phi&=\sqrt{\frac{1-\cos\phi}{2}}=\sqrt{\frac{h-1}{2h}}\\
+\nonumber \sin\phi&=\sqrt{\frac{1-\cos2\phi}{2}}=\sqrt{\frac{h+1}{2h}}\\
+\nonumber \cos\phi&=\sqrt{\frac{1+\cos2\phi}{2}}=\sqrt{\frac{h-1}{2h}}\\
 \sin\phi\cos\phi&=\frac{R^{2}\omega^{2}}{h}.
 \end{align}
 Combinando las ecuaciones (3.179) y (3.182), obtenemos:
@@ -1003,7 +1003,7 @@ K(T^{'},T^{''},\Theta^{'},\Theta^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\righ
 \end{equation}
 Para finalizar debemos devolver todas las transformaciones que hemos realizado, primero $T\to\frac{1}{\omega}\bar{\tau}$ y $\Theta\to R\bar{\theta}$, por tanto:
 \begin{equation}
-K(\bar{\tau}^{'},\bar{\tau}^{''},\bar{\theta}^{'},\bar{\theta}^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{\alpha\beta\omega}{(2\pi i\Lambda)^{2}R}\right)^{\frac{1}{2}}\exp\left(\frac{i\alpha}{2\Lambda}(\bar{\tau}^{''}-\bar{\tau}^{'})^{2}\right)\exp\left(\frac{i\beta}{2\Lambda}(\bar{\theta}^{''}-\bar{\theta}^{'})^{2}\right),
+K(\bar{\tau}^{'},\bar{\tau}^{''},\bar{\theta}^{'},\bar{\theta}^{''})=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{\alpha\beta\omega^2}{(2\pi i\Lambda)^{2}R^2}\right)^{\frac{1}{2}}\exp\left(\frac{i\alpha}{2\Lambda}(\bar{\tau}^{''}-\bar{\tau}^{'})^{2}\right)\exp\left(\frac{i\beta}{2\Lambda}(\bar{\theta}^{''}-\bar{\theta}^{'})^{2}\right),
 \end{equation}
 notemos que en la expresión (3.192) ya no usamos $\alpha^{'},\beta^{'}$, sino $\alpha,\beta$. La rotación que realizamos se puede escribir como:
 \begin{eqnarray}
@@ -1019,4 +1019,13 @@ así podemos escribir:
 &\times & \exp\left(\frac{i}{2\Lambda}(\tau^{''}-\tau^{'})(\theta^{''}-\theta^{''})\frac{2R^{2}\omega^{2}}{h^{2}}\left[\frac{1}{\omega^{2}}+4R^{4}\omega^{2}\right]\right).
 \end{eqnarray}
 Finalmente si hacemos la última sustitución, $\tau \to \omega t$:
- 
+\begin{eqnarray}
+\nonumber K(t^{'},t^{''},\theta^{'},\theta^{''})&=&\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{\alpha\beta\omega^2}{(2\pi i\Lambda)^{2}R^2}\right)^{\frac{1}{2}}\exp\left(\frac{i}{2\Lambda}\frac{(t^{''}-t^{'})^{2}}{2}\left[R^{2}\omega^{2}-\frac{1}{2}-\frac{1}{2h^{2}}-\frac{2R^{4}\omega^{4}}{h^{2}}\right]\right)\\
+\nonumber &\times & \exp\left(\frac{i}{2\Lambda}\frac{(\theta^{''}-\theta^{''})^{2}}{2}\left[R^{2}-\frac{1}{2\omega^{2}}+\frac{1}{2\omega^{2}h^{2}}+\frac{2R^{4}\omega^{2}}{h^{2}}\right]\right)\\
+&\times &\exp\left(\frac{i}{2\Lambda}(t^{''}-t^{'})(\theta^{''}-\theta^{''})\left[\frac{2R^{2}\omega}{h^{2}}+\frac{8R^{6}\omega^{5}}{h^{2}}\right]\right),
+\end{eqnarray} 
+una forma de realizar una prueba de consistencia al resultado (3.195) es explorar el límite $\omega \to 0$, si tomamos este límite en (3.195) vemos que:
+\begin{equation}
+K(t^{'},t^{''},\theta^{'},\theta^{''})_{\omega\to0}=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{1}{2\pi\Lambda}\right)\exp\left(\frac{i}{2\Lambda}\left[-\frac{(t^{''}-t^{'})^{2}}{2}+\frac{(\theta^{''}-\theta^{''})^{2}}{2}R^{2}\right]\right).
+\end{equation} 
+Esto debido a que $\lim_{\omega\to 0}\left(\alpha\beta\frac{\omega^2}{R^2}\right)^{\frac{1}{2}}=i$, vemos que la expresión (3.196) tiene las coordenadas desacopladas y no depende de $\omega$, esto era lo esperado.

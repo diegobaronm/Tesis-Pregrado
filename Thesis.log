@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  7 JUN 2016 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  8 JUN 2016 12:22
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1362,7 +1362,12 @@ Overfull \hbox (15.91736pt too wide) in alignment at lines 1014--1020
  [][][] []
  []
 
-[83]) (Chapters/Chapter4.tex [84]
+[83]
+Overfull \hbox (35.42558pt too wide) in alignment at lines 1022--1026
+ [][][] []
+ []
+
+) (Chapters/Chapter4.tex [84]
 Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Bibliograf\IeC {\'\i }a.
@@ -1389,7 +1394,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 57D8CD02348E17C246038BC9D6049A15;10198.
+(rerunfilecheck)             Checksum: 5E7CC336E9CC7B5A10DD1F9375D6FB9E;10198.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1397,8 +1402,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 15188 strings out of 493673
- 210260 string characters out of 3141530
+ 15190 strings out of 493673
+ 210284 string characters out of 3141530
  288289 words of memory out of 3000000
  17653 multiletter control sequences out of 15000+200000
  17008 words of font info for 64 fonts, out of 3000000 for 9000
@@ -1433,9 +1438,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (95 pages, 3464504 bytes).
+Output written on Thesis.pdf (95 pages, 3467161 bytes).
 PDF statistics:
- 1352 PDF objects out of 1440 (max. 8388607)
- 589 named destinations out of 1000 (max. 500000)
+ 1354 PDF objects out of 1440 (max. 8388607)
+ 591 named destinations out of 1000 (max. 500000)
  411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
