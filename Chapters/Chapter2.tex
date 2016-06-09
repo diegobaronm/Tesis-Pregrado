@@ -32,7 +32,7 @@ K(3,1)=K(2A,1)K(3,2A)+K(2B,1)K(3,2B),
 al tomar el módulo cuadrado de la expresión (2.5) se generarán los términos de interferencia necesarios para describir el patrón de interferencia. No podemos decir que el electrón tomó un camino u el otro, de una manera más simple: este siguió todos los caminos posibles!
 
 \section{La ecuación de Schrödinger.}
-En el cuadro de Schrodinger la evolución de un sistema cuántico afecta al ket que representa al estado del sistema [1], la ecuación que rige la dinámica del mismo es la \textbf{Ecuación de Schrödinger}
+En el cuadro de Schrodinger la evolución de un sistema cuántico afecta al ket que representa al estado del sistema [4], la ecuación que rige la dinámica del mismo es la \textbf{Ecuación de Schrödinger}
 \begin{equation}
 i\hbar\frac{\partial}{\partial t}|\psi\rangle_S=\hat{H}|\psi\rangle_S.
 \end{equation}
@@ -479,7 +479,7 @@ Este límite es conocido como el régimen de Fraunhofer (Pantalla lejana), Figur
 \begin{figure}[h]
 \centering
 \includegraphics[width=14cm]{Imagenes/Fig9}
-\caption[Patron de interferencia, 1 rendija, regimen de Fraunhofer]{Curva de difracción para una sola rendija, en la figura (a) $N_F(a)=0.01$, en (b) $N_F(a)=0.5$. Tomado de [1]}
+\caption[Patron de interferencia, 1 rendija, regimen de Fraunhofer]{Curva de difracción para una sola rendija, en la figura (a) $N_F(a)=0.01$, en (b) $N_F(a)=0.5$. Tomado de [5]}
 \end{figure}
 Sin embargo para $N_F(a)\ll 1$, obtenemos diferentes aproximaciones asintóticas:
 \begin{eqnarray}
@@ -498,7 +498,7 @@ La función (2.83) oscila rápidamente alrededor del valor constante $N_F(a)\gam
 \begin{figure}[h!]
 \centering
 \includegraphics[width=10cm]{Imagenes/Fig10}
-\caption[Patrón de interferencia, 1 rendija, regimen de Fresnel]{Curva de difracción para una sola rendija, en la figura  $N_F(a)=100$. Tomado de [1]}
+\caption[Patrón de interferencia, 1 rendija, regimen de Fresnel]{Curva de difracción para una sola rendija, en la figura  $N_F(a)=100$. Tomado de [5]}
 \end{figure}
 
 
@@ -536,7 +536,7 @@ en el caso de dos rendijas de ancho $2a$ y separadas por una distancia $2b$, en 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=14.5cm]{Imagenes/Fig11}
-\caption[Patrón de interferencia, 2 rendijas]{Curva de difracción para dos rendijas, en la figura  $N_F(a)=0.001$ para (a), 0.015 para (b), 0.12 para (c), 6 para (d) . Tomado de [1]}
+\caption[Patrón de interferencia, 2 rendijas]{Curva de difracción para dos rendijas, en la figura  $N_F(a)=0.001$ para (a), 0.015 para (b), 0.12 para (c), 6 para (d) . Tomado de [5]}
 \end{figure}
 \newpage
 \newpage
@@ -1126,7 +1126,7 @@ De alguna manera se requiere que se cumpla la condición asintótica:
 \begin{equation}
  \phi(x)\longrightarrow_{\substack{t\to\infty \\t\to-\infty}}\phi_{\substack{\text{out}\\ \text{in}}}(x).	
 \end{equation} 
-Sin embargo si la condición es tomada exactamente en la forma de la ecuación (2.191), es decir, a nivel de operadores, obtenemos un valor nulo para los elementos de la matriz $S$. El formalismo LSZ(Lehmann, Zymanzik, Ziemmermann) (1955) establece la condición correcta [2], esta es:
+Sin embargo si la condición es tomada exactamente en la forma de la ecuación (2.191), es decir, a nivel de operadores, obtenemos un valor nulo para los elementos de la matriz $S$. El formalismo LSZ(Lehmann, Zymanzik, Ziemmermann) (1955) establece la condición correcta [7], esta es:
 \begin{equation}
 \lim_{t\to\pm\infty}\langle a|\phi|b\rangle=\langle a|\phi_{\substack{\text{out}\\ \text{in}}}|b\rangle ,
 \end{equation}
@@ -1223,7 +1223,7 @@ De esta forma expresamos que cada potencial $A_\mu$ puede ser obtenido a partir 
 \begin{equation}
 Z=\int\mathcal{D}A_{\mu}e^{iS}\sim\int\mathcal{D}\bar{A_{\mu}}e^{iS}\int\mathcal{D}\Lambda .
 \end{equation}  	  	
-Como $S$ es invariante Gauge, la integración funcional sobre $\Lambda$ se separa, es este término, $\int \mathcal{D}\Lambda$, el cual da lugar al "sobreconteo" y hace que $Z$ diverja. Faddeev y Popov [2] mostraron por primera vez como hacer esta separación de forma rigurosa, este argumento no es facil de digerir a primera vista y está basado en métodos funcionales. Por tanto es útil hacer una analogía con la integración común en 2D.
+Como $S$ es invariante Gauge, la integración funcional sobre $\Lambda$ se separa, es este término, $\int \mathcal{D}\Lambda$, el cual da lugar al "sobreconteo" y hace que $Z$ diverja. Faddeev y Popov [6] mostraron por primera vez como hacer esta separación de forma rigurosa, este argumento no es facil de digerir a primera vista y está basado en métodos funcionales. Por tanto es útil hacer una analogía con la integración común en 2D.
  		
 
 
@@ -1293,7 +1293,7 @@ así:
 \triangle (r)=det\bigg|\frac{df}{d\theta}\bigg|_{f=0}.
 \end{equation}
 \subsection{El método de Faddevv-Popov.}
-Ahora sí, vamos a poner nuestra atención en aislar el factor de sobreconteo en teorías Gauge, donde la acción es invariante de Gauge. 	Sabemos que una transformación Gauge se puede escribir como [3]:
+Ahora sí, vamos a poner nuestra atención en aislar el factor de sobreconteo en teorías Gauge, donde la acción es invariante de Gauge. 	Sabemos que una transformación Gauge se puede escribir como [7,8]:
 \begin{equation}
 A_{\mu}^{U}=UA_{\mu}U^{\dagger}-i(\partial_{\mu}U)U^{\dagger};\ \ \ U=e^{i\text{\ensuremath{\Lambda}}^{a}(x)T^{a}}.
 \end{equation} 
