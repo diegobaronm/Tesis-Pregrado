@@ -776,10 +776,10 @@ con $u={\xi ,\eta}$. El procedimiento anterior muestra la gran utilidad que resu
 
 
 
-\section{El propagador para el efecto Sagnac.}
+\section{El efecto Sagnac.}
 En esta última sección estudiaremos el efecto Sagnac, este efecto consiste en que al enviar dos rayos de luz en  direcciones opuestas en una plataforma rotativa con espejos en su perímetro, al recombinar los rayos estos exhiben un efecto de interferencia. Este efecto debe su nombre a Georges Sagnac quíen en 1913 realizó el primer experimento con el fin de observar los efectos de interferencia [19,20]. Para esa época se creía que este tipo de efecto constituía una prueba de la hipótesis del \textit{éter luminifero}, sin embargo, tiempo después se mostró que el efecto era también compatible con la teoría de la relatividad [21]. En la primera parte de esta sección derivaremos mediante la teoría de la relatividad la diferencia de camino óptico sufrida por los rayos y en la segunda, por medio de las integrales de trayectoria buscaremos reproducir este resultado y compararlo con la teoría clásica.
 	 
-\subsection{Sistemas de coordenadas no inerciales.}
+\subsection{Relatividad especial.}
 Vamos a considerar la propagación de la luz en sistemas de referencia no inerciales. Debemos distinguir entre dos tipos de aceleraciones, supongamos que un observador en un sistema de referencia inercial $S$ ve a un observador que se mueve en un sistema de referencia $S^{'}$, con velocidad $\vec{v}$. Si escribimos $\vec{v}v\vec{n}$, donde $\vec{n}$ es un vector unitario en dirección de la velocidad, podemos distinguir dos casos:
 \begin{equation}
 (i)\ \frac{d\vec{n}}{dt}=0,\ \frac{dv}{dt}\neq0\ (ii)\ \frac{d\vec{n}}{dt}\neq0,\ \frac{dv}{dt}=0,
@@ -1021,11 +1021,90 @@ así podemos escribir:
 Finalmente si hacemos la última sustitución, $\tau \to \omega t$:
 \begin{eqnarray}
 \nonumber K(t^{'},t^{''},\theta^{'},\theta^{''})&=&\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{\alpha\beta\omega^2}{(2\pi i\Lambda)^{2}R^2}\right)^{\frac{1}{2}}\exp\left(\frac{i}{2\Lambda}\frac{(t^{''}-t^{'})^{2}}{2}\left[R^{2}\omega^{2}-\frac{1}{2}-\frac{1}{2h^{2}}-\frac{2R^{4}\omega^{4}}{h^{2}}\right]\right)\\
-\nonumber &\times & \exp\left(\frac{i}{2\Lambda}\frac{(\theta^{''}-\theta^{''})^{2}}{2}\left[R^{2}-\frac{1}{2\omega^{2}}+\frac{1}{2\omega^{2}h^{2}}+\frac{2R^{4}\omega^{2}}{h^{2}}\right]\right)\\
-&\times &\exp\left(\frac{i}{2\Lambda}(t^{''}-t^{'})(\theta^{''}-\theta^{''})\left[\frac{2R^{2}\omega}{h^{2}}+\frac{8R^{6}\omega^{5}}{h^{2}}\right]\right),
+\nonumber &\times & \exp\left(\frac{i}{2\Lambda}\frac{(\theta^{''}-\theta^{'})^{2}}{2}\left[R^{2}-\frac{1}{2\omega^{2}}+\frac{1}{2\omega^{2}h^{2}}+\frac{2R^{4}\omega^{2}}{h^{2}}\right]\right)\\
+&\times &\exp\left(\frac{i}{2\Lambda}(t^{''}-t^{'})(\theta^{''}-\theta^{'})\left[\frac{2R^{2}\omega}{h^{2}}+\frac{8R^{6}\omega^{5}}{h^{2}}\right]\right),
 \end{eqnarray} 
 una forma de realizar una prueba de consistencia al resultado (3.195) es explorar el límite $\omega \to 0$, si tomamos este límite en (3.195) vemos que:
 \begin{equation}
 K(t^{'},t^{''},\theta^{'},\theta^{''})_{\omega\to0}=\exp\left(-\frac{i\mu^{2}\Lambda}{2}\right)\left(\frac{1}{2\pi\Lambda}\right)\exp\left(\frac{i}{2\Lambda}\left[-\frac{(t^{''}-t^{'})^{2}}{2}+\frac{(\theta^{''}-\theta^{''})^{2}}{2}R^{2}\right]\right).
 \end{equation} 
 Esto debido a que $\lim_{\omega\to 0}\left(\alpha\beta\frac{\omega^2}{R^2}\right)^{\frac{1}{2}}=i$, vemos que la expresión (3.196) tiene las coordenadas desacopladas y no depende de $\omega$, esto era lo esperado.
+
+\subsection{Patrón de interferencia.}
+Como vimos en la $\mathsection$ 2, ecuación (2.3), la amplitud cuántica de probabilidad se puede calcular como el módulo cuadrado del propagador:
+\begin{equation}
+P(x)=|K(x)|^{2},
+\end{equation}
+en nuestra versión del efecto Sagnac consideramos dos partículas que viajan en direcciones opuestas y siguen trayectorias circulares. El propagador para este sistema se puede escribir como:
+\begin{equation}
+K_{T}(t,\theta)=K(t,\theta)+K(t,-\theta),
+\end{equation}
+esto se puede ver debido a que su suponemos que las partículas dejan la fuente emisora al mismo tiempo y con la misma velocidad, cuando una de ellas tenga una posición angular $\theta$, la otra tendrá una posición angular opuesta correspondiente a $-\theta$. Esto se ilustra en la figura 3.4.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{Imagenes/Fig20}
+\caption[Justificación esquemática del propagador.]{En esta figura se aprecia el hecho de que las partículas que viajan en direcciones contrarias, tienen posiciones angulares opuestas.}
+\end{figure}
+Ya sabemos de la sección anterior que el propagador para una de las partículas esta dado por la ecuación (3.195), si consideramos un viajero no masivo ($\mu=0$), entonces:
+\begin{equation}
+K(t^{'},t^{''},\theta^{'},\theta^{''})=A\exp\left[\frac{i}{2\Lambda}\frac{t^{2}}{2}a\right]\exp\left[\frac{i}{2\Lambda}\frac{\theta^{2}}{2}b\right]\exp\left[\frac{i}{2\Lambda}\theta tc\right],
+\end{equation}
+con
+\begin{eqnarray}
+\nonumber &A=\frac{(\alpha\beta)^{\frac{1}{2}}\omega}{2\pi i\Lambda R}\ ,\ t=t^{''}-t^{'}\ ,\ \theta=\theta^{''}-\theta^{'},&\\
+\nonumber & a=\left[R^{2}\omega^{2}-\frac{1}{2}-\frac{1}{2h^{2}}-\frac{2R^{4}\omega^{4}}{h^{2}}\right]\ ,\ b=\left[R^{2}-\frac{1}{2\omega^{2}}+\frac{1}{2\omega^{2}h^{2}}+\frac{2R^{4}\omega^{2}}{h^{2}}\right],&\\
+&c=\left[\frac{2R^{2}\omega}{h^{2}}+\frac{8R^{6}\omega^{5}}{h^{2}}\right].&
+\end{eqnarray}
+Por tanto,
+\begin{eqnarray}
+\nonumber K_T(t,\theta)&=&A\exp\left[\frac{i}{2\Lambda}\frac{t^{2}}{2}a\right]\exp\left[\frac{i}{2\Lambda}\frac{\theta^{2}}{2}b\right]\exp\left[\frac{i}{2\Lambda}\theta tc\right]\\
+\nonumber &+&A\exp\left[\frac{i}{2\Lambda}\frac{t^{2}}{2}a\right]\exp\left[\frac{i}{2\Lambda}\frac{(-\theta)^{2}}{2}b\right]\exp\left[\frac{i}{2\Lambda}(-\theta)tc\right]\\
+&=&A\exp\left[\frac{i}{2\Lambda}\frac{t^{2}}{2}a\right]\exp\left[\frac{i}{2\Lambda}\frac{\theta^{2}}{2}b\right]\left[\exp\left[\frac{i}{2\Lambda}\theta tc\right]+\exp\left[-\frac{i}{2\Lambda}\theta tc\right]\right],
+\end{eqnarray}
+así, si calculamos $|K_T(t,\theta)|^2$:
+\begin{equation}
+|K_{T}(t,\theta)|^{2}=AA^{*}\left[\exp\left[\frac{i}{2\Lambda}\theta tc\right]+\exp\left[-\frac{i}{2\Lambda}\theta tc\right]\right]\left[\exp\left[-\frac{i}{2\Lambda}\theta tc\right]+\exp\left[\frac{i}{2\Lambda}\theta tc\right]\right],
+\end{equation}
+usando el hecho de que $2\cos\theta=e^{i\theta}+e^{-i\theta}$, tenemos que:
+\begin{equation}
+|K_{T}(t,\theta)|^{2}=4AA^{*}\cos^{2}\left(\frac{\theta tc}{2\Lambda}\right).
+\end{equation}
+Ahora para $\omega\ll 1$ tenemos que el tiempo propio y el tiempo coordenado son muy parecidos, así $\frac{t}{\Lambda}\approx 1$, entonces:
+\begin{equation}
+|K_{T}(t,\theta)|^{2}=4AA^{*}\cos^{2}\left(\frac{\theta c}{2}\right),
+\end{equation}
+por último:
+\begin{eqnarray}
+\nonumber c&=&\left[\frac{2R^{2}\omega}{h^{2}}+\frac{8R^{6}\omega^{5}}{h^{2}}\right]\\
+\nonumber c&\approx &  2R^{2}\omega(1-4R^{4}\omega^{4})\approx2R^{2}\omega .
+\end{eqnarray}
+Así 
+\begin{equation}
+P(\theta)=|K_{T}(\theta)|^{2}=4AA^{*}\cos^{2}(R^{2}\omega\theta),
+\end{equation}
+si analizamos la interferencia luego de que las partículas hayan dado una vuelta completa $\theta=\theta^{''}-\theta^{'}=2\pi$, entonces:
+\begin{equation}
+P(2\pi)=|K_{T}(2\pi)|^{2}=4AA^{*}\cos^{2}(2\pi R^{2}\omega).
+\end{equation}
+Si restauramos las unidades del sistema internacional:
+\begin{equation}
+P(2\pi)=4AA^{*}\cos^{2}\left(\frac{2\pi R^{2}\omega}{\hbar c^{2}}\right),
+\end{equation}
+y usando las relaciones (en el caso de partículas no masivas), $E=pc,\ p=\frac{h}{\lambda},\ \hbar=\frac{h}{2\pi},\ c=\lambda \nu$, obtenemos:
+\begin{equation}
+P(2\pi)\propto\cos^{2}\left(\frac{4\pi^{2}R^{2}\omega}{\lambda c}\right).
+\end{equation}
+Por otro lado de la óptica ondulatoria, sabemos que dos ondas monocromáticas de longitud de onda $\lambda$ 	y que poseen una diferencia de camino óptico $\triangle l$, forman un patrón de interferencia con una intesidad proporcional a [22]:
+\begin{equation}
+P(\triangle l)\propto\cos^{2}\left(\frac{\pi\triangle l}{\lambda}\right),
+\end{equation} 
+retomando el resultado que derivamos en la $\mathsection$ 3.5.1, ecuación (3.162):
+\begin{equation}
+\triangle l=\frac{4\pi R^{2}\omega}{c}\Rightarrow P(2\pi)\propto\cos^{2}\left(\frac{4\pi^{2}R^{2}\omega}{\lambda c}\right).
+\end{equation}
+Por tanto comparando la ecuación (3.208) y (3.210) vemos que hay consistencia en los dos tipos de aproximaciones, por lo menos a primer orden en $\omega$. Una de estas aproxiciones es puramente clásica en contraste con el método de integrales de trayectoria, que considera los aspectos cuánticos del problema. Finalmente otra ventaja de la aproximación por integrales de trayectoria es que si de entrada permitimos que entren términos de mayor orden en la expansión, tendrémos "correciones" cuánticas al resultado clásico que hemos esbozado en la $\mathsection$ 3.5.1 . 
+ 
+
+
+
+
