@@ -31,17 +31,17 @@
 \contentsline {subsection}{\numberline {3.1.2}Caso No-abeliano.}{54}{subsection.302}
 \contentsline {subsection}{\numberline {3.1.3}La simetr\IeC {\'\i }a de Lorentz como teor\IeC {\'\i }a Gauge.}{57}{subsection.322}
 \contentsline {subsection}{\numberline {3.1.4}La ecuaci\IeC {\'o}n de Dirac en el espacio de Schwarzschild.}{60}{subsection.341}
-\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schr\IeC {\"o}dinger en espacio curvo.}{62}{section.356}
-\contentsline {subsection}{\numberline {3.2.1}El problema del ordenamiento.}{62}{subsection.357}
-\contentsline {subsection}{\numberline {3.2.2}Ordenamiento de Weyl.}{64}{subsection.368}
-\contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{68}{section.391}
-\contentsline {subsection}{\numberline {3.3.1}Transformaciones de coordenadas e intregrales de trayectoria.}{69}{subsection.398}
-\contentsline {subsection}{\numberline {3.3.2}Integrales de trayectoria en coordenadas polares.}{70}{subsection.411}
-\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{74}{section.427}
-\contentsline {section}{\numberline {3.5}El efecto Sagnac.}{77}{section.441}
-\contentsline {subsection}{\numberline {3.5.1}Relatividad especial.}{77}{subsection.442}
-\contentsline {subsection}{\numberline {3.5.2}El propagador.}{81}{subsection.461}
-\contentsline {subsection}{\numberline {3.5.3}Patr\IeC {\'o}n de interferencia.}{86}{subsection.495}
-\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{90}{chapter.512}
+\contentsline {section}{\numberline {3.2}La ecuaci\IeC {\'o}n de Schr\IeC {\"o}dinger en espacio curvo.}{63}{section.356}
+\contentsline {subsection}{\numberline {3.2.1}El problema del ordenamiento.}{63}{subsection.357}
+\contentsline {subsection}{\numberline {3.2.2}Ordenamiento de Weyl.}{65}{subsection.368}
+\contentsline {section}{\numberline {3.3}Transformaciones de coordenadas.}{69}{section.391}
+\contentsline {subsection}{\numberline {3.3.1}Transformaciones de coordenadas e intregrales de trayectoria.}{70}{subsection.398}
+\contentsline {subsection}{\numberline {3.3.2}Integrales de trayectoria en coordenadas polares.}{71}{subsection.411}
+\contentsline {section}{\numberline {3.4}El \IeC {\'a}tomo de Hidr\IeC {\'o}geno v\IeC {\'\i }a integrales de trayectoria.}{75}{section.427}
+\contentsline {section}{\numberline {3.5}El efecto Sagnac.}{78}{section.441}
+\contentsline {subsection}{\numberline {3.5.1}Relatividad especial.}{78}{subsection.442}
+\contentsline {subsection}{\numberline {3.5.2}El propagador.}{82}{subsection.461}
+\contentsline {subsection}{\numberline {3.5.3}Patr\IeC {\'o}n de interferencia.}{87}{subsection.495}
+\contentsline {chapter}{\numberline {4}Bibliograf\IeC {\'\i }a.}{91}{chapter.512}
 \vspace {2em}
 \vspace {2em}

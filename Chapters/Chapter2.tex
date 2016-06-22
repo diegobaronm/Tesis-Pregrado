@@ -969,7 +969,7 @@ e^{-\bar{\eta}\eta}&=&1-\bar{\eta}\eta\\
 ahora hagamos una generalización a más dimensiones, sea $\text{\ensuremath{\bar{\eta}}=\ensuremath{\left(\begin{array}{c}
 \bar{\eta_{1}}\\
 \bar{\eta_{2}}
-\end{array}\right)}}$;$\text{\ensuremath{\eta}=\ensuremath{\left(\begin{array}{c}
+\end{array}\right)}}$; $\text{\ensuremath{\eta}=\ensuremath{\left(\begin{array}{c}
 \eta_{1}\\
 \eta_{2}
 \end{array}\right)}}$, entonces:
@@ -1064,9 +1064,9 @@ Algunas relaciones importantes son:
 \begin{equation}
 S_{\beta\alpha}=_{out}\langle\beta|\alpha\text{\ensuremath{\rangle}}_{in};\ a_{out}=S^{\dagger}a_{in}S;\ a_{out}^{\dagger}=S^{\dagger}a_{in}^{\text{\ensuremath{\dagger}}}S;\ \phi_{out}=S^{\dagger}\phi_{in}S .
 \end{equation}
-Necesitamos calcular de fomra explícita una expresión $S$, para esto primero consideremos el campo $\phi$ en un tiempo intermedio entre $(-\infty,\infty)$, es decir cuando el campo está sujeto a interacciones. La densidad lagrangiana es $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$, por tanto $\phi$ cumple:
+Necesitamos calcular de forma explícita una expresión $S$, para esto primero consideremos el campo $\phi$ en un tiempo intermedio entre $(-\infty,\infty)$, es decir cuando el campo está sujeto a interacciones. La densidad lagrangiana es $\mathcal{L}=\frac{1}{2}\left[\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}\right]+\mathcal{L}_{int}$, por tanto $\phi$ cumple:
 \begin{equation}
-(\square_{x}+m^{2})\phi=\frac{\partial\mathcal{L}_{int}}{\partial\phi};\ K_{x}\phi=\frac{\partial\mathcal{L}_{int}}{\partial\phi};\ K_{x}\equiv(\square_{x}+m^{2}).
+(\square_{x}+m^{2})\phi=\frac{\partial\mathcal{L}_{int}}{\partial\phi};\ K_{x}\phi=\frac{\partial\mathcal{L}_{int}}{\partial\phi}\ y \ K_{x}\equiv(\square_{x}+m^{2}).
 \end{equation}
 Resolvamos la ecuación (2.179), tenemos por definición que la funcion de Green cumple que:
 \begin{equation}
@@ -1186,11 +1186,11 @@ Por otro lado en ausencia de campos externos, el vacío evoluciona en el vacío 
 \end{equation}
 Combinando la ecuación (2.203) y (2.204):
 \begin{equation}
-F[J]=Z[J]\Rightarrow SI[J]=:\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J] ,
+F[J]=Z[J]\Rightarrow SI[J]=\ :\exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J] ,
 \end{equation}
 y tomando el limite $J\to 0\Rightarrow I[J]\to 1$ entonces de (2.205) obtenemos finalmente que:
 \begin{equation}
-S=:\ \exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]\bigg|_{J=0} .
+S=\ :\exp\left[\int\phi_{in}(z)K\frac{\delta}{\delta J(z)}dz\right]:Z[J]\bigg|_{J=0} .
 \end{equation} 
 La ecuación (2.206) se conoce como la \textit{fórmula de la reducción} en forma funcional. La forma en que funciona como veremos más adelante es la siguiente: Un término típico en la expansión (2.206) contiene $\frac{\delta^n}{\delta J^N}Z[J]\bigg|_{J=0}$, esto no es más que la función de Green de n-puntos. Por cada partícula externa tenemos un operador $\vec{K}$ el cual reduce el propagador a una función delta, la cual finalmente es multiplicada por el campo $\phi_{in}(x)$ que es la función de la partícula libre entrante.
 \\
@@ -1208,7 +1208,7 @@ La ecuación (2.207) se cumple para campos escalares, pero basta con reemplazar 
 
 
 \section{Teorías Gauge y campos de Yang-Mills}
-En esta sección pretendemos extender lo que hemos hecho en las dos secciones anteriores para hallar el propagador en el caso de campos Gauge no-Abelianos (Campos de Yang-Mills). Si consideramos el funcional generatriz:
+En esta sección, inspirada en [7], pretendemos extender lo que hemos hecho en las dos secciones anteriores para hallar el propagador en el caso de campos Gauge no-Abelianos (Campos de Yang-Mills). Si consideramos el funcional generatriz:
 \begin{equation}
 Z=\int\mathcal{D}A_{\mu}e^{i\int\mathcal{L}dx},
 \end{equation}
@@ -1223,7 +1223,7 @@ De esta forma expresamos que cada potencial $A_\mu$ puede ser obtenido a partir 
 \begin{equation}
 Z=\int\mathcal{D}A_{\mu}e^{iS}\sim\int\mathcal{D}\bar{A_{\mu}}e^{iS}\int\mathcal{D}\Lambda .
 \end{equation}  	  	
-Como $S$ es invariante Gauge, la integración funcional sobre $\Lambda$ se separa, es este término, $\int \mathcal{D}\Lambda$, el cual da lugar al "sobreconteo" y hace que $Z$ diverja. Faddeev y Popov [6] mostraron por primera vez como hacer esta separación de forma rigurosa, este argumento no es facil de digerir a primera vista y está basado en métodos funcionales. Por tanto es útil hacer una analogía con la integración común en 2D.
+Como $S$ es invariante Gauge, la integración funcional sobre $\Lambda$ se separa, es este término, $\int \mathcal{D}\Lambda$, el cual da lugar al sobreconteo y hace que $Z$ diverja. Faddeev y Popov [6] mostraron por primera vez como hacer esta separación de forma rigurosa, este argumento no es facil de digerir a primera vista y está basado en métodos funcionales. Por tanto es útil hacer una analogía con la integración común en 2D.
  		
 
 
@@ -1356,7 +1356,7 @@ F^a=\partial^\mu A_{\mu}^{a}+C^a(x),
 \end{equation} 
 donde $C^a(x)$ es una función arbitraria. Así el funcional generatriz queda como:
 \begin{equation}
-Z=\int\mathcal{D}A_{\mu}\triangle_{F}[A_{\mu}]\delta[F^{a}[A_{\mu}]-C^a]e^{iS}.
+Z=\int\mathcal{D}A\triangle_{F}[A_{\mu}]\delta[F^{a}[A]-C^a]e^{iS}.
 \end{equation}
 Como $C$ es independiente de $A$ la ecuación (2.238) sigue siendo correcta y además de esto, debido a que Z es independiente de $C$ podemos multiplicar $Z$ por un factor cualquiera función de $C$. Por tanto multiplicamos Z por el factor:
 \begin{equation}
@@ -1375,4 +1375,4 @@ donde la densidad lagrangiana efectiva es:
 \nonumber \mathcal{L}_{\text{eff}}&=&\mathcal{L}-\frac{F^{2}}{2\alpha}-\bar{\eta}^aM_{ab}\eta^{b}\\
 &=& \mathcal{L}+\mathcal{L}_{GF}+\mathcal{L}_{FPG}.
 \end{eqnarray}
-$\mathcal{L}_{GF}$ es el término de fijación del Gauge y $\mathcal{L}_{FPG}$ es el término de los fantasmas de Faddeev-Popov. Los campos de Grassmann $\eta,\bar{\eta}$ son llamados campos fantasmas debido a que su spin-estadisistica no física (son campos fermionicos que satisfacen la ecuación de KG) solo les permite aparecer en las partes internas de los diagramas de Feynmann, nunca como campos externos. 
+$\mathcal{L}_{GF}$ es el término de fijación del Gauge y $\mathcal{L}_{FPG}$ es el término de los fantasmas de Faddeev-Popov. Los campos de Grassmann $\eta,\bar{\eta}$ son llamados campos fantasmas debido a que su spín-estadística no física (son campos fermionicos que satisfacen la ecuación de KG) solo les permite aparecer en las partes internas de los diagramas de Feynmann, nunca como campos externos. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  12 JUN 2016 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.30)  22 JUN 2016 00:21
 entering extended mode
 **Thesis.tex
 (Thesis.tex
@@ -1297,119 +1297,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--12
 [50
 
 ] [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 74--79
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
 
  []
 
 [54] [55] [56]
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 222--226
 
  []
 
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 231--236
+Underfull \hbox (badness 10000) in paragraph at lines 234--239
 
  []
 
-[58] [59] [60] [61] [62] [63]
-Underfull \hbox (badness 10000) in paragraph at lines 429--434
+[58] [59] [60] [61] [62] [63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 432--437
 
  []
 
-[64] [65] [66] [67] [68]
-Underfull \hbox (badness 10000) in paragraph at lines 575--580
+[65] [66] [67] [68] [69]
+Underfull \hbox (badness 10000) in paragraph at lines 578--583
 
  []
 
-[69] [70]
-Overfull \hbox (24.45541pt too wide) in alignment at lines 652--659
+[70] [71]
+Overfull \hbox (24.45541pt too wide) in alignment at lines 655--662
  [][][] []
  []
 
-[71]
-Overfull \hbox (37.43933pt too wide) in alignment at lines 661--664
+[72]
+Overfull \hbox (37.43933pt too wide) in alignment at lines 664--667
  [][][] []
  []
 
 
-Overfull \hbox (19.59567pt too wide) in alignment at lines 670--673
+Overfull \hbox (19.59567pt too wide) in alignment at lines 673--676
  [][][] []
  []
 
-[72] [73]
-Underfull \hbox (badness 10000) in paragraph at lines 704--712
+[73] [74]
+Underfull \hbox (badness 10000) in paragraph at lines 707--715
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--712
+Underfull \hbox (badness 10000) in paragraph at lines 707--715
 
  []
 
-[74] [75] [76] [77] <Imagenes/Fig17.png, id=1059, 472.76625pt x 648.17157pt>
+[75] [76] [77] [78] <Imagenes/Fig17.png, id=1063, 472.76625pt x 648.17157pt>
 File: Imagenes/Fig17.png Graphic file (type png)
 
 <use Imagenes/Fig17.png>
-Package pdftex.def Info: Imagenes/Fig17.png used on input line 819.
+Package pdftex.def Info: Imagenes/Fig17.png used on input line 822.
 (pdftex.def)             Requested size: 142.26378pt x 195.04639pt.
- [78 <./Imagenes/Fig17.png>]
-<Imagenes/Fig18.png, id=1068, 256.91985pt x 256.91985pt>
+ [79 <./Imagenes/Fig17.png>]
+<Imagenes/Fig18.png, id=1072, 256.91985pt x 256.91985pt>
 File: Imagenes/Fig18.png Graphic file (type png)
 
 <use Imagenes/Fig18.png>
-Package pdftex.def Info: Imagenes/Fig18.png used on input line 850.
+Package pdftex.def Info: Imagenes/Fig18.png used on input line 853.
 (pdftex.def)             Requested size: 199.16928pt x 199.17746pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 843--856
+Underfull \hbox (badness 10000) in paragraph at lines 846--859
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 843--856
+Underfull \hbox (badness 10000) in paragraph at lines 846--859
 
  []
 
-[79] [80 <./Imagenes/Fig18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 877--881
+[80] [81 <./Imagenes/Fig18.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 880--884
 
  []
 
-[81] [82] <Imagenes/Fig19.png, id=1109, 153.9351pt x 205.2468pt>
+[82] [83] <Imagenes/Fig19.png, id=1113, 153.9351pt x 205.2468pt>
 File: Imagenes/Fig19.png Graphic file (type png)
 
 <use Imagenes/Fig19.png>
-Package pdftex.def Info: Imagenes/Fig19.png used on input line 956.
+Package pdftex.def Info: Imagenes/Fig19.png used on input line 959.
 (pdftex.def)             Requested size: 108.12054pt x 144.16345pt.
- [83 <./Imagenes/Fig19.png>] [84]
-Overfull \hbox (6.33624pt too wide) detected at line 1003
+ [84 <./Imagenes/Fig19.png>] [85]
+Overfull \hbox (6.33624pt too wide) detected at line 1006
 []\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T[]; T[]; \OT1/c
 mr/m/n/10.95 []\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 []) = [] [] [][] [] [
 ] [] [] \OML/cmm/m/it/10.95 :
  []
 
 
-Overfull \hbox (15.91736pt too wide) in alignment at lines 1014--1020
+Overfull \hbox (15.91736pt too wide) in alignment at lines 1017--1023
  [][][] []
  []
 
-[85]
-Overfull \hbox (35.42558pt too wide) in alignment at lines 1022--1026
+[86]
+Overfull \hbox (35.42558pt too wide) in alignment at lines 1025--1029
  [][][] []
  []
 
-[86] <Imagenes/Fig20.png, id=1147, 301.125pt x 206.9331pt>
+[87] <Imagenes/Fig20.png, id=1151, 301.125pt x 206.9331pt>
 File: Imagenes/Fig20.png Graphic file (type png)
 
 <use Imagenes/Fig20.png>
-Package pdftex.def Info: Imagenes/Fig20.png used on input line 1045.
+Package pdftex.def Info: Imagenes/Fig20.png used on input line 1048.
 (pdftex.def)             Requested size: 284.52756pt x 195.5465pt.
- [87 <./Imagenes/Fig20.png>] [88])
-(Chapters/Chapter4.tex [89]
+ [88 <./Imagenes/Fig20.png>] [89])
+(Chapters/Chapter4.tex [90]
 Cap\'{\i }tulo 4.
 ------------------------------------------------------------------------------
  4 Bibliograf\IeC {\'\i }a.
@@ -1427,9 +1432,9 @@ Overfull \hbox (1.12505pt too wide) in paragraph at lines 15--17
 ON IN-TO THE FEYN-MAN PATH IN-TE-GRAL.\OT1/cmr/m/n/10.95 ;
  []
 
-[90
+[91
 
-]) [91]
+]) [92]
 ------------------------------------------------------------------------------
  Bibliograf\'{\i }a
 ------------------------------------------------------------------------------
@@ -1451,8 +1456,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 15218 strings out of 493673
- 210648 string characters out of 3141530
+ 15219 strings out of 493673
+ 210656 string characters out of 3141530
  295292 words of memory out of 3000000
  17658 multiletter control sequences out of 15000+200000
  17008 words of font info for 64 fonts, out of 3000000 for 9000
@@ -1487,9 +1492,9 @@ ts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 ymbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Thesis.pdf (100 pages, 3535797 bytes).
+Output written on Thesis.pdf (101 pages, 3536699 bytes).
 PDF statistics:
- 1404 PDF objects out of 1440 (max. 8388607)
- 613 named destinations out of 1000 (max. 500000)
+ 1408 PDF objects out of 1440 (max. 8388607)
+ 614 named destinations out of 1000 (max. 500000)
  424 words of extra memory for PDF output out of 10000 (max. 10000000)
 

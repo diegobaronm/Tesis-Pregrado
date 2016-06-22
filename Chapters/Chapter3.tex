@@ -3,12 +3,12 @@
 
 	   	
 \section{Teoría clásica de campos en espacios curvos.}
-Al nivel más fundamental la situación que nos presenta la fisica teórica es un modelo, con un alto grado de soporte experimental, en el cual solo hay tres interacciones: la cromo-dinámica cuaántica (QCD), que explica la interacción mediante la cual los quarks interactúan para formar los hadrones; la interacción débil (EW) que explica los procesos de decaimiento radiactivo y los fenomenos electromagneticos en una teoría unificada; y finalmente la gravedad. Las primeras dos interacciones se entienden en el contexto de la teoria cuántica de campos, en particular la teoría de campos Gauge, donde las interacciones se explican mediante el intercambio de bosones Gauge (gluones para QCD y el fotón y los bosones W,Z para EW). Sin embargo la teoría que mejor explica los fenómenos gravitatorios. la relativdad general (GR), es una teoría totalmente diferente debido a su naturaleza geométrica.
+Al nivel más fundamental la situación que nos presenta la fisica teórica es un modelo, con un alto grado de soporte experimental, en el cual solo hay tres interacciones: la cromo-dinámica cuaántica (QCD), que explica la interacción mediante la cual los quarks interactúan para formar los hadrones; la interacción débil (EW) que explica los procesos de decaimiento radiactivo y los fenomenos electromagneticos en una teoría unificada y finalmente la gravedad. Las primeras dos interacciones se entienden en el contexto de la teoría cuántica de campos, en particular la teoría de campos Gauge, donde las interacciones se explican mediante el intercambio de bosones Gauge (gluones para QCD y el fotón y los bosones W,Z para EW). Sin embargo la teoría que mejor explica los fenómenos gravitatorios, la relativdad general (GR), es una teoría totalmente diferente debido a su naturaleza geométrica.
 \\
 \\
-Sin embargo el objetivo de la física es reducir el numero de teorías, conceptos y esquemas al mínimo, es por esto que muchos físicos trabajan en teorías que unifiquen estos dos esquemas: supergravedad, teoría de supercuerdas, gravedad cuántica de lazos, etc. Debido a que las otras dos interacciones fundamentales se entienden en términos de teorías cuánticas de campo, ¿no deberia darsele a la gravedad un tratamiento cuántico?
+Pero el objetivo de la física es reducir el numero de teorías, conceptos y esquemas al mínimo, es por esto que muchos físicos trabajan en teorías que unifiquen estos dos esquemas: supergravedad, teoría de supercuerdas, gravedad cuántica de lazos, etc. Debido a que las otras dos interacciones fundamentales se entienden en términos de teorías cuánticas de campo, ¿no deberia dársele a la gravedad un tratamiento cuántico?
 \\
-Por tanto, en una busqueda de teorías más alla de GR, ¿hacia dónde nos dirigimos?. Es bien sabido que no se puede hacer con las otras fuerzas fundamentales lo mismo que con la gravedad, en la teoría gravitatoria uno cambia la aceleración producida por la fuerza gravitacional por un sistema de referencia acelerado y esto se puede hacer debido a la equivalencia entre masa inercial y masa gravitatoria. Sin embargo esto no se puede hacer con las fuerzas fundamentales restantes, por ejemplo, la aceleración que sufre una partícula cargada electricamente es proporcional a su carga e inversamente proporcional a su masa inercial ($a\propto \frac{q}{m}$). Como esta razón no es la misma para todas las partículas uno no puede encontrar un sistema de referencia donde globalmente "desaparezca" la fuerza eléctrica. Sin embargo en los 60`s se dieron cuenta que al \textit{calibrar} (traducción del ingles "gauging", refiríendose a transformaciones Gauge como transformaciones de calibre) la simetría de Lorentz, uno termina con una teoría muy parecida a la GR. En esta primera sección introduciremos esta idea, sin embargo antes daremos un ejemplo de teorías Gauge abelianas (electromagnetismo) y no-abelianas (campos de Yang Mills).
+Por tanto, en una busqueda de teorías más alla de GR, ¿hacia dónde nos dirigimos? Es bien sabido que no se puede hacer con las otras fuerzas fundamentales lo mismo que con la gravedad, en la teoría gravitatoria uno cambia la aceleración producida por la fuerza gravitacional por un sistema de referencia acelerado y esto se puede hacer debido a la equivalencia entre masa inercial y masa gravitatoria. Sin embargo esto no se puede hacer con las fuerzas fundamentales restantes, por ejemplo, la aceleración que sufre una partícula cargada eléctricamente es proporcional a su carga e inversamente proporcional a su masa inercial ($a\propto \frac{q}{m}$). Como esta razón no es la misma para todas las partículas uno no puede encontrar un sistema de referencia donde globalmente "desaparezca" la fuerza eléctrica. Sin embargo en los 60's se dieron cuenta que al \textit{calibrar} (traducción del ingles "gauging", refiríendose a transformaciones Gauge como transformaciones de calibre) la simetría de Lorentz, uno termina con una teoría muy parecida a la GR. En esta primera sección introduciremos esta idea, sin embargo antes daremos un ejemplo de teorías Gauge abelianas (electromagnetismo) y no-abelianas (campos de Yang Mills).
 \subsection{Caso abeliano.}
 Consideremeos un campo escalar complejo que obedece la ecuacion de K-G y tiene una densidad Lagrangiana:
 \begin{equation}
@@ -32,7 +32,7 @@ por tanto
 \begin{equation}
 \partial_{0}\int_{V}j^{0}dV=0\Rightarrow\frac{dQ}{dt}=0;\ \ Q=\int_{V}j^{0}dV.
 \end{equation}
-Identificando $Q$ con la carga eléctrica tenemos que el campo $\phi$ porta una carga eléctrica la cual es conservada. Sin embargo la transformación anterior demanda que $\phi$ cambie la cantidad indicada al mismo tiempo en todos los puntos del espacio-tiempo, este tipo de transformación no tiene el espíritu de la relatividad, la transformación deberá ser \textit{local} en vez de \textit{globar}, es decir, el parámetro $\Lambda$ debe depender de las coordenadas $\Lambda=\Lambda(x^\mu)$. Así:
+Identificando $Q$ con la carga eléctrica tenemos que el campo $\phi$ porta una carga eléctrica la cual es conservada. Sin embargo la transformación anterior demanda que $\phi$ cambie la cantidad indicada al mismo tiempo en todos los puntos del espacio-tiempo, este tipo de transformación no tiene el espíritu de la relatividad, la transformación deberá ser \textit{local} en vez de \textit{global}, es decir, el parámetro $\Lambda$ debe depender de las coordenadas $\Lambda=\Lambda(x^\mu)$. Así:
 \begin{equation}
 \phi(x)\to e^{-i\Lambda(x)}\phi(x),\ \ \phi(x)^{*}\to e^{i\Lambda(x)}\phi(x)^{*},
 \end{equation}
@@ -75,7 +75,10 @@ Esta corriente es conservada, las ecuaciones de movimiento de $A_\mu$ son:
 esto último debido a que el tensor $F^{\nu\mu}$ es antisimétrico.
 \\
 \\
-Recordemos ahora que en GR el tensor de curvatura es proporcional al conmutador de las derivadas covariantes, es decir, $[\nabla_{\mu},\nabla_{\nu}]e_{k}=R_{k\mu\nu}^{\rho}e_{\rho}$. Si notamos que $[D_{\mu},D_{\nu}]\phi=ie(\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu})=ieF_{\mu\nu}\phi$, podemos establecer una analogía entre la curvatura y la intesidad del campo Gauge. Otro hecho que podemos notar es que recordando la definición del tensor de Rienmann [8] $R_{***}^{*}=\partial[_{*}\Gamma_{*}]+[\Gamma,\Gamma] $ y también que $F_{**}=\partial[_{*}A_{*}]$ se puede asociar el potencial $A$ en electrodinámica con el coeficiente de conexión $\Gamma$ en GR. En el caso  del campo electromagnético el segundo término de la definición del tensor de Rienmann no tiene un análogo, pero veremos como esta situación cambia cuando generalicemos al caso de una simetría Gauge local no abeliana. Para terminar esta sección escribamos el análisis anterior de una forma más compacta, consideremos una transformación:
+Recordemos ahora que en GR el tensor de curvatura es proporcional al conmutador de las derivadas covariantes, es decir, $[\nabla_{\mu},\nabla_{\nu}]e_{k}=R_{k\mu\nu}^{\rho}e_{\rho}$. Si notamos que $[D_{\mu},D_{\nu}]\phi=ie(\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu})=ieF_{\mu\nu}\phi$, podemos establecer una analogía entre la curvatura y la intesidad del campo Gauge.
+\\
+\\
+Otro hecho que podemos notar es que recordando la definición del tensor de Rienmann [8] $R_{***}^{*}=\partial[_{*}\Gamma_{*}]+[\Gamma,\Gamma] $ y también que $F_{**}=\partial[_{*}A_{*}]$ se puede asociar el potencial $A$ en electrodinámica con el coeficiente de conexión $\Gamma$ en GR. En el caso  del campo electromagnético el segundo término de la definición del tensor de Rienmann no tiene un análogo, pero veremos como esta situación cambia cuando generalicemos al caso de una simetría Gauge local no abeliana. Para terminar esta sección escribamos el análisis anterior de una forma más compacta, consideremos una transformación:
 \begin{equation}
 \phi\to U\phi,\ \ \phi^{*}\to U^{\dagger}\phi^{*}\text{con}\ \ U=e^{i\Lambda}\Rightarrow UU^{\dagger}=1,
 \end{equation}
@@ -88,7 +91,7 @@ Si dos matrices $U_1,U_2$ obedecen la última relación de la ecuación (3.16) e
 
 
 \subsection{Caso No-abeliano.}
-Sería interesante extender la simetría U(1) para la electrodinámica solo por ver "que sucede", pero de hecho hay una motivación física para hacerlo. La primera vez que fue hecho esto sucedió en el contexto de la física nuclear y la idea original es de Yang y Mills [9]. La propuesta trataba sobre una cantidad física que hoy en día se conoce como el isospín. Estos dos físicos se dieron cuenta que había una relación entre la carga eléctrica de las partículas y la tercera componente de su isospín, asi si pensamos el isopín como la consecuencia de la simetría bajo rotación en un espacio abstracto ¿no es factible entonces entender esta cantidad extendiendo el grupo gauge de U(1) a SU(2)?
+Sería interesante extender la simetría U(1) para la electrodinámica solo por ver "que sucede", pero de hecho hay una motivación física para hacerlo. La primera vez que fue hecho esto sucedió en el contexto de la física nuclear y la idea original es de Yang y Mills [9]. La propuesta trataba sobre una cantidad física que hoy en día se conoce como el isospín. Estos dos físicos se dieron cuenta que había una relación entre la carga eléctrica de las partículas y la tercera componente de su isospín, así si pensamos el isopín como la consecuencia de la simetría bajo rotación en un espacio abstracto ¿no es factible entonces entender esta cantidad extendiendo el grupo gauge de U(1) a SU(2)?
 \\
 \\
 El caso de SU(2) es un poco diferente, ya que este es un grupo no abeliano. SU(2) es elgripo especial unitario de dimensión 2, un elemento del grupo es tal que: 
@@ -174,14 +177,14 @@ Ahora generalizando el tensor de intensidad como $F_{\mu\nu}=\frac{i}{g}[D_\mu,D
 \begin{equation}
 F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}-ig[A_{\mu},A_{\nu}]\Rightarrow F_{\mu\nu}^{a}=\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c} ,
 \end{equation}
-así en el caso no-abeliano el tensor de intensidad $F_{\mu\nu}$ ha adquirido in término cuadrático en $A_\mu$. Veamos que el tensor $F_{\mu\nu}$ NO es invariante Gauge:
+así en el caso no-abeliano el tensor de intensidad $F_{\mu\nu}$ ha adquirido in término cuadrático en $A_\mu$. Veamos que el tensor $F_{\mu\nu}$ no es invariante Gauge:
 \begin{eqnarray}
 \nonumber F_{\mu\nu}^{\prime a}&=&\partial_{\mu}A_{\nu}^{\prime a}-\partial_{\nu}A_{\mu}^{\prime a}+g\epsilon_{abc}A_{\mu}^{\prime b}A_{\nu}^{\prime c}\\
 \nonumber &=& \partial_{\mu}UA_{\nu}^{a}U^{-1}-\partial_{\nu}UA_{\mu}^{a}U^{-1}-\frac{i}{g}\partial_{\mu}[(\partial_{\nu}U)U^{-1}]+\frac{i}{g}\partial_{\nu}[(\partial_{\mu}U)U^{-1}]\\
 \nonumber && +g\epsilon_{abc}UA_{\mu}^{b}A_{\nu}^{c}U^{-1}-\frac{i}{g}(\partial_{\mu}U)U^{-1}UA_{\nu}U^{-1}-\frac{i}{g}UA_{\mu}U^{-1}(\partial_{\nu}U)U^{-1}\\
 &=& U[\partial_{\mu}A_{\nu}^{a}-\partial_{\nu}A_{\mu}^{a}+g\epsilon_{abc}A_{\mu}^{b}A_{\nu}^{c}]U^{-1}=UF_{\mu\nu}^{a}U^{-1} ,
 \end{eqnarray}
-por tanto $F_{\mu\nu}$ NO es invariante Gauge y tampoco $F_{\mu\nu}F^{\mu\nu}$ ya que:
+por tanto $F_{\mu\nu}$ no es invariante Gauge y tampoco $F_{\mu\nu}F^{\mu\nu}$ ya que:
 \begin{equation}
 F_{\mu\nu}F^{\mu\nu}\to UF_{\mu\nu}F^{\mu\nu} U^{-1}.
 \end{equation}
@@ -219,7 +222,7 @@ Ahora para hacer la ecuación (3.37) invariante \textit{local} de Lorentz debemo
 Pero primero debemos hacer un alto en el camino y hacernos la siguiente pregunta: ¿cómo vamos a tratar los campos espinoriales en RG? En particular como vamos a tratar las derivadas covariantes sobre ellos. Nosotros estamos familiarizados con la construcción de derivadas covariantes para vectores y tensores de diferente rango, pero, ¿qué hay de los espinores? Esta no es una pregunta trivial y esto recae en el hecho de que el grupo de transformaciones generales de coordenadas. que se encuentra bajo los cimientos de la RG, tiene representaciones vectoriales y tensoriales, más no representaciones de espín.
 \\
 \\
-Una situación similar ocurre para las rotaciones y las transformaciones de Lorentz. Las rotaciones están descritas por el grupo SO(3) del cual hay representaciones vectoriales y tensoriales, pero no espinoriales. Sin embargo el grupo SU(2) que es homeomórfico a SO(3) si tiene representación espinorial. Sin embargo no hay tal solución en RG, el grupo de transformaciones generales de coordenadas es un grupo de infinitos parámetros y no hay forma de encontrar un grupo similar con representación espinorial. Asi que de nuevo, volviendo a la pregunta ¿ cómo tratamos los espinores en RG? La respuesta fue dada por primera vez por Weyl [10] y en lo que sigue de aquí en adelante seguiremos un argumento que va en la misma dirección del argumento de Weyl en 1929. 
+Una situación similar ocurre para las rotaciones espaciales y las transformaciones de Lorentz. Las rotaciones están descritas por el grupo SO(3) del cual hay representaciones vectoriales y tensoriales, pero no espinoriales. Sin embargo el grupo SU(2) que es homeomórfico a SO(3) si tiene representación espinorial. Sin embargo no hay tal solución en RG, el grupo de transformaciones generales de coordenadas es un grupo de infinitos parámetros y no hay forma de encontrar un grupo similar con representación espinorial. Así que de nuevo, volviendo a la pregunta ¿ cómo tratamos los espinores en RG? La respuesta fue dada por primera vez por Weyl [10] y en lo que sigue de aquí en adelante seguiremos un argumento que va en la misma dirección del argumento de Weyl en 1929. 
 
 Sea $\mathcal{M}$ una variedad Lorentziana 4-dimensional, los \textit{vierbein} están definidos como: 
 \begin{equation}
@@ -299,7 +302,7 @@ En esta sección derivaremos la ecuación de Dirac en el espacio-tiempo de Schwa
 \end{equation}
 En el espacio de Schwarzschild el elemento de linea es [1,8,11]:
 \begin{equation}
-ds^{2}=-\left(1-\frac{2m}{r}\right)c^{2}dt^{2}+\left(1-\frac{2m}{r}\right)^{-1}dr^{2}+r^{2}(d\theta^{2}+\text{Sin}^{2}\theta d\phi^{2}),
+ds^{2}=-\left(1-\frac{2m}{r}\right)c^{2}dt^{2}+\left(1-\frac{2m}{r}\right)^{-1}dr^{2}+r^{2}(d\theta^{2}+\sin^{2}\theta d\phi^{2}),
 \end{equation}
 si llevamos lo anterior al lenguaje de marcos ortogonales locales (vierbeins), debemos escribir:
 \begin{equation}
@@ -307,11 +310,11 @@ ds^{2}=-(\mathbf{\theta}^{0})^{2}+(\mathbf{\theta}^{1})^{2}+(\mathbf{\theta}^{2}
 \end{equation}
 con $g_{\mu\nu}=\eta_{\mu\nu}$ y
 \begin{equation}
-\mathbf{\theta}^{0}=\left(1-\frac{2m}{r}\right)^{1/2}cdt\ ;\ \mathbf{\theta}^{1}=\left(1-\frac{2m}{r}\right)^{-1/2}dr\ ;\ \mathbf{\theta}^{2}=rd\theta\ ;\ \mathbf{\theta}^{3}=r\text{Sin}\theta d\phi .
+\mathbf{\theta}^{0}=\left(1-\frac{2m}{r}\right)^{1/2}cdt\ ;\ \mathbf{\theta}^{1}=\left(1-\frac{2m}{r}\right)^{-1/2}dr\ ;\ \mathbf{\theta}^{2}=rd\theta\ ;\ \mathbf{\theta}^{3}=r\sin\theta d\phi .
 \end{equation}
-La base dual es:
+La vectorial es:
 \begin{equation}
-\mathbf{e_{0}}=\frac{1}{c}\left(1-\frac{2m}{r}\right)^{-1/2}\frac{\partial}{\partial t}\ ;\ \mathbf{e}_{1}=\left(1-\frac{2m}{r}\right)^{1/2}\frac{\partial}{\partial r}\ ;\ \mathbf{e}_{2}=\frac{1}{r}\frac{\partial}{\partial\theta}\ ;\ \mathbf{e}_{3}=\frac{1}{r\text{Sin}\theta}\frac{\partial}{\partial\phi} ,
+\mathbf{e_{0}}=\frac{1}{c}\left(1-\frac{2m}{r}\right)^{-1/2}\frac{\partial}{\partial t}\ ;\ \mathbf{e}_{1}=\left(1-\frac{2m}{r}\right)^{1/2}\frac{\partial}{\partial r}\ ;\ \mathbf{e}_{2}=\frac{1}{r}\frac{\partial}{\partial\theta}\ ;\ \mathbf{e}_{3}=\frac{1}{r\sin\theta}\frac{\partial}{\partial\phi} ,
 \end{equation}
 (hay que notar que $m$ es la masa de Schwarzschild, diferente de la masa de la partícula ($m_D$)). Los conmutadores de las cantidades definidas en (3.59) se pueden calcular como:
 \begin{equation}
@@ -373,7 +376,7 @@ En esta sección se realizará la introducción de las integrales de trayectoria
 
 
 \subsection{El problema del ordenamiento.}
-Para empezar vamos a considerar la ecuación de Schrödinger en una variedad d-dimensional de Rienmmann $\mathcal{M}$, con coordenadas $q^a$, métrica $g^{ab}(q)$ y elemento de línea
+Para empezar vamos a considerar la ecuación de Schrödinger en una variedad d-dimensional de Riemann $\mathcal{M}$, con coordenadas $q^a$, métrica $g^{ab}(q)$ y elemento de línea
 \begin{equation}
 ds^2=g_{ab}(q)dq^adq^b.
 \end{equation}	
